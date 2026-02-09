@@ -1,0 +1,36 @@
+.header {
+  color: $white;
+  font-weight: bolder;
+  background-color: $navbar-dark-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &.header-absolute {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+  }
+  .logo-text {
+    font-family: $font-family-sensical;
+    font-size: $font-size-xl;
+    color: $white;
+    &:hover {
+      text-decoration: none;
+      color: $accent;
+      transition: $nav-link-transition;
+    }
+  }
+}
+// .lock-scroll {
+//   .header {
+//     &.header-absolute {
+//       position: static;
+//     }
+//   }
+// }

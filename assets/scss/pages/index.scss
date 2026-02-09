@@ -1,0 +1,19 @@
+.title-sensical{
+    font-family: $font-family-sensical-regular;
+    color: $black;
+}
+.button {
+    background-color: $accent;
+    color: $white;
+    font-size: $font-size-base;
+    border-radius: $border-radius-pill;
+    border-style: $border-style;
+    &:hover {
+        background-color: $white;
+        color: $accent;
+        transition: $transition-base;
+    }
+}
+.color-white{
+    color: $white;
+}
