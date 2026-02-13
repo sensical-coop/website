@@ -1,4 +1,4 @@
-baseURL = "https://sensical.coop/"
+baseURL = "https://sensical.es/"
 languageCode = "en-us"
 title = "Sensical SCCL"
 
@@ -24,7 +24,7 @@ title = "Sensical SCCL"
     meta_description = "Sensical SCCL is a developer and engineering cooperative, offering consultance services in prototyping, open science and environmental participatory processes."
     meta_og_title = "Sensical SCCL"
     meta_og_type = "website"
-    meta_og_url = "https://sensical.coop/"
+    meta_og_url = "https://sensical.es/"
     meta_og_image = "images/sensical-logo.png"
     meta_og_description = "Sensical SCCL is a developer and engineering cooperative, offering consultance services in prototyping, open science and environmental participatory processes."
 
