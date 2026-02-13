@@ -8,8 +8,27 @@
   height: 60px;
   .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    @include media-breakpoint-up(lg) {
+      justify-content: space-between;
+    }
+    > .main-menu {
+      display: none;
+      @include media-breakpoint-up(lg) {
+        justify-content: end;
+        display: flex;
+        width: 70%;
+        order: 2;
+      }
+    }
+    > .language-select {
+      display: none;
+      @include media-breakpoint-up(lg) {
+        display: block;
+        order: 3;
+      }
+    }
   }
   &.header-absolute {
     position: absolute;

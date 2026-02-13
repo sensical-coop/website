@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: {{ .Date }}
+date: {{ .Date | time.Format ":date_full" }}
 icon: "services/service-icon-1.png"
 featured: true
 draft: false

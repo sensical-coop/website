@@ -1,0 +1,11 @@
+<div class="container-item btn-group language-select">
+  <button type="button" class="btn btn-outline-danger btn-sm">{{ .Language.LanguageName }}</button>
+  <button type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <!-- <span class="sr-only">Toggle Dropdown</span> -->
+  </button>
+  <div class="dropdown-menu dropdown-menu-dark">
+    {{ range $.Site.Home.AllTranslations }}
+    <a class="dropdown-item" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+    {{ end }}
+  </div>
+</div>

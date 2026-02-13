@@ -51,3 +51,21 @@ title = "Sensical SCCL"
 [permalinks]
   post = "/:year/:month/:day/:slug/"
   pages = "/:contentbasename/"
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    languageName = 'en'
+    weight = 10
+  [languages.es]
+    contentDir = 'content/es'
+    languageName = 'es'
+    weight = 20
+  [languages.cat]
+    contentDir = 'content/cat'
+    languageName = 'cat'
+    weight = 30
+  [languages.fr]
+    contentDir = 'content/fr'
+    languageName = 'fr'
+    weight = 40

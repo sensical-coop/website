@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: {{ .Date }}
+date: {{ .Date | time.Format ":date_full" }}
 draft: false
 weight: 100
 heroHeading: 'Work'
