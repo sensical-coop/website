@@ -22,24 +22,24 @@ jobs:
       HUGO_VERSION: 0.154.5
     steps:
       - name: Checkout
-        uses: actions/checkout@8e8c483db84b4bee # v6.0.2
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.2
         with:
           fetch-depth: 0
           persist-credentials: false
           submodules: recursive
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@75d2e847 # v3.0.0
+        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@983d7736 # v5.0.0
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
 
       - name: Cache Hugo resources
-        uses: actions/cache@8b402f58 # v5.0.3
+        uses: actions/cache@8b402f58fbc84540c8b491a91e594a4576fec3d7 # v5.0.3
         with:
           path: |
             ${{ runner.temp }}/hugo_cache
@@ -52,7 +52,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          TZ: America/New_York
+          TZ: Europe/Madrid
         run: |
           hugo \
             --gc \
