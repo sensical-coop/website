@@ -1,6 +1,9 @@
 .title-sensical{
     font-family: $font-family-sans-serif;
-    color: $black;
+    font-size: 5rem;
+    @include media-breakpoint-up(lg) {
+        font-size: 6rem;
+    }
 }
 .button {
     background-color: $accent;
@@ -16,4 +19,11 @@
 }
 .color-white{
     color: $white;
+}
+.text-work{
+    font-size: 1.2rem;
+    text-decoration: none;
+    @include media-breakpoint-up(lg) {
+        font-size: 1.4rem;
+    }
 }
