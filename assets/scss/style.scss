@@ -1,22 +1,15 @@
 // Font
-@mixin font($font-family, $font-file) {
+@mixin font($font-family, $font-file, $font-style) {
   @font-face {
     font-family: $font-family;
-    src: url($font-file+'.eot');
-    src: url($font-file+'.eot?#iefix') format('embedded-opentype'),
-         url($font-file+'.woff') format('woff'),
-         url($font-file+'.ttf') format('truetype'),
-         url($font-file+'.svg#'+$font-family) format('svg');
+    src: url($font-file+'.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
+    font-style: $font-style;
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400|Open+Sans:400,700');
-@include font("cy-grotesk-wide-bold", '/fonts/cy-grotesk-wide-bold');
-@include font("cy-grotesk-wide", '/fonts/cy-grotesk-wide');
-@include font("urw-grotesk-wide-light", '/fonts/urw-grotesk-wide-light');
-@include font("avenir-next-lt-pro-regular", '/fonts/avenir-next-lt-pro-regular');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@include font("cy-grotesk-wide-bold", '/fonts/cy-grotesk-wide-bold', 'bold');
 
 // Bootstrap
 @import 'bootstrap-variables';
