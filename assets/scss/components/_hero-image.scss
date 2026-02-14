@@ -12,6 +12,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 80px;
+      @include media-breakpoint-up(lg) {
+        padding-bottom: 10px;
+      }
   }
   .row {
     height: inherit;
@@ -20,15 +24,14 @@
     flex: 0;
     color: $white;
     margin: auto 0;
+    margin-bottom: 0px;
     h1 {
       font-size: 4rem;
       font-family: $font-family-sensical;
       font-weight: 900;
-      margin-top: 6em;
       @include media-breakpoint-up(md) {
         font-size: 5rem;
         width: 80%;
-        margin-top: 6em;
       }
     }
     h2 {
