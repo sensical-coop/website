@@ -9,7 +9,9 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@include font("cy-grotesk-wide-bold", '/fonts/cy-grotesk-wide-bold', 'bold');
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@include font("neo-grotesque-bold", '/fonts/neo-grotesque-bold', 'bold');
 
 // Bootstrap
 @import 'bootstrap-variables';
