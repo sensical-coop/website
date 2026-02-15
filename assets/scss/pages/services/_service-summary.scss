@@ -24,3 +24,14 @@
     }
   }
 }
+
+.service-link:hover {
+  h2, p {
+    color: $accent !important;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+a.service-link:hover {
+  text-decoration: none !important;
+}
