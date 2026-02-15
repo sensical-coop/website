@@ -23,26 +23,27 @@
 {{ $reusablePages := $headless.Resources.ByType "page" }}
 {{ $reusablePages := sort $reusablePages ".Params.weight" }}
 {{ range first 1 $reusablePages }}
-<div id="home" class="strip bg-primary strip-full">
-  <div class="container">
-    <div class="row strip-adaptable-col">
-      <div class="col content align-items-start">
-        <h2>{{ .Title }}</h2>
-        <div class="text-work text-white">{{ .Content }}</div>
-      </div>
-      <div class="col content">
-        <div class="arrow-container">
-          <a class="animated-arrow" href="{{ .Params.buttonLink | relLangURL }}">
-            <span class="the-arrow -left">
-              <span class="shaft"></span>
-            </span>
-            <span class="main">
-              <span class="text">{{ .Params.button }}</span>
-              <span class="the-arrow -right">
+<div id="home" class="bg-primary bg-accent-dots strip-full">
+    <div class="container bg-primary box">
+      <div class="row strip-adaptable-col">
+        <div class="col content align-items-start pt-1">
+          <h2 class="text-white">{{ .Title }}</h2>
+          <div class="text-work text-white">{{ .Content }}</div>
+        </div>
+        <div class="col content">
+          <div class="arrow-container">
+            <a class="animated-arrow" href="{{ .Params.buttonLink | relLangURL }}">
+              <span class="the-arrow -left">
                 <span class="shaft"></span>
               </span>
-            </span>
-          </a>
+              <span class="main">
+                <span class="text">{{ .Params.button }}</span>
+                <span class="the-arrow -right">
+                  <span class="shaft"></span>
+                </span>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -63,18 +64,28 @@
 
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $services) 0}}
-<div id="services" class="container pt-8 pb-8 pb-md-14 pt-md-14 strip-full">
-  <div class="row justify-content-start">
-    <div class="col-12 content">
-      <h2 class="text-center mb-3 text-black">{{ with .Site.GetPage "/services/" }}{{ .Title | default "Our Services" }}{{ end }}</h2>
+<div id="services" class="pt-8 pb-8 pb-md-14 pt-md-14 bg-accent-gradient">
+  <div class="row justify-content-center gap-5 m-2">
+    <div class="col-12 content mb-5">
+      <h2 class="text-center text-black">{{ with .Site.GetPage "/services/" }}{{ .Title | default "Our Services" }}{{ end }}</h2>
     </div>
     {{ range first 6 (sort $services ".Params.weight") }}
-    <div class="col-12 col-md-4 mb-1">
+    <div class="col-12 col-md-5 p-2 box-accent" style="--c:black;--w:20px;--b:1px;">
       {{ .Render "summary" }}
     </div>
     {{ end }}
-    <div class="col-12 text-center">
-      <a class="button button-primary" href="{{ .Site.LanguagePrefix }}/services">View All Services</a>
+    <div class="arrow-container">
+      <a class="animated-arrow " href="{{ .Site.LanguagePrefix }}/services" style="--c:black;">
+        <span class="the-arrow -left" style="--c:black;">
+          <span class="shaft"></span>
+        </span>
+        <span class="main">
+          <span class="text">{{ with .Site.GetPage "/services/" }}{{ .Params.button | default "View all our Services" }}{{ end }}</span>
+          <span class="the-arrow -right" style="--c:black;">
+            <span class="shaft"></span>
+          </span>
+        </span>
+      </a>
     </div>
   </div>
 </div>
@@ -85,10 +96,22 @@
   <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
     <div class="row justify-content-center">
       <div class="content col-12 col-md-8 text-center text-white">
-        <h2 class="color-white">{{ .Title }}</h2>
+        <h2 class="text-white">{{ .Title }}</h2>
         {{ .Content }}
         {{ if .Params.button }}
-          <a class="button button-white" href="{{ .Params.buttonLink | relLangURL }}">{{ .Params.button }}</a>
+        <div class="arrow-container mt-8" style="height: auto">
+            <a class="animated-arrow " href="{{ .Params.buttonLink | relLangURL }}" style="--c:rgb(255, 255, 255);">
+              <span class="the-arrow -left" style="--c:rgb(255, 255, 255);">
+                <span class="shaft"></span>
+              </span>
+              <span class="main">
+                <span class="text">{{ .Params.button }}</span>
+                <span class="the-arrow -right" style="--c:rgb(255, 255, 255);">
+                  <span class="shaft"></span>
+                </span>
+              </span>
+            </a>
+          </div>
         {{ end }}
       </div>
     </div>

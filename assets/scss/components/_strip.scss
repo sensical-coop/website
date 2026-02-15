@@ -87,6 +87,8 @@ $arrow-head-thickness: $shaft-thickness;
 .the-arrow {
   width: $shaft-width;
   transition: all 0.2s;
+  --c: #fff;   /* color of the border */
+  color: var(--c);
 
   &.-left {
     position: absolute;
@@ -95,12 +97,12 @@ $arrow-head-thickness: $shaft-thickness;
 
     > .shaft {
       width: 0;
-      background-color: $white;
+      background-color: var(--c);
 
       &:before,
       &:after {
         width: 0;
-        background-color: $white;
+        background-color: var(--c);
       }
 
       &:before {
@@ -138,7 +140,7 @@ $arrow-head-thickness: $shaft-thickness;
   }
 
   > .shaft {
-    background-color: $white;
+    background-color: var(--c);
     display: block;
     height: $shaft-thickness;
     position: relative;
@@ -148,7 +150,7 @@ $arrow-head-thickness: $shaft-thickness;
 
     &:before,
     &:after {
-      background-color: $white;
+      background-color: var(--c);
       content: '';
       display: block;
       height: $arrow-head-thickness;
@@ -172,7 +174,8 @@ $arrow-head-thickness: $shaft-thickness;
 // Animated Arrow Button
 .animated-arrow {
   display: inline-block;
-  color: $white;
+  --c: #fff;
+  color: var(--c);
   font-size: 1.25em;
   font-style: italic;
   text-decoration: none;

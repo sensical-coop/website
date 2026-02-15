@@ -24,7 +24,7 @@
     flex: 0;
     color: $white;
     margin: auto 0;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
     h1 {
       font-size: 4rem;
       font-family: $font-family-sensical;
@@ -54,6 +54,7 @@
     flex: 0;
     text-align: center;
     opacity: 0.7;
+    transform: translateY(-150px);
     &:hover {
       opacity: 1;
     }
