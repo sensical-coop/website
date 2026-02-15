@@ -60,6 +60,16 @@
   justify-content: space-evenly;
 }
 
+.strip-adaptable-col {
+  flex-direction: column;
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+  }
+  .content{
+    margin-bottom: 40px;
+  }
+}
+
 $text-arrow-space: 16px;
 $shaft-width: 64px;
 $shaft-thickness: 1px;
