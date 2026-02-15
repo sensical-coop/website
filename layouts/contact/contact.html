@@ -3,16 +3,8 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-<div class="intro intro-small">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1>{{ .Title }}</h1>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
+{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "section" .Params.Section )}}
+<div class="container mt-8">
   <div class="row">
     <div class="col-12 col-md-8">
       {{ .Content }}
