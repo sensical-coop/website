@@ -19,9 +19,11 @@
 
 
 <div class="container pb-6 pt-6 pb-md-10 pt-md-10">
-  <div class="row">
+  <div class="row gap-5 m-2 justify-content-center">
     {{ range .Pages.ByWeight }}
-    <div class="col-12 col-md-6 mb-2 ">{{ .Render "summary" }}</div>
+      <div class="col-12 col-md-5 p-2 box-accent" style="--c:black;--w:20px;--b:1px;">
+          {{ .Render "summary" }}
+      </div>
     {{ end }}
   </div>
 </div>
