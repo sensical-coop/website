@@ -57,15 +57,67 @@ title = "Sensical SCCL"
     contentDir = 'content/en'
     languageName = 'en'
     weight = 10
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = 'Work'
+        pageRef = '/work'
+        weight = 10
+      [[languages.en.menus.main]]
+        name = 'Services'
+        pageRef = '/services'
+        weight = 20
+      [[languages.en.menus.main]]
+        name = 'Contact'
+        pageRef = '/contact'
+        weight = 30
   [languages.es]
     contentDir = 'content/es'
     languageName = 'es'
     weight = 20
+    [languages.es.menus]
+      [[languages.es.menus.main]]
+        name = 'Portfolio'
+        pageRef = '/work'
+        weight = 10
+      [[languages.es.menus.main]]
+        name = 'Servicios'
+        pageRef = '/services'
+        weight = 20
+      [[languages.es.menus.main]]
+        name = 'Contacto'
+        pageRef = '/contact'
+        weight = 30
   [languages.cat]
     contentDir = 'content/cat'
     languageName = 'cat'
     weight = 30
+    [languages.cat.menus]
+      [[languages.cat.menus.main]]
+        name = 'Portfolio'
+        pageRef = '/work'
+        weight = 10
+      [[languages.cat.menus.main]]
+        name = 'Serveis'
+        pageRef = '/services'
+        weight = 20
+      [[languages.cat.menus.main]]
+        name = 'Contacte'
+        pageRef = '/contact'
+        weight = 30
   [languages.fr]
     contentDir = 'content/fr'
     languageName = 'fr'
     weight = 40
+    [languages.fr.menus]
+      [[languages.fr.menus.main]]
+        name = 'Travails'
+        pageRef = '/work'
+        weight = 10
+      [[languages.fr.menus.main]]
+        name = 'Services'
+        pageRef = '/services'
+        weight = 20
+      [[languages.fr.menus.main]]
+        name = 'Contact'
+        pageRef = '/contact'
+        weight = 30

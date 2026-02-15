@@ -2,10 +2,10 @@
   <div class="container">
     <div class="container-item logo">
       <!-- <a href="{{ .Site.BaseURL }}"><img height={{ .Site.Params.logo.desktop_height }} width={{ .Site.Params.logo.desktop_width }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.desktop | relURL }}" /></a> -->
-        <a href="{{ .Site.BaseURL }}" class="logo-text"> {{ .Site.Params.logo.text }} </a>
+        <a href="{{ .Site.BaseURL | relLangURL }}" class="logo-text"> {{ .Site.Params.logo.text }} </a>
     </div>
     <div class="logo-mobile">
-      <a href="{{ .Site.BaseURL }}" class="logo-text"> {{ .Site.Params.logo.text }} </a>
+      <a href="{{ .Site.BaseURL | relLangURL }}" class="logo-text"> {{ .Site.Params.logo.text }} </a>
       <!-- <a href="{{ .Site.BaseURL }}"><img height={{ .Site.Params.logo.mobile_height }} width={{ .Site.Params.logo.mobile_width }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.mobile | relURL }}" /></a> -->
     </div>
     {{ partial "main-menu.html" . }}
