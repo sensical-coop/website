@@ -1,7 +1,9 @@
 <div id="hero" class="hero-image hero-image-setheight">
   <div class="container ">
-    <div class="hero-text">
-      <span class="hero-section">{{ .section }}</span>
+    <div class="hero-text mt-10">
+      <a href="{{ .section | relLangURL }}">
+        <span class="hero-section">{{ .section_title }}</span>
+      </a>
       <h1>{{ .heading }}</h1>
       <p>{{ .subheading }}</p>
     </div>

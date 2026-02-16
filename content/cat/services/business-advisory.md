@@ -7,6 +7,7 @@ draft: false
 heroHeading: 'Business Advisory'
 heroSubHeading: 'Expert advice and guidance when you need it most.'
 heroBackground: 'services/service2.jpg'
+section_title: 'Serveis'
 ---
 
 Lorem markdownum, dictis umbrosum dextrum, Lelegeia quamquam distantes pares

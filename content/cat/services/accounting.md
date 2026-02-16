@@ -8,6 +8,7 @@ weight: 1
 heroHeading: 'Accounting'
 heroSubHeading: 'We offer general accouting on hourly rate or fixed fee'
 heroBackground: 'services/service1.jpg'
+section_title: 'Serveis'
 ---
 
 Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
