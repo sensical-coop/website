@@ -3,27 +3,45 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}}
+<!-- {{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}} -->
 
-{{ $headless := .Site.GetPage "/pages/about" }}
-{{ $subpages := $headless.Resources.ByType "page" }}
-{{ $subpages := sort $subpages ".Params.weight" }}
-{{ range $subpages }}
-<div class="strip bg-cover bg-position-top bg-overlay" style="background-image: url('{{ .Params.background | relURL }}');">
-  <div class="container pt-17 pb-17">
-    <div class="row">
-      <div class="col-12 col-md-6 {{ if eq .Params.align "right" }}offset-md-6{{ end }}">
-        <h2 class="text-primary text-capitalize">{{ .Title }}</h2>
-        {{ .Content }}
-        {{ if .Params.button }}
-          <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
-        {{ end }}
+<div class="bg-primary bg-white-dots strip-full">
+  <div class="container bg-primary box">
+    <div class="row strip-adaptable-col">
+      <div class="col content align-items-start pt-1">
+        <h2 class="text-white">{{ .Params.HeroHeading }}</h2>
+        <div class="text-work text-white pt-5">{{ .Content }}</div>
+      </div>
+      <div class="arrow-container">
+        <a class="animated-arrow " href="#team" style="--c:rgb(255, 255, 255);">
+          <span class="the-arrow -left" style="--c:rgb(255, 255, 255);">
+            <span class="shaft"></span>
+          </span>
+          <span class="main">
+            <span class="text">{{ .Params.teamTitle }}</span>
+            <span class="the-arrow -right" style="--c:rgb(255, 255, 255);">
+              <span class="shaft"></span>
+            </span>
+          </span>
+        </a>
       </div>
     </div>
   </div>
 </div>
-{{ end }}
 
-{{ .Content }}
+{{ $headless := .Site.GetPage "/pages/about" }}
+{{ $subpages := $headless.Resources.ByType "page" }}
+<div id="team" class="pt-8 pb-8 pb-md-14 pt-md-14 bg-accent-gradient">
+  <div class="row justify-content-center gap-5 m-2">
+    <div class="col-12 content mb-5">
+      <h2 class="text-center text-black">{{ .Params.teamTitle }}</h2>
+    </div>
+    {{ range $subpages }}
+    <div class="col-12 col-md-5 p-2 box" style="--c:#000;--w:20px;--b:1px;">
+      {{ .Render "member" }}
+    </div>
+    {{ end }}
+  </div>
+</div>
 
 {{ end }}

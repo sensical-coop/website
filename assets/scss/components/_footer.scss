@@ -55,9 +55,6 @@
           text-decoration: underline;
         }
       }
-      img {
-        filter: invert(100%);
-      }
       &.copyright {
         font-weight: bold;
         color: lighten($primary, 20%);

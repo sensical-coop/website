@@ -1,0 +1,52 @@
+[
+    {
+        "name": "pepe-perez",
+        "socials": [
+            {
+                "name": "Discord",
+                "link": "https://discord.com/pepeperez/",
+                "image": "social/discord-logo.svg"
+            },
+            {
+                "name": "linkedin",
+                "link": "https://linkedin.com/sensical-coop/",
+                "image": "social/linkedin-logo.svg"
+            },
+            {
+                "name": "github",
+                "link": "https://linkedin.com/sensical-coop/",
+                "image": "social/github-logo.svg"
+            },
+            {
+                "name": "instagram",
+                "link": "https://linkedin.com/sensical-coop/",
+                "image": "social/instagram-logo.svg"
+            },
+            {
+                "name": "website",
+                "link": "https://linkedin.com/sensical-coop/",
+                "image": "social/link-logo.svg"
+            },
+            {
+                "name": "website",
+                "link": "https://linkedin.com/sensical-coop/",
+                "image": "social/mastodon-logo.svg"
+            }
+        ]
+    },
+    {
+        "name": "andres-martinez",
+        "socials": [
+            {
+                "name": "Github",
+                "link": "https://github.com/andres-martinez/",
+                "image": "social/github-logo.svg"
+            },
+            {
+                "name": "Linkedin",
+                "link": "https://linkedin.com/andres-martinez/",
+                "image": "social/linkedin-logo.svg"
+            }
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+
+{{ $members := .Site.Data.member }}
+{{ $person := .Params.member }}
+
+  <div class="member-summary">
+    {{ if .Params.image }}
+    <div class="member-image">
+      <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
+    </div>
+    {{ end }}
+    <div class="member-content">
+      <h2 class="member-title">
+        {{ .Title }}
+      </h2>
+      <p>{{ .Content }}</p>
+        <div class="social-inner">
+        {{ if $members }}
+            <ul class="social">
+            {{ range $member, $details := $members }}
+                {{ if eq $person $details.name}}
+                    {{ range $details.socials }}
+                    <li>
+                        <a href="{{ .link }}" target="blank">
+                        <img class="social-logo" width="20" height="20" src="{{ .image | relURL }}" title="{{ .name }}" alt="{{ .name }}" />
+                        </a>
+                    </li>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            </ul>
+        {{ end }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+.member-summary {
+  display: flex;
+  align-items: flex-start;
+  .member-image {
+    flex: 0 0 40px;
+    margin-right: 30px;
+    height: 20vh;
+    width: 20vh;
+    img {
+      border-radius: 50%;
+        max-width: inherit;
+        max-height: inherit;
+        height: inherit;
+        width: inherit;
+      object-fit: cover;
+      padding: 3px;
+      border: 1px solid $accent;
+      filter: grayscale(80%);
+    }
+  }
+  .member-content {
+    flex: 1;
+    color:$black;
+    .member-title {
+      font-family: $font-family-sans-serif;
+      color: $black;
+      font-size: 1.5rem;
+    }
+    p {
+      color: #666;
+      font-size: 0.9rem;
+      width: 90%;
+    }
+  }
+  .social-logo {
+    fill: black;
+  }
+}
