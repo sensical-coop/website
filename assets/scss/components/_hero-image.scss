@@ -76,6 +76,10 @@
   .hero-text {
     h1 {
       margin-top: 1em;
+      font-size: $h1-font-size*1.2;
+      @include media-breakpoint-up(md) {
+        font-size: $h1-font-size*2;
+      }
     }
   }
 }
