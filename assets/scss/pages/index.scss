@@ -75,8 +75,10 @@ body{
   position: relative;
   left: var(--x);
   top: var(--y);
-  width: var(--size);
-  height: var(--size);
+  @include media-breakpoint-up(md) {
+    width: var(--size);
+    height: var(--size);
+  }
   background: radial-gradient(circle closest-side, $accent, transparent);
   transform: translate(-50%, -50%);
   transition: width 0.2s ease, height 0.2s ease;
