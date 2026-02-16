@@ -18,14 +18,3 @@ mh.addEventListener('mousemove', e => {
   mh.style.setProperty('--x', x + 'px');
   mh.style.setProperty('--y', y + 'px');
 });
-
-const mhbox = document.querySelector('.mouse-highlight-box');
-
-mhbox.addEventListener('mousemove', e => {
-  const rect = e.target.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-
-  mhbox.style.setProperty('--x', x + 'px');
-  mhbox.style.setProperty('--y', y + 'px');
-});
