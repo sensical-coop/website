@@ -25,14 +25,20 @@
 .bg-white-dots{
   background-image: radial-gradient(circle at 1px 1px, $secondary 1px, transparent 0);
   background-size: 40px 40px;
+  background-repeat: unset;
+  background-blend-mode: unset;
 }
 .bg-black-dots{
   background-image: radial-gradient(circle at 1px 1px, $black 1px, transparent 0);
   background-size: 40px 40px;
+  background-repeat: unset;
+  background-blend-mode: unset;
 }
 .bg-accent-dots{
   background-image: radial-gradient(circle at 1px 1px, $accent 1px, transparent 0);
   background-size: 40px 40px;
+  background-repeat: unset;
+  background-blend-mode: unset;
 }
 .bg-accent-gradient{
   background: $white;
