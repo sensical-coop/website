@@ -1,8 +1,8 @@
 ---
 title: 'Fair and open tech'
 weight: 1
-button: 'Check our work'
+button: 'Coming soon'
 buttonLink: 'work'
 ---
 
-We are a very cool coop. Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit.
+We have broad experience in the development of open technologies applied to various disciplines — from open hardware, web platforms, and data analysis in environmental monitoring projects to blinky lights and robotics in the performing arts, we bring a creative but critical view to every project, regardless of the sector.

@@ -1,8 +1,8 @@
 ---
 title: 'Contact'
 date: 2018-02-22T17:01:34+07:00
-heroHeading: 'Contact'
+heroHeading: 'Contact us'
 ---
 
 
-We offer a free consultation for all new clients.
+We are happy to discuss any project needs you may have. Get in touch and we'll get the ball rolling!

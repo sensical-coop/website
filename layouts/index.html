@@ -32,7 +32,7 @@
         </div>
         <div class="col content">
           <div class="arrow-container">
-            <a class="animated-arrow" href="{{ .Params.buttonLink | relLangURL }}">
+            <a class="animated-arrow">
               <span class="the-arrow -left">
                 <span class="shaft"></span>
               </span>
@@ -80,7 +80,7 @@
           <span class="shaft"></span>
         </span>
         <span class="main">
-          <span class="text">{{ with .Site.GetPage "/services/" }}{{ .Params.button | default "View all our Services" }}{{ end }}</span>
+          <span class="text">{{ with .Site.GetPage "/services/" }}{{ .Params.button | default "Services comming soon" }}{{ end }}</span>
           <span class="the-arrow -right" style="--c:black;">
             <span class="shaft"></span>
           </span>
