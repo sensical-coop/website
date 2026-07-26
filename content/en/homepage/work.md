@@ -1,7 +1,7 @@
 ---
 title: 'Creative and collaborative technology R&D'
 weight: 1
-button: 'Coming soon'
+button: 'What we do'
 buttonLink: 'work'
 ---
 
