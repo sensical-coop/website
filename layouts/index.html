@@ -26,24 +26,11 @@
 <div id="home" class="bg-primary strip-full">
     <div class="container bg-primary box" style="--c:#FF495F; --b: 4px;">
       <div class="row strip-adaptable-col">
-        <div class="col align-items-start p-4">
-          <h2 class="text-white approach-title">{{ .Title }}</h2>
-          <div class="text-work text-white">{{ .Content }}</div>
+        <div class="col align-items-start px-2 p-lg-4">
+          <h2 class="text-white landing-title">{{ .Title }}</h2>
+          <div class="fs-5 text-white">{{ .Content }}</div>
         </div>
-        <div class="col p-4">
-          <!-- <div class="arrow-container">
-            <a class="animated-arrow" href="#work">
-              <span class="the-arrow -left">
-                <span class="shaft"></span>
-              </span>
-              <span class="main">
-                <span class="text">{{ .Params.button }}</span>
-                <span class="the-arrow -right">
-                  <span class="shaft"></span>
-                </span>
-              </span>
-            </a>
-          </div> -->
+        <div class="col py-1 p-lg-4">
           <div class="arrow-container">
             <a class="button sensical-button" href="#work">
               <p class="button-link-text fs-5">{{ .Params.button }}</p>
@@ -61,16 +48,16 @@
 <div id="work" class="bg-accent">
   <div class="justify-content-center">
     <div class="col-12 content mb-5 mt-5">
-      <h2 class="container text-black fw-bolder">{{ with .Site.GetPage "/work/" }}{{ .Title | default "What we do" }}{{ end }}</h2>
+      <h2 class="container text-black fw-bolder text-center text-lg-start px-0">{{ with .Site.GetPage "/work/" }}{{ .Title | default "What we do" }}{{ end }}</h2>
     </div>
     <div class="service-summary">
     {{ range first 6 (sort $work ".Params.weight") }}
       {{ .Render "summary" }}
     {{ end }}
     </div>
-    <div class="py-4 d-flex align-items-center text-lg-center w-100 full-width-link">
+    <div class="py-4 d-flex align-items-center text-center w-100 full-width-link">
       <a class="fs-1 fw-bolder container" href="{{ .Site.LanguagePrefix }}/work">
-        {{ with .Site.GetPage "/work/" }}{{ .Params.button | default "Check all our work" }}{{ end }}
+        {{ with .Site.GetPage "/work/" }}{{ .Params.button | default "See all our work" }}{{ end }}
       </a>
     </div>
   </div>
@@ -81,11 +68,9 @@
 <div id="contact" class="strip bg-primary bg-cover bg-position-top bg-overlay">
   <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
     <div class="row justify-content-start justify-content-lg-center">
-      <div class="content text-white text-lg-center">
+      <div class="content text-white text-center">
         <h2 class="text-white fw-bolder">{{ .Title }}</h2>
-        <div class="fs-3">
-          {{ .Content }}
-        </div>
+        <p class="fs-5">{{ .Content | plainify }}</p>
         {{ if .Params.button }}
         <div class="arrow-container mt-5" style="height: auto">
           <a class="button sensical-button" href="{{ .Params.buttonLink | relLangURL }}">

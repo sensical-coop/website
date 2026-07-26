@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 {{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "section" .Params.Section )}}
-<div class="container mt-8 fs-5">
+<div class="container my-5 my-lg-8 fs-5 px-2 px-lg-0">
     {{ .Content }}
     <ul>
       {{ if .Site.Data.contact.phone }}

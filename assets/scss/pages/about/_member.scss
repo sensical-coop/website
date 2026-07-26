@@ -1,6 +1,7 @@
 .member-summary {
   display: flex;
   align-items: flex-start;
+  overflow-x: hidden;
   .member-image {
     flex: 0 0 40px;
     margin-right: 30px;

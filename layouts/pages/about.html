@@ -5,13 +5,18 @@
 {{ define "main" }}
 <!-- {{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}} -->
 
-<div class="bg-primary bg-white-dots strip-full">
+<div class="bg-primary bg-white-dots strip-full overflow-x-hidden">
   <div class="container bg-primary box" style="--c: #fff">
     <div class="row strip-adaptable-col">
-      <div class="col content align-items-start pt-1">
-        <h2 class="text-white">{{ .Params.HeroHeading }}</h2>
-        <div class="text-work text-white pt-5 fs-3">{{ .Content }}</div>
+      <div class="col content align-items-start pt-1 text-white">
+        <h2 class="font-sensical text-white">{{ .Params.HeroHeading }}</h2>
+        <p class="pt-5 fs-5">{{ .Content | plainify }}</p>
       </div>
+      <!-- <div class="arrow-container">
+        <a class="button sensical-button" href="#team">
+          <p class="button-link-text fs-5" style="text-decoration: none;">{{ .Params.teamTitle }}</p>
+        </a>
+      </div> -->
       <div class="arrow-container">
         <a class="animated-arrow " href="#team" style="--c:rgb(255, 255, 255);">
           <span class="the-arrow -left" style="--c:rgb(255, 255, 255);">
@@ -33,8 +38,8 @@
 {{ $subpages := $headless.Resources.ByType "page" }}
 <div id="team" class="pt-8 pb-8 pb-md-12 pt-md-12 bg-accent-gradient">
   <div class="row justify-content-center gap-5">
-    <div class="col-12 content mb-5 mt-5">
-      <h2 class="container text-black fw-bolder text-lg-center">{{ .Params.teamTitle }}</h2>
+    <div class="content mb-lg-5 mt-lg-5">
+      <h2 class="container text-black fw-bolder text-center">{{ .Params.teamTitle }}</h2>
     </div>
     {{ range $subpages }}
     <div class="col-12 col-md-5 p-2 box" style="--c:#000;--w:20px;--b:3px;">

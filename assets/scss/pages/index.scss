@@ -20,8 +20,13 @@ body{
   gap: 1rem;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 25px !important;
-  padding-bottom: 25px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  @include media-breakpoint-up(lg) {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+
   text-transform: uppercase;
   font-weight: 600 !important;
   text-decoration: none !important;
@@ -32,7 +37,6 @@ body{
   border-radius: $border-radius-pill;
   text-decoration: none;
   height: 40px;
-  font-size: 1.2rem !important;
 
   .circle-button {
     width: 40px;
@@ -73,20 +77,19 @@ body{
 
 .sensical-button-plus {
   padding-left: 10px !important;
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
-}
-
-.text-work{
-  font-size: 1.2rem;
-  text-decoration: none;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
   @include media-breakpoint-up(lg) {
-      font-size: 1.4rem;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
   }
 }
 
-.approach-title {
-  font-size: 4rem !important;
+.landing-title {
+  font-size: 2.3rem !important;
+  @include media-breakpoint-up(lg) {
+      font-size: 4rem !important;
+  }
 }
 
 .bg-gray-100 {
@@ -119,33 +122,32 @@ body{
   border-color: $accent !important;
 }
 
-.fs-3 {
-  p {
-    font-size: $font-size-xl;
-  }
-}
-
 .box {
   overflow: hidden;
-
-  --b: 2px;           /* border thickness */
-  --c: $accent;       /* corner color */
-  --w: 30px;          /* corner size */
-  --bg: #fff;       /* background color */
-
-  border: var(--b) solid transparent;
-
-  --_g: #0000 90deg, var(--c) 0;
-  --_p: var(--w) var(--w) border-box no-repeat;
-
-  background:
-    conic-gradient(from 90deg  at top    var(--b) left  var(--b), var(--_g)) 0 0 / var(--_p),
-    conic-gradient(from 180deg at top    var(--b) right var(--b), var(--_g)) 100% 0 / var(--_p),
-    conic-gradient(from 0deg   at bottom var(--b) left  var(--b), var(--_g)) 0 100% / var(--_p),
-    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p),
-    var(--bg);
+  border: none;
+  background: var(--bg, #fff);
 }
 
+@include media-breakpoint-up(md) {
+  .box {
+    --b: 2px;
+    --c: #{$accent};
+    --w: 30px;
+    --bg: #fff;
+
+    border: var(--b) solid transparent;
+
+    --_g: #0000 90deg, var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+
+    background:
+      conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0 / var(--_p),
+      conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 / var(--_p),
+      conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p),
+      var(--bg);
+  }
+}
 .box-accent {
   overflow: hidden;
 
@@ -193,21 +195,29 @@ body{
 // }
 
 #work, #contact {
-  scroll-snap-align: start;
+  @include media-breakpoint-up(lg) {
+    scroll-snap-align: start;
+  }
 }
 
 .strip-full {
-  scroll-snap-align: start;
+  @include media-breakpoint-up(lg) {
+    scroll-snap-align: start;
+  }
 }
 
 .service-summary {
-
   .service-content {
-    scroll-snap-align: start;
+    @include media-breakpoint-up(lg) {
+      scroll-snap-align: start;
+    }
 
     .service-title {
       font-family: $font-family-sans-serif;
-      font-size: 2.5rem;
+      font-size: 2.3rem !important;
+      @include media-breakpoint-up(lg) {
+          font-size: 2.5rem !important;
+      }
       color: $black;
     }
 
