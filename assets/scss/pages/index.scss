@@ -1,51 +1,158 @@
 body{
     overflow-x: hidden;
 }
-.button {
-    background-color: $accent;
-    color: $white;
-    font-size: $font-size-base;
-    border-radius: $border-radius-pill;
-    border-style: $border-style;
-    &:hover {
-        background-color: $white;
-        color: $accent;
-        transition: $transition-base;
-    }
+
+.a-accent {
+  color: $accent !important;
+  text-decoration-color: $accent !important;
+  text-underline-offset: 5px !important;
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px !important;
+    transition: 0.2s ease-in-out !important;
+  }
 }
-.text-work{
-    font-size: 1.2rem;
-    text-decoration: none;
-    @include media-breakpoint-up(lg) {
-        font-size: 1.4rem;
+
+.sensical-button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+
+  background-color: $accent;
+  color: $black;
+  border: 1px solid $accent;
+  border-radius: $border-radius-pill;
+  text-decoration: none;
+  height: 40px;
+  font-size: 1.2rem !important;
+
+  .circle-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px !important;
+  }
+
+  .button-link-text {
+    padding-bottom: 0px;
+    text-decoration: none !important;
+    margin-bottom: 0px;
+    &:hover {
+      color: $black;
     }
+  }
+
+  .plus {
+    display: inline-block;
+    font-size: 50px;
+    line-height: 1;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: $white;
+    color: $black !important;
+
+    .plus {
+      color: $black !important;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.sensical-button-plus {
+  padding-left: 10px !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.text-work{
+  font-size: 1.2rem;
+  text-decoration: none;
+  @include media-breakpoint-up(lg) {
+      font-size: 1.4rem;
+  }
+}
+
+.approach-title {
+  font-size: 4rem !important;
+}
+
+.bg-gray-100 {
+  background-color: $gray-100;
+}
+
+.bg-accent {
+  background-color: $accent;
+}
+
+.font-sensical {
+  font-family: $font-family-sensical !important;
+}
+
+.full-width-link {
+  font-family: $font-family-sensical !important;
+  &:hover {
+    background-color: $gray-100;
+    text-decoration: none !important;
+    transition: $transition-base;
+  }
+
+  a:hover {
+    color: $black;
+    text-decoration: none !important;
+  }
+}
+
+.border-color-accent {
+  border-color: $accent !important;
+}
+
+.fs-3 {
+  p {
+    font-size: $font-size-xl;
+  }
 }
 
 .box {
   overflow: hidden;
 
-  --b: 2px;      /* thickness of the border */
-  --c: #fff;   /* color of the border */
-  --w: 30px;     /* width of border */
-  --a: #FF495F;
+  --b: 2px;           /* border thickness */
+  --c: $accent;       /* corner color */
+  --w: 30px;          /* corner size */
+  --bg: #fff;       /* background color */
 
-  border: var(--b) solid #0000; /* space for the border */
+  border: var(--b) solid transparent;
+
   --_g: #0000 90deg, var(--c) 0;
   --_p: var(--w) var(--w) border-box no-repeat;
+
   background:
-    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
-    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
-    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
-    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b), var(--_g)) 0 0 / var(--_p),
+    conic-gradient(from 180deg at top    var(--b) right var(--b), var(--_g)) 100% 0 / var(--_p),
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b), var(--_g)) 0 100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p),
+    var(--bg);
 }
 
 .box-accent {
   overflow: hidden;
 
   --b: 2px;      /* thickness of the border */
-  --c: #fff;   /* color of the border */
+  --c: #fff;     /* color of the border */
   --w: 30px;     /* width of border */
-  --a: #FF495F;
+  bg: $accent;
 
   border: var(--b) solid #0000; /* space for the border */
   --_g: #0000 90deg, var(--c) 0;
@@ -57,32 +164,118 @@ body{
     conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
 
   &:hover{
-    border: var(--b) solid var(--a);
-    transition: 0.2s ease-in;
-    h2, p {
-        color: #FF495F !important;
+    border: var(--b) solid var(bg);
+    transition: 0.4s ease-in;
+  }
+}
+
+// .mouse-highlight span {
+//   position: absolute;
+// }
+
+// .mouse-highlight::before {
+//   --size: 0;
+//   content: '';
+//   position: relative;
+//   left: var(--x);
+//   top: var(--y);
+//   @include media-breakpoint-up(md) {
+//     width: var(--size);
+//     height: var(--size);
+//   }
+//   background: radial-gradient(circle closest-side, $accent, transparent);
+//   transform: translate(-50%, -50%);
+//   transition: width 0.2s ease, height 0.2s ease;
+// }
+
+// .mouse-highlight:hover::before {
+//   --size: 500px;
+// }
+
+#work, #contact {
+  scroll-snap-align: start;
+}
+
+.strip-full {
+  scroll-snap-align: start;
+}
+
+.service-summary {
+
+  .service-content {
+    scroll-snap-align: start;
+
+    .service-title {
+      font-family: $font-family-sans-serif;
+      font-size: 2.5rem;
+      color: $black;
+    }
+
+    p {
+      color: $black;
+      font-size: 1.5rem;
+      margin-bottom: 0px !important;
     }
   }
-}
 
-.mouse-highlight span {
-  position: absolute;
-}
-
-.mouse-highlight::before {
-  --size: 0;
-  content: '';
-  position: relative;
-  left: var(--x);
-  top: var(--y);
-  @include media-breakpoint-up(md) {
-    width: var(--size);
-    height: var(--size);
+  .service-content:last-of-type {
+    border-bottom: 1px solid $black;
   }
-  background: radial-gradient(circle closest-side, $accent, transparent);
-  transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease;
 }
-.mouse-highlight:hover::before {
-  --size: 500px;
+
+.alert-bg-sensical {
+  background-color: $accent;
+  border-radius: 0px;
+  border-top: 3px $black solid;
+  border-bottom: 3px $black solid;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  p {
+    font-size: $font-size-lg !important;
+  }
+  padding: 30px 35px;
+  h3 {
+    font-weight: bolder;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+}
+
+.text-accent {
+  color: $accent;
+}
+
+.alert-border-sensical {
+  background-color: $white;
+  border-top: 3px $accent solid;
+  border-bottom: 3px $accent solid;
+  border-radius: 0px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  p {
+    font-size: $font-size-lg !important;
+  }
+  padding: 30px 35px;
+  h3 {
+    font-weight: bolder;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+}
+
+.divider-full {
+  width: 100vw;
+  margin-left: calc(50% - 60vw);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+// Enable smooth scrolling (on hero-down click)
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth; // optional
 }

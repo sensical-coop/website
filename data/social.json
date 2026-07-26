@@ -3,5 +3,10 @@
         "name": "Github",
         "link": "https://github.com/sensical-coop/",
         "image": "social/github-logo.svg"
+    },
+    {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/company/sensical-sccl/",
+        "image": "social/linkedin-logo.svg"
     }
 ]

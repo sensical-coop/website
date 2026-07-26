@@ -4,36 +4,26 @@
 
 {{ define "main" }}
 {{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "section" .Params.Section )}}
-<div class="container mt-8">
-  <div class="row">
-    <div class="col-12 col-md-8">
-      {{ .Content }}
-      <ul>
-        {{ if .Site.Data.contact.phone }}
-        <li><strong>Phone: </strong>{{ .Site.Data.contact.phone }}</li>
-        {{ end }}
-        {{ if .Site.Data.contact.email }}
-        <li><strong>Email: </strong><a href="mailto:{{ .Site.Data.contact.email }}">
-            {{ .Site.Data.contact.email }}</a></li>
-        {{ end }}
-        {{ if .Site.Data.contact.address }}
-        <li style="white-space: pre-wrap;"><strong>Address: </strong><br>{{ .Site.Data.contact.address }}</li>
-        {{ end }}
-      </ul>
-      {{ if .Site.Data.contact.hours }}
-      <h4 class="mt-4">Business Hours</h4>
-      <table class="table table-sm opening-hours-table">
-        {{ range .Site.Data.contact.hours }}
-        <tr>
-          <td class="day font-weight-bold">{{ .day }}</td>
-          <td class="opens">{{ .open }}</td>
-          <td>-</td>
-          <td class="closes">{{ .close }}</td>
-        </tr>
-        {{ end }}
-      </table>
+<div class="container mt-8 fs-5">
+    {{ .Content }}
+    <ul>
+      {{ if .Site.Data.contact.phone }}
+      <li><strong>Phone: </strong>{{ .Site.Data.contact.phone }}</li>
       {{ end }}
-    </div>
-  </div>
+      {{ if .Site.Data.contact.email }}
+      <li><strong>Email: </strong><a class="a-accent" href="mailto:{{ .Site.Data.contact.email }}">
+          {{ .Site.Data.contact.email }}</a></li>
+      {{ end }}
+      {{ if .Site.Data.contact.address }}
+      <li style="white-space: pre-wrap;"><strong>Address: </strong>{{ .Site.Data.contact.address }}</li>
+      {{ end }}
+      {{ if .Site.Data.contact.PIC }}
+      <li><strong>PIC: </strong>{{ .Site.Data.contact.PIC }}</li>
+      {{ end }}
+      {{ if .Site.Data.contact.VATES }}
+      <li><strong>VAT Number (ES): </strong>{{ .Site.Data.contact.VATES }}</li>
+      <li><strong>VAT Number (International): </strong>{{ .Site.Data.contact.VATINT }}</li>
+      {{ end }}
+    </ul>
 </div>
 {{ end }}

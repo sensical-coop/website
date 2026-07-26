@@ -1,27 +1,31 @@
 email: 'info@sensical.es'
 # phone: 'XXXX XXX XXX'
 businessName: 'Sensical SCCL'
-# address: |
-# Barcelona, Spain
-# hours:
-#   - day: Monday
-#     open: 8:30am
-#     close: 5:00pm
-#   - day: Tuesday
-#     open: 8:30am
-#     close: 5:00pm
-#   - day: Wednesday
-#     open: 8:30am
-#     close: 5:00pm
-#   - day: Thursday
-#     open: 8:30am
-#     close: 5:00pm
-#   - day: Friday
-#     open: 8:30am
-#     close: 5:00pm
-#   - day: Saturday
-#     open: Closed
-#     close:
-#   - day: Sunday
-#     open: Closed
-#     close:
+address: |
+  Carrer Diputació 151, Baixos Esquerra
+  Barcelona, Spain 08011
+PIC: 864390281
+VATES: F27637909
+VATINT: ESF27637909
+hours:
+  - day: Monday
+    open: 8:30am
+    close: 5:00pm
+  - day: Tuesday
+    open: 8:30am
+    close: 5:00pm
+  - day: Wednesday
+    open: 8:30am
+    close: 5:00pm
+  - day: Thursday
+    open: 8:30am
+    close: 5:00pm
+  - day: Friday
+    open: 8:30am
+    close: 5:00pm
+  - day: Saturday
+    open: Closed
+    close:
+  - day: Sunday
+    open: Closed
+    close:

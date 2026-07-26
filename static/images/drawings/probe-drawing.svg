@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1378.12 68.87">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #d3d3d3;
+      }
+
+      .st0, .st1, .st2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .st1 {
+        fill: #ff495f;
+      }
+
+      .st2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect x="573.77" y="-548.52" width="18.38" height="1165.91" transform="translate(548.52 617.39) rotate(-90)"/>
+  <rect class="st2" x="1168.57" y="13.31" width="36.94" height="42.25" transform="translate(1152.6067 1221.4749) rotate(-90)"/>
+  <rect class="st1" x="1187.52" y="21.65" width="66.87" height="25.57" transform="translate(1186.5204 1255.3886) rotate(-90)"/>
+  <rect class="st2" x="1214.29" y="25.15" width="57.45" height="18.56" transform="translate(1208.5876 1277.4558) rotate(-90)"/>
+  <rect class="st1" x="1272" y="-18.69" width="66.87" height="106.26" transform="translate(1270.9958 1339.864) rotate(-90)"/>
+  <rect class="st0" x="1334.4" y="25.15" width="66.87" height="18.56" transform="translate(1333.404 1402.2722) rotate(-90)"/>
+</svg>

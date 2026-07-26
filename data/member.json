@@ -1,51 +1,86 @@
 [
     {
-        "name": "pepe-perez",
+        "name": "oscar-gonzalez",
         "socials": [
             {
                 "name": "Discord",
-                "link": "https://discord.com/pepeperez/",
+                "link": "https://discord.com/users/oscgonfer/",
                 "image": "social/discord-logo.svg"
             },
             {
                 "name": "linkedin",
-                "link": "https://linkedin.com/sensical-coop/",
+                "link": "https://www.linkedin.com/in/oscgonfer/",
                 "image": "social/linkedin-logo.svg"
             },
             {
                 "name": "github",
-                "link": "https://linkedin.com/sensical-coop/",
+                "link": "https://github.com/oscgonfer/",
                 "image": "social/github-logo.svg"
             },
             {
-                "name": "instagram",
-                "link": "https://linkedin.com/sensical-coop/",
-                "image": "social/instagram-logo.svg"
-            },
-            {
-                "name": "website",
-                "link": "https://linkedin.com/sensical-coop/",
-                "image": "social/link-logo.svg"
-            },
-            {
-                "name": "website",
-                "link": "https://linkedin.com/sensical-coop/",
-                "image": "social/mastodon-logo.svg"
+                "name": "orcid",
+                "link": "https://orcid.org/0000-0001-7142-4175",
+                "image": "social/orcid-logo.svg"
             }
         ]
     },
     {
-        "name": "andres-martinez",
+        "name": "rebecca-peters",
         "socials": [
             {
-                "name": "Github",
-                "link": "https://github.com/andres-martinez/",
+                "name": "linkedin",
+                "link": "https://www.linkedin.com/in/rebeccaannepeters/",
+                "image": "social/linkedin-logo.svg"
+            },
+            {
+                "name": "github",
+                "link": "https://github.com/peters-rebecca/",
                 "image": "social/github-logo.svg"
             },
             {
-                "name": "Linkedin",
-                "link": "https://linkedin.com/andres-martinez/",
+                "name": "orcid",
+                "link": "https://orcid.org/0000-0001-5682-6053",
+                "image": "social/orcid-logo.svg"
+            }
+        ]
+    },
+    {
+        "name": "tim-cowlishaw",
+        "socials": [
+            {
+                "name": "linkedin",
+                "link": "https://www.linkedin.com/in/tim-cowlishaw/",
                 "image": "social/linkedin-logo.svg"
+            },
+            {
+                "name": "mastodon",
+                "link": "https://assemblag.es/@mistertim",
+                "image": "social/mastodon-logo.svg"
+            },
+            {
+                "name": "github",
+                "link": "https://github.com/timcowlishaw/",
+                "image": "social/github-logo.svg"
+            },
+            {
+                "name": "orcid",
+                "link": "https://orcid.org/0000-0002-1815-1427",
+                "image": "social/orcid-logo.svg"
+            }
+        ]
+    },
+    {
+        "name": "adai-surinach",
+        "socials": [
+            {
+                "name": "linkedin",
+                "link": "https://www.linkedin.com/in/adai-suri/",
+                "image": "social/linkedin-logo.svg"
+            },
+            {
+                "name": "github",
+                "link": "https://github.com/adaisuri",
+                "image": "social/github-logo.svg"
             }
         ]
     }

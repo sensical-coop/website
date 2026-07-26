@@ -1,8 +1,11 @@
 ---
-title: 'Fair and open tech'
+title: 'Creative and collaborative technology R&D'
 weight: 1
 button: 'Coming soon'
 buttonLink: 'work'
 ---
 
-We have broad experience in the development of open technologies applied to various disciplines — from open hardware, web platforms, and data analysis in environmental monitoring projects to blinky lights and robotics in the performing arts, we bring a creative but critical view to every project, regardless of the sector.
+We've worked with companies, research projects, artists and non-profits to help them imagine, build and deploy technologies that work for them, for society, and for the planet.
+
+Our unique way of working combines collaborative methods, creative imagination, and critical reflection, as well as the technical skills to get things built.
+

@@ -10,15 +10,54 @@
       height: auto;
     }
   }
+
+  .content a {
+    color: $accent !important;
+    text-decoration-color: $accent !important;
+    text-underline-offset: 5px !important;
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 2px !important;
+      transition: 0.2s ease-in-out !important;
+    }
+  }
+
   .content {
-    color: black;
+
+    > h2 {
+      font-size: $h2-font-size;
+      padding-top: 30px;
+      padding-bottom: 25px;
+      font-weight: bolder;
+    }
+
     > p {
+      font-size: 20px;
+      margin-bottom: 40px;
+
       &:first-of-type {
-        font-size: 24px;
+        font-size: $font-size-xl;
         line-height: 32px;
         margin-bottom: 40px;
-        font-weight: 300;
+        font-weight: 500;
       }
+
+      &:last-of-type:not(:has(+ ul)) {
+        margin-bottom: 40px;
+      }
+
+      p:has(+ ul) {
+        margin-bottom: 20px;
+      }
+    }
+    > ul, li {
+      list-style-type: none;
+      font-size: 20px !important;
+    }
+
+    li:before {
+        content: "+";
+        margin-right: 15px;
     }
   }
   .masonry {
@@ -26,6 +65,7 @@
     column-count: 3;
     column-gap: 1em;
   }
+
   .item {
     /* Masonry bricks or child elements */
     background-color: #eee;

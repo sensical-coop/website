@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800.23 641.64">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        fill: #d3d3d3;
+      }
+
+      .st2 {
+        fill: #ff495f;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="st2" x="3.97" y="56.11" width="792.29" height="422.05"/>
+    <path d="M800.23,482.13H0V52.14h800.23v429.99ZM7.94,474.18h784.34V60.08H7.94v414.1Z"/>
+  </g>
+  <g>
+    <rect class="st1" x="105.35" y="3.97" width="589.53" height="52.14"/>
+    <path d="M698.85,60.08H101.38V0h597.48v60.08ZM109.32,52.14h581.59V7.94H109.32v44.19Z"/>
+  </g>
+  <g>
+    <rect x="190.56" y="529.32" width="29.17" height="112.32"/>
+    <rect x="385.53" y="529.32" width="29.17" height="112.32"/>
+    <rect x="580.5" y="529.32" width="29.17" height="112.32"/>
+  </g>
+  <g>
+    <rect class="st0" x="105.35" y="478.15" width="589.53" height="52.14"/>
+    <path d="M698.85,534.26H101.38v-60.08h597.48v60.08ZM109.32,526.32h581.59v-44.19H109.32v44.19Z"/>
+  </g>
+</svg>

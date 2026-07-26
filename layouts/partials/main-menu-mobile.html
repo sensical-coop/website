@@ -14,7 +14,7 @@
   <ul class="container">
     {{ range $.Site.Home.AllTranslations }}
     <li>
-      <a class="" href="{{ .RelPermalink }}">{{ .Language.LanguageName | lower }}</a>
+      <a class="" href="{{ .RelPermalink }}">{{ .Language.Label | lower }}</a>
     </li>
     {{ end }}
   </ul>

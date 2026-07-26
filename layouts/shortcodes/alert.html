@@ -1,0 +1,6 @@
+
+<div class="container-fluid py-5 alert alert-{{ .Get "type" | default "warning" }}">
+  <div class="container">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

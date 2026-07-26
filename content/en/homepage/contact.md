@@ -6,4 +6,4 @@ button: 'Contact Us'
 buttonLink: 'contact'
 ---
 
-We are happy to discuss any project needs you may have. Get in touch and we'll get the ball rolling!
+If you have an idea, challenge, or project that you think we could help with - we’d love to chat. Send us a message and we’ll get started!

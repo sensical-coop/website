@@ -23,16 +23,16 @@
 {{ $reusablePages := $headless.Resources.ByType "page" }}
 {{ $reusablePages := sort $reusablePages ".Params.weight" }}
 {{ range first 1 $reusablePages }}
-<div id="home" class="bg-primary bg-accent-dots strip-full">
-    <div class="container bg-primary box">
+<div id="home" class="bg-primary strip-full">
+    <div class="container bg-primary box" style="--c:#FF495F; --b: 4px;">
       <div class="row strip-adaptable-col">
-        <div class="col content align-items-start pt-1">
-          <h2 class="text-white">{{ .Title }}</h2>
+        <div class="col align-items-start p-4">
+          <h2 class="text-white approach-title">{{ .Title }}</h2>
           <div class="text-work text-white">{{ .Content }}</div>
         </div>
-        <div class="col content">
-          <div class="arrow-container">
-            <a class="animated-arrow">
+        <div class="col p-4">
+          <!-- <div class="arrow-container">
+            <a class="animated-arrow" href="#work">
               <span class="the-arrow -left">
                 <span class="shaft"></span>
               </span>
@@ -43,48 +43,34 @@
                 </span>
               </span>
             </a>
+          </div> -->
+          <div class="arrow-container">
+            <a class="button sensical-button" href="#work">
+              <p class="button-link-text fs-5">{{ .Params.button }}</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div class="hero-down text-center">
-    <a href="#services">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" alt="Scroll Down">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 898.75 533.751" transform="matrix(.69 0 0 .69 15.5 15.5)"
-          fill="#fff">
-          <path
-            d="M224.687 309.061L0 84.372l42.186-42.186L84.372 0l182.815 182.811L450 365.622l182.5-182.496L815 .63l41.874 41.874L898.75 84.38 674.062 309.065 449.373 533.751 224.687 309.06z" />
-        </svg>
-      </svg>
-    </a>
-  </div> -->
 </div>
 {{ end }}
 
-{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
-{{if gt (len $services) 0}}
-<div id="services" class="pt-8 pb-8 pb-md-14 pt-md-14 bg-accent-gradient">
-  <div class="row justify-content-center gap-5 m-2">
-    <div class="col-12 content mb-5">
-      <h2 class="text-center text-black">{{ with .Site.GetPage "/services/" }}{{ .Title | default "Our Services" }}{{ end }}</h2>
+{{ $work := where (where .Site.RegularPages "Type" "work") ".Params.featured" true }}
+{{if gt (len $work) 0}}
+<div id="work" class="bg-accent">
+  <div class="justify-content-center">
+    <div class="col-12 content mb-5 mt-5">
+      <h2 class="container text-black fw-bolder">{{ with .Site.GetPage "/work/" }}{{ .Title | default "What we do" }}{{ end }}</h2>
     </div>
-    {{ range first 6 (sort $services ".Params.weight") }}
-    <div class="col-12 col-md-5 p-2 box-accent" style="--c:black;--w:20px;--b:1px;">
+    <div class="service-summary">
+    {{ range first 6 (sort $work ".Params.weight") }}
       {{ .Render "summary" }}
-    </div>
     {{ end }}
-    <div class="arrow-container">
-      <a class="animated-arrow " href="{{ .Site.LanguagePrefix }}/services" style="--c:black;">
-        <span class="the-arrow -left" style="--c:black;">
-          <span class="shaft"></span>
-        </span>
-        <span class="main">
-          <span class="text">{{ with .Site.GetPage "/services/" }}{{ .Params.button | default "Services comming soon" }}{{ end }}</span>
-          <span class="the-arrow -right" style="--c:black;">
-            <span class="shaft"></span>
-          </span>
-        </span>
+    </div>
+    <div class="py-4 d-flex align-items-center text-lg-center w-100 full-width-link">
+      <a class="fs-1 fw-bolder container" href="{{ .Site.LanguagePrefix }}/work">
+        {{ with .Site.GetPage "/work/" }}{{ .Params.button | default "Check all our work" }}{{ end }}
       </a>
     </div>
   </div>
@@ -92,33 +78,26 @@
 {{end}}
 
 {{ range first 1 (after 1 $reusablePages) }}
-<div id="home" class="strip bg-primary bg-cover bg-position-top bg-overlay">
+<div id="contact" class="strip bg-primary bg-cover bg-position-top bg-overlay">
   <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
-    <div class="row justify-content-center">
-      <div class="content col-12 col-md-8 text-center text-white">
-        <h2 class="text-white">{{ .Title }}</h2>
-        {{ .Content }}
+    <div class="row justify-content-start justify-content-lg-center">
+      <div class="content text-white text-lg-center">
+        <h2 class="text-white fw-bolder">{{ .Title }}</h2>
+        <div class="fs-3">
+          {{ .Content }}
+        </div>
         {{ if .Params.button }}
-        <div class="arrow-container mt-8" style="height: auto">
-            <a class="animated-arrow " href="{{ .Params.buttonLink | relLangURL }}" style="--c:rgb(255, 255, 255);">
-              <span class="the-arrow -left" style="--c:rgb(255, 255, 255);">
-                <span class="shaft"></span>
-              </span>
-              <span class="main">
-                <span class="text">{{ .Params.button }}</span>
-                <span class="the-arrow -right" style="--c:rgb(255, 255, 255);">
-                  <span class="shaft"></span>
-                </span>
-              </span>
-            </a>
-          </div>
+        <div class="arrow-container mt-5" style="height: auto">
+          <a class="button sensical-button" href="{{ .Params.buttonLink | relLangURL }}">
+            <p class="button-link-text fs-5" style="text-decoration: none;">{{ .Params.button }}</p>
+          </a>
+        </div>
         {{ end }}
       </div>
     </div>
   </div>
 </div>
 {{ end }}
-
 {{ end }}
 
 {{ define "footer_js" }}

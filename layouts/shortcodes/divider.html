@@ -1,0 +1,9 @@
+{{ $margin := .Get "margin" | default "60vh" }}
+{{ $height := .Get "height" | default "200" }}
+
+<div class="divider-full mb-5" style="margin-left: calc(50% - {{ $margin }});">
+  <img
+    src="{{ .Get "image" | relURL }}"
+    alt=""
+    style="max-height: {{ $height }}px">
+</div>

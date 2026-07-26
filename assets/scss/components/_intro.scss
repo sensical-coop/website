@@ -37,7 +37,7 @@
   p {
     width: 80%;
     font-size: 1.2rem;
-    font-weight: light;
+    font-weight: normal;
     line-height: 1.5;
     color: $secondary;
     @include media-breakpoint-up(sm) {
