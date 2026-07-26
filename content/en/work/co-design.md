@@ -11,11 +11,11 @@ related_pages:
 - environmental-data-collection
 ---
 
-We’re experienced {{< accent >}}facilitators, mentors and educators as well as creative and technical practitioners{{< /accent >}}, and we love to combine these skills to work with our clients and collaborators in an inclusive, participatory manner where everyone has an active role in identifying challenges and imagining and realising solutions. Our approach is hands-on: participants both actively shape the solutions we develop, and gain the new skills and abilities that they need to continue their development, and to continue to work with new technologies in the future.
+We’re experienced {{< accent >}}facilitators, mentors and educators as well as creative and technical practitioners{{< /accent >}}, and we love to combine these skills to work with our clients and collaborators in an inclusive, participatory manner where everyone has an active role in identifying challenges and imagining and realising solutions.
 
-Let’s bring your projects to life, together. We like to work alongside your team and your collaborators to solve your needs, whatever they are: we can support you in your design or decision-making processes, as well as in technical development and realisation.
+Our approach is hands-on: participants both actively shape the solutions we develop, and gain the new skills and abilities that they need to continue their development, and to continue to work with new technologies in the future.
 
-Our approach ensures that everyone who needs to be is involved, and that you’re prepared to take ownership of the product and continue its journey when we’re done.
+Let’s bring your projects to life, together. We like to work alongside your team and your collaborators to solve your needs, whatever they are: we can support you in your design or decision-making processes, as well as in technical development and realisation.Our approach ensures that everyone who needs to be is involved, and that you’re prepared to take ownership of the product and continue its journey when we’re done.
 
 ## Methods
 
