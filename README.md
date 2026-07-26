@@ -1,6 +1,12 @@
-# sensical website
+# Sensical website
+
+![](https://github.com/sensical-coop/design/blob/main/logo/high-res-2500px/sensical-b-p-2500px.png)
 
 This is the repository containing sensical SCCL website. The website is built using [hugo](https://gohugo.io), building upon [zerostatic/hugo-hero-theme](https://github.com/zerostaticthemes/hugo-hero-theme).
+
+## Related repositories
+
+- [Sensical Design](https://github.com/sensical-coop/design)
 
 ## Installation
 

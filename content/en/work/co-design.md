@@ -33,7 +33,6 @@ We can adapt the process according to your specific needs, both in terms of inte
 
 {{< /alert >}}
 
-
 ## Experience
 
 We’ve used our experiences as creative practitioners and facilitators to bring together diverse collectives of co-inventors including schoolchildren, musicians, environmental activists, and retirees. With each of them we’ve facilitated and enabled them to understand and imagine the possibilities of new technologies in their lives and practices, and worked with them to develop new products, services and experiences. We have worked alongside clients and partners including businesses, cultural and media organizations, and educational institutions.
