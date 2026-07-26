@@ -1,7 +1,7 @@
 .header {
-  color: $white;
+  color: $black;
   font-weight: bolder;
-  // background-color: $navbar-dark-color;
+  background-color: $accent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,10 +38,10 @@
   .logo-text {
     font-family: $font-family-sensical;
     font-size: $font-size-xl;
-    color: $white;
+    color: $black;
     &:hover {
       text-decoration: none;
-      color: $accent;
+      color: $white;
       transition: $nav-link-transition;
     }
   }

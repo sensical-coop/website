@@ -14,8 +14,8 @@
         width: inherit;
       object-fit: cover;
       padding: 3px;
-      border: 1px solid $accent;
-      filter: grayscale(80%);
+      border: 3px solid $black;
+      filter: grayscale(100%);
     }
   }
   .member-content {
@@ -27,8 +27,8 @@
       font-size: 1.5rem;
     }
     p {
-      color: #666;
-      font-size: 0.9rem;
+      color: $black;
+      font-size: $font-size-base;
       width: 90%;
     }
   }

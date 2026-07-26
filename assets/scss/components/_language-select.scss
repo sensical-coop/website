@@ -1,6 +1,14 @@
 .language-select {
   display: none;
+  border: 0px !important;
   @include media-breakpoint-up(md) {
     display: block;
+  }
+  .button-language {
+    border: 0px !important;
+    font-weight: bold;
+    &:active {
+      border: 0px !important;
+    }
   }
 }

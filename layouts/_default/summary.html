@@ -1,7 +1,22 @@
-<div class="summary">
-  {{ if .Params.image }}
-  <img alt="{{ .Title }}" src="{{ .Params.image }}" />
-  {{ end}}
-  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-  {{ .Content | truncate 100 }}
+<div class="service-content w-100 p-5 bg-gray-100 w-100 border-top border-2 border-black" style="--c:black;">
+  <div class="service-header py-2">
+    <h3 class="container service-title fw-bolder">
+      {{ .Title }}
+    </h3>
+  </div>
+  <div class="container w-100">
+  {{ $text := .Content | plainify }}
+  {{ $first := index (split $text ".") 0 }}
+  <p>{{ $first }}.</p>
+    <div class="mt-3">
+      <a class="sensical-button sensical-button-plus"
+        href="{{ .Permalink }}">
+        <div class="circle-button">
+          <div class="plus">+</div>
+        </div>
+        <p class="button-link-text">Read more</p>
+      </a>
+    </div>
+  </div>
 </div>
+

@@ -1,8 +1,11 @@
 ---
-title: 'Fair and open tech'
+title: 'Creative and collaborative technology R&D'
 weight: 1
 button: 'Check our work'
 buttonLink: 'work'
 ---
 
-We are a very cool coop. Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit.
+We've worked with companies, research projects, artists and non-profits to help them imagine, build and deploy technologies that work for them, for society, and for the planet.
+
+Our unique way of working combines collaborative methods, creative imagination, and critical reflection, as well as the technical skills to get things built.
+

@@ -6,4 +6,4 @@ button: 'Contact Us'
 buttonLink: 'contact'
 ---
 
-Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. ipsum dolor sit amet, et essent mediocritatem quo,
+If you have an idea, challenge, or project that you think we could help with - we’d love to chat. Send us a message and we’ll get started!

@@ -9,31 +9,31 @@
     justify-content: flex-start;
     > li {
       list-style: none;
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       > a {
         padding: 10px 14px 10px 14px;
         display: inline-block;
-        font-weight: regular;
-        text-transform: uppercase;
+        // font-weight: bolder;
+        // text-transform: uppercase;
         text-decoration: none;
-        color: $white;
+        color: $black;
         &:hover {
           // background: $navbar-dark-hover-color;
-          color: $accent;
+          color: $white;
           transition: $nav-link-transition;
           text-decoration: none;
+          text-underline-offset: 5px;
         }
       }
       &.active {
         > a {
           // background: $navbar-dark-hover-color;
-          text-decoration: none;
-          color: $accent;
+          color: $white;
+
           &:hover {
             text-decoration: none;
             // background: $primary;
             transition: all 225ms ease-in 0s;
-            color: $white;
           }
         }
       }

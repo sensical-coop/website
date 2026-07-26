@@ -4,16 +4,16 @@
 
 {{ define "main" }}
 {{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "section" .Section "section_title" .Params.section_title "content" .)}}
-<div class="container pt-4 pt-md-10 pb-4 pb-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
+<div class="pt-4 pt-md-10 pb-4 pb-md-10">
+  <div class="justify-content-start">
+    <div class="container">
       <div class="work work-single">
         <div class="content">{{.Content}}</div>
       </div>
     </div>
     {{ if .Params.images }}
     <div class="col-12 pt-4 pt-md-10">
-      <h2 class="mb-2 text-uppercase">Gallery</h2>
+      <h2 class="container mb-2 text-uppercase">Gallery</h2>
       <div class="masonry">
         {{ range .Params.images }}
           <div class="work-image item">
@@ -21,6 +21,19 @@
           </div>
         {{ end }}
       </div>
+    </div>
+    {{ end }}
+    {{ if .Params.related_pages }}
+    <div class="bg-accent border-top border-black border-2 py-5 mt-8">
+      <h2 class="container text-uppercase bg-accent fw-bolder pb-0 mb-0">Related work</h2>
+    </div>
+    {{ $related := .Params.related_pages }}
+    {{ $work := where .Site.RegularPages "Type" "work" }}
+    {{ $relatedWork := where $work ".File.TranslationBaseName" "in" $related }}
+    <div class="service-summary">
+    {{ range first 6 (sort $relatedWork ".Params.weight") }}
+      {{ .Render "summary" }}
+    {{ end }}
     </div>
     {{ end }}
   </div>

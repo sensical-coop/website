@@ -2,8 +2,11 @@ email: 'info@sensical.es'
 # phone: 'XXXX XXX XXX'
 businessName: 'Sensical SCCL'
 address: |
-  123 Some Street
-  Barcelona, Spain 08002
+  Carrer Diputació 151, Baixos Esquerra
+  Barcelona, Spain 08011
+PIC: 864390281
+VATES: F27637909
+VATINT: ESF27637909
 hours:
   - day: Monday
     open: 8:30am

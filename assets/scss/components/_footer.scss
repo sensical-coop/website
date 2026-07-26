@@ -3,6 +3,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   color: $primary;
+  border-top: 1px $accent solid !important;
   .footer-inner {
     display: flex;
     justify-content: space-between;
@@ -34,6 +35,16 @@
       margin-top: 0;
     }
   }
+  .footer-link {
+    color: $black;
+    font-weight: $font-weight-bolder;
+    &:hover {
+      color: $accent;
+      text-decoration: none;
+      transition: $transition-base;
+    }
+  }
+
   ul {
     list-style: none;
     margin: 0;
@@ -56,7 +67,6 @@
         }
       }
       &.copyright {
-        font-weight: bold;
         color: lighten($primary, 20%);
         display: none;
         @include media-breakpoint-up(md) {

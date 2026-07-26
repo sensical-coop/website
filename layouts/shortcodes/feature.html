@@ -1,0 +1,22 @@
+{{ $side := .Get "side" | default "right" }}
+{{ $width := .Get "width" | default "300" }}
+{{ $maxheight := .Get "maxheight" | default "300" }}
+{{ $mobile := .Get "mobile" | default "show" }}
+
+<div class="feature feature-{{ $side }}">
+    <div class="feature__content">
+
+        <div class="feature__text">
+        {{ .Inner | markdownify }}
+        </div>
+
+        <div class="feature__image {{ if eq $mobile "hide" }}feature__image--desktop{{ end }}">
+        <img
+            src="{{ .Get "image" | relURL }}"
+            alt=""
+            style="width: {{ $width }}px;
+            max-height: {{ $maxheight }}px;">
+        </div>
+
+    </div>
+</div>

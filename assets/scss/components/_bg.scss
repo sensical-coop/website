@@ -22,6 +22,9 @@
 .bg-secondary {
   background-color: $secondary;
 }
+.bg-accent {
+  background-color: $accent;
+}
 .bg-white-dots{
   background-image: radial-gradient(circle at 1px 1px, $secondary 1px, transparent 0);
   background-size: 40px 40px;

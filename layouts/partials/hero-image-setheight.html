@@ -1,11 +1,9 @@
-<div id="hero" class="hero-image bg-primary hero-image-setheight bg-white-dots">
-  <div class="container ">
-    <div class="hero-text mt-10">
-      <a href="{{ .section | relLangURL }}">
-        <span class="hero-section">{{ .section_title }}</span>
-      </a>
-      <h1>{{ .heading }}</h1>
-      <p>{{ .subheading }}</p>
-    </div>
+<div id="hero" class="hero-image bg-primary hero-image-setheight">
+  <div class="container hero-text">
+    <a class="text-white hero-link" href="{{ .section | relLangURL }}">
+      {{ .section_title }}
+    </a>
+    <h1 class="ml-0 font-sensical">{{ .heading }}</h1>
+    <p class="fs-3">{{ .subheading }}</p>
   </div>
 </div>

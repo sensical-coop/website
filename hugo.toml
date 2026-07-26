@@ -1,5 +1,5 @@
 baseURL = "https://sensical.es/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Sensical SCCL"
 
 [module]
@@ -21,17 +21,12 @@ title = "Sensical SCCL"
     alt = "Sensical SCCL"
 
   [params.homepage_meta_tags]
-    meta_description = "Sensical SCCL is a developer and engineering cooperative, offering consultance services in prototyping, open science and environmental participatory processes."
+    meta_description = "Sensical SCCL is amultidisciplinary group of developers, creatives, and researchers passionate about open technology, sustainability, prototyping, and science."
     meta_og_title = "Sensical SCCL"
     meta_og_type = "website"
     meta_og_url = "https://sensical.es/"
     meta_og_image = "images/sensical-logo.png"
-    meta_og_description = "Sensical SCCL is a developer and engineering cooperative, offering consultance services in prototyping, open science and environmental participatory processes."
-
-[[menu.main]]
-	name = "Services"
-	url = "/services/"
-  weight = 1
+    meta_og_description = "Sensical SCCL is amultidisciplinary group of developers, creatives, and researchers passionate about open technology, sustainability, prototyping, and science."
 
 [[menu.main]]
   name = "Work"
@@ -55,7 +50,7 @@ title = "Sensical SCCL"
 [languages]
   [languages.en]
     contentDir = 'content/en'
-    languageName = 'en'
+    label = 'en'
     weight = 10
     [languages.en.menus]
       [[languages.en.menus.main]]
@@ -63,77 +58,10 @@ title = "Sensical SCCL"
         pageRef = '/work'
         weight = 10
       [[languages.en.menus.main]]
-        name = 'Services'
-        pageRef = '/services'
-        weight = 20
-      [[languages.en.menus.main]]
         name = 'About'
         pageRef = '/pages/about'
-        weight = 30
+        weight = 20
       [[languages.en.menus.main]]
         name = 'Contact'
         pageRef = '/contact'
-        weight = 40
-  [languages.es]
-    contentDir = 'content/es'
-    languageName = 'es'
-    weight = 20
-    [languages.es.menus]
-      [[languages.es.menus.main]]
-        name = 'Portfolio'
-        pageRef = '/work'
-        weight = 10
-      [[languages.es.menus.main]]
-        name = 'Servicios'
-        pageRef = '/services'
-        weight = 20
-      [[languages.es.menus.main]]
-        name = 'Sobre'
-        pageRef = '/pages/about'
         weight = 30
-      [[languages.es.menus.main]]
-        name = 'Contacto'
-        pageRef = '/contact'
-        weight = 40
-  [languages.cat]
-    contentDir = 'content/cat'
-    languageName = 'cat'
-    weight = 30
-    [languages.cat.menus]
-      [[languages.cat.menus.main]]
-        name = 'Portfolio'
-        pageRef = '/work'
-        weight = 10
-      [[languages.cat.menus.main]]
-        name = 'Serveis'
-        pageRef = '/services'
-        weight = 20
-      [[languages.cat.menus.main]]
-        name = 'Sobre'
-        pageRef = '/pages/about'
-        weight = 30
-      [[languages.cat.menus.main]]
-        name = 'Contacte'
-        pageRef = '/contact'
-        weight = 40
-  [languages.fr]
-    contentDir = 'content/fr'
-    languageName = 'fr'
-    weight = 40
-    [languages.fr.menus]
-      [[languages.fr.menus.main]]
-        name = 'Travails'
-        pageRef = '/work'
-        weight = 10
-      [[languages.fr.menus.main]]
-        name = 'Services'
-        pageRef = '/services'
-        weight = 20
-      [[languages.fr.menus.main]]
-        name = 'À-propos'
-        pageRef = '/pages/about'
-        weight = 30
-      [[languages.fr.menus.main]]
-        name = 'Contacter'
-        pageRef = '/contact'
-        weight = 40
