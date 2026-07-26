@@ -43,5 +43,30 @@
                 "image": "social/orcid-logo.svg"
             }
         ]
+    },
+    {
+        "name": "tim-cowlishaw",
+        "socials": [
+            {
+                "name": "linkedin",
+                "link": "https://www.linkedin.com/in/tim-cowlishaw/",
+                "image": "social/linkedin-logo.svg"
+            },
+            {
+                "name": "mastodon",
+                "link": "https://assemblag.es/@mistertim",
+                "image": "social/mastodon-logo.svg"
+            },
+            {
+                "name": "github",
+                "link": "https://github.com/timcowlishaw/",
+                "image": "social/github-logo.svg"
+            },
+            {
+                "name": "orcid",
+                "link": "https://orcid.org/0000-0002-1815-1427",
+                "image": "social/orcid-logo.svg"
+            }
+        ]
     }
 ]
