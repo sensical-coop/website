@@ -50,7 +50,7 @@ title = "Sensical SCCL"
 [languages]
   [languages.en]
     contentDir = 'content/en'
-    label = 'en'
+    languageName = 'en'
     weight = 10
     [languages.en.menus]
       [[languages.en.menus.main]]
