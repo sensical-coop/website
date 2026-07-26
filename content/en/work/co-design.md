@@ -48,3 +48,4 @@ We can offer a wide range of options including:
 + Project co-design and facilitation, for broader, more sustained project co-design support.
 + Long term mentoring, training and capacity building within your organization.
 
+Contact us at: [info@sensical.es](mailto:info@sensical.es)
