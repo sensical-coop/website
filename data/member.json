@@ -68,5 +68,20 @@
                 "image": "social/orcid-logo.svg"
             }
         ]
+    },
+    {
+        "name": "adai-surinach",
+        "socials": [
+            {
+                "name": "linkedin",
+                "link": "https://www.linkedin.com/in/adai-suri/",
+                "image": "social/linkedin-logo.svg"
+            },
+            {
+                "name": "github",
+                "link": "https://github.com/adaisuri",
+                "image": "social/github-logo.svg"
+            }
+        ]
     }
 ]
