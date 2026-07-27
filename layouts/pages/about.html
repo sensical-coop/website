@@ -42,9 +42,7 @@
       <h2 class="container text-black fw-bolder text-center">{{ .Params.teamTitle }}</h2>
     </div>
     {{ range $subpages }}
-    <div class="col-12 col-md-5 p-2 box" style="--c:#000;--w:20px;--b:3px;">
       {{ .Render "member" }}
-    </div>
     {{ end }}
   </div>
 </div>

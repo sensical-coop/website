@@ -2,16 +2,57 @@
 {{ $members := .Site.Data.member }}
 {{ $person := .Params.member }}
 
-  <div class="member-summary">
-    {{ if .Params.image }}
-    <div class="member-image">
-      <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
-    </div>
-    {{ end }}
-    <div class="member-content">
+<div class="col-12 col-md-5 p-2 box" style="--c:#000;--w:20px;--b:3px; --bg:#00000000;">
+  <div class="member-card px-4 p-md-0">
+      {{ if .Params.image }}
+      <div class="member-image">
+          <img class="member-photo" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+      </div>
+      {{ end }}
+
+      <div class="member-content">
+          <div class="member-content-top">
+              <h3 class="name">{{ .Title }}</h3>
+          </div>
+          <div class="member-content-bottom">
+          {{ if $members }}
+              <ul class="social">
+              {{ range $member, $details := $members }}
+                  {{ if eq $person $details.name}}
+                      {{ range $details.socials }}
+                      <li>
+                          <a href="{{ .link }}" target="blank">
+                          <img class="social-logo" width="20" height="20" src="{{ .image | relURL }}" title="{{ .name }}" alt="{{ .name }}" />
+                          </a>
+                      </li>
+                      {{ end }}
+                  {{ end }}
+              {{ end }}
+              </ul>
+          {{ end }}
+          </div>
+      </div>
+  </div>
+
+  <p class="member-bio px-4 p-lg-0">
+      {{ .Content | plainify }}
+  </p>
+</div>
+
+
+  <!-- <div class="member-summary">
+    <div class="member-content px-2 p-lg-4">
+
+      {{ if .Params.image }}
+      <div class="member-image">
+        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+      </div>
+      {{ end }}
+
       <h2 class="member-title">
         {{ .Title }}
       </h2>
+
       <p>{{ .Content }}</p>
         <div class="social-inner">
         {{ if $members }}
@@ -31,4 +72,4 @@
         {{ end }}
         </div>
     </div>
-</div>
+</div> -->
