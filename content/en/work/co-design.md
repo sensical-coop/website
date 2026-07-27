@@ -15,7 +15,7 @@ We’re experienced {{< accent >}}facilitators, mentors and educators as well as
 
 Our approach is hands-on: participants both actively shape the solutions we develop, and gain the new skills and abilities that they need to continue their development, and to continue to work with new technologies in the future.
 
-Let’s bring your projects to life, together. We like to work alongside your team and your collaborators to solve your needs, whatever they are: we can support you in your design or decision-making processes, as well as in technical development and realisation.Our approach ensures that everyone who needs to be is involved, and that you’re prepared to take ownership of the product and continue its journey when we’re done.
+Let’s bring your projects to life, together. We like to work alongside your team and your collaborators to solve your needs, whatever they are: we can support you in your design or decision-making processes, as well as in technical development and realisation. Our approach ensures that everyone who needs to be is involved, and that you’re prepared to take ownership of the product and continue its journey when we’re done.
 
 ## Methods
 
@@ -40,7 +40,9 @@ We’ve used our experiences as creative practitioners and facilitators to bring
 ## Who we’ve worked with
 
 Between us, we’ve worked in this way with organizations such as Fab Lab Barcelona, The BBC, CCCB, Medialab Matadero, Sónar, and a broad range of universities and research organizations.
-What we can offer
+
+## What we can offer
+
 We can offer a wide range of options including:
 
 + One off workshops with a specific objective in mind, which we design and facilitate to support your short-term goals.
