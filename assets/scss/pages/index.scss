@@ -194,7 +194,7 @@ body{
 //   --size: 500px;
 // }
 
-#work, #contact {
+#home, #work, #contact {
   @include media-breakpoint-up(lg) {
     scroll-snap-align: start;
   }
@@ -208,9 +208,6 @@ body{
 
 .service-summary {
   .service-content {
-    @include media-breakpoint-up(lg) {
-      scroll-snap-align: start;
-    }
 
     .service-title {
       font-family: $font-family-sans-serif;
