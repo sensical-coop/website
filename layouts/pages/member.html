@@ -3,7 +3,7 @@
 {{ $person := .Params.member }}
 
 <div class="col-12 col-md-5 p-2 box" style="--c:#000;--w:20px;--b:3px; --bg:#00000000;">
-  <div class="member-card px-4 p-md-0">
+  <div class="member-card px-2 p-md-0">
       {{ if .Params.image }}
       <div class="member-image">
           <img class="member-photo" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
@@ -34,7 +34,7 @@
       </div>
   </div>
 
-  <p class="member-bio px-4 p-lg-0">
+  <p class="member-bio px-2 p-lg-0">
       {{ .Content | plainify }}
   </p>
 </div>
