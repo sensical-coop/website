@@ -11,22 +11,17 @@ title = "Sensical SCCL"
   google_analytics_id=""
 
   [params.logo]
-    mobile = "images/logo-mobile.svg"
-    mobile_height = "36px"
-    mobile_width = "36px"
-    desktop = "images/sensical-logo.png"
-    desktop_height = "29px"
-    desktop_width = "217px"
+    favicon = "images/logo/favicon.ico"
     text = "snscl"
     alt = "Sensical SCCL"
 
   [params.homepage_meta_tags]
-    meta_description = "Sensical SCCL is amultidisciplinary group of developers, creatives, and researchers passionate about open technology, sustainability, prototyping, and science."
+    meta_description = "Sensical SCCL is a multidisciplinary group of developers, creatives, and researchers passionate about open technology, sustainability, prototyping, and science."
     meta_og_title = "Sensical SCCL"
     meta_og_type = "website"
     meta_og_url = "https://sensical.es/"
-    meta_og_image = "images/sensical-logo.png"
-    meta_og_description = "Sensical SCCL is amultidisciplinary group of developers, creatives, and researchers passionate about open technology, sustainability, prototyping, and science."
+    meta_og_image = "images/logo/sensical-logo.png"
+    meta_og_description = "Sensical SCCL is a multidisciplinary group of developers, creatives, and researchers passionate about open technology, sustainability, prototyping, and science."
 
 [[menu.main]]
   name = "Work"
