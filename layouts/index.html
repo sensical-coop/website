@@ -23,11 +23,11 @@
 {{ $reusablePages := $headless.Resources.ByType "page" }}
 {{ $reusablePages := sort $reusablePages ".Params.weight" }}
 {{ range first 1 $reusablePages }}
-<div id="home" class="bg-primary strip-full">
-    <div class="container bg-primary box" style="--c:#FF495F; --b: 4px;">
+<div id="home" class="bg-primary strip-full bg-accent-dots">
+    <div class="container bg-primary box" style="--c:#FF495F; --b: 3px;">
       <div class="row strip-adaptable-col">
-        <div class="col align-items-start px-2 p-lg-4">
-          <h2 class="text-white landing-title">{{ .Title }}</h2>
+        <div class="col align-items-start px-2 p-md-4 p-lg-4">
+          <h2 class="text-white landing-title pb-md-2">{{ .Title }}</h2>
           <div class="fs-5 text-white">{{ .Content }}</div>
         </div>
         <div class="col py-1 p-lg-4">
