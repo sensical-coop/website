@@ -1,5 +1,5 @@
 ---
-title: 'Recerca i desenvolupament tecnològic R+D'
+title: 'R+D tecnològic creatiu i col·laboratiu'
 weight: 1
 button: 'Què fem'
 buttonLink: 'work'
