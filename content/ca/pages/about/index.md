@@ -7,6 +7,7 @@ heroHeading: 'Sobre Sensical'
 heroSubHeading: ""
 heroBackground: 'https://source.unsplash.com/sO-JmQj95ec/1600x1000'
 teamTitle: "Coneix a l'equip"
+translationKey: about
 ---
 
 Sensical SCCL és un grup multidisciplinari de desenvolupadors, creatius, enginyers i investigadors, apassionats amb les tecnologies obertes, la sostenibilitat, el prototipatge i la ciència.
