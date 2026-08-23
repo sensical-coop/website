@@ -82,6 +82,6 @@ Oferim una àmplia gamma de productes i serveis entorn de solucions mediambienta
 
 ## Construïm-ho {{< accent >}}junts{{< /accent >}}
 
-Tenim una experiència en particular treballant al costat d'investigadors i grups de científics ciutadans per a ajudar a definir els seus objectius de recerca, desplegar sensors, analitzar dades i prendre mesures sobre els resultats, i ens encanta treballar de manera horitzontal i participativa. Llegeixi més sobre els nostres mètodes en la nostra pàgina de [co-creació](/content/ca/work/co-creacio/).
+Tenim una experiència en particular treballant al costat d'investigadors i grups de científics ciutadans per a ajudar a definir els seus objectius de recerca, desplegar sensors, analitzar dades i prendre mesures sobre els resultats, i ens encanta treballar de manera horitzontal i participativa. Llegeixi més sobre els nostres mètodes en la nostra pàgina de [co-creació](/ca/work/co-creacio/).
 
 Contacti'ns en: [info@sensical.es](mailto:info@sensical.es)
