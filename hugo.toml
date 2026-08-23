@@ -78,3 +78,20 @@ DefaultContentLanguage = "en"
         name = 'Contacto'
         pageRef = '/contact'
         weight = 30
+[languages.fr]
+    contentDir = 'content/fr'
+    languageName = 'fr'
+    weight = 11
+    [languages.fr.menus]
+      [[languages.fr.menus.main]]
+        name = 'Portefeuille'
+        pageRef = '/work'
+        weight = 10
+      [[languages.fr.menus.main]]
+        name = 'À propos'
+        pageRef = '/pages/about'
+        weight = 20
+      [[languages.fr.menus.main]]
+        name = 'Contact'
+        pageRef = '/contact'
+        weight = 30
