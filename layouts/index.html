@@ -56,9 +56,11 @@
     {{ end }}
     </div>
     <div class="py-4 d-flex align-items-center text-center w-100 full-width-link">
-      <a class="fs-1 fw-bolder container" href="{{ .Site.LanguagePrefix }}/work">
-        {{ with .Site.GetPage "/work/" }}{{ .Params.button | default "See all our work" }}{{ end }}
+      {{ with .Site.GetPage "/work/" }}
+      <a class="fs-1 fw-bolder container" hreflang="{{ .Site.LanguagePrefix }}" href="{{ .Params.url }}">
+        {{ .Params.button | T "See all our work" }}
       </a>
+      {{ end }}
     </div>
   </div>
 </div>

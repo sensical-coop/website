@@ -11,9 +11,13 @@
           </ul>
           {{ end }}
           <ul class="footer-menu">
-            <li><a class="footer-link" href="{{ .Site.LanguagePrefix }}/">Home</a></li>
-            <li><a class="footer-link" href="{{ .Site.LanguagePrefix }}/contact">Contact</a></li>
-            <li class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</li>
+            <li>
+              <a class="footer-link" href="{{ .Site.LanguagePrefix }}/">{{ T "Home" }}</a>
+            </li>
+            <li>{{ with .Site.GetPage "/contact/" }}
+              <!-- The permalink below needs to work in this way, otherwise it duplicates the slug on the page -->
+              <a class="footer-link" href="{{ .Site.LanguagePrefix }}/{{ .Params.url }}">{{ .Params.button | T "Contact"}}</a>{{ end }}</li>
+            <li class="copyright">© {{ now.Format "2006" }} {{ .Site.Title }}</li>
           </ul>
         </div>
       </div>

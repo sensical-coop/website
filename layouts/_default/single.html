@@ -25,7 +25,7 @@
     {{ end }}
     {{ if .Params.related_pages }}
     <div class="bg-accent border-top border-black border-2 py-5 mt-8">
-      <h2 class="container text-uppercase bg-accent fw-bolder pb-0 mb-0">Related work</h2>
+      <h2 class="container text-uppercase bg-accent fw-bolder pb-0 mb-0">{{ T "Related work" }}</h2>
     </div>
     {{ $related := .Params.related_pages }}
     {{ $work := where .Site.RegularPages "Type" "work" }}
