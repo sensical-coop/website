@@ -1,5 +1,5 @@
 ---
-title: 'I+D tecnológico creativo y colaborativo.'
+title: 'I+D tecnológico creativo y colaborativo'
 weight: 1
 button: 'Qué hacemos'
 buttonLink: 'portfolio'
