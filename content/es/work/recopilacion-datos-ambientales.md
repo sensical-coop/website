@@ -82,6 +82,6 @@ Ofrecemos una amplia gama de productos y servicios entorno a soluciones medioamb
 
 ## Construyámoslo {{< accent >}}juntos{{< /accent >}}
 
-Tenemos experiencia trabajando junto a investigadores, grupos de ciencia  ciudadana, y la industria, para ayudar a definir sus objetivos de investigación, desplegar sensores, analizar datos y tomar decisiones. Nos encanta trabajar de manera horizontal y participativa. Lee más sobre nuestros métodos en nuestra página de [co-creación](/content/es/portfolio/co-creacion/).
+Tenemos experiencia trabajando junto a investigadores, grupos de ciencia  ciudadana, y la industria, para ayudar a definir sus objetivos de investigación, desplegar sensores, analizar datos y tomar decisiones. Nos encanta trabajar de manera horizontal y participativa. Lee más sobre nuestros métodos en nuestra página de [co-creación](/es/co-creacion/).
 
 Contáctanos en: [info@sensical.es](mailto:info@sensical.es)
