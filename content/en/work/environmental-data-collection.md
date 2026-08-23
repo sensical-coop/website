@@ -10,7 +10,7 @@ related_pages:
 - co-design
 ---
 
-We help imagine, build, and deploy flexible, affordable, and reliable bespoke environmental data collection systems. We are a pioneer in collecting sensor data with distributed, off-grid mesh networks. Likewise, we have proven expertise in validation, calibration and  data processing of large-scale datasets, ensuring smoothly running sensor deployments.
+We help imagine, build, and deploy flexible, affordable, and reliable bespoke environmental data collection systems. We are a pioneer in collecting sensor data with distributed, off-grid mesh networks. Likewise, we have proven expertise in validation, calibration and data processing of large-scale datasets, ensuring smoothly running sensor deployments.
 
 {{< divider
     image="images/drawings/probe-drawing.svg"
