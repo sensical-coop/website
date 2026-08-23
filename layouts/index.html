@@ -32,7 +32,7 @@
         </div>
         <div class="col py-1 p-lg-4">
           <div class="arrow-container">
-            <a class="button sensical-button" href="#work">
+            <a class="button sensical-button" href="#{{ T "work" }}">
               <p class="button-link-text fs-5">{{ .Params.button }}</p>
             </a>
           </div>
@@ -45,7 +45,7 @@
 
 {{ $work := where (where .Site.RegularPages "Type" "work") ".Params.featured" true }}
 {{if gt (len $work) 0}}
-<div id="work" class="bg-accent">
+<div id="{{ T "work" }}" class="bg-accent">
   <div class="justify-content-center">
     <div class="col-12 content mb-5 mt-5">
       <h2 class="container text-black fw-bolder text-center text-lg-start px-0">{{ with .Site.GetPage "/work/" }}{{ .Title | default "What we do" }}{{ end }}</h2>

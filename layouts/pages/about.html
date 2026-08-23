@@ -18,7 +18,7 @@
         </a>
       </div> -->
       <div class="arrow-container">
-        <a class="animated-arrow " href="#team" style="--c:rgb(255, 255, 255);">
+        <a class="animated-arrow " href="#{{ T "team" }}" style="--c:rgb(255, 255, 255);">
           <span class="the-arrow -left" style="--c:rgb(255, 255, 255);">
             <span class="shaft"></span>
           </span>
@@ -36,7 +36,7 @@
 
 {{ $headless := .Site.GetPage "/pages/about" }}
 {{ $subpages := $headless.Resources.ByType "page" }}
-<div id="team" class="pt-8 pb-8 pb-md-12 pt-md-12 bg-accent-gradient">
+<div id="{{ T "team" }}" class="pt-8 pb-8 pb-md-12 pt-md-12 bg-accent-gradient">
   <div class="row justify-content-center gap-5">
     <div class="content mb-lg-5 mt-lg-5">
       <h2 class="container text-black fw-bolder text-center">{{ .Params.teamTitle }}</h2>
