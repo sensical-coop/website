@@ -8,6 +8,7 @@ heroHeading: 'Recopilación de datos ambientales'
 heroSubHeading: ''
 button: "Leer más"
 section_title: 'Portfolio'
+translationKey: environmentaldatacollection
 related_pages:
 - co-creacion
 ---

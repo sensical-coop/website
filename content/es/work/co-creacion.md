@@ -8,6 +8,7 @@ heroHeading: 'Co-creación y diseño participativo'
 heroSubHeading: ''
 button: "Leer más"
 section_title: 'Portfolio'
+translationKey: cocreation
 related_pages:
 - recopilacion-datos-ambientales
 ---

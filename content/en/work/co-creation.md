@@ -7,6 +7,7 @@ heroHeading: 'Co-creation and participatory design'
 heroSubHeading: ''
 button: "Read more"
 section_title: 'Work'
+translationKey: cocreation
 related_pages:
 - environmental-data-collection
 ---

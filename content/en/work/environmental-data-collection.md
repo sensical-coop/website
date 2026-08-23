@@ -6,6 +6,7 @@ weight: 2
 heroHeading: 'Environmental data collection'
 heroSubHeading: ''
 section_title: 'Work'
+translationKey: environmentaldatacollection
 related_pages:
 - co-creation
 ---
