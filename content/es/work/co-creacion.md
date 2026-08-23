@@ -36,7 +36,7 @@ Podemos adaptar el proceso según tus necesidades específicas, tanto en intensi
 
 Hemos utilizado nuestras experiencias como profesionales creativos y facilitadores para reunir a diversos colectivos de coinventores, incluidos escolares, músicos, activistas ambientales... Con cada uno de ellos hemos facilitado y permitido comprender e imaginar las posibilidades de las nuevas tecnologías en sus vidas y prácticas, y hemos trabajado con ellos para desarrollar nuevos productos, servicios y experiencias. Hemos trabajado junto a clientes y socios, incluyendo empresas, organizaciones culturales y mediáticas, e instituciones educativas.
 
-### Con quién hemos trabajado
+## Con quién hemos trabajado
 
 En conjunto o individualmente, hemos trabajado de esta manera con organizaciones como Fab Lab Barcelona, la BBC, el Centro de Cultura Contemporánea de Barcelona (CCCB), Medialab Matadero, el Festival Sónar y una amplia gama de universidades y organizaciones de investigación.
 
