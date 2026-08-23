@@ -7,7 +7,7 @@ heroHeading: 'Environmental data collection'
 heroSubHeading: ''
 section_title: 'Work'
 related_pages:
-- co-design
+- co-creation
 ---
 
 We help imagine, build, and deploy flexible, affordable, and reliable bespoke environmental data collection systems. We are a pioneer in collecting sensor data with distributed, off-grid mesh networks. Likewise, we have proven expertise in validation, calibration and data processing of large-scale datasets, ensuring smoothly running sensor deployments.
@@ -79,6 +79,6 @@ We can offer a wide range of products and services around environmental solution
 
 ## Let’s build it {{< accent >}}together{{< /accent >}}
 
-We have particular experience in working alongside researchers and citizen scientist groups to help define their research objectives, deploy sensors, analyse data and take action on the results, and we love to work in a horizontal, participatory fashion. Read more about our methods on our co-creation page.
+We have particular experience in working alongside researchers and citizen scientist groups to help define their research objectives, deploy sensors, analyse data and take action on the results, and we love to work in a horizontal, participatory fashion. Read more about our methods on our [co-creation page](/content/en/portfolio/co-creation/).
 
 Contact us at: [info@sensical.es](mailto:info@sensical.es)
