@@ -42,6 +42,7 @@ title = "Sensical SCCL"
   post = "/:year/:month/:day/:slug/"
   pages = "/:contentbasename/"
 
+DefaultContentLanguage = "en"
 [languages]
   [languages.en]
     contentDir = 'content/en'
@@ -58,5 +59,22 @@ title = "Sensical SCCL"
         weight = 20
       [[languages.en.menus.main]]
         name = 'Contact'
+        pageRef = '/contact'
+        weight = 30
+  [languages.es]
+    contentDir = 'content/es'
+    languageName = 'es'
+    weight = 11
+    [languages.es.menus]
+      [[languages.es.menus.main]]
+        name = 'Portfolio'
+        pageRef = '/work'
+        weight = 10
+      [[languages.es.menus.main]]
+        name = 'Sobre'
+        pageRef = '/pages/about'
+        weight = 20
+      [[languages.es.menus.main]]
+        name = 'Contacto'
         pageRef = '/contact'
         weight = 30
