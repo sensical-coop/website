@@ -78,3 +78,20 @@ DefaultContentLanguage = "en"
         name = 'Contacto'
         pageRef = '/contact'
         weight = 30
+  [languages.ca]
+    contentDir = 'content/ca'
+    languageName = 'ca'
+    weight = 12
+    [languages.ca.menus]
+      [[languages.ca.menus.main]]
+        name = 'Portfolio'
+        pageRef = '/work'
+        weight = 10
+      [[languages.ca.menus.main]]
+        name = 'Sobre'
+        pageRef = '/pages/about'
+        weight = 20
+      [[languages.ca.menus.main]]
+        name = 'Contacte'
+        pageRef = '/contact'
+        weight = 30
