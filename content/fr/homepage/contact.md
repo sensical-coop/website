@@ -7,4 +7,4 @@ button: 'Contactez-nous'
 buttonLink: 'contact'
 ---
 
-Si vous avez une idée, une réflexion ou un projet avec ce que nous pensons pouvoir collaborer, nous pouvons avoir envie de le faire. ¡Contactez-nous et employons-nous !
+Une idée, un défi ou un projet qui requiert nos services ? Contactez-nous et c'est parti !
