@@ -83,5 +83,20 @@
                 "image": "social/github-logo.svg"
             }
         ]
+    },
+    {
+        "name": "adrien-laveau",
+        "socials": [
+            {
+                "name": "linkedin",
+                "link": "https://www.linkedin.com/in/adrien-laveau-40723955",
+                "image": "social/linkedin-logo.svg"
+            },
+            {
+                "name": "github",
+                "link": "https://github.com/adrienlaveau",
+                "image": "social/github-logo.svg"
+            }
+        ]
     }
 ]
