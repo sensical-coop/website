@@ -5,7 +5,7 @@ layout: 'about'
 heroHeading: 'À propos de Sensical'
 heroSubHeading: ""
 heroBackground: 'https://source.unsplash.com/sO-JmQj95ec/1600x1000'
-teamTitle: 'Découvrez l'équipe'
+teamTitle: "Découvrez l'équipe"
 translationKey: about
 ---
 
