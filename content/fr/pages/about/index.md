@@ -1,11 +1,11 @@
 ---
-url: 'acerca-de'
-title: 'Sobre Sensical'
+title: 'À propos de Sensical'
 date: 2018-12-06T09:29:16+10:00
 layout: 'about'
-heroHeading: 'Sobre Sensical'
+heroHeading: 'À propos de Sensical'
 heroSubHeading: ""
-teamTitle: 'Conoce al equipo'
+heroBackground: 'https://source.unsplash.com/sO-JmQj95ec/1600x1000'
+teamTitle: 'Découvrez l'équipe'
 translationKey: about
 ---
 
