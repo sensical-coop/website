@@ -36,7 +36,7 @@ Nous possédons une vaste expérience en matière de collecte de données enviro
 
 ### En bref
 
-Nous développons des outils pour la science participative, la recherche industrielle et les applications de capteurs. Nous avons une solide expérience dans de nombreux projets de R&D, notamment les projets Horizon et Erasmus, et collaborons avec des organismes de financement de la recherche nationaux et locaux en Espagne et à Barcelone.
+Nous développons des outils pour la science participative mais aussi pour l'industrie et les instituts de recherche. Notre expertise est reconnue à travers de nombreux projets de R&D, notamment les projets Horizon et Erasmus+, ainsi que des collaborations avec des fonds de recherche nationaux et locaux en Espagne et à Barcelone.
 {{< /alert >}}
 
 
@@ -44,7 +44,7 @@ Nous développons des outils pour la science participative, la recherche industr
 
 Nous sommes fiers de compter parmi les premiers contributeurs à l'écosystème open source [Meshastic](https://meshtastic.org) dans le domaine de la qualité de l'air.
 
-Notre vaste expérience des projets utilisant des capteurs à bas coût nous permet de faciliter la collecte de données environnementales et d'indicateurs de pollution atmosphérique tels que les **particules fines (PM), les polluants chimiques, le CO2** et bien d'autres.
+Notre vaste expérience des projets utilisant des capteurs à bas coût nous permet de faciliter la collecte de données environnementales et d'indicateurs de pollution atmosphérique tels que les **particules fines (PM), les polluants chimiques, le CO2** et bien d'autres, dans des réseau décentralisés et maillés.
 
 {{< divider
     image="images/drawings/antenna-drawing.svg"
@@ -56,10 +56,10 @@ Notre vaste expérience des projets utilisant des capteurs à bas coût nous per
 
 ### Pas seulement des capteurs
 
-Nous reconnaissons que la collecte de données environnementales implique bien plus que des capteurs et de la technologie, et en tant que collectif possédant une expérience et des compétences diverses, nous pouvons apporter notre soutien non seulement pour l'intégration des capteurs, mais aussi pour une gamme de services complémentaires, par exemple, par le biais de la **formation et de la documentation, de la conception ou du soutien à l'analyse des données**.
+Nous reconnaissons que la collecte de données environnementales implique bien plus que des capteurs et de la technologie, et en tant que collectif possédant une expérience et des compétences diverses, nous pouvons apporter notre soutien non seulement pour l'intégration des capteurs, mais aussi pour une gamme de services complémentaires. Qu'il s'agisse de **formation, de conception de solution ou de traitement des données** nous accompagnons votre projet d'analyse environnemental de A à Z.
 {{< /alert >}}
 
-## Ce que nous pouvons vous offrir
+## Ce que nous vous offrons
 
 Nous proposons une large gamme de produits et services liés aux solutions environnementales, notamment :
 
@@ -71,16 +71,16 @@ Nous proposons une large gamme de produits et services liés aux solutions envir
     mobile="hide"
 >}}
 
-+ Solutions matérielles de surveillance environnementale, y compris les réseaux distribués (_mesh_)
-+ Services de données, y compris le stockage, le traitement et la validation
-+ Développement de micrologiciels et intégration de capteurs
-+ Projets clés en main, incluant les produits matériels et logiciels (_hardware_ et _software_)
-+ Accompagnement en matière de surveillance participative
-+ Formation et conseil sur tous les points ci-dessus
++ Solutions (éprouvées sur le terrain) de surveillance environnementale et leur réseaux de communication décentralisés (_mesh_)
++ Services de données incluants stockage, traitement et validation
++ Développement de firmware et intégration de capteurs
++ Projets clés en main, incluant l'électronique et la partie logicielle (_hardware_ et _software_)
++ Projets collectif d'aquisition de données (syndic, villes, écoles, quartiers etc...)
++ Formation et conseil sur toute notre gamme
 
 {{< /feature >}}
 
-## Construisons-le {{< accent >}}ensemble{{< /accent >}}
+## Construisons {{< accent >}}ensemble{{< /accent >}}
 
 Nous collaborons avec des chercheurs, des groupes de sciences participatives et des industriels pour les aider à définir leurs objectifs de recherche, déployer des capteurs, analyser les données et prendre des décisions. Nous privilégions le travail collaboratif et transversal. Découvrez nos méthodes sur notre page dédiée à la [co-création](/fr/co-creation/).
 
