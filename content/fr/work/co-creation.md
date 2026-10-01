@@ -36,7 +36,7 @@ Nous pouvons adapter le processus à vos besoins spécifiques, tant en termes d'
 
 Nous avons mis à profit notre expérience de professionnels créatifs et d'animateurs pour réunir des groupes diversifiés de co-inventeurs, parmi lesquels des écoliers, des musiciens et des militants écologistes. Avec chacun d'eux, nous les avons accompagnés et aidés à comprendre et à imaginer les possibilités offertes par les nouvelles technologies dans leur vie et leurs pratiques, et nous avons collaboré avec eux au développement de nouveaux produits, services et expériences. Nous avons également collaboré avec des clients et des partenaires, notamment des entreprises, des organismes culturels et médiatiques, ainsi que des établissements d'enseignement.
 
-## Avec qui nous avons travaillé
+## Avec qui avons nous travaillé
 
 Ensemble ou individuellement, nous avons travaillé de cette manière avec des organisations telles que Fab Lab Barcelona, ​​la BBC, le Centre de culture contemporaine de Barcelone (CCCB), Medialab Matadero, le festival Sónar et un large éventail d'universités et d'organismes de recherche.
 
