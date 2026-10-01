@@ -6,4 +6,4 @@ heroHeading: 'Contact'
 translationKey: contact
 ---
 
-Si vous avez une idée, un défi ou un projet sur lequel nous pourrions collaborer, n'hésitez pas à nous contacter. Contactez-nous et commençons !
+Une idée, un défi ou un projet qui requiert nos services ? Contactez-nous et c'est parti !
