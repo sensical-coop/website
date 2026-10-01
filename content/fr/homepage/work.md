@@ -1,9 +1,10 @@
 ---
-title: 'We Help Business Grow'
+title: 'Créativité et Technologie Collaborative au service de notre R&D'
 weight: 1
-background: 'images/kevin-bhagat-461952-unsplash.jpg'
-button: 'Our Work'
-buttonLink: 'work'
+button: 'Ce que nous faisons'
+buttonLink: 'portefeuille'
 ---
 
-We are a very cool coop. Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit.
+Nous avons collaboré avec des entreprises, des projets de recherche, des artistes et des organisations à but non lucratif pour les aider à concevoir, développer et déployer des technologies bénéfiques pour eux, la société et l'environnement.
+
+Notre approche unique allie méthodes collaboratives, créativité et esprit critique aux compétences techniques nécessaires à la réalisation des projets.

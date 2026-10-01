@@ -1,9 +1,10 @@
 ---
+url: 'contact'
 title: 'Parlons-en'
 weight: 2
 background: ''
-button: 'Contactez-nouz'
+button: 'Contactez-nous'
 buttonLink: 'contact'
 ---
 
-Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. ipsum dolor sit amet, et essent mediocritatem quo,
+Une idée, un défi ou un projet qui requiert nos services ? Contactez-nous et c'est parti !
