@@ -1,7 +1,7 @@
 ---
 title: 'Adrien Laveau'
 date: 2018-12-06T09:29:16+10:00
-image: '/images/adrien-laveau.jpg'
+image: '/images/adrien-laveau.png'
 align: right
 member: 'adrien-laveau'
 weight: 1
