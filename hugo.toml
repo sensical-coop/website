@@ -84,7 +84,7 @@ DefaultContentLanguage = "en"
     weight = 11
     [languages.fr.menus]
       [[languages.fr.menus.main]]
-        name = 'Portefeuille'
+        name = 'Services'
         pageRef = '/work'
         weight = 10
       [[languages.fr.menus.main]]
