@@ -1,22 +1,16 @@
-<div class="service-content w-100 px-2 py-4 p-lg-5 bg-gray-100 w-100 border-top border-2 border-black" style="--c:black;">
-  <div class="service-header py-2">
-    <h3 class="container service-title fw-bolder px-0">
-      {{ .Title }}
-    </h3>
-  </div>
-  <div class="container w-100 px-0">
+<article class="work-card">
+  <div class="work-card__meta" aria-hidden="true"></div>
+  <h3 class="work-card__title">{{ .Title }}</h3>
+  {{ with .Params.labels }}
+  <ul class="work-card__labels">
+    {{ range . }}<li>{{ . }}</li>{{ end }}
+  </ul>
+  {{ end }}
   {{ $text := .Content | plainify }}
   {{ $first := index (split $text ".") 0 }}
-    <p class="px-0 fs-5">{{ $first | plainify }}.</p>
-    <div class="mt-3">
-      <a class="sensical-button sensical-button-plus"
-        href="{{ .Permalink }}">
-        <div class="circle-button">
-          <div class="plus">+</div>
-        </div>
-        <p class="button-link-text fs-5">{{ T "Read more" }}</p>
-      </a>
-    </div>
-  </div>
-</div>
-
+  <p class="work-card__text">{{ $first | plainify }}.</p>
+  <a class="sensical-button sensical-button-plus stretched-link" href="{{ .RelPermalink }}">
+    <span class="circle-button" aria-hidden="true"><span class="plus">+</span></span>
+    <span class="button-link-text fs-5">{{ T "Read more" }}<span class="visually-hidden">: {{ .Title }}</span></span>
+  </a>
+</article>

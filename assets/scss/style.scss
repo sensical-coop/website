@@ -1,17 +1,13 @@
 // Font
-@mixin font($font-family, $font-file, $font-style) {
-  @font-face {
-    font-family: $font-family;
-    src: url($font-file+'.ttf') format('truetype');
-    font-weight: normal;
-    font-style: $font-style;
-  }
+// Raleway and Unbounded (fallback title font) are loaded via <link> in baseof.html
+@font-face {
+  font-family: "neo-grotesque-bold";
+  src: url('/fonts/neo-grotesque-bold.woff2') format('woff2'),
+       url('/fonts/neo-grotesque-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@include font("neo-grotesque-bold", '/fonts/neo-grotesque-bold', 'bold');
 
 // Bootstrap
 @import 'bootstrap-variables';
@@ -41,6 +37,9 @@
 @import 'components/hero-image';
 @import 'components/bg';
 @import 'components/language-select';
+@import 'components/work-card';
+@import 'components/banner-keywords';
+@import 'components/lift';
 
 // Pages
 @import 'pages/index';
@@ -48,6 +47,8 @@
 @import 'pages/services/page-services-single';
 @import 'pages/work/page-work-single';
 @import 'pages/about/member';
+@import 'pages/faq';
+@import 'pages/contact';
 
 // Display breakpoints for DEV
 // body:after {

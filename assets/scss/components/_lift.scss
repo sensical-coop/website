@@ -1,0 +1,36 @@
+// "Lift" hover: the element moves up-left and casts a hard offset shadow.
+// Used across the site
+@mixin lift($dx: 2px, $text: null, $shadow: $black) {
+  display: inline-block;
+  // Only the movement animates
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+  &:hover,
+  &:focus-visible {
+    @if $text {
+      color: $text;
+    }
+    text-decoration: none;
+    transform: translate(-$dx, -$dx);
+    text-shadow: ($dx + 1px) ($dx + 1px) 0 $shadow;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+// Header (coral bar): turn white with a black shadow, like the subtitle words
+.header .logo-text {
+  @include lift(2px, $white, $black);
+}
+.main-menu > ul > li > a,
+.main-menu > ul > li.active > a {
+  @include lift(2px, $white, $black);
+}
+
+// Footer (white): stay black with a coral shadow, like the "sensical" letters
+.footer .footer-logo {
+  @include lift(3px, $black, $accent);
+}
+.footer .footer-link {
+  @include lift(2px, $black, $accent);
+}

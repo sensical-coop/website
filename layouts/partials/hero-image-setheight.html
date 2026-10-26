@@ -1,6 +1,10 @@
-<div id="hero" class="hero-image bg-primary hero-image-setheight">
+<div id="hero" class="hero-image bg-primary bg-white-dots hero-image-setheight">
   <div class="container hero-text px-2 px-lg-0">
+    {{ with .eyebrow }}
+    <p class="hero-eyebrow">{{ with $.eyebrowLink }}<a href="{{ . }}">{{ $.eyebrow }}</a>{{ else }}{{ . }}{{ end }}</p>
+    {{ end }}
     <h1 class="ml-0 font-sensical">{{ .heading }}</h1>
-    <p class="fs-3">{{ .subheading }}</p>
+    {{ with .subheading }}<p class="hero-lead">{{ . }}</p>{{ end }}
+    {{ with .keywords }}{{ partial "banner-keywords.html" . }}{{ end }}
   </div>
 </div>

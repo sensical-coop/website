@@ -1,0 +1,114 @@
+// Work cards: numbered, bordered tiles on a light grid section
+.work-grid {
+  background-color: $gray-100;
+  background-image: radial-gradient(circle at 1px 1px, rgba($black, 0.18) 1px, transparent 0);
+  background-size: 40px 40px;
+  border-top: 2px solid $black;
+  border-bottom: 2px solid $black;
+  padding: 40px 0;
+  @include media-breakpoint-up(md) {
+    padding: 80px 0;
+  }
+}
+
+.service-summary {
+  counter-reset: work;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
+}
+
+.work-card {
+  counter-increment: work;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: $white;
+  border: 2px solid $black;
+  padding: 28px 24px 32px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  @include media-breakpoint-up(md) {
+    padding: 40px 40px 44px;
+  }
+
+  // Index number, set in the display face
+  .work-card__meta {
+    margin-bottom: 28px;
+    &::before {
+      content: counter(work, decimal-leading-zero);
+      display: inline-block;
+      font-family: $font-family-sensical;
+      font-size: 1rem;
+      line-height: 1;
+      color: $accent;
+      border-bottom: 2px solid $accent;
+      padding-bottom: 6px;
+    }
+  }
+
+  // What the work involves, joined with the brand's "+"
+  .work-card__labels {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px 0 16px;
+    padding: 0;
+    list-style: none;
+    li {
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-transform: lowercase;
+      color: $secondary;
+      & + li::before {
+        content: "+";
+        color: $accent;
+        margin: 0 8px;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus-within {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0 $black;
+  }
+
+  .work-card__title {
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: $black;
+    margin-bottom: 16px;
+    @include media-breakpoint-up(lg) {
+      font-size: 2.1rem;
+    }
+  }
+
+  .work-card__text {
+    color: $body-text;
+    font-size: 1.125rem;
+    line-height: 1.55;
+    margin-bottom: 28px;
+    flex: 1;
+  }
+
+  .sensical-button {
+    margin-top: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-card {
+    transition: none;
+    &:hover,
+    &:focus-within {
+      transform: none;
+    }
+  }
+}

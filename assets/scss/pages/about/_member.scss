@@ -37,6 +37,9 @@
 
 .member-bio {
     margin-top: 25px;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: $body-text;
 }
 
 .member-card h4 {
@@ -51,6 +54,10 @@
     font-weight: 500;
     margin-bottom: 0px;
     color: var(--md-typeset-color);
+    // Tablet: the name sits in a narrow column next to the photo
+    @include media-breakpoint-between(md, lg) {
+      font-size: 1.25rem;
+    }
 }
 
 .socials-member {

@@ -1,0 +1,40 @@
+// "+ keyword" pills on the black page banners: same pill shape as the buttons and language switcher
+.banner-keywords,
+.content .banner-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  @include media-breakpoint-up(lg) {
+    gap: 10px;
+    margin-top: 36px;
+  }
+  li {
+    margin: 0;
+    border: 2px solid $white;
+    border-radius: $border-radius-pill;
+    padding: 5px 14px;
+    color: $white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    text-transform: lowercase;
+    @include media-breakpoint-up(md) {
+      font-size: 0.95rem;
+      padding: 6px 16px;
+    }
+    &::before {
+      content: "+";
+      color: $accent;
+      margin-right: 6px;
+    }
+    // Keep small screens light: first four only
+    @include media-breakpoint-down(md) {
+      &:nth-child(n + 5) {
+        display: none;
+      }
+    }
+  }
+}

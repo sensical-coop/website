@@ -21,6 +21,8 @@ ul.social {
       background-position: center center;
       background-size: auto;
       display: block;
+      // Keep tap targets >= 24px around the 20px icons
+      padding: 4px;
       span {
         font-size: 24px;
       }

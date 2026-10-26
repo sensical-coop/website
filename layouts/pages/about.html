@@ -3,13 +3,12 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-<!-- {{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}} -->
 
 <div class="bg-primary bg-white-dots strip-full overflow-x-hidden">
   <div class="container bg-primary box" style="--c: #fff">
     <div class="row strip-adaptable-col">
       <div class="col content align-items-start pt-1 text-white">
-        <h2 class="font-sensical text-white">{{ .Params.HeroHeading }}</h2>
+        <h1 class="heading-h2 font-sensical text-white">{{ .Params.HeroHeading }}</h1>
         <p class="pt-5 fs-5">{{ .Content | plainify }}</p>
       </div>
       <!-- <div class="arrow-container">

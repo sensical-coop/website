@@ -54,7 +54,12 @@
   background-size: cover;
 }
 .strip-full {
-  height: 100vh;
+  // Full-screen "slides" on large screens only; on small screens let content set the height
+  padding: 96px 0 64px;
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    padding: 0;
+  }
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -82,7 +87,7 @@ $arrow-head-thickness: $shaft-thickness;
   justify-content: center;
   height: 100%;
   margin-bottom: 1rem;
-  overflow-x: hidden;
+  overflow-x: clip; // clip, not hidden: hidden also clips vertically and cut off lifted pills
 }
 
 .the-arrow {
@@ -182,6 +187,7 @@ $arrow-head-thickness: $shaft-thickness;
   text-decoration: none;
   position: relative;
   transition: all 0.2s;
+  padding: 12px 0;
 
   &:hover {
     color: $accent;
