@@ -28,6 +28,14 @@
 .feature__text {
   flex: 1;
   font-size: inherit;
+  max-width: 46rem;
+  p {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    @include media-breakpoint-up(md) {
+      font-size: 1.25rem;
+    }
+  }
 }
 
 .feature__image {

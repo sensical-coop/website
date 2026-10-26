@@ -26,7 +26,8 @@
       font-weight: $font-weight-light;
     }
   }
-  h2 {
+  h2,
+  h1.heading-h2 {
     font-family: $font-family-heading;
     line-height: 1.1;
     font-weight: 400;
@@ -40,13 +41,7 @@
   // Subheading
   h3 {
     color: black;
-    line-height: 1.4;
-    font-weight: $font-weight-thin;
-    letter-spacing: 1px;
-    @include media-breakpoint-up(md) {
-      line-height: 1.4;
-      letter-spacing: 1.8px;
-      font-weight: $font-weight-thin;
-    }
+    line-height: 1.35;
+    font-weight: 700;
   }
 }

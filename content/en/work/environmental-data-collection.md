@@ -1,5 +1,7 @@
 ---
 title: 'Environmental data collection'
+seoTitle: "Environmental sensing and air quality monitoring | Sensical"
+description: "Open, affordable environmental monitoring: air quality sensors, Meshtastic mesh networks, calibration and data validation, from first prototype to deployment."
 draft: false
 featured: true
 weight: 2
@@ -7,6 +9,10 @@ heroHeading: 'Environmental data collection'
 heroSubHeading: ''
 section_title: 'Work'
 translationKey: environmentaldatacollection
+labels:
+- "Sensors"
+- "Data"
+- "Mesh networks"
 related_pages:
 - co-creation
 ---

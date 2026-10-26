@@ -1,5 +1,7 @@
 ---
 title: 'Recopilació de dades ambientals'
+seoTitle: "Sensors ambientals i monitoratge de l'aire | Sensical"
+description: "Monitoratge ambiental obert i assequible: sensors de qualitat de l'aire, xarxes mesh Meshtastic, calibratge i validació de dades, del prototip al desplegament."
 draft: false
 featured: true
 weight: 2
@@ -7,6 +9,13 @@ heroHeading: 'Recopilació de dades ambientals'
 heroSubHeading: ''
 button: "Llegir més"
 section_title: 'Portfolio'
+translationKey: environmentaldatacollection
+aliases:
+- /work/recopilacio-dades-ambientals/
+labels:
+- "Sensors"
+- "Dades"
+- "Xarxes mesh"
 related_pages:
 - co-creacio
 ---
@@ -82,6 +91,6 @@ Oferim una àmplia gamma de productes i serveis entorn de solucions mediambienta
 
 ## Construïm-ho {{< accent >}}junts{{< /accent >}}
 
-Tenim una experiència en particular treballant al costat d'investigadors i grups de científics ciutadans per a ajudar a definir els seus objectius de recerca, desplegar sensors, analitzar dades i prendre mesures sobre els resultats, i ens encanta treballar de manera horitzontal i participativa. Llegeixi més sobre els nostres mètodes en la nostra pàgina de [co-creació](/ca/work/co-creacio/).
+Tenim una experiència en particular treballant al costat d'investigadors i grups de científics ciutadans per a ajudar a definir els seus objectius de recerca, desplegar sensors, analitzar dades i prendre mesures sobre els resultats, i ens encanta treballar de manera horitzontal i participativa. Llegeixi més sobre els nostres mètodes en la nostra pàgina de [co-creació](/ca/portfolio/co-creacio/).
 
 Contacti'ns en: [info@sensical.es](mailto:info@sensical.es)

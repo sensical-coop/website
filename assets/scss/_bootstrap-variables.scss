@@ -19,6 +19,9 @@ $white: #ffffff;
 $black: #000000;
 $primary: $black;
 $secondary: #43454d;
+// Running text: near-black for contrast on white and gray-100
+$body-text: #1c1c1c;
+$body-color: $body-text;
 
 // Links
 $link-color: $primary;

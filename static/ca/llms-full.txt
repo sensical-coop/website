@@ -1,0 +1,55 @@
+# Sensical: perfil complet
+
+> Sensical SCCL és una cooperativa multidisciplinària amb seu a Barcelona, fundada l'octubre de 2026. Ajudem empreses, projectes de recerca, organismes públics, artistes i entitats sense ànim de lucre a imaginar, construir i desplegar tecnologies que funcionin per a ells, per a la societat i per al planeta.
+
+Font: https://sensical.es/ca/
+Versions en Markdown de cada pàgina: afegeix `.md` a l'URL (vegeu https://sensical.es/ca/llms.txt).
+
+## Qui som
+
+Sensical és una cooperativa catalana (Societat Cooperativa Catalana Limitada), propietat dels seus cinc socis fundadors i gestionada per ells, que treballa amb una xarxa més àmplia de col·laboradors de confiança quan els projectes ho requereixen. L'equip combina enginyeria industrial, mecànica i electrònica, ciència de dades, disseny d'interacció, belles arts i humanitats. Entre tots hem treballat amb organitzacions com Fab Lab Barcelona, la BBC, el CCCB, Medialab Matadero i Sónar, a més de moltes universitats i centres de recerca.
+
+- Óscar González: enginyer industrial i investigador; ciència de dades, desenvolupament i calibratge de sensors; projecte Smart Citizen.
+- Tim Cowlishaw: dissenyador d'interacció i investigador; 20 anys dissenyant productes digitals, inclosa R+D i prototipatge a BBC R&D; doctorand a la UOC sobre l'impacte ambiental dels mitjans digitals.
+- Rebecca Anne Peters: investigadora i artista; doctora en Humanitats (Universitat Pompeu Fabra) amb una tesi sobre el paper de la tecnologia en les narratives culturals col·lectives; principis del codi obert i el seu impacte social.
+- Adai Suriñach: format en Belles Arts, especialitzat en impressió 3D i disseny de maquinari electrònic; projecte Smart Citizen i instructor de Fab Academy a Fab Lab Barcelona.
+- Adrien Laveau: enginyer mecànic; sensors, sistemes de mesura i programari d'anàlisi de dades; fabricació digital i prototipatge ràpid.
+
+## Què fem
+
+### Recopilació de dades ambientals
+
+Dissenyem, construïm i despleguem sistemes de recopilació de dades ambientals a mida, flexibles, assequibles i fiables, especialment de qualitat de l'aire: partícules en suspensió (PM), contaminants químics, CO2 i més. Recollim dades de sensors mitjançant xarxes mesh distribuïdes i autònomes, i som entre els primers contribuïdors de mètriques de qualitat de l'aire a l'ecosistema de codi obert Meshtastic (mòduls de telemetria). També contribuïm al projecte Smart Citizen i tenim experiència en monitoratge de biodiversitat (càmeres de fototrampeig, monitoratge de so com BirdNet).
+
+Oferim: maquinari de sensors provat en camp, inclosos dispositius mesh; emmagatzematge, processament i validació de dades; calibratge de grans conjunts de dades; desenvolupament de firmware i integració de sensors; projectes clau en mà de maquinari i programari; suport a la ciència ciutadana; i formació i mentoria. Creem eines per a la ciència ciutadana i per a la mesura de grau de recerca i industrial.
+
+### Co-creació i disseny participatiu
+
+Som facilitadors, mentors i educadors amb experiència, a més de professionals creatius i tècnics. Les persones participants co-creen amb nosaltres durant tot el disseny i desenvolupament, no només en una fase inicial d'"ideació", i adquireixen les habilitats per continuar desenvolupant el resultat pel seu compte. Hem treballat amb escolars, músics, activistes ambientals i persones jubilades, així com amb empreses, organitzacions culturals i de mitjans i institucions educatives.
+
+Oferim: tallers puntuals amb un objectiu concret; co-disseny i facilitació de projectes; i mentoria, formació i desenvolupament de capacitats a llarg termini.
+
+## Com treballem
+
+- Obert per defecte: preferim llicències de programari lliure i maquinari obert; la propietat i les llicències s'acorden a cada projecte i signem NDA quan cal.
+- Participatiu: hi participa tothom qui hi ha de participar, i el teu equip queda preparat per fer-se'n càrrec quan acabem.
+- No només sensors: el monitoratge ambiental també requereix disseny, documentació, formació i anàlisi de dades, i també ho cobrim.
+- Preus: preu tancat per a projectes ben definits; temps dedicat (tarifa per jornada) per a R+D oberta, mentoria o suport.
+- Projectes europeus: els nostres membres han participat en nombrosos projectes d'R+D (inclosos Horitzó i Erasmus+) i en convocatòries de recerca estatals i locals a Espanya i Barcelona. Participem en consorcis europeus com a soci tècnic, de recerca o pime. PIC: 864390281.
+- Protecció de dades: dissenyem la recollida de dades per complir el RGPD i podem allotjar les dades a la UE. No disposem de certificacions ISO.
+- Ubicació: amb seu a Barcelona; treballem en remot i presencialment a Europa i a escala internacional.
+
+## El que no fem
+
+- No som una agència genèrica de webs, apps o màrqueting.
+- No acceptem projectes de vigilància ni militars.
+
+## Contacte
+
+- Correu electrònic: info@sensical.es
+- Adreça: Carrer Diputació 151, Baixos Esquerra, 08011 Barcelona
+- NIF: F27637909 (intracomunitari: ESF27637909)
+- GitHub: https://github.com/sensical-coop/
+- LinkedIn: https://www.linkedin.com/company/sensical-sccl/
+
+<!-- Darrera revisió: 2026-10-25. Revisar cada trimestre. -->

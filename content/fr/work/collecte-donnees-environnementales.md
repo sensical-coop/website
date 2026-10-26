@@ -1,6 +1,7 @@
 ---
-url: 'collecte-donnees-environnementales'
 title: 'Collecte de données environnementales'
+seoTitle: "Capteurs environnementaux et qualité de l'air | Sensical"
+description: "Mesure environnementale ouverte et abordable : capteurs de qualité de l'air, réseaux mesh Meshtastic, étalonnage et validation des données, du prototype au terrain."
 draft: false
 featured: true
 weight: 2
@@ -8,6 +9,13 @@ heroHeading: 'Collecte de données environnementales'
 heroSubHeading: ''
 button: "En savoir plus"
 section_title: 'Portefeuille'
+translationKey: environmentaldatacollection
+aliases:
+- /collecte-donnees-environnementales/
+labels:
+- "Capteurs"
+- "Données"
+- "Réseaux mesh"
 related_pages:
 - co-creation
 ---
@@ -42,7 +50,7 @@ Nous développons des outils pour la science participative mais aussi pour l'ind
 
 ## Fiers collaborateurs de Meshtastic
 
-Nous sommes fiers de compter parmi les premiers contributeurs à l'écosystème open source [Meshastic](https://meshtastic.org) dans le domaine de la qualité de l'air.
+Nous sommes fiers de compter parmi les premiers contributeurs à l'écosystème open source [Meshtastic](https://meshtastic.org) dans le domaine de la qualité de l'air.
 
 Notre vaste expérience des projets utilisant des capteurs à bas coût nous permet de faciliter la collecte de données environnementales et d'indicateurs de pollution atmosphérique tels que les **particules fines (PM), les polluants chimiques, le CO2** et bien d'autres, dans des réseau décentralisés et maillés.
 
@@ -61,7 +69,7 @@ Nous reconnaissons que la collecte de données environnementales implique bien p
 
 ## Ce que nous vous offrons
 
-Nous proposons une large gamme de produits et services liés aux solutions environnementales, notamment :
+Nous proposons une large gamme de produits et services liés aux solutions environnementales, notamment :
 
 {{< feature
     image="images/drawings/electrochemical.svg"
@@ -82,6 +90,6 @@ Nous proposons une large gamme de produits et services liés aux solutions envir
 
 ## Construisons {{< accent >}}ensemble{{< /accent >}}
 
-Nous collaborons avec des chercheurs, des groupes de sciences participatives et des industriels pour les aider à définir leurs objectifs de recherche, déployer des capteurs, analyser les données et prendre des décisions. Nous privilégions le travail collaboratif et transversal. Découvrez nos méthodes sur notre page dédiée à la [co-création](/fr/co-creation/).
+Nous collaborons avec des chercheurs, des groupes de sciences participatives et des industriels pour les aider à définir leurs objectifs de recherche, déployer des capteurs, analyser les données et prendre des décisions. Nous privilégions le travail collaboratif et transversal. Découvrez nos méthodes sur notre page dédiée à la [co-création](/fr/services/co-creation/).
 
-Contactez-nous à : [info@sensical.es](mailto:info@sensical.es)
+Contactez-nous à : [info@sensical.es](mailto:info@sensical.es)

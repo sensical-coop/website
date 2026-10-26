@@ -1,0 +1,66 @@
+{{- /* Organization JSON-LD built from data/organization.yaml, data/contact.yaml, data/social.json and the team bios */ -}}
+{{- $org := hugo.Data.organization -}}
+{{- $contact := hugo.Data.contact -}}
+{{- $orgID := printf "%s#organization" hugo.Sites.Default.Home.Permalink -}}
+{{- $about := site.GetPage "/pages/about" -}}
+
+{{- $people := slice -}}
+{{- with $about -}}
+  {{- range .Resources.ByType "page" -}}
+    {{- $slug := .Params.member -}}
+    {{- $person := dict
+      "@type" "Person"
+      "@id" (printf "%s#person-%s" hugo.Sites.Default.Home.Permalink $slug)
+      "name" .Title
+      "description" (.Content | plainify | strings.TrimSpace)
+      "worksFor" (dict "@id" $orgID)
+    -}}
+    {{- with .Params.image }}{{ with resources.Get (strings.TrimPrefix "/" .) -}}
+      {{- $size := int (math.Min 400 .Width .Height) -}}
+      {{- $person = merge $person (dict "image" (.Fill (printf "%dx%d Center webp q80" $size $size)).Permalink) -}}
+    {{- end }}{{ end -}}
+    {{- range hugo.Data.member -}}
+      {{- if eq .name $slug -}}
+        {{- $links := slice -}}
+        {{- range .socials }}{{ if not (strings.Contains .link "discord.com") }}{{ $links = $links | append .link }}{{ end }}{{ end -}}
+        {{- $person = merge $person (dict "sameAs" $links) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $people = $people | append $person -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $founders := slice -}}
+{{- $members := slice -}}
+{{- range $people -}}
+  {{- $slug := strings.TrimPrefix "person-" (index (split (index . "@id") "#") 1) -}}
+  {{- if in $org.founders $slug }}{{ $founders = $founders | append . }}{{ else }}{{ $members = $members | append . }}{{ end -}}
+{{- end -}}
+
+{{- $sameAs := slice -}}
+{{- range hugo.Data.social }}{{ $sameAs = $sameAs | append .link }}{{ end -}}
+
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "@id" $orgID
+  "name" $org.name
+  "legalName" $org.legalName
+  "alternateName" $org.alternateName
+  "url" hugo.Sites.Default.Home.Permalink
+  "logo" (absURL "images/logo/sensical-logo.png")
+  "description" site.Home.Description
+  "email" $contact.email
+  "vatID" $contact.VATINT
+  "address" (merge (dict "@type" "PostalAddress") $org.address)
+  "contactPoint" (dict "@type" "ContactPoint" "contactType" "customer support" "email" $contact.email "availableLanguage" (slice "en" "es" "ca" "fr"))
+  "foundingDate" $org.foundingDate
+  "foundingLocation" (dict "@type" "Place" "name" $org.foundingLocation)
+  "numberOfEmployees" (dict "@type" "QuantitativeValue" "minValue" $org.numberOfEmployees.min "maxValue" $org.numberOfEmployees.max)
+  "areaServed" $org.areaServed
+  "knowsAbout" $org.knowsAbout
+  "sameAs" $sameAs
+-}}
+{{- with $founders }}{{ $schema = merge $schema (dict "founder" .) }}{{ end -}}
+{{- with $members }}{{ $schema = merge $schema (dict "member" .) }}{{ end -}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

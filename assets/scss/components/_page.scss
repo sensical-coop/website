@@ -4,5 +4,24 @@
   flex-direction: column;
   .wrapper {
     flex: 1;
+    // Full-bleed elements (100vw alerts, offset dividers) must not cause horizontal scroll
+    overflow-x: clip;
   }
+}
+
+body {
+  // Raleway defaults to old-style figures; lining figures read better for dates, codes and numbers
+  font-variant-numeric: lining-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: $accent;
+  color: $black;
+}
+
+:focus-visible {
+  outline: 3px solid $accent;
+  outline-offset: 3px;
 }

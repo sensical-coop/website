@@ -1,19 +1,6 @@
-{{ define "title" }}{{ .Site.Title }}{{ end}}
 {{ define "header_css" }}{{ end }}
 {{ define "body_classes" }}page-home{{ end }}
 {{ define "header_classes" }}header-transparent{{ end }}
-
-{{ define "meta_tags" }}
-<meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_description }}" />
-<meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
-<meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
-<meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
-<meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
-<meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
-<meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
-<meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
-<meta name="twitter:creator" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}" />
-{{ end }}
 
 {{ define "main" }}
 
@@ -24,7 +11,7 @@
 {{ $reusablePages := sort $reusablePages ".Params.weight" }}
 {{ range first 1 $reusablePages }}
 <div id="home" class="bg-primary strip-full bg-accent-dots">
-    <div class="container bg-primary box" style="--c:#FF495F; --b: 3px;">
+    <div class="container bg-primary panel panel--dark">
       <div class="row strip-adaptable-col">
         <div class="col align-items-start px-2 p-md-4 p-lg-4">
           <h2 class="text-white landing-title pb-md-2">{{ .Title }}</h2>
@@ -40,25 +27,28 @@
       </div>
     </div>
   </div>
-</div>
 {{ end }}
 
 {{ $work := where (where .Site.RegularPages "Type" "work") ".Params.featured" true }}
 {{if gt (len $work) 0}}
 <div id="{{ T "work" }}" class="bg-accent">
   <div class="justify-content-center">
-    <div class="col-12 content mb-5 mt-5">
+    <div class="col-12 content py-4 py-md-5">
       <h2 class="container text-black fw-bolder text-center text-lg-start px-0">{{ with .Site.GetPage "/work/" }}{{ .Title | default "What we do" }}{{ end }}</h2>
     </div>
-    <div class="service-summary">
-    {{ range first 6 (sort $work ".Params.weight") }}
-      {{ .Render "summary" }}
-    {{ end }}
+    <div class="work-grid">
+      <div class="container px-2 px-lg-0">
+        <div class="service-summary">
+        {{ range first 6 (sort $work ".Params.weight") }}
+          {{ .Render "summary" }}
+        {{ end }}
+        </div>
+      </div>
     </div>
     <div class="py-4 d-flex align-items-center text-center w-100 full-width-link">
       {{ with .Site.GetPage "/work/" }}
-      <a class="fs-1 fw-bolder container" hreflang="{{ .Site.LanguagePrefix }}" href="{{ .Params.url }}">
-        {{ .Params.button | T "See all our work" }}
+      <a class="fs-1 fw-bolder container" href="{{ .RelPermalink }}">
+        {{ .Params.button | T "See all our work" }} <span aria-hidden="true">→</span>
       </a>
       {{ end }}
     </div>

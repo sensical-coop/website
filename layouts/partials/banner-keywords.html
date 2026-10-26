@@ -1,0 +1,8 @@
+{{- /* Outlined "+ keyword" pills for page banners. Context: a list of strings */ -}}
+{{- with . }}
+<ul class="banner-keywords" aria-label="{{ T "What we work on" }}">
+  {{- range . }}
+  <li>{{ . }}</li>
+  {{- end }}
+</ul>
+{{- end }}

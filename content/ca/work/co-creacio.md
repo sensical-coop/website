@@ -1,5 +1,7 @@
 ---
 title: 'Co-creació i disseny participatiu'
+seoTitle: "Co-creació i disseny participatiu per a equips | Sensical"
+description: "Co-creació i disseny participatiu pràctic: tallers, co-disseny de projectes i mentoria a llarg termini perquè el teu equip faci seva la seva tecnologia."
 draft: false
 featured: true
 weight: 3
@@ -7,6 +9,13 @@ heroHeading: 'Co-creació i disseny participatiu'
 heroSubHeading: ''
 button: "Llegir més"
 section_title: 'Portfolio'
+translationKey: cocreation
+aliases:
+- /work/co-creacio/
+labels:
+- "Tallers"
+- "Co-disseny"
+- "Mentoria"
 related_pages:
 - recopilacio-dades-ambientals
 ---

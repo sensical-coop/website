@@ -1,5 +1,7 @@
 ---
 title: 'About Sensical'
+seoTitle: "About Sensical: the team behind our open tech cooperative"
+description: "Meet Sensical, a Barcelona cooperative of engineers, designers and researchers working on open hardware, environmental sensing and citizen science projects."
 date: 2018-12-06T09:29:16+10:00
 layout: 'about'
 heroHeading: 'About Sensical'

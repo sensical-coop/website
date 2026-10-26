@@ -1,0 +1,64 @@
+.contact-grid {
+  display: grid;
+  gap: 48px;
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 80px;
+    align-items: start;
+  }
+}
+
+.contact-intro p {
+  font-size: inherit;
+  line-height: 1.45;
+  max-width: 34rem;
+}
+
+.contact-email {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: $font-family-sensical;
+  font-size: 1.6rem;
+  color: $black;
+  text-decoration: underline;
+  text-decoration-color: $accent;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+  overflow-wrap: anywhere;
+  @include media-breakpoint-up(md) {
+    font-size: 2.6rem;
+  }
+  &:hover {
+    color: $accent;
+    text-decoration-color: $black;
+  }
+}
+
+.contact-divider {
+  margin-top: 64px;
+  @include media-breakpoint-up(lg) {
+    margin-top: 96px;
+  }
+}
+
+.contact-details {
+  border-top: 2px solid $black;
+  margin: 0;
+  dt {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $secondary;
+    padding-top: 18px;
+  }
+  dd {
+    font-size: 1.125rem;
+    margin: 4px 0 0;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba($black, 0.2);
+  }
+  .contact-address {
+    white-space: pre-line;
+  }
+}

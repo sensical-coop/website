@@ -1,0 +1,55 @@
+# Sensical: perfil completo
+
+> Sensical SCCL es una cooperativa multidisciplinar con sede en Barcelona, fundada en octubre de 2026. Ayudamos a empresas, proyectos de investigación, organismos públicos, artistas y entidades sin ánimo de lucro a imaginar, construir y desplegar tecnologías que funcionen para ellos, para la sociedad y para el planeta.
+
+Fuente: https://sensical.es/es/
+Versiones en Markdown de cada página: añade `.md` a la URL (ver https://sensical.es/es/llms.txt).
+
+## Quiénes somos
+
+Sensical es una cooperativa catalana (Societat Cooperativa Catalana Limitada), propiedad de sus cinco socios fundadores y gestionada por ellos, que trabaja con una red más amplia de colaboradores de confianza cuando los proyectos lo requieren. El equipo combina ingeniería industrial, mecánica y electrónica, ciencia de datos, diseño de interacción, bellas artes y humanidades. Entre todos hemos trabajado con organizaciones como Fab Lab Barcelona, la BBC, el CCCB, Medialab Matadero y Sónar, además de muchas universidades y centros de investigación.
+
+- Óscar González: ingeniero industrial e investigador; ciencia de datos, desarrollo y calibración de sensores; proyecto Smart Citizen.
+- Tim Cowlishaw: diseñador de interacción e investigador; 20 años diseñando productos digitales, incluida I+D y prototipado en BBC R&D; doctorando en la UOC sobre el impacto ambiental de los medios digitales.
+- Rebecca Anne Peters: investigadora y artista; doctora en Humanidades (Universitat Pompeu Fabra) con una tesis sobre el papel de la tecnología en las narrativas culturales colectivas; principios del código abierto y su impacto social.
+- Adai Suriñach: formado en Bellas Artes, especializado en impresión 3D y diseño de hardware electrónico; proyecto Smart Citizen e instructor de Fab Academy en Fab Lab Barcelona.
+- Adrien Laveau: ingeniero mecánico; sensores, sistemas de medida y software de análisis de datos; fabricación digital y prototipado rápido.
+
+## Qué hacemos
+
+### Recopilación de datos ambientales
+
+Diseñamos, construimos y desplegamos sistemas de recopilación de datos ambientales a medida, flexibles, asequibles y fiables, especialmente de calidad del aire: partículas en suspensión (PM), contaminantes químicos, CO2 y más. Recogemos datos de sensores mediante redes mesh distribuidas y autónomas, y estamos entre los primeros contribuidores de métricas de calidad del aire al ecosistema de código abierto Meshtastic (módulos de telemetría). También contribuimos al proyecto Smart Citizen y tenemos experiencia en monitorización de biodiversidad (cámaras de fototrampeo, monitorización de sonido como BirdNet).
+
+Ofrecemos: hardware de sensores probado en campo, incluidos dispositivos mesh; almacenamiento, procesado y validación de datos; calibración de grandes conjuntos de datos; desarrollo de firmware e integración de sensores; proyectos llave en mano de hardware y software; apoyo a la ciencia ciudadana; y formación y mentoría. Creamos herramientas para ciencia ciudadana y para la medición de grado de investigación e industrial.
+
+### Co-creación y diseño participativo
+
+Somos facilitadores, mentores y educadores con experiencia, además de profesionales creativos y técnicos. Las personas participantes co-crean con nosotros durante todo el diseño y desarrollo, no solo en una fase inicial de "ideación", y adquieren las habilidades para seguir desarrollando el resultado por su cuenta. Hemos trabajado con escolares, músicos, activistas ambientales y personas jubiladas, así como con empresas, organizaciones culturales y de medios e instituciones educativas.
+
+Ofrecemos: talleres puntuales con un objetivo concreto; co-diseño y facilitación de proyectos; y mentoría, formación y desarrollo de capacidades a largo plazo.
+
+## Cómo trabajamos
+
+- Abierto por defecto: preferimos licencias de software libre y hardware abierto; la propiedad y las licencias se acuerdan en cada proyecto y firmamos NDA cuando hace falta.
+- Participativo: participa todo el mundo que tiene que participar, y tu equipo queda preparado para hacerse cargo cuando terminamos.
+- No solo sensores: la monitorización ambiental también requiere diseño, documentación, formación y análisis de datos, y también lo cubrimos.
+- Precios: precio cerrado para proyectos bien definidos; tiempo dedicado (tarifa por jornada) para I+D abierta, mentoría o soporte.
+- Proyectos europeos: nuestros miembros han participado en numerosos proyectos de I+D (incluidos Horizonte y Erasmus+) y en convocatorias de investigación nacionales y locales en España y Barcelona. Participamos en consorcios europeos como socio técnico, de investigación o pyme. PIC: 864390281.
+- Protección de datos: diseñamos la recogida de datos para cumplir con el RGPD y podemos alojar los datos en la UE. No disponemos de certificaciones ISO.
+- Ubicación: con sede en Barcelona; trabajamos en remoto y presencialmente en Europa y a nivel internacional.
+
+## Lo que no hacemos
+
+- No somos una agencia genérica de webs, apps o marketing.
+- No aceptamos proyectos de vigilancia ni militares.
+
+## Contacto
+
+- Correo electrónico: info@sensical.es
+- Dirección: Carrer Diputació 151, Baixos Esquerra, 08011 Barcelona, España
+- CIF: F27637909 (intracomunitario: ESF27637909)
+- GitHub: https://github.com/sensical-coop/
+- LinkedIn: https://www.linkedin.com/company/sensical-sccl/
+
+<!-- Última revisión: 2026-10-25. Revisar cada trimestre. -->

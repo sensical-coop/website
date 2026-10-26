@@ -1,0 +1,36 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-pages-faq{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+{{ partial "hero-image-setheight.html" (dict "heading" .Params.heroHeading "subheading" .Params.heroSubHeading) }}
+<div class="faq-section">
+  <div class="container px-2 px-lg-0">
+    <div class="faq-layout">
+      <div class="faq-list">
+        {{ with .Content }}<div class="faq-intro">{{ . }}</div>{{ end }}
+        {{- /* Native <details>: keyboard accessible, works without JS, answers stay in the HTML */}}
+        {{ range $i, $f := .Params.faqs }}
+        <details class="faq-item"{{ if eq $i 0 }} open{{ end }}>
+          <summary>
+            <span class="faq-num" aria-hidden="true">{{ printf "%02d" (add $i 1) }}</span>
+            <h2 class="faq-q">{{ $f.q }}</h2>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">{{ $f.a | markdownify }}</div>
+        </details>
+        {{ end }}
+      </div>
+      <aside class="faq-aside">
+        <p class="faq-aside__title">{{ T "FAQ more title" }}</p>
+        <p class="faq-aside__text">{{ T "FAQ more text" }}</p>
+        {{ with hugo.Data.contact.email }}
+        <a class="button sensical-button" href="mailto:{{ . }}">
+          <span class="button-link-text">{{ T "FAQ more button" }}</span>
+        </a>
+        {{ end }}
+      </aside>
+    </div>
+  </div>
+</div>
+{{ end }}

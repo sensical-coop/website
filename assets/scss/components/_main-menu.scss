@@ -20,20 +20,24 @@
         &:hover {
           // background: $navbar-dark-hover-color;
           color: $white;
-          transition: $nav-link-transition;
           text-decoration: none;
           text-underline-offset: 5px;
+        }
+        span {
+          border-bottom: 2px solid transparent;
+          padding-bottom: 2px;
         }
       }
       &.active {
         > a {
           // background: $navbar-dark-hover-color;
-          color: $white;
+          color: $black;
+          span {
+            border-bottom-color: $black;
+          }
 
           &:hover {
             text-decoration: none;
-            // background: $primary;
-            transition: all 225ms ease-in 0s;
           }
         }
       }

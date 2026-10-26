@@ -1,0 +1,29 @@
+# Sensical
+
+> Sensical SCCL is a multidisciplinary cooperative based in Barcelona, Spain. We are a group of engineers, designers and researchers who imagine, build and deploy open technology with companies, research projects, public bodies, artists and non-profits: environmental sensing systems, open hardware and software, and participatory, co-created R&D.
+
+Sensical is a Catalan cooperative (Societat Cooperativa Catalana Limitada) founded in October 2026 by five members, working with a network of collaborators. We work remotely and on site, across Europe and internationally. We default to open-source software and open hardware, with licensing agreed per project. Contact: info@sensical.es.
+
+Every page listed below has a clean Markdown version: append `.md` to the page URL without the trailing slash (for example https://sensical.es/work/co-creation/ is https://sensical.es/work/co-creation.md). The full profile is at https://sensical.es/llms-full.txt. Spanish, Catalan and French versions: https://sensical.es/es/llms.txt, https://sensical.es/ca/llms.txt and https://sensical.es/fr/llms.txt.
+
+## Work
+
+- [Environmental data collection](https://sensical.es/work/environmental-data-collection.md): Open, affordable air quality and environmental monitoring: sensors, Meshtastic mesh networks, calibration, data validation and deployment.
+- [Co-creation and participatory design](https://sensical.es/work/co-creation.md): Workshops, project co-design and long-term mentoring that involve your team throughout design and development.
+
+## Company
+
+- [About Sensical](https://sensical.es/about.md): Who we are and the team's backgrounds.
+- [Frequently asked questions](https://sensical.es/faq.md): Who we work with, how projects start, pricing, IP and licences, EU-funded projects, GDPR.
+- [Contact](https://sensical.es/contact.md): Email, address, EU PIC and VAT number.
+
+## What we don't do
+
+- We are not a generic web, app or marketing agency.
+- We do not take on surveillance or military projects.
+
+## Optional
+
+- [Full profile](https://sensical.es/llms-full.txt): Methods, differentiators and how we work, in more detail.
+
+<!-- Last reviewed: 2026-10-25. Review quarterly. -->

@@ -1,5 +1,9 @@
 .hero-full {
   height: 100vh;
+  height: 100svh;
+  min-height: 560px;
+  background-image: radial-gradient(circle at 1px 1px, rgba($black, 0.22) 1px, transparent 0);
+  background-size: 40px 40px;
   position: relative;
   padding-top: 60px;
   .container {
@@ -16,6 +20,7 @@
     height: inherit;
   }
   .hero-components{
+    z-index: 1;
     position: absolute;
     bottom: 3vh;
     width: 100%;
@@ -61,10 +66,53 @@
       }
     }
   }
+  // "sensical" wordmark: each letter lifts with a hard offset shadow on hover
+  .hero-wordmark {
+    .hero-letter {
+      display: inline-block;
+      transition: transform 0.2s ease, text-shadow 0.2s ease;
+      &:hover {
+        transform: translate(-4px, -4px);
+        text-shadow: 6px 6px 0 $accent;
+      }
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-wordmark .hero-letter {
+      transition: none;
+    }
+  }
+
+  // Subtitle under the band
+  .hero-statement.container {
+    display: block;
+    height: auto;
+    padding-bottom: 0;
+    font-weight: 500;
+    line-height: 1.45 !important;
+    // Words lift on hover like the wordmark letters
+    .hero-word {
+      display: inline-block;
+      transition: transform 0.2s ease, text-shadow 0.2s ease;
+      &:hover {
+        color: $white;
+        transform: translate(-3px, -3px);
+        text-shadow: 3px 3px 0 $black;
+      }
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-statement .hero-word {
+      transition: none;
+    }
+  }
   .hero-down {
     flex: 0;
     width: 100%;
     text-align: center;
+    a {
+      display: inline-block;
+    }
     fill: $black;
     opacity: 0.4;
     &:hover {
@@ -100,21 +148,61 @@
   background-color: $accent;
 }
 .hero-image-setheight {
-  height: 250px;
+  padding-top: 60px + 80px;
+  padding-bottom: 48px;
+  border-bottom: 2px solid $black;
   @include media-breakpoint-up(lg) {
-    height: 460px;
+    padding-top: 60px + 140px;
+    padding-bottom: 72px;
   }
   .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     color: $white;
-    height: 100%;
-    padding-bottom: 40px;
     h1 {
-      @include media-breakpoint-up(lg) {
-        font-size: $h1-font-size *2;
+      // Never split words
+      font-size: clamp(1.5rem, 7.2vw, 2.5rem);
+      line-height: 1.05;
+      margin-bottom: 0;
+      hyphens: manual;
+      text-wrap: balance;
+      @include media-breakpoint-up(md) {
+        font-size: clamp(2.5rem, 6.2vw, 3.75rem);
       }
+      @include media-breakpoint-up(lg) {
+        font-size: $h1-font-size * 2;
+      }
+    }
+  }
+  .hero-eyebrow {
+    color: $accent;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    a {
+      display: inline-block;
+      padding: 6px 0;
+      color: inherit;
+      text-decoration: none;
+      &::before {
+        content: "\2190\00a0"; // back to section
+      }
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .hero-lead {
+    color: rgba($white, 0.8);
+    font-size: 1.25rem;
+    line-height: 1.45;
+    margin: 24px 0 0;
+    max-width: 40rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.5rem;
     }
   }
 }

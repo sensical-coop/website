@@ -1,0 +1,56 @@
+// Panels: solid-bordered boxes, the same frame as the work cards and FAQ questions.
+// They replace the old corner-bracket boxes. Not links, so no lift on hover.
+.panel {
+  background: $white;
+  border: 2px solid $black;
+  padding: 24px;
+  @include media-breakpoint-up(md) {
+    padding: 40px 48px;
+  }
+}
+
+// On black sections: white frame with a coral offset shadow (like an open FAQ question)
+.panel--dark {
+  background: $black;
+  border-color: $white;
+  box-shadow: 8px 8px 0 $accent;
+  // Phones: these panels are also the .container, so inset them to keep the
+  // frame and the shadow on screen
+  @include media-breakpoint-down(sm) {
+    width: auto;
+    margin-left: 12px;
+    margin-right: 20px;
+  }
+}
+
+// Big left-aligned section heading, like "What we do" on the home page
+.section-title {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: $black;
+  margin-bottom: 32px;
+  @include media-breakpoint-up(md) {
+    font-size: 4rem;
+    margin-bottom: 56px;
+  }
+}
+
+// About: team members as panels, two columns like the work cards
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
+}
+
+// About hero title inside the dark panel: scale on phones so words never overflow
+.panel--dark h1.heading-h2 {
+  @include media-breakpoint-down(md) {
+    font-size: clamp(1.9rem, 9.5vw, 3rem);
+  }
+}

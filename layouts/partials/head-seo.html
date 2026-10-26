@@ -1,0 +1,40 @@
+{{- /* Per-page SEO meta: title, description, canonical, hreflang, Open Graph */ -}}
+{{- $title := .Params.seoTitle | default (cond .IsHome site.Title (printf "%s | Sensical" (cond (eq .Kind "404") (T "Page not found") .Title))) -}}
+{{- $description := .Description | default (.Summary | plainify | strings.TrimSpace | truncate 160) | default site.Home.Description -}}
+{{- $image := .Params.og_image | default site.Params.og_image | absURL -}}
+{{- $ogLocales := dict "en" "en_GB" "es" "es_ES" "ca" "ca_ES" "fr" "fr_FR" -}}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+{{- if eq .Kind "404" }}
+<meta name="robots" content="noindex">
+{{- else }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{- if eq .Language.Lang hugo.Sites.Default.Language.Lang }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- end }}
+{{- end }}
+{{- end }}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $image }}">
+{{- if not .Params.og_image }}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ site.Title }}">
+{{- end }}
+<meta property="og:locale" content="{{ index $ogLocales .Language.Lang }}">
+{{- range .Translations }}
+<meta property="og:locale:alternate" content="{{ index $ogLocales .Language.Lang }}">
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+{{- if eq .Layout "faq" }}
+{{ partial "schema-faq.html" . }}
+{{- end }}
+{{- if or .IsHome (eq .Layout "about") }}
+{{ partial "schema-organization.html" . }}
+{{- end }}

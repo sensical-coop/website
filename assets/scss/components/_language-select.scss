@@ -1,14 +1,62 @@
 .language-select {
   display: none;
-  border: 0px !important;
+  position: relative;
+  margin-left: 12px;
   @include media-breakpoint-up(md) {
     display: block;
   }
-  .button-language {
-    border: 0px !important;
-    font-weight: bold;
-    &:active {
-      border: 0px !important;
+
+  .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: 2px solid $black;
+    border-radius: $border-radius-pill;
+    padding: 4px 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $black;
+    cursor: pointer;
+    &::after {
+      margin-left: 2px;
+    }
+    &:hover,
+    &[aria-expanded="true"] {
+      background: $black;
+      color: $accent;
+    }
+  }
+
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+    top: calc(100% + 8px);
+    min-width: 0;
+    padding: 0;
+    border: 2px solid $black;
+    border-radius: 0;
+    background: $white;
+    box-shadow: 6px 6px 0 $black;
+    overflow: hidden;
+  }
+
+  .dropdown-item {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 10px 24px;
+    color: $black;
+    &:hover,
+    &:focus {
+      background: $accent;
+      color: $black;
+    }
+    &.active {
+      background: $black;
+      color: $white;
     }
   }
 }

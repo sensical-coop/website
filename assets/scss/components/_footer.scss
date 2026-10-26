@@ -1,95 +1,72 @@
 .footer {
   background: $white;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: $primary;
-  border-top: 1px $accent solid !important;
+  border-top: 2px solid $black;
+  padding: 40px 0;
+
   .footer-inner {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    align-items: center;
-
-    @include media-breakpoint-up(sm) {
-      justify-content: space-between;
+    gap: 28px;
+    @include media-breakpoint-up(md) {
       flex-direction: row;
-      align-items: center;
+      justify-content: space-between;
+      align-items: flex-end;
     }
   }
-  .footer-title {
-    color: $primary;
-    font-size: 1.3rem;
-    font-family: $font-family-heading;
-    margin-bottom: 10px;
-    flex: 0;
-    @include media-breakpoint-up(sm) {
-      margin: 0;
-      flex: 0 0 120px;
-    }
-  }
-  .footer-menu {
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
-    @include media-breakpoint-up(sm) {
-      margin-top: 0;
-    }
-  }
-  .footer-link {
+
+  .footer-logo {
+    font-family: $font-family-sensical;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1;
     color: $black;
-    font-weight: $font-weight-bolder;
+    text-decoration: none;
     &:hover {
       color: $accent;
-      text-decoration: none;
-      transition: $transition-base;
     }
   }
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex: 1;
-    li {
-      display: block;
-      margin-right: 10px;
-      color: lighten($secondary, 50%);
-      font-size: 0.9rem;
-      line-height: 1.8;
-      &:last-of-type {
-        margin-right: 0;
-      }
-      a {
-        color: lighten($primary, 20%);
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      &.copyright {
-        color: lighten($primary, 20%);
-        display: none;
-        @include media-breakpoint-up(md) {
-          display: inline-block;
-        }
-      }
+  .footer-legal {
+    margin: 10px 0 0;
+    font-size: 0.875rem;
+    color: $secondary;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @include media-breakpoint-up(md) {
+      align-items: flex-end;
     }
-    @include media-breakpoint-up(sm) {
-      height: inherit;
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      align-items: center;
-      justify-content: flex-end;
-      li {
-        list-style: none;
-        a {
-          display: inline-block;
-          padding: 10px 8px 10px 8px;
-          font-weight: 300;
-        }
-      }
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 0 -8px;
+    padding: 0;
+    @include media-breakpoint-up(md) {
+      margin: 0 -8px 0 0;
+    }
+  }
+
+  .footer-link {
+    display: inline-block;
+    padding: 10px 8px;
+    color: $black;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  ul.social {
+    margin-left: -4px;
+    @include media-breakpoint-up(md) {
+      margin: 0 -4px 0 0;
     }
   }
 }

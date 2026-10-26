@@ -6,3 +6,5 @@ public/
 style.scss_*
 resources/
 pending.txt
+# Local notes, not part of the site
+TODO.md
