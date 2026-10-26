@@ -1,0 +1,39 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-contact{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+{{ partial "hero-image-setheight.html" (dict "heading" .Params.heroHeading "subheading" .Params.heroSubHeading) }}
+{{ $c := hugo.Data.contact }}
+<div class="container my-5 my-lg-8 px-2 px-lg-0">
+  <div class="contact-grid">
+    <div class="contact-main">
+      <div class="contact-intro fs-4">{{ .Content }}</div>
+      {{ with $c.email }}
+      <a class="contact-email" href="mailto:{{ . }}">{{ . }}</a>
+      {{ end }}
+    </div>
+    <dl class="contact-details">
+      {{ with $c.phone }}
+      <dt>{{ T "Phone" }}</dt><dd>{{ . }}</dd>
+      {{ end }}
+      {{ with $c.address }}
+      <dt>{{ T "Address" }}</dt><dd class="contact-address">{{ strings.TrimSpace . }}</dd>
+      {{ end }}
+      {{ with $c.PIC }}
+      <dt>{{ T "Participant Identification Code (PIC)" }}</dt><dd>{{ . }}</dd>
+      {{ end }}
+      {{ with $c.VATES }}
+      <dt>{{ T "VAT Number (ES)" }}</dt><dd>{{ . }}</dd>
+      {{ end }}
+      {{ with $c.VATINT }}
+      <dt>{{ T "VAT Number (International)" }}</dt><dd>{{ . }}</dd>
+      {{ end }}
+    </dl>
+  </div>
+  {{- /* Same full-bleed treatment as the divider shortcode: the cable runs off the edge of the screen */}}
+  <div class="divider-full contact-divider" style="margin-left: calc(50% - 40vw);" aria-hidden="true">
+    <img src="{{ "images/drawings/antenna-drawing.svg" | relURL }}" alt="" loading="lazy" style="max-height: 100px">
+  </div>
+</div>
+{{ end }}

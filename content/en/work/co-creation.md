@@ -1,5 +1,7 @@
 ---
 title: 'Co-creation and participatory design'
+seoTitle: "Co-creation and participatory design services | Sensical"
+description: "Hands-on co-creation and participatory design: workshops, project co-design and long-term mentoring so that your team can own and evolve its technology."
 draft: false
 featured: true
 weight: 3
@@ -8,6 +10,10 @@ heroSubHeading: ''
 button: "Read more"
 section_title: 'Work'
 translationKey: cocreation
+labels:
+- "Workshops"
+- "Co-design"
+- "Mentoring"
 related_pages:
 - environmental-data-collection
 ---

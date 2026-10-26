@@ -1,6 +1,7 @@
 ---
-url: 'co-creacion'
 title: 'Co-creación y diseño participativo'
+seoTitle: "Co-creación y diseño participativo para equipos | Sensical"
+description: "Co-creación y diseño participativo práctico: talleres, co-diseño de proyectos y mentoría a largo plazo para que tu equipo pueda hacer suya su tecnología."
 draft: false
 featured: true
 weight: 3
@@ -9,6 +10,12 @@ heroSubHeading: ''
 button: "Leer más"
 section_title: 'Portfolio'
 translationKey: cocreation
+aliases:
+- /co-creacion/
+labels:
+- "Talleres"
+- "Co-diseño"
+- "Mentoría"
 related_pages:
 - recopilacion-datos-ambientales
 ---
@@ -49,4 +56,3 @@ Podemos ofrecer una amplia gama de opciones, incluyendo:
 + Co-diseño y facilitación de proyectos, para un apoyo más amplio y sostenido al co-diseño del proyecto.
 + Mentoría, formación y desarrollo de capacidades a largo plazo dentro de tu organización.
 
-Contáctanos en: [info@sensical.es](mailto:info@sensical.es)
