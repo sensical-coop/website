@@ -1,10 +1,10 @@
-<div class="container-item btn-group language-select">
-  <button type="button" class="btn btn-lg button-language fs-5">{{ .Language.LanguageName }}</button>
-  <button type="button" class="btn dropdown-toggle dropdown-toggle-split btn-lg h-100 button-language fs-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<div class="container-item language-select">
+  <button type="button" class="lang-toggle dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="{{ T "Language" }}: {{ .Language.Label }}">
+    {{ .Language.Label }}
   </button>
-  <div class="dropdown-menu dropdown-menu-dark">
+  <div class="dropdown-menu">
     {{ range .AllTranslations }}
-    <a class="dropdown-item fs-5" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+    <a class="dropdown-item{{ if eq .Language.Lang $.Language.Lang }} active{{ end }}" href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ .Language.Label }}</a>
     {{ end }}
   </div>
 </div>
