@@ -29,8 +29,8 @@
 
 // Footer (white): stay black with a coral shadow, like the "sensical" letters
 .footer .footer-logo {
-  @include lift(3px, $black, $accent);
+  @include lift(2px, $black, $accent);
 }
 .footer .footer-link {
-  @include lift(2px, $black, $accent);
+  @include lift(.5px, $black, $accent);
 }
