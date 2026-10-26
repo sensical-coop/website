@@ -30,7 +30,7 @@ disableKinds = ["taxonomy", "term", "rss"]
 [params]
   google_analytics_id=""
   # Default social sharing image (absolute URL is built in the head partial)
-  og_image = "images/og/sensical-1200x630.png"
+  og_image = "images/og/sensical-2400x1260.png"
 
   [params.logo]
     favicon = "images/logo/favicon.ico"
