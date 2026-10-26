@@ -1,0 +1,29 @@
+# Sensical
+
+> Sensical SCCL és una cooperativa multidisciplinària amb seu a Barcelona. Som un grup d'enginyers, dissenyadors i investigadors que imagina, construeix i desplega tecnologia oberta amb empreses, projectes de recerca, organismes públics, artistes i entitats sense ànim de lucre: sistemes de sensors ambientals, maquinari i programari oberts, i R+D participativa i co-creada.
+
+Sensical és una cooperativa catalana (Societat Cooperativa Catalana Limitada) fundada l'octubre de 2026 per cinc socis, que treballa amb una xarxa de col·laboradors. Treballem en remot i presencialment, a Europa i a escala internacional. Per defecte fem servir programari lliure i maquinari obert; les llicències s'acorden a cada projecte. Contacte: info@sensical.es.
+
+Cada pàgina de la llista té una versió neta en Markdown: afegeix `.md` a l'URL de la pàgina sense la barra final (per exemple https://sensical.es/ca/portfolio/co-creacio/ és https://sensical.es/ca/portfolio/co-creacio.md). El perfil complet és a https://sensical.es/ca/llms-full.txt. Versions en anglès, castellà i francès: https://sensical.es/llms.txt, https://sensical.es/es/llms.txt i https://sensical.es/fr/llms.txt.
+
+## Feina
+
+- [Recopilació de dades ambientals](https://sensical.es/ca/portfolio/recopilacio-dades-ambientals.md): Monitoratge ambiental i de qualitat de l'aire obert i assequible: sensors, xarxes mesh Meshtastic, calibratge, validació de dades i desplegament.
+- [Co-creació i disseny participatiu](https://sensical.es/ca/portfolio/co-creacio.md): Tallers, co-disseny de projectes i mentoria a llarg termini que impliquen el teu equip durant tot el disseny i desenvolupament.
+
+## Empresa
+
+- [Sobre Sensical](https://sensical.es/ca/qui-som.md): Qui som i la trajectòria de l'equip.
+- [Preguntes freqüents](https://sensical.es/ca/preguntes-frequents.md): Amb qui treballem, com comença un projecte, preus, propietat intel·lectual i llicències, projectes europeus, RGPD.
+- [Contacte](https://sensical.es/ca/contacte.md): Correu electrònic, adreça, PIC europeu i NIF.
+
+## El que no fem
+
+- No som una agència genèrica de webs, apps o màrqueting.
+- No acceptem projectes de vigilància ni militars.
+
+## Opcional
+
+- [Perfil complet](https://sensical.es/ca/llms-full.txt): Mètodes, elements diferencials i manera de treballar, amb més detall.
+
+<!-- Darrera revisió: 2026-10-25. Revisar cada trimestre. -->

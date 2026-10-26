@@ -1,0 +1,55 @@
+# Sensical: full profile
+
+> Sensical SCCL is a multidisciplinary cooperative based in Barcelona, Spain, founded in October 2026. We help companies, research projects, public bodies, artists and non-profits imagine, build and deploy technologies that work for them, for society and for the planet.
+
+Source: https://sensical.es/
+Markdown versions of each page: append `.md` to the page URL (see https://sensical.es/llms.txt).
+
+## Who we are
+
+Sensical is a Catalan cooperative (Societat Cooperativa Catalana Limitada), owned and run by its five founding members, and working with a wider network of trusted collaborators when projects need it. The team combines industrial, mechanical and electronic engineering, data science, interaction design, fine arts and the humanities. Between us we have worked with organisations such as Fab Lab Barcelona, the BBC, CCCB, Medialab Matadero and Sónar, as well as many universities and research organisations.
+
+- Óscar González: industrial engineer and researcher; data science, sensor development and calibration; Smart Citizen project.
+- Tim Cowlishaw: interaction designer and researcher; 20 years designing digital products, including R&D and prototyping at BBC R&D; PhD candidate at the UOC on the environmental impact of digital media.
+- Rebecca Anne Peters: researcher and artist; doctorate in Humanities (Universitat Pompeu Fabra) on technology's role within collective cultural narratives; open source principles and their impact on society.
+- Adai Suriñach: trained in Fine Arts, specialised in 3D printing and electronic hardware design; Smart Citizen project and Fab Academy instructor at Fab Lab Barcelona.
+- Adrien Laveau: mechanical engineer; sensors, measurement systems and data analysis software; digital fabrication and rapid prototyping.
+
+## What we do
+
+### Environmental data collection
+
+We design, build and deploy flexible, affordable and reliable bespoke environmental data collection systems, especially for air quality: particulate matter (PM), chemical pollutants, CO2 and more. We collect sensor data over distributed, off-grid mesh networks and are among the first contributors of air quality metrics to the open-source Meshtastic ecosystem (Telemetry modules). We also contribute to the Smart Citizen project and have experience with biodiversity monitoring (camera traps, sound monitoring such as BirdNet).
+
+We offer: field-proven sensing hardware including mesh devices; data storage, processing and validation; calibration of large-scale datasets; firmware development and sensor integration; turn-key hardware and software projects; participatory sensing support; and training and mentoring. We build tools for citizen science as well as research-grade and industrial sensing.
+
+### Co-creation and participatory design
+
+We are experienced facilitators, mentors and educators as well as creative and technical practitioners. Participants co-create with us throughout design and development, not only in an initial "ideation" phase, and gain the skills to keep developing the result on their own. We have worked with schoolchildren, musicians, environmental activists and retirees, as well as businesses, cultural and media organisations and educational institutions.
+
+We offer: one-off workshops with a specific objective; project co-design and facilitation; and long-term mentoring, training and capacity building.
+
+## How we work
+
+- Open by default: we favour open-source software and open-hardware licences; ownership and licensing are agreed per project, and we sign NDAs when needed.
+- Participatory: everyone who needs to be involved is involved, and your team is prepared to take ownership when we finish.
+- Not just sensors: environmental monitoring also needs design, documentation, training and data analysis, and we cover these too.
+- Pricing: fixed price for well-scoped projects; time and materials (day rate) for open-ended R&D, mentoring or support.
+- EU projects: our members have taken part in many R&D projects (including Horizon and Erasmus+) and in national and local research funding in Spain and Barcelona. We join EU consortia as a technical, research or SME partner. PIC: 864390281.
+- Data protection: we design data collection to comply with the GDPR and can host data in the EU. We hold no ISO certifications.
+- Location: based in Barcelona; we work remotely and on site across Europe and internationally.
+
+## What we don't do
+
+- We are not a generic web, app or marketing agency.
+- We do not take on surveillance or military projects.
+
+## Contact
+
+- Email: info@sensical.es
+- Address: Carrer Diputació 151, Baixos Esquerra, 08011 Barcelona, Spain
+- VAT: ESF27637909
+- GitHub: https://github.com/sensical-coop/
+- LinkedIn: https://www.linkedin.com/company/sensical-sccl/
+
+<!-- Last reviewed: 2026-10-25. Review quarterly. -->
