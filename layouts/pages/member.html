@@ -1,12 +1,18 @@
 
-{{ $members := .Site.Data.member }}
+{{ $members := hugo.Data.member }}
 {{ $person := .Params.member }}
 
 <div class="col-12 col-md-5 p-2 box" style="--c:#000;--w:20px;--b:3px; --bg:#00000000;">
   <div class="member-card px-2 p-md-0">
-      {{ if .Params.image }}
+      {{ with .Params.image }}
       <div class="member-image">
-          <img class="member-photo" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+          {{ with resources.Get (strings.TrimPrefix "/" .) }}
+            {{ $size := int (math.Min 400 .Width .Height) }}
+            {{ $photo := .Fill (printf "%dx%d Center webp q80" $size $size) }}
+            <img class="member-photo" src="{{ $photo.RelPermalink }}" width="{{ $photo.Width }}" height="{{ $photo.Height }}" alt="{{ $.Title }}" loading="lazy">
+          {{ else }}
+            <img class="member-photo" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+          {{ end }}
       </div>
       {{ end }}
 
@@ -21,7 +27,7 @@
                   {{ if eq $person $details.name}}
                       {{ range $details.socials }}
                       <li>
-                          <a href="{{ .link }}" target="blank">
+                          <a href="{{ .link }}" target="_blank" rel="noopener">
                           <img class="social-logo" width="20" height="20" src="{{ .image | relURL }}" title="{{ .name }}" alt="{{ .name }}" />
                           </a>
                       </li>
