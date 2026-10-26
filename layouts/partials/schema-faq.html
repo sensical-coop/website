@@ -1,0 +1,18 @@
+{{- /* FAQPage JSON-LD: mirrors the visible questions/answers in .Params.faqs exactly */ -}}
+{{- $entities := slice -}}
+{{- range .Params.faqs -}}
+  {{- $entities = $entities | append (dict
+    "@type" "Question"
+    "name" .q
+    "acceptedAnswer" (dict "@type" "Answer" "text" (.a | markdownify | plainify))
+  ) -}}
+{{- end -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "FAQPage"
+  "url" .Permalink
+  "inLanguage" .Language.Lang
+  "mainEntity" $entities
+  "publisher" (dict "@id" (printf "%s#organization" hugo.Sites.Default.Home.Permalink))
+-}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

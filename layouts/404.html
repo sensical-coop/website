@@ -1,0 +1,12 @@
+{{ define "body_classes" }}page-404{{ end }}
+
+{{ define "main" }}
+{{ partial "hero-image-setheight.html" (dict "heading" (T "Page not found") "subheading" (T "Page not found text")) }}
+<div class="container my-5 my-lg-8 fs-5 px-2 px-lg-0 content">
+  <ul>
+    <li><a href="{{ site.Home.RelPermalink }}">{{ T "Home" }}</a></li>
+    {{ with site.GetPage "/work" }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+    {{ with site.GetPage "/pages/contact" }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+  </ul>
+</div>
+{{ end }}

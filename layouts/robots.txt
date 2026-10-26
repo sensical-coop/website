@@ -1,0 +1,8 @@
+# Sensical robots policy.
+# We deliberately allow all crawlers, including AI/LLM crawlers (GPTBot, ClaudeBot,
+# PerplexityBot, Google-Extended, ...): being cited by AI answer engines is welcome.
+# LLM-friendly summaries: {{ site.Home.Permalink }}llms.txt
+User-agent: *
+Allow: /
+
+Sitemap: {{ site.Home.Permalink }}sitemap.xml

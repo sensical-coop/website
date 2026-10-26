@@ -1,0 +1,50 @@
+# Facts used for the Organization JSON-LD (schema.org)
+name: 'Sensical'
+legalName: 'Sensical SCCL'
+alternateName:
+  - 'snscl'
+foundingDate: '2026-10'
+foundingLocation: 'Barcelona, Spain'
+numberOfEmployees:
+  min: 5
+  max: 9
+address:
+  streetAddress: 'Carrer Diputació 151, Baixos Esquerra'
+  postalCode: '08011'
+  addressLocality: 'Barcelona'
+  addressRegion: 'Catalonia'
+  addressCountry: 'ES'
+areaServed:
+  - 'Europe'
+  - 'Worldwide'
+knowsAbout:
+  - 'Environmental monitoring'
+  - 'Air quality sensing'
+  - 'Low-cost sensors'
+  - 'Sensor calibration and data validation'
+  - 'Mesh networks'
+  - 'Meshtastic'
+  - 'Citizen science'
+  - 'Biodiversity monitoring'
+  - 'Open hardware'
+  - 'Open-source software'
+  - 'Firmware development'
+  - 'Data analysis'
+  - 'Co-creation'
+  - 'Participatory design'
+  - 'Creative technology'
+  - 'Interoperability'
+  - 'Sustainability'
+  - 'Performance arts'
+  - 'Robotics'
+  - '3D printing'
+  - 'Digital fabrication'
+  - 'Electronics'
+  - 'Environmental data collection'
+# Members listed as founders (slugs match data/member.json and content/*/pages/about/*.md)
+founders:
+  - 'oscar-gonzalez'
+  - 'tim-cowlishaw'
+  - 'rebecca-peters'
+  - 'adai-surinach'
+  - 'adrien-laveau'
