@@ -5,7 +5,7 @@
 {{ define "main" }}
 
 <div class="bg-primary bg-white-dots strip-full overflow-x-hidden">
-  <div class="container bg-primary box" style="--c: #fff">
+  <div class="container bg-primary panel panel--dark">
     <div class="row strip-adaptable-col">
       <div class="col content align-items-start pt-1 text-white">
         <h1 class="heading-h2 font-sensical text-white">{{ .Params.HeroHeading }}</h1>
@@ -35,14 +35,14 @@
 
 {{ $headless := .Site.GetPage "/pages/about" }}
 {{ $subpages := $headless.Resources.ByType "page" }}
-<div id="{{ T "team" }}" class="pt-8 pb-8 pb-md-12 pt-md-12 bg-accent-gradient overflow-x-hidden">
-  <div class="row justify-content-center gap-5">
-    <div class="content mb-lg-5 mt-lg-5">
-      <h2 class="container text-black fw-bolder text-center">{{ .Params.teamTitle }}</h2>
+<div id="{{ T "team" }}" class="dot-section">
+  <div class="container px-2 px-lg-0">
+    <h2 class="section-title">{{ .Params.teamTitle }}</h2>
+    <div class="team-grid">
+      {{ range $subpages }}
+        {{ .Render "member" }}
+      {{ end }}
     </div>
-    {{ range $subpages }}
-      {{ .Render "member" }}
-    {{ end }}
   </div>
 </div>
 

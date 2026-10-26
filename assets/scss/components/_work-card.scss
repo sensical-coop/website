@@ -1,5 +1,6 @@
 // Work cards: numbered, bordered tiles on a light grid section
-.work-grid {
+.work-grid,
+.dot-section {
   background-color: $gray-100;
   background-image: radial-gradient(circle at 1px 1px, rgba($black, 0.18) 1px, transparent 0);
   background-size: 40px 40px;

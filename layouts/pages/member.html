@@ -2,8 +2,8 @@
 {{ $members := hugo.Data.member }}
 {{ $person := .Params.member }}
 
-<div class="col-12 col-md-5 p-2 box" style="--c:#000;--w:20px;--b:3px; --bg:#00000000;">
-  <div class="member-card px-2 p-md-0">
+<article class="panel member-panel">
+  <div class="member-card">
       {{ with .Params.image }}
       <div class="member-image">
           {{ with resources.Get (strings.TrimPrefix "/" .) }}
@@ -40,7 +40,7 @@
       </div>
   </div>
 
-  <p class="member-bio px-2 p-lg-0">
+  <p class="member-bio">
       {{ .Content | plainify }}
   </p>
-</div>
+</article>
