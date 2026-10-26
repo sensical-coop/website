@@ -1,5 +1,10 @@
 ---
+slug: 'a-propos'
+aliases:
+- /about/
 title: 'À propos de Sensical'
+seoTitle: "À propos de Sensical : l'équipe de notre coopérative tech"
+description: "Découvrez Sensical, coopérative barcelonaise d'ingénieurs, de designers et de chercheurs en matériel ouvert, capteurs environnementaux et science citoyenne."
 date: 2018-12-06T09:29:16+10:00
 layout: 'about'
 heroHeading: 'À propos de Sensical'

@@ -1,6 +1,7 @@
 ---
-url: 'co-creation'
 title: 'Co-création et conception participative'
+seoTitle: "Co-création et conception participative | Sensical"
+description: "Co-création et conception participative concrètes : ateliers, co-conception de projets et mentorat sur la durée pour que votre équipe s'approprie sa technologie."
 draft: false
 featured: true
 weight: 3
@@ -8,13 +9,20 @@ heroHeading: 'Co-création et conception participative'
 heroSubHeading: ''
 button: "En savoir plus"
 section_title: 'Portefeuille'
+translationKey: cocreation
+aliases:
+- /co-creation/
+labels:
+- "Ateliers"
+- "Co-conception"
+- "Mentorat"
 related_pages:
 - collecte-donnees-environnementales
 ---
 
 Nous sommes des {{< accent >}}facilitateurs, des mentors et des formateurs expérimentés, ainsi que des professionnels créatifs et techniques{{< /accent >}}, et nous aimons conjuguer ces compétences pour accompagner nos clients et partenaires de manière inclusive et participative. Nous encourageons nos partenaires à s'impliquer activement dans l'identification des défis, la conception et la mise en œuvre des solutions proposées.
 
-Notre approche est pragmatique : les participants contribuent activement à façonner les solutions que nous développons et acquièrent les nouvelles compétences et capacités nécessaires pour poursuivre leur développement et travailler avec les nouvelles technologies à l'avenir.
+Notre approche est pragmatique : les participants contribuent activement à façonner les solutions que nous développons et acquièrent les nouvelles compétences et capacités nécessaires pour poursuivre leur développement et travailler avec les nouvelles technologies à l'avenir.
 
 Nous apprécions travailler en étroite collaboration avec chaque équipe et ses partenaires afin de répondre aux besoins spécifiques de chaque projet, quels qu'ils soient. Nous pouvons accompagner les processus de conception et de prise de décision, ainsi que le développement technique et la construction. Notre approche garantit que toutes les personnes concernées participent au processus et peuvent s'approprier le produit et poursuivre son développement et sa maintenance une fois le projet terminé.
 
@@ -48,4 +56,4 @@ Nous proposons un large éventail d'options, notamment :
 + La co-conception et l'animation de projets, pour un soutien plus large et durable dans ce domaine.
 + Un mentorat, des formations et un renforcement des capacités à long terme au sein de votre organisation.
 
-Contactez-nous à : [info@sensical.es](mailto:info@sensical.es)
+Contactez-nous à : [info@sensical.es](mailto:info@sensical.es)
