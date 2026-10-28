@@ -54,11 +54,11 @@
   background-size: cover;
 }
 .strip-full {
-  // Full-screen "slides" on large screens only; on small screens let content set the height
+  // Full-screen "slides" on large screens only; on small screens let content set the height.
   padding: 96px 0 64px;
   @include media-breakpoint-up(lg) {
-    height: 100vh;
-    padding: 0;
+    min-height: 100vh;
+    padding: 112px 0 64px;
   }
   display: flex;
   flex-direction: column;

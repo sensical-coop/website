@@ -85,6 +85,16 @@ body{
 
 // Pills outside the work cards lift like the cards and the wordmark letters
 .sensical-button:not(.sensical-button-plus) {
+  max-width: 100%;
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    white-space: normal;
+    padding: 14px 24px !important;
+    text-align: center;
+    .button-link-text {
+      line-height: 1.25;
+    }
+  }
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   &:hover,
   &:focus-visible {
