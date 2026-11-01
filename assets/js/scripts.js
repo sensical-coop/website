@@ -77,3 +77,110 @@ document.querySelectorAll('details.faq-item').forEach(function(item) {
     }
   });
 });
+
+// Image carousel (layouts/partials/carousel.html). The track is a scroll-snap strip,
+// so swiping and trackpads work on their own; this adds arrows, dots, arrow keys and
+// an eased lateral slide. Snapping is paused while the slide animates.
+var carouselReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+document.querySelectorAll('[data-carousel]').forEach(function(root) {
+  var track = root.querySelector('.image-carousel__track');
+  var slides = Array.prototype.slice.call(track.children);
+  var controls = root.querySelector('.image-carousel__controls');
+  if (!controls || slides.length < 2) return;
+
+  var dotsBox = root.querySelector('[data-carousel-dots]');
+  var counter = root.querySelector('[data-carousel-current]');
+  var index = 0;
+  var frame = null;
+
+  var dots = slides.map(function(slide, i) {
+    var dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'image-carousel__dot';
+    dot.setAttribute('aria-label', root.dataset.labelGoto + ' ' + (i + 1));
+    dot.addEventListener('click', function() { go(i); });
+    dotsBox.appendChild(dot);
+    return dot;
+  });
+
+  function mark(i) {
+    index = i;
+    dots.forEach(function(dot, j) { dot.setAttribute('aria-current', j === i ? 'true' : 'false'); });
+    counter.textContent = (i + 1 < 10 ? '0' : '') + (i + 1);
+  }
+
+  function slideTo(target) {
+    if (frame) cancelAnimationFrame(frame);
+    var start = track.scrollLeft;
+    var distance = target - start;
+    if (carouselReduceMotion.matches || !distance) {
+      track.scrollLeft = target;
+      return;
+    }
+    // Longer jumps (e.g. wrapping back to the first image) get a little more time
+    var duration = Math.min(900, 450 + Math.abs(distance) / track.clientWidth * 150);
+    var t0 = null;
+    track.classList.add('is-animating');
+    function step(now) {
+      if (t0 === null) t0 = now;
+      var p = Math.min(1, (now - t0) / duration);
+      var eased = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+      track.scrollLeft = start + distance * eased;
+      if (p < 1) {
+        frame = requestAnimationFrame(step);
+      } else {
+        frame = null;
+        track.classList.remove('is-animating');
+      }
+    }
+    frame = requestAnimationFrame(step);
+  }
+
+  function go(i) {
+    i = (i + slides.length) % slides.length;
+    mark(i);
+    slideTo(slides[i].offsetLeft);
+  }
+
+  // Keep dots and counter in sync when the user swipes or scrolls
+  var ticking = false;
+  track.addEventListener('scroll', function() {
+    if (frame || ticking) return;
+    ticking = true;
+    requestAnimationFrame(function() {
+      ticking = false;
+      var nearest = 0;
+      slides.forEach(function(slide, i) {
+        if (Math.abs(slide.offsetLeft - track.scrollLeft) < Math.abs(slides[nearest].offsetLeft - track.scrollLeft)) nearest = i;
+      });
+      if (nearest !== index) mark(nearest);
+    });
+  }, { passive: true });
+
+  // A manual swipe or wheel cancels a running animation
+  ['pointerdown', 'wheel', 'touchstart'].forEach(function(type) {
+    track.addEventListener(type, function() {
+      if (!frame) return;
+      cancelAnimationFrame(frame);
+      frame = null;
+      track.classList.remove('is-animating');
+    }, { passive: true });
+  });
+
+  track.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(index + 1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(index - 1); }
+  });
+  root.querySelector('[data-carousel-prev]').addEventListener('click', function() { go(index - 1); });
+  root.querySelector('[data-carousel-next]').addEventListener('click', function() { go(index + 1); });
+
+  // Stay on the current image when the layout width changes
+  window.addEventListener('resize', function() {
+    if (!frame) track.scrollLeft = slides[index].offsetLeft;
+  });
+
+  mark(0);
+  controls.hidden = false;
+  root.classList.add('is-ready');
+});

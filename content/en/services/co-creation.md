@@ -8,8 +8,10 @@ weight: 3
 heroHeading: 'Co-creation and participatory design'
 heroSubHeading: ''
 button: "Read more"
-section_title: 'Work'
+section_title: 'Services'
 translationKey: cocreation
+aliases:
+- /work/co-creation/
 labels:
 - "Workshops"
 - "Co-design"

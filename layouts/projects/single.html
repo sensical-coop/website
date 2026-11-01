@@ -1,0 +1,28 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-work-single page-project-single{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+{{ $section := .CurrentSection }}
+{{ partial "hero-image-setheight.html" (dict "heading" (.Params.heroHeading | default .Title) "subheading" .Params.heroSubHeading "eyebrow" ($section.Title) "eyebrowLink" $section.RelPermalink "keywords" .Params.labels) }}
+<div class="pt-4 pt-md-8">
+  <div class="justify-content-start">
+    <div class="container">
+      {{ partial "project-facts.html" . }}
+      <div class="work work-single pb-4 pb-md-8">
+        <div class="content">{{ .Content }}</div>
+      </div>
+    </div>
+    {{ with .Params.images }}
+    <div class="container pb-4 pb-md-8">
+      <h2 class="mb-2 text-uppercase">{{ T "Gallery" }}</h2>
+      {{ partial "carousel.html" (dict "page" $ "images" . "fit" $.Params.galleryFit "ratio" $.Params.galleryRatio) }}
+    </div>
+    {{ end }}
+    {{ with .Params.services }}
+    {{ $services := where (where site.RegularPages "Type" "services") ".Params.translationKey" "in" . }}
+    {{ partial "related-grid.html" (dict "title" (T "Services in this project") "pages" $services) }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

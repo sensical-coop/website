@@ -1,0 +1,25 @@
+<article class="work-card work-card--project">
+  {{ with .Params.image }}
+  <div class="work-card__image">
+    <img src="{{ partial "image-url.html" (dict "page" $ "src" . "width" 900) }}" alt="" loading="lazy" decoding="async">
+  </div>
+  {{ end }}
+  <div class="work-card__meta" aria-hidden="true"></div>
+  {{ $facts := slice }}
+  {{ with .Params.client }}{{ $facts = $facts | append . }}{{ end }}
+  {{ with .Params.year }}{{ $facts = $facts | append (string .) }}{{ end }}
+  {{ with $facts }}<p class="work-card__facts">{{ delimit . " · " }}</p>{{ end }}
+  <h3 class="work-card__title">{{ .Title }}</h3>
+  {{ with .Params.labels }}
+  <ul class="work-card__labels">
+    {{ range . }}<li>{{ . }}</li>{{ end }}
+  </ul>
+  {{ end }}
+  {{ $text := .Description }}
+  {{ if not $text }}{{ $text = printf "%s." (index (split (.Content | plainify) ".") 0) }}{{ end }}
+  <p class="work-card__text">{{ $text }}</p>
+  <a class="sensical-button sensical-button-plus stretched-link" href="{{ .RelPermalink }}">
+    <span class="circle-button" aria-hidden="true"><span class="plus">+</span></span>
+    <span class="button-link-text fs-5">{{ T "Read more" }}<span class="visually-hidden">: {{ .Title }}</span></span>
+  </a>
+</article>

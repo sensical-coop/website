@@ -1,0 +1,63 @@
+{{- /* Reusable image carousel: slides on a scroll-snap track, so swiping works without JS;
+       scripts.js adds the arrows, dots, keyboard and the eased slide animation.
+       Context: dict
+         "page"   page whose bundle resources are looked up first (optional)
+         "images" list of paths/URLs, or maps with "src", "alt", "caption"
+         "ratio"  slide aspect ratio, as CSS (default "16/10")
+         "fit"    "cover" (default, crops) or "contain" (whole image, for drawings)
+         "label"  accessible name (default: T "Image gallery") */ -}}
+{{- $page := .page -}}
+{{- $fit := .fit | default "cover" -}}
+{{- $ratio := .ratio | default "16/10" -}}
+{{- $slides := slice -}}
+{{- range .images -}}
+  {{- $s := . -}}
+  {{- if not (reflect.IsMap $s) }}{{ $s = dict "src" $s }}{{ end -}}
+  {{- $src := $s.src | default "" | string -}}
+  {{- $url := $src | relURL -}}
+  {{- $srcset := "" -}}
+  {{- with $page }}{{ with .Resources.Get $src -}}
+    {{- $url = .RelPermalink -}}
+    {{- if and (eq .ResourceType "image") (in (slice "jpeg" "png" "webp" "tiff" "bmp") .MediaType.SubType) -}}
+      {{- $set := slice -}}
+      {{- $img := . -}}
+      {{- range slice 800 1600 2400 -}}
+        {{- if lt . $img.Width -}}
+          {{- $r := $img.Resize (printf "%dx webp q80" .) -}}
+          {{- $set = $set | append (printf "%s %dw" $r.RelPermalink .) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $full := $img.Resize (printf "%dx webp q80" (math.Min $img.Width 2400 | int)) -}}
+      {{- $url = $full.RelPermalink -}}
+      {{- $set = $set | append (printf "%s %dw" $full.RelPermalink $full.Width) -}}
+      {{- $srcset = delimit (uniq $set) ", " -}}
+    {{- end -}}
+  {{- end }}{{ end -}}
+  {{- if $src }}{{ $slides = $slides | append (dict "url" $url "srcset" $srcset "alt" ($s.alt | default "") "caption" ($s.caption | default "")) }}{{ end -}}
+{{- end -}}
+{{- with $slides }}
+{{- $total := len . }}
+<div class="image-carousel image-carousel--{{ $fit }}" data-carousel role="region" aria-roledescription="carousel"
+  aria-label="{{ $.label | default (T "Image gallery") }}" data-label-goto="{{ T "Go to image" }}"
+  style="--carousel-ratio: {{ $ratio | safeCSS }}">
+  <div class="image-carousel__track" tabindex="0">
+    {{- range $i, $s := . }}
+    <figure class="image-carousel__slide" role="group" aria-roledescription="slide" aria-label="{{ add $i 1 }} / {{ $total }}">
+      <img src="{{ $s.url }}"{{ with $s.srcset }} srcset="{{ . }}" sizes="(min-width: 1200px) 1140px, 100vw"{{ end }}
+        alt="{{ $s.alt }}" loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}" decoding="async">
+      {{- with $s.caption }}
+      <figcaption>{{ . | markdownify }}</figcaption>
+      {{- end }}
+    </figure>
+    {{- end }}
+  </div>
+  {{- if gt $total 1 }}
+  <div class="image-carousel__controls" hidden>
+    <button type="button" class="image-carousel__arrow" data-carousel-prev aria-label="{{ T "Previous image" }}"><span aria-hidden="true">←</span></button>
+    <div class="image-carousel__dots" data-carousel-dots></div>
+    <span class="image-carousel__count" aria-hidden="true"><span data-carousel-current>01</span> / {{ printf "%02d" $total }}</span>
+    <button type="button" class="image-carousel__arrow" data-carousel-next aria-label="{{ T "Next image" }}"><span aria-hidden="true">→</span></button>
+  </div>
+  {{- end }}
+</div>
+{{- end -}}

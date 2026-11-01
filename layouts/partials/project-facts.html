@@ -1,0 +1,22 @@
+{{- /* Project key facts (client, year, location, partners, services) as a bordered list */ -}}
+{{- $p := . -}}
+{{- $services := where (where site.RegularPages "Type" "services") ".Params.translationKey" "in" ($p.Params.services | default slice) -}}
+{{- if or $p.Params.client $p.Params.year $p.Params.location $p.Params.partners $services }}
+<dl class="project-facts">
+  {{- with $p.Params.client }}
+  <div class="project-facts__item"><dt>{{ T "Client" }}</dt><dd>{{ . }}</dd></div>
+  {{- end }}
+  {{- with $p.Params.year }}
+  <div class="project-facts__item"><dt>{{ T "Year" }}</dt><dd>{{ . }}</dd></div>
+  {{- end }}
+  {{- with $p.Params.location }}
+  <div class="project-facts__item"><dt>{{ T "Location" }}</dt><dd>{{ . }}</dd></div>
+  {{- end }}
+  {{- with $p.Params.partners }}
+  <div class="project-facts__item"><dt>{{ T "Partners" }}</dt><dd>{{ delimit . ", " }}</dd></div>
+  {{- end }}
+  {{- with $services }}
+  <div class="project-facts__item"><dt>{{ T "Services" }}</dt><dd>{{ range $i, $s := . }}{{ if $i }}<span class="project-facts__plus" aria-hidden="true">+</span>{{ end }}<a href="{{ $s.RelPermalink }}">{{ $s.Title }}</a>{{ end }}</dd></div>
+  {{- end }}
+</dl>
+{{- end }}

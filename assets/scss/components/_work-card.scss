@@ -113,3 +113,26 @@
     }
   }
 }
+
+// The footer's top border closes the page, so a grid that ends the page drops its own
+// (otherwise the two lines double up)
+main .work-grid:last-child {
+  border-bottom: 0;
+}
+
+// List pages: on short pages, stretch the grid down to the footer instead of leaving
+// a white strip between them
+.page-work-list {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    > .work-grid:last-child {
+      flex: 1 0 auto;
+    }
+  }
+}

@@ -8,7 +8,7 @@ weight: 2
 heroHeading: 'Collecte de données environnementales'
 heroSubHeading: ''
 button: "En savoir plus"
-section_title: 'Portefeuille'
+section_title: 'Services'
 translationKey: environmentaldatacollection
 aliases:
 - /collecte-donnees-environnementales/

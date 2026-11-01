@@ -1,0 +1,41 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-work-list page-project-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+{{ partial "hero-image-setheight.html" (dict "heading" .Params.heroHeading "subheading" .Params.heroSubHeading) }}
+{{ if .Content }}
+<div class="container pt-6 pt-md-10">
+  <div class="row">
+    <div class="col-12">
+      <div class="page-intro">
+      {{ .Content }}
+    </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<div class="work-grid">
+  <div class="container px-2 px-lg-0">
+    {{ with .Pages }}
+    <div class="service-summary">
+    {{ range .ByWeight }}
+      {{ .Render "summary" }}
+    {{ end }}
+    </div>
+    {{ else }}
+    <div class="project-empty panel">
+      <p class="fs-5 mb-4">{{ T "No projects yet" }}</p>
+      {{ with site.GetPage "/pages/contact" }}
+      <a class="sensical-button sensical-button-plus" href="{{ .RelPermalink }}">
+        <span class="circle-button" aria-hidden="true"><span class="plus">+</span></span>
+        <span class="button-link-text fs-5">{{ .Title }}</span>
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
