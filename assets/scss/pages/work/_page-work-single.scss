@@ -85,6 +85,13 @@
     .alert .container > * {
       max-width: 46rem;
     }
+
+    // Coral links would vanish on the coral alert
+    .alert.alert-bg-sensical a {
+      color: $black !important;
+      text-decoration: underline;
+      text-decoration-color: $black !important;
+    }
   }
   .masonry {
     /* Masonry container */

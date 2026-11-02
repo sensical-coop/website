@@ -27,6 +27,11 @@ disableKinds = ["taxonomy", "term", "rss"]
   section = ["html"]
   page = ["html", "markdown"]
 
+# No cookie banner: embed YouTube from youtube-nocookie.com
+[privacy]
+  [privacy.youTube]
+    privacyEnhanced = true
+
 [params]
   google_analytics_id=""
   # Default social sharing image (absolute URL is built in the head partial)
