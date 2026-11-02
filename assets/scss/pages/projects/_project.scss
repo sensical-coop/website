@@ -88,3 +88,75 @@
     margin: 0 8px;
   }
 }
+
+// Projects filter: rows of outlined pills, the active one in coral.
+// Hidden until scripts.js runs, so without JS every project simply shows.
+.project-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  margin-bottom: 32px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 40px;
+  }
+  &[hidden] {
+    display: none;
+  }
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__label {
+    font-family: $font-family-sensical;
+    font-size: 0.95rem;
+    color: $accent;
+    margin-right: 4px;
+  }
+
+  &__chip {
+    border: 2px solid $black;
+    border-radius: $border-radius-pill;
+    background: $white;
+    color: $black;
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding: 4px 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    &:hover,
+    &:focus-visible {
+      transform: translate(-2px, -2px);
+      box-shadow: 3px 3px 0 $black;
+    }
+    &[aria-pressed="true"] {
+      background: $accent;
+    }
+  }
+
+  &__empty {
+    max-width: 46rem;
+    margin-bottom: 32px;
+    &[hidden] {
+      display: none;
+    }
+  }
+}
+
+// Filtered-out cards (the grid's display rules would otherwise win over [hidden])
+.work-card[hidden] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-filter__chip {
+    transition: none;
+    &:hover,
+    &:focus-visible {
+      transform: none;
+    }
+  }
+}

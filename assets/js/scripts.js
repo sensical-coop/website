@@ -184,3 +184,73 @@ document.querySelectorAll('[data-carousel]').forEach(function(root) {
   controls.hidden = false;
   root.classList.add('is-ready');
 });
+
+// Projects filter (layouts/projects/list.html): one topic and one year at a time,
+// combined. The choice is kept in the URL (?topic=…&year=…) so a filtered view can be
+// shared. Without JS the filter stays hidden and every project shows.
+document.querySelectorAll('[data-project-filter]').forEach(function(filter) {
+  var grid = document.querySelector('[data-filter-grid]');
+  var empty = document.querySelector('[data-filter-empty]');
+  if (!grid) return;
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('[data-topics]'));
+  var chips = Array.prototype.slice.call(filter.querySelectorAll('[data-filter]'));
+  var state = { topic: '', year: '' };
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  // Start from the URL, ignoring values that have no chip
+  var params = new URLSearchParams(window.location.search);
+  Object.keys(state).forEach(function(group) {
+    var value = params.get(group) || '';
+    var known = chips.some(function(chip) { return chip.dataset.filter === group && chip.dataset.value === value; });
+    if (known) state[group] = value;
+  });
+
+  function matches(card, group, attr) {
+    return !state[group] || card.getAttribute(attr).split(' ').indexOf(state[group]) > -1;
+  }
+
+  function apply(animate) {
+    var shown = 0;
+    cards.forEach(function(card) {
+      var show = matches(card, 'topic', 'data-topics') && matches(card, 'year', 'data-years');
+      var wasHidden = card.hidden;
+      card.hidden = !show;
+      if (show) {
+        shown++;
+        if (animate && wasHidden && !reduceMotion.matches && card.animate) {
+          card.animate({ opacity: [0, 1], transform: ['translateY(8px)', 'none'] }, { duration: 250, easing: 'ease-out' });
+        }
+      }
+    });
+    chips.forEach(function(chip) {
+      chip.setAttribute('aria-pressed', state[chip.dataset.filter] === chip.dataset.value ? 'true' : 'false');
+    });
+    if (empty) empty.hidden = shown > 0;
+
+    var url = new URLSearchParams(window.location.search);
+    Object.keys(state).forEach(function(group) {
+      if (state[group]) url.set(group, state[group]); else url.delete(group);
+    });
+    var query = url.toString();
+    history.replaceState(null, '', window.location.pathname + (query ? '?' + query : '') + window.location.hash);
+  }
+
+  chips.forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var group = chip.dataset.filter;
+      // Clicking the active chip again goes back to "All"
+      state[group] = state[group] === chip.dataset.value ? '' : chip.dataset.value;
+      apply(true);
+    });
+  });
+  document.querySelectorAll('[data-filter-reset]').forEach(function(button) {
+    button.addEventListener('click', function() {
+      state.topic = '';
+      state.year = '';
+      apply(true);
+    });
+  });
+
+  filter.hidden = false;
+  apply(false);
+});
