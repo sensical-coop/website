@@ -17,7 +17,9 @@ partners: []
 # The service pages list this project automatically.
 services: []
 labels: []
-# Card cover: a file in this folder (resized to webp) or a path under static/
+# Images: put them in assets/images/projects/<project>/ and use "/images/projects/<project>/x.jpg",
+# so every language shares one copy (resized to webp). Files in this folder or under static/ also work.
+# Card cover
 image: ""
 # Gallery carousel after the text. Strings, or maps with src/alt/caption
 images: []

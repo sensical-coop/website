@@ -1,0 +1,10 @@
+{{- /* Finds an image as a Hugo resource: first in the page bundle, then under assets/
+       (so translations can share one copy, e.g. "/images/projects/x/photo.jpg").
+       Context: dict "page" "src". Returns the resource, or "" when it is a static or
+       remote path. */ -}}
+{{- $r := "" -}}
+{{- with .page }}{{ with .Resources.Get $.src }}{{ $r = . }}{{ end }}{{ end -}}
+{{- if and (not $r) (not (strings.Contains .src "://")) -}}
+  {{- with resources.Get (strings.TrimPrefix "/" .src) }}{{ $r = . }}{{ end -}}
+{{- end -}}
+{{- return $r -}}

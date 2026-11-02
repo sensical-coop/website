@@ -6,7 +6,7 @@
   {{< /carousel >}}
 
   or pull them from a front matter list with images="gallery" (default key: images).
-  Paths are looked up in the page bundle first, then under static/. */ -}}
+  Paths are looked up in the page bundle first, then under assets/, then static/. */ -}}
 {{- $images := slice -}}
 {{- with .Inner -}}
   {{- range findRESubmatch `!\[([^\]]*)\]\(\s*<?([^\s)>]+)>?(?:\s+"([^"]*)")?\s*\)` . -}}
