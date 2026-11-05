@@ -254,3 +254,32 @@ document.querySelectorAll('[data-project-filter]').forEach(function(filter) {
   filter.hidden = false;
   apply(false);
 });
+
+// Sticky header: slides away while scrolling down, comes back on scroll up
+(function() {
+  var header = document.querySelector('.header');
+  if (!header) return;
+  var lastY = window.scrollY;
+  var ticking = false;
+  function update() {
+    var y = window.scrollY;
+    var menuOpen = body.classList.contains('lock-scroll');
+    var langOpen = langMenu && langMenu.classList.contains('show');
+    if (Math.abs(y - lastY) > 4) {
+      var hide = y > lastY && y > header.offsetHeight && !menuOpen && !langOpen;
+      header.classList.toggle('is-hidden', hide);
+      lastY = y;
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+  }, { passive: true });
+  // Keyboard users tabbing into the menu always see it
+  header.addEventListener('focusin', function() {
+    header.classList.remove('is-hidden');
+  });
+})();
