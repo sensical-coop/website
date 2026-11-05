@@ -1,0 +1,677 @@
+// Serious style: a quieter take on the same pages. Applies with <html data-style="serious">
+// (params.style in hugo.toml, or ?style=serious to preview). The fun style is the base;
+// everything here only overrides it.
+//
+// Hairlines instead of 2px black frames, no dot grids or hard offset shadows,
+// small-caps labels, text links instead of coral pills, coral kept for accents.
+
+$serious-line: rgba($black, 0.12);
+$serious-surface: #f5f5f3;
+@mixin serious-caps {
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+html[data-style="serious"] {
+  // Lifts become plain colour changes: no movement, no offset shadow
+  .header .logo-text,
+  .main-menu > ul > li > a,
+  .footer .footer-logo,
+  .footer .footer-link,
+  .hero-full .hero-wordmark .hero-letter,
+  .hero-full .hero-statement .hero-word {
+    transition: color 0.2s ease;
+    &:hover,
+    &:focus-visible {
+      transform: none;
+      text-shadow: none;
+    }
+  }
+
+  // Navbar: white, with a hairline and lighter type
+  .header {
+    background-color: $white;
+    border-bottom: 1px solid $serious-line !important;
+    font-weight: 400;
+    .logo-text:hover,
+    .logo-text:focus-visible {
+      color: $accent;
+    }
+  }
+
+  .main-menu > ul > li {
+    font-size: 1.05rem;
+    > a {
+      color: rgba($black, 0.7);
+      &:hover,
+      &:focus-visible {
+        color: $black;
+      }
+      span {
+        border-bottom-width: 1px;
+      }
+    }
+    &.active > a {
+      color: $black;
+      span {
+        border-bottom-color: $accent;
+      }
+    }
+  }
+
+  // Footer: logo and links turn coral, like the header logo
+  .footer .footer-logo,
+  .footer .footer-link {
+    &:hover,
+    &:focus-visible {
+      color: $accent;
+    }
+  }
+  .footer .footer-link {
+    font-weight: 500;
+  }
+
+  .language-select .lang-toggle {
+    border-width: 1px;
+    border-color: $serious-line;
+    font-weight: 500;
+    &:hover,
+    &[aria-expanded="true"] {
+      background: $black;
+      border-color: $black;
+      color: $white;
+    }
+  }
+  .language-select .dropdown-menu {
+    border: 1px solid $serious-line;
+    box-shadow: 0 8px 24px rgba($black, 0.12);
+  }
+  .language-select .dropdown-item {
+    font-weight: 500;
+  }
+
+  // Plain surfaces
+  .bg-white-dots,
+  .bg-black-dots,
+  .bg-accent-dots,
+  .hero-full {
+    background-image: none;
+  }
+  // Home hero in black and white: black page, white band for the wordmark, white
+  // subtitle. Letters and words turn coral on hover.
+  .hero-color-accent {
+    background-color: $black;
+  }
+  .hero-full {
+    .bg-gray-100 {
+      background-color: $white !important;
+    }
+    .hero-statement {
+      color: $white;
+    }
+    .hero-down {
+      fill: $white;
+    }
+    .hero-wordmark .hero-letter:hover,
+    .hero-statement .hero-word:hover {
+      color: $accent;
+    }
+  }
+
+  .footer {
+    border-top: 1px solid $serious-line;
+  }
+
+  // Keyword pills on the black banners: thin outlines, no "+"
+  .banner-keywords li {
+    border-width: 1px;
+    border-color: rgba($white, 0.35);
+    font-weight: 500;
+    text-transform: none;
+    &::before {
+      content: none;
+    }
+  }
+
+  // Grid sections
+  .work-grid,
+  .dot-section {
+    background: $serious-surface;
+    border-top: 1px solid $serious-line;
+    border-bottom: 0;
+  }
+
+  .service-summary {
+    gap: 56px;
+    @include media-breakpoint-up(lg) {
+      gap: 72px 48px;
+    }
+  }
+
+  // Cards: no frame, a hairline on top, content set on the surface
+  .work-card {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid $black;
+    padding: 20px 0 0;
+    transition: none;
+    &:hover,
+    &:focus-within {
+      transform: none;
+      box-shadow: none;
+    }
+
+    .work-card__meta {
+      margin-bottom: 20px;
+      &::before {
+        font-family: $font-family-sans-serif;
+        font-weight: 600;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        font-variant-numeric: tabular-nums;
+        color: $secondary;
+        border: 0;
+        padding: 0;
+      }
+    }
+
+    .work-card__title {
+      font-weight: 600;
+      font-size: 1.6rem;
+      letter-spacing: -0.015em;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 6px;
+      transition: text-decoration-color 0.2s ease;
+      @include media-breakpoint-up(lg) {
+        font-size: 1.85rem;
+      }
+    }
+    &:hover .work-card__title,
+    &:focus-within .work-card__title {
+      text-decoration-color: currentColor;
+    }
+
+    .work-card__labels {
+      margin: 0 0 16px;
+      li {
+        @include serious-caps;
+        color: $secondary;
+        & + li::before {
+          content: "/";
+          color: rgba($black, 0.25);
+          margin: 0 10px;
+        }
+      }
+    }
+
+    .work-card__text {
+      font-size: 1.05rem;
+      color: $secondary;
+    }
+
+    // "Read more" as a text link with an arrow
+    .sensical-button {
+      height: auto;
+      padding: 0 !important;
+      gap: 0;
+      background: none;
+      border: 0;
+      border-radius: 0;
+      font-family: $font-family-sans-serif;
+      text-transform: none;
+      letter-spacing: 0;
+      color: $black;
+      .circle-button {
+        display: none;
+      }
+      .button-link-text {
+        font-size: 1rem !important;
+        font-weight: 600;
+        border-bottom: 1px solid $black;
+        padding-bottom: 4px;
+        &::after {
+          content: "→";
+          display: inline-block;
+          margin-left: 10px;
+          transition: transform 0.2s ease;
+        }
+      }
+    }
+    &:hover .sensical-button .button-link-text::after,
+    &:focus-within .sensical-button .button-link-text::after {
+      transform: translateX(4px);
+    }
+  }
+
+  // Project cards: the image sits above the hairline, unframed
+  .work-card--project {
+    border-top: 0;
+    padding-top: 0;
+    .work-card__image {
+      margin: 0 0 20px;
+      border: 0;
+      img {
+        aspect-ratio: 3 / 2;
+        transition: transform 0.6s ease;
+      }
+    }
+    &:hover .work-card__image img,
+    &:focus-within .work-card__image img {
+      transform: scale(1.02);
+    }
+    .work-card__meta {
+      border-top: 1px solid $black;
+      padding-top: 16px;
+      margin-bottom: 12px;
+      align-self: stretch;
+    }
+    .work-card__facts {
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+  }
+
+  // Filter: quiet outlined pills, the active one black
+  .project-filter {
+    &__label {
+      @include serious-caps;
+      color: $secondary;
+      min-width: 3.5rem;
+    }
+    &__chip {
+      border: 1px solid $serious-line;
+      background: $white;
+      font-weight: 500;
+      transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+      &:hover,
+      &:focus-visible {
+        transform: none;
+        box-shadow: none;
+        border-color: $black;
+      }
+      &[aria-pressed="true"] {
+        background: $black;
+        border-color: $black;
+        color: $white;
+      }
+    }
+  }
+
+  // Project facts: a ruled row instead of a boxed table
+  .project-facts {
+    border: 0;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $serious-line;
+    gap: 0 32px;
+    &__item {
+      box-shadow: none;
+      padding: 16px 0;
+    }
+    dt {
+      @include serious-caps;
+      color: $secondary;
+      margin-bottom: 6px;
+    }
+    dd {
+      font-weight: 500;
+      a {
+        text-decoration-color: $serious-line;
+        &:hover {
+          text-decoration-color: $black;
+        }
+      }
+    }
+    &__plus {
+      color: $secondary;
+    }
+  }
+
+  // Coral bar above related cards: a plain section heading
+  .related-grid__title {
+    background: $white !important;
+    border-top: 1px solid $serious-line !important;
+    padding: 48px 0 0 !important;
+    h2 {
+      background: none !important;
+      @include serious-caps;
+      font-size: 0.875rem;
+      color: $secondary;
+    }
+    + .work-grid {
+      background: $white;
+      border-top: 0;
+      padding-top: 24px;
+    }
+  }
+
+  // Page text
+  .page-work-single .content {
+    > h2 {
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    li::before {
+      content: "–";
+      color: $secondary;
+      font-weight: 400;
+    }
+  }
+
+  .alert-bg-sensical {
+    background: $serious-surface;
+    border-top: 1px solid $serious-line;
+    border-bottom: 1px solid $serious-line;
+    border-left: 0;
+    h3 {
+      font-weight: 600;
+      &::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: $accent;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .page-work-single .content .alert.alert-bg-sensical a {
+    color: $black !important;
+    text-decoration-color: $accent !important;
+  }
+  .alert-border-sensical {
+    border-top: 1px solid $serious-line;
+    border-bottom: 1px solid $serious-line;
+    h3 {
+      font-weight: 600;
+    }
+  }
+
+  // Carousel: unframed image, slim controls below
+  .image-carousel {
+    border: 0;
+    background: transparent;
+    &__slide figcaption {
+      border-top: 0;
+      padding: 12px 0 0;
+      font-size: 0.95rem;
+    }
+    &__controls {
+      border-top: 0;
+      padding: 12px 0 0;
+    }
+    &__arrow {
+      width: 40px;
+      height: 40px;
+      border: 1px solid $serious-line;
+      &:hover,
+      &:focus-visible {
+        border-color: $black;
+      }
+    }
+  }
+
+  // Big CTA buttons: a slim black pill in the body font, with an arrow, instead of the
+  // tall coral display-font pill
+  .sensical-button:not(.sensical-button-plus) {
+    height: auto;
+    padding: 14px 26px !important;
+    gap: 0;
+    background: $black;
+    border: 1px solid $black;
+    color: $white;
+    font-family: $font-family-sans-serif;
+    text-transform: none;
+    letter-spacing: 0;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    .button-link-text {
+      font-size: 1rem !important;
+      font-weight: 500;
+      line-height: 1.2;
+      color: inherit;
+      &::after {
+        content: "→";
+        display: inline-block;
+        margin-left: 12px;
+        transition: transform 0.2s ease;
+      }
+    }
+    &:hover,
+    &:focus-visible {
+      transform: none;
+      box-shadow: none;
+      background-color: $white;
+      border-color: $black;
+      color: $black !important;
+      .button-link-text {
+        color: $black;
+        &::after {
+          transform: translateX(4px);
+        }
+      }
+    }
+  }
+
+  // On black sections the pill turns white
+  .bg-primary .sensical-button:not(.sensical-button-plus) {
+    background: $white;
+    border-color: $white;
+    color: $black;
+    &:hover,
+    &:focus-visible {
+      background: transparent;
+      border-color: $white;
+      color: $white !important;
+      .button-link-text {
+        color: $white;
+      }
+    }
+  }
+
+  // "See all our services / projects →": body font, lighter, underline on hover
+  .full-width-link {
+    font-family: $font-family-sans-serif !important;
+    border-top: 1px solid $serious-line;
+    a {
+      font-weight: 500 !important;
+      font-size: 1.5rem !important;
+      letter-spacing: -0.01em;
+      text-align: left;
+      @include media-breakpoint-up(md) {
+        font-size: 1.75rem !important;
+      }
+    }
+    &:hover {
+      background-color: $serious-surface;
+      a {
+        text-decoration: underline !important;
+        text-decoration-thickness: 1px !important;
+        text-underline-offset: 6px;
+      }
+    }
+  }
+
+  // Framed panels on black (About): hairline frame, no coral offset shadow
+  .panel--dark {
+    border-width: 1px;
+    border-color: rgba($white, 0.3);
+    box-shadow: none;
+  }
+
+  // Home: thin rules on the hero band; section heads on white instead of coral bars
+  .hero-full .border-3 {
+    border-width: 1px !important;
+  }
+  .page-home main > .bg-accent {
+    background-color: $white;
+    border-top: 1px solid $serious-line;
+  }
+  .page-home #projects {
+    border-top: 1px solid $serious-line !important;
+  }
+
+  // About: team panels with hairline frames, thin photo rings
+  .panel:not(.panel--dark) {
+    border-width: 1px;
+    border-color: $serious-line;
+  }
+  .member-image img {
+    border-width: 1px;
+    border-color: $serious-line;
+  }
+
+  // FAQ: hairline questions without the lift; open ones get a black frame
+  .faq-item {
+    border-width: 1px;
+    border-color: $serious-line;
+    transition: border-color 0.2s ease;
+    &:hover,
+    &:focus-within {
+      transform: none;
+      box-shadow: none;
+      border-color: $black;
+    }
+    &[open]:not(.is-closing) {
+      &,
+      &:hover,
+      &:focus-within {
+        box-shadow: none;
+        border-color: $black;
+      }
+    }
+  }
+
+  .faq-section {
+    background: $serious-surface;
+    border-top: 1px solid $serious-line;
+  }
+  .faq-num {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    font-variant-numeric: tabular-nums;
+    color: $secondary;
+    border: 0;
+    margin-top: 6px;
+  }
+  .faq-q {
+    font-weight: 600;
+  }
+  // Outlined circle with a thin plus; it fills black when open
+  .faq-toggle {
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: 1px solid $serious-line;
+    transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    &::before,
+    &::after {
+      width: 14px;
+      height: 1.5px;
+    }
+    .faq-item[open]:not(.is-closing) & {
+      background: $black;
+      border-color: $black;
+      &::before,
+      &::after {
+        background: $white;
+      }
+    }
+  }
+  .faq-aside__title {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+  }
+
+  // Contact: the email in the body font with a thin underline
+  .contact-email {
+    font-family: $font-family-sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+  }
+  .contact-details {
+    border-top-width: 1px;
+  }
+
+  // "+" pills outside the cards (e.g. the empty projects list) read like the card links
+  .project-empty .sensical-button-plus {
+    height: auto;
+    padding: 0 !important;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid $black;
+    border-radius: 0;
+    font-family: $font-family-sans-serif;
+    text-transform: none;
+    .circle-button {
+      display: none;
+    }
+    .button-link-text {
+      font-size: 1rem !important;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-style="serious"] {
+    .work-card--project .work-card__image img,
+    .work-card .sensical-button .button-link-text::after,
+    .sensical-button .button-link-text::after {
+      transition: none;
+      transform: none !important;
+    }
+  }
+}
+
+// Switching styles: the new page is revealed by a growing circle centred on the toggle
+// (style-switcher.html sets --reveal-x/y/r); the old page stays still underneath
+@keyframes style-reveal {
+  from {
+    clip-path: circle(0 at var(--reveal-x) var(--reveal-y));
+  }
+  to {
+    clip-path: circle(var(--reveal-r) at var(--reveal-x) var(--reveal-y));
+  }
+}
+html.is-switching-style::view-transition-old(root) {
+  animation: none;
+}
+html.is-switching-style::view-transition-new(root) {
+  animation: style-reveal 0.7s cubic-bezier(0.65, 0, 0.35, 1) both;
+  mix-blend-mode: normal;
+}
+
+// Review toggle (layouts/partials/style-switcher.html); only rendered on hugo server
+.style-switcher {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1000;
+  display: flex;
+  padding: 4px;
+  background: $white;
+  border: 1px solid $black;
+  border-radius: $border-radius-pill;
+  box-shadow: 0 4px 16px rgba($black, 0.15);
+  button {
+    border: 0;
+    border-radius: $border-radius-pill;
+    background: none;
+    padding: 6px 14px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: $black;
+    &[aria-pressed="true"] {
+      background: $black;
+      color: $white;
+    }
+  }
+}
