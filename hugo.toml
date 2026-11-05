@@ -38,8 +38,8 @@ disableKinds = ["taxonomy", "term", "rss"]
   og_image = "images/og/sensical-2400x1260.png"
   # Visual style: "fun" or "serious". Preview the other with ?style=serious;
   # the switcher shows on `hugo server`, or everywhere with styleSwitcher = true
-  style = "serious"
-  styleSwitcher = false
+  style = "fun"
+  styleSwitcher = true
 
   [params.logo]
     favicon = "images/logo/favicon.ico"
