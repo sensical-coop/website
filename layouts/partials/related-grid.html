@@ -1,0 +1,15 @@
+{{- /* Coral title bar + dot grid of cards. Context: dict "title" "pages" */ -}}
+{{- with .pages }}
+<div class="related-grid__title bg-accent border-top border-black border-2 py-5">
+  <h2 class="container text-uppercase bg-accent fw-bolder pb-0 mb-0">{{ $.title }}</h2>
+</div>
+<div class="work-grid">
+  <div class="container px-2 px-lg-0">
+    <div class="service-summary">
+    {{- range first 6 (sort . ".Params.weight") }}
+      {{ .Render "summary" }}
+    {{- end }}
+    </div>
+  </div>
+</div>
+{{- end }}

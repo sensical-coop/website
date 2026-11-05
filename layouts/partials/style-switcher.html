@@ -1,0 +1,48 @@
+{{- /* Floating Fun / Serious toggle for reviewing the two styles (see params.style) */ -}}
+{{- if or hugo.IsServer site.Params.styleSwitcher }}
+<div class="style-switcher" role="group" aria-label="Style">
+  <button type="button" data-style-set="fun">Fun</button>
+  <button type="button" data-style-set="serious">Serious</button>
+</div>
+<script>
+(function () {
+  var root = document.documentElement;
+  var buttons = document.querySelectorAll('[data-style-set]');
+  function sync() {
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', b.dataset.styleSet === root.getAttribute('data-style'));
+    });
+  }
+  function apply(style) {
+    root.setAttribute('data-style', style);
+    try { sessionStorage.setItem('style', style); } catch (e) {}
+    var url = new URL(location.href);
+    url.searchParams.set('style', style);
+    history.replaceState(null, '', url);
+    sync();
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var style = b.dataset.styleSet;
+      if (style === root.getAttribute('data-style')) return;
+      var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!document.startViewTransition || still) return apply(style);
+      // The new style grows as a circle from the button that was clicked. The CSS
+      // animation (_style-serious.scss) reads the centre and radius from these
+      // properties, so it starts with the transition, without a frame of the new style.
+      var r = b.getBoundingClientRect();
+      var x = r.left + r.width / 2;
+      var y = r.top + r.height / 2;
+      root.style.setProperty('--reveal-x', x + 'px');
+      root.style.setProperty('--reveal-y', y + 'px');
+      root.style.setProperty('--reveal-r', Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y)) + 'px');
+      root.classList.add('is-switching-style');
+      document.startViewTransition(function () { apply(style); }).finished.finally(function () {
+        root.classList.remove('is-switching-style');
+      });
+    });
+  });
+  sync();
+})();
+</script>
+{{- end }}

@@ -1,0 +1,11 @@
+{{- /* URL for an image path: a page bundle or assets/ resource (resized to webp), or a static path.
+       Context: dict "page" "src" "width" (default 1200). Returns a string. */ -}}
+{{- $url := .src | relURL -}}
+{{- $width := .width | default 1200 -}}
+{{- with partial "image-resource.html" (dict "page" .page "src" .src) -}}
+  {{- $url = .RelPermalink -}}
+  {{- if and (eq .ResourceType "image") (in (slice "jpeg" "png" "webp" "tiff" "bmp") .MediaType.SubType) -}}
+    {{- $url = (.Resize (printf "%dx webp q80" (math.Min .Width $width | int))).RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+{{- return $url -}}

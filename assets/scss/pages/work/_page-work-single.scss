@@ -57,9 +57,9 @@
         margin-bottom: 20px;
       }
     }
-    // Comfortable reading measure; full-bleed blocks (alerts, dividers) are unaffected
+    // Reading measure (about 90 characters); full-bleed blocks (alerts, dividers) are unaffected
     > p, > h2, > h3, > ul, > ol {
-      max-width: 46rem;
+      max-width: 58rem;
     }
 
     > ul, li {
@@ -83,7 +83,14 @@
     }
 
     .alert .container > * {
-      max-width: 46rem;
+      max-width: 58rem;
+    }
+
+    // Coral links would vanish on the coral alert
+    .alert.alert-bg-sensical a {
+      color: $black !important;
+      text-decoration: underline;
+      text-decoration-color: $black !important;
     }
   }
   .masonry {

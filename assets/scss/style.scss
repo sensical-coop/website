@@ -41,15 +41,20 @@
 @import 'components/panel';
 @import 'components/banner-keywords';
 @import 'components/lift';
+@import 'components/image-carousel';
 
 // Pages
 @import 'pages/index';
 @import 'pages/services/page-services-list';
 @import 'pages/services/page-services-single';
 @import 'pages/work/page-work-single';
+@import 'pages/projects/project';
 @import 'pages/about/member';
 @import 'pages/faq';
 @import 'pages/contact';
+
+// Alternative style, layered over the base (see params.style)
+@import 'components/style-serious';
 
 // Display breakpoints for DEV
 // body:after {

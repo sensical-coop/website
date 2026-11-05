@@ -8,9 +8,10 @@ weight: 2
 heroHeading: 'Recopilació de dades ambientals'
 heroSubHeading: ''
 button: "Llegir més"
-section_title: 'Portfolio'
+section_title: 'Serveis'
 translationKey: environmentaldatacollection
 aliases:
+- /portfolio/recopilacio-dades-ambientals/
 - /work/recopilacio-dades-ambientals/
 labels:
 - "Sensors"
@@ -91,6 +92,6 @@ Oferim una àmplia gamma de productes i serveis entorn de solucions mediambienta
 
 ## Construïm-ho {{< accent >}}junts{{< /accent >}}
 
-Tenim una experiència en particular treballant al costat d'investigadors i grups de científics ciutadans per a ajudar a definir els seus objectius de recerca, desplegar sensors, analitzar dades i prendre mesures sobre els resultats, i ens encanta treballar de manera horitzontal i participativa. Llegeixi més sobre els nostres mètodes en la nostra pàgina de [co-creació](/ca/portfolio/co-creacio/).
+Tenim una experiència en particular treballant al costat d'investigadors i grups de científics ciutadans per a ajudar a definir els seus objectius de recerca, desplegar sensors, analitzar dades i prendre mesures sobre els resultats, i ens encanta treballar de manera horitzontal i participativa. Llegeixi més sobre els nostres mètodes en la nostra pàgina de [co-creació](/ca/serveis/co-creacio/).
 
 Contacti'ns en: [info@sensical.es](mailto:info@sensical.es)

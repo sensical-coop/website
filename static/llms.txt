@@ -4,12 +4,12 @@
 
 Sensical is a Catalan cooperative (Societat Cooperativa Catalana Limitada) founded in October 2026 by five members, working with a network of collaborators. We work remotely and on site, across Europe and internationally. We default to open-source software and open hardware, with licensing agreed per project. Contact: info@sensical.es.
 
-Every page listed below has a clean Markdown version: append `.md` to the page URL without the trailing slash (for example https://sensical.es/work/co-creation/ is https://sensical.es/work/co-creation.md). The full profile is at https://sensical.es/llms-full.txt. Spanish, Catalan and French versions: https://sensical.es/es/llms.txt, https://sensical.es/ca/llms.txt and https://sensical.es/fr/llms.txt.
+Every page listed below has a clean Markdown version: append `.md` to the page URL without the trailing slash (for example https://sensical.es/services/co-creation/ is https://sensical.es/services/co-creation.md). The full profile is at https://sensical.es/llms-full.txt. Spanish, Catalan and French versions: https://sensical.es/es/llms.txt, https://sensical.es/ca/llms.txt and https://sensical.es/fr/llms.txt.
 
-## Work
+## Services
 
-- [Environmental data collection](https://sensical.es/work/environmental-data-collection.md): Open, affordable air quality and environmental monitoring: sensors, Meshtastic mesh networks, calibration, data validation and deployment.
-- [Co-creation and participatory design](https://sensical.es/work/co-creation.md): Workshops, project co-design and long-term mentoring that involve your team throughout design and development.
+- [Environmental data collection](https://sensical.es/services/environmental-data-collection.md): Open, affordable air quality and environmental monitoring: sensors, Meshtastic mesh networks, calibration, data validation and deployment.
+- [Co-creation and participatory design](https://sensical.es/services/co-creation.md): Workshops, project co-design and long-term mentoring that involve your team throughout design and development.
 
 ## Company
 

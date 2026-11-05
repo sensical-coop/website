@@ -4,12 +4,12 @@
 
 Sensical és una cooperativa catalana (Societat Cooperativa Catalana Limitada) fundada l'octubre de 2026 per cinc socis, que treballa amb una xarxa de col·laboradors. Treballem en remot i presencialment, a Europa i a escala internacional. Per defecte fem servir programari lliure i maquinari obert; les llicències s'acorden a cada projecte. Contacte: info@sensical.es.
 
-Cada pàgina de la llista té una versió neta en Markdown: afegeix `.md` a l'URL de la pàgina sense la barra final (per exemple https://sensical.es/ca/portfolio/co-creacio/ és https://sensical.es/ca/portfolio/co-creacio.md). El perfil complet és a https://sensical.es/ca/llms-full.txt. Versions en anglès, castellà i francès: https://sensical.es/llms.txt, https://sensical.es/es/llms.txt i https://sensical.es/fr/llms.txt.
+Cada pàgina de la llista té una versió neta en Markdown: afegeix `.md` a l'URL de la pàgina sense la barra final (per exemple https://sensical.es/ca/serveis/co-creacio/ és https://sensical.es/ca/serveis/co-creacio.md). El perfil complet és a https://sensical.es/ca/llms-full.txt. Versions en anglès, castellà i francès: https://sensical.es/llms.txt, https://sensical.es/es/llms.txt i https://sensical.es/fr/llms.txt.
 
-## Feina
+## Serveis
 
-- [Recopilació de dades ambientals](https://sensical.es/ca/portfolio/recopilacio-dades-ambientals.md): Monitoratge ambiental i de qualitat de l'aire obert i assequible: sensors, xarxes mesh Meshtastic, calibratge, validació de dades i desplegament.
-- [Co-creació i disseny participatiu](https://sensical.es/ca/portfolio/co-creacio.md): Tallers, co-disseny de projectes i mentoria a llarg termini que impliquen el teu equip durant tot el disseny i desenvolupament.
+- [Recopilació de dades ambientals](https://sensical.es/ca/serveis/recopilacio-dades-ambientals.md): Monitoratge ambiental i de qualitat de l'aire obert i assequible: sensors, xarxes mesh Meshtastic, calibratge, validació de dades i desplegament.
+- [Co-creació i disseny participatiu](https://sensical.es/ca/serveis/co-creacio.md): Tallers, co-disseny de projectes i mentoria a llarg termini que impliquen el teu equip durant tot el disseny i desenvolupament.
 
 ## Empresa
 

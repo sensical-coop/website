@@ -8,9 +8,10 @@ weight: 3
 heroHeading: 'Co-creación y diseño participativo'
 heroSubHeading: ''
 button: "Leer más"
-section_title: 'Portfolio'
+section_title: 'Servicios'
 translationKey: cocreation
 aliases:
+- /portfolio/co-creacion/
 - /co-creacion/
 labels:
 - "Talleres"

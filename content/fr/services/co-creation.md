@@ -8,7 +8,7 @@ weight: 3
 heroHeading: 'Co-création et conception participative'
 heroSubHeading: ''
 button: "En savoir plus"
-section_title: 'Portefeuille'
+section_title: 'Services'
 translationKey: cocreation
 aliases:
 - /co-creation/

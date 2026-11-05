@@ -4,12 +4,12 @@
 
 Sensical es una cooperativa catalana (Societat Cooperativa Catalana Limitada) fundada en octubre de 2026 por cinco socios, que trabaja con una red de colaboradores. Trabajamos en remoto y presencialmente, en Europa y a nivel internacional. Por defecto usamos software libre y hardware abierto; las licencias se acuerdan en cada proyecto. Contacto: info@sensical.es.
 
-Cada página de la lista tiene una versión limpia en Markdown: añade `.md` a la URL de la página sin la barra final (por ejemplo https://sensical.es/es/portfolio/co-creacion/ es https://sensical.es/es/portfolio/co-creacion.md). El perfil completo está en https://sensical.es/es/llms-full.txt. Versiones en inglés, catalán y francés: https://sensical.es/llms.txt, https://sensical.es/ca/llms.txt y https://sensical.es/fr/llms.txt.
+Cada página de la lista tiene una versión limpia en Markdown: añade `.md` a la URL de la página sin la barra final (por ejemplo https://sensical.es/es/servicios/co-creacion/ es https://sensical.es/es/servicios/co-creacion.md). El perfil completo está en https://sensical.es/es/llms-full.txt. Versiones en inglés, catalán y francés: https://sensical.es/llms.txt, https://sensical.es/ca/llms.txt y https://sensical.es/fr/llms.txt.
 
-## Trabajo
+## Servicios
 
-- [Recopilación de datos ambientales](https://sensical.es/es/portfolio/recopilacion-datos-ambientales.md): Monitorización ambiental y de calidad del aire abierta y asequible: sensores, redes mesh Meshtastic, calibración, validación de datos y despliegue.
-- [Co-creación y diseño participativo](https://sensical.es/es/portfolio/co-creacion.md): Talleres, co-diseño de proyectos y mentoría a largo plazo que implican a tu equipo durante todo el diseño y desarrollo.
+- [Recopilación de datos ambientales](https://sensical.es/es/servicios/recopilacion-datos-ambientales.md): Monitorización ambiental y de calidad del aire abierta y asequible: sensores, redes mesh Meshtastic, calibración, validación de datos y despliegue.
+- [Co-creación y diseño participativo](https://sensical.es/es/servicios/co-creacion.md): Talleres, co-diseño de proyectos y mentoría a largo plazo que implican a tu equipo durante todo el diseño y desarrollo.
 
 ## Empresa
 

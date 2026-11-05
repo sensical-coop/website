@@ -13,7 +13,7 @@ disableKinds = ["taxonomy", "term", "rss"]
   [mediaTypes."text/markdown"]
     suffixes = ["md"]
 
-# Per-page Markdown twins for LLMs (GEO): /work/co-creation/ -> /work/co-creation.md
+# Per-page Markdown twins for LLMs (GEO): /services/co-creation/ -> /services/co-creation.md
 [outputFormats]
   [outputFormats.markdown]
     mediaType = "text/markdown"
@@ -27,10 +27,19 @@ disableKinds = ["taxonomy", "term", "rss"]
   section = ["html"]
   page = ["html", "markdown"]
 
+# No cookie banner: embed YouTube from youtube-nocookie.com
+[privacy]
+  [privacy.youTube]
+    privacyEnhanced = true
+
 [params]
   google_analytics_id=""
   # Default social sharing image (absolute URL is built in the head partial)
   og_image = "images/og/sensical-2400x1260.png"
+  # Visual style: "fun" or "serious". Preview the other with ?style=serious;
+  # the switcher shows on `hugo server`, or everywhere with styleSwitcher = true
+  style = "fun"
+  styleSwitcher = true
 
   [params.logo]
     favicon = "images/logo/favicon.ico"
@@ -40,7 +49,8 @@ disableKinds = ["taxonomy", "term", "rss"]
 [permalinks]
   [permalinks.page]
     pages = "/:slugorcontentbasename/"
-    work = "/work/:contentbasename/"
+    services = "/services/:contentbasename/"
+    projects = "/projects/:contentbasename/"
 
 DefaultContentLanguage = "en"
 [languages]
@@ -51,9 +61,13 @@ DefaultContentLanguage = "en"
     weight = 10
     [languages.en.menus]
       [[languages.en.menus.main]]
-        name = 'Work'
-        pageRef = '/work'
+        name = 'Services'
+        pageRef = '/services'
         weight = 10
+      [[languages.en.menus.main]]
+        name = 'Projects'
+        pageRef = '/projects'
+        weight = 15
       [[languages.en.menus.main]]
         name = 'About'
         pageRef = '/pages/about'
@@ -70,12 +84,17 @@ DefaultContentLanguage = "en"
     [languages.es.permalinks]
       [languages.es.permalinks.page]
         pages = "/:slugorcontentbasename/"
-        work = "/portfolio/:contentbasename/"
+        services = "/servicios/:contentbasename/"
+        projects = "/proyectos/:contentbasename/"
     [languages.es.menus]
       [[languages.es.menus.main]]
-        name = 'Portfolio'
-        pageRef = '/work'
+        name = 'Servicios'
+        pageRef = '/services'
         weight = 10
+      [[languages.es.menus.main]]
+        name = 'Proyectos'
+        pageRef = '/projects'
+        weight = 15
       [[languages.es.menus.main]]
         name = 'Sobre'
         pageRef = '/pages/about'
@@ -92,12 +111,17 @@ DefaultContentLanguage = "en"
     [languages.fr.permalinks]
       [languages.fr.permalinks.page]
         pages = "/:slugorcontentbasename/"
-        work = "/services/:contentbasename/"
+        services = "/services/:contentbasename/"
+        projects = "/projets/:contentbasename/"
     [languages.fr.menus]
       [[languages.fr.menus.main]]
         name = 'Services'
-        pageRef = '/work'
+        pageRef = '/services'
         weight = 10
+      [[languages.fr.menus.main]]
+        name = 'Projets'
+        pageRef = '/projects'
+        weight = 15
       [[languages.fr.menus.main]]
         name = 'À propos'
         pageRef = '/pages/about'
@@ -114,12 +138,17 @@ DefaultContentLanguage = "en"
     [languages.ca.permalinks]
       [languages.ca.permalinks.page]
         pages = "/:slugorcontentbasename/"
-        work = "/portfolio/:contentbasename/"
+        services = "/serveis/:contentbasename/"
+        projects = "/projectes/:contentbasename/"
     [languages.ca.menus]
       [[languages.ca.menus.main]]
-        name = 'Portfolio'
-        pageRef = '/work'
+        name = 'Serveis'
+        pageRef = '/services'
         weight = 10
+      [[languages.ca.menus.main]]
+        name = 'Projectes'
+        pageRef = '/projects'
+        weight = 15
       [[languages.ca.menus.main]]
         name = 'Sobre'
         pageRef = '/pages/about'

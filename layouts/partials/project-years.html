@@ -1,0 +1,10 @@
+{{- /* Every year a project covers, from its `year` param: 2026, "2026" or a range like
+       "2022–2023". Context: the project page. Returns a slice of ints. */ -}}
+{{- $years := slice -}}
+{{- $found := findRE `\d{4}` (string (.Params.year | default "")) -}}
+{{- if eq (len $found) 1 -}}
+  {{- $years = slice (int (index $found 0)) -}}
+{{- else if ge (len $found) 2 -}}
+  {{- $years = seq (int (index $found 0)) (int (index $found (sub (len $found) 1))) -}}
+{{- end -}}
+{{- return $years -}}
