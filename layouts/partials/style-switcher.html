@@ -1,8 +1,9 @@
-{{- /* Floating Fun / Serious toggle for reviewing the two styles (see params.style) */ -}}
+{{- /* Floating Fun / Serious toggle (see params.style), with a note that shows on hover or focus */ -}}
 {{- if or hugo.IsServer site.Params.styleSwitcher }}
-<div class="style-switcher" role="group" aria-label="Style">
-  <button type="button" data-style-set="fun">Fun</button>
-  <button type="button" data-style-set="serious">Serious</button>
+<div class="style-switcher" role="group" aria-label="{{ T "Style" }}" aria-describedby="style-switcher-note">
+  <button type="button" data-style-set="fun">{{ T "Style fun" }}</button>
+  <button type="button" data-style-set="serious">{{ T "Style serious" }}</button>
+  <p class="style-switcher__note" id="style-switcher-note" role="tooltip">{{ T "Style note" }}</p>
 </div>
 <script>
 (function () {
@@ -27,9 +28,7 @@
       if (style === root.getAttribute('data-style')) return;
       var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (!document.startViewTransition || still) return apply(style);
-      // The new style grows as a circle from the button that was clicked. The CSS
-      // animation (_style-serious.scss) reads the centre and radius from these
-      // properties, so it starts with the transition, without a frame of the new style.
+      // The new style grows as a circle from the button that was clicked.
       var r = b.getBoundingClientRect();
       var x = r.left + r.width / 2;
       var y = r.top + r.height / 2;

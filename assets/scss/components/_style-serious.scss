@@ -349,6 +349,72 @@ html[data-style="serious"] {
     }
   }
 
+  // Related services: a compact list of rows on a grey band, so they read differently
+  // from the project cards (no number, no description; title, labels and an arrow)
+  .related-grid__title.related-grid--services,
+  .work-grid.related-grid--services {
+    background: $serious-surface !important;
+  }
+  .work-grid.related-grid--services {
+    padding-bottom: 48px;
+    .service-summary {
+      grid-template-columns: 1fr;
+      gap: 0;
+      border-bottom: 1px solid $serious-line;
+    }
+    .work-card {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px 24px;
+      padding: 20px 0;
+      border-top: 1px solid $serious-line;
+      transition: background-color 0.2s ease;
+      @include media-breakpoint-up(md) {
+        padding: 24px 0;
+      }
+    }
+    .work-card__meta,
+    .work-card__text {
+      display: none;
+    }
+    .work-card__title {
+      flex: 1 1 18rem;
+      margin: 0;
+      font-size: 1.35rem;
+      @include media-breakpoint-up(lg) {
+        font-size: 1.5rem;
+      }
+    }
+    .work-card__labels {
+      margin: 0;
+    }
+    // Arrow only, pinned to the row's right edge; the link text stays for screen readers
+    .work-card {
+      padding-right: 48px;
+    }
+    .sensical-button {
+      margin: 0;
+      .button-link-text {
+        border-bottom: 0;
+        padding: 0;
+        font-size: 0 !important;
+        &::after {
+          position: absolute;
+          right: 4px;
+          top: 50%;
+          margin: 0;
+          font-size: 1.25rem;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .work-card:hover .sensical-button .button-link-text::after,
+    .work-card:focus-within .sensical-button .button-link-text::after {
+      transform: translate(4px, -50%);
+    }
+  }
+
   // Page text
   .page-work-single .content {
     > h2 {
@@ -621,6 +687,9 @@ html[data-style="serious"] {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .style-switcher__note {
+    transition: none;
+  }
   html[data-style="serious"] {
     .work-card--project .work-card__image img,
     .work-card .sensical-button .button-link-text::after,
@@ -649,7 +718,8 @@ html.is-switching-style::view-transition-new(root) {
   mix-blend-mode: normal;
 }
 
-// Review toggle (layouts/partials/style-switcher.html); only rendered on hugo server
+// Style toggle (layouts/partials/style-switcher.html); rendered on hugo server, or
+// everywhere with params.styleSwitcher
 .style-switcher {
   position: fixed;
   right: 16px;
@@ -661,6 +731,42 @@ html.is-switching-style::view-transition-new(root) {
   border: 1px solid $black;
   border-radius: $border-radius-pill;
   box-shadow: 0 4px 16px rgba($black, 0.15);
+  // Note above the toggle
+  &__note {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 10px);
+    width: 300px;
+    max-width: calc(100vw - 32px);
+    margin: 0;
+    padding: 10px 14px;
+    background: $black;
+    color: $white;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(4px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    pointer-events: none;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 28px;
+      top: 100%;
+      border: 6px solid transparent;
+      border-top-color: $black;
+    }
+  }
+  // Mouse: only while hovering. Keyboard: while a button has visible focus (a click
+  // leaves the button focused, so plain :focus-within would keep the note open)
+  &:hover &__note,
+  &:has(:focus-visible) &__note {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
   button {
     border: 0;
     border-radius: $border-radius-pill;
