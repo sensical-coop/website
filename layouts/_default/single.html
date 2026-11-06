@@ -4,7 +4,11 @@
 
 {{ define "main" }}
 {{ $section := .CurrentSection }}
-{{ partial "hero-image-setheight.html" (dict "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "eyebrow" ($section.Title) "eyebrowLink" $section.RelPermalink "keywords" .Params.labels) }}
+{{- /* Banner photo: heroImage, else the card image; heroImage: false keeps the plain banner */}}
+{{- $heroPhoto := .Params.image -}}
+{{- with .Params.heroImage }}{{ $heroPhoto = . }}{{ end -}}
+{{- if eq .Params.heroImage false }}{{ $heroPhoto = "" }}{{ end }}
+{{ partial "hero-image-setheight.html" (dict "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "eyebrow" ($section.Title) "eyebrowLink" $section.RelPermalink "keywords" .Params.labels "image" $heroPhoto "page" .) }}
 <div class="pt-4 pt-md-10">
   <div class="justify-content-start">
     <div class="container">

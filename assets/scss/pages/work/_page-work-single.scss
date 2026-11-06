@@ -93,6 +93,25 @@
       text-decoration-color: $black !important;
     }
   }
+  // Markdown images never grow past their column (layouts/_default/_markup/render-image.html)
+  .content img {
+    max-width: 100%;
+    height: auto;
+  }
+  .content-image {
+    margin: 40px 0;
+    img {
+      display: block;
+      width: 100%;
+    }
+    figcaption {
+      padding-top: 12px;
+      color: $secondary;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+
   .masonry {
     /* Masonry container */
     column-count: 3;

@@ -13,14 +13,18 @@ client: ""
 year: {{ now.Year }}
 location: ""
 partners: []
-# Services used, by their translationKey (environmentaldatacollection, cocreation).
-# The service pages list this project automatically.
+# Services used, by their translationKey (environmentaldatacollection, meshtasticsensorintegration,
+# technicaldevelopmentartists, cocreation). The service pages list this project automatically.
 services: []
+# Other projects to show at the end, by translationKey (e.g. famulus40) or file/folder name
+related_projects: []
 labels: []
 # Images: put them in assets/images/projects/<project>/ and use "/images/projects/<project>/x.jpg",
 # so every language shares one copy (resized to webp). Files in this folder or under static/ also work.
-# Card cover
+# Card cover; also the banner background, darkened for readability
 image: ""
+# Banner photo if different from the card cover; false keeps the plain black banner
+# heroImage: ""
 # Gallery carousel after the text. Strings, or maps with src/alt/caption
 images: []
 # Gallery options: "cover" (crop, default) or "contain"; aspect ratio, default 16/10

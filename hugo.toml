@@ -46,6 +46,10 @@ disableKinds = ["taxonomy", "term", "rss"]
     text = "snscl"
     alt = "Sensical SCCL"
 
+# Markdown images on their own line render as <figure> (see _markup/render-image.html)
+[markup.goldmark.parser]
+  wrapStandAloneImageWithinParagraph = false
+
 [permalinks]
   [permalinks.page]
     pages = "/:slugorcontentbasename/"

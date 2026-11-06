@@ -2,7 +2,10 @@
 {{ $members := hugo.Data.member }}
 {{ $person := .Params.member }}
 
-<article class="panel member-panel">
+{{- /* The file name (e.g. oscar-gonzalez) is the same in every language, so it is the anchor
+       other pages link to: /about/#oscar-gonzalez */ -}}
+{{ $anchor := .File.ContentBaseName }}
+<article class="panel member-panel" id="{{ $anchor }}">
   <div class="member-card">
       {{ with .Params.image }}
       <div class="member-image">
@@ -18,7 +21,7 @@
 
       <div class="member-content">
           <div class="member-content-top">
-              <h3 class="name">{{ .Title }}</h3>
+              <h3 class="name">{{ .Title }} <a class="member-anchor" href="#{{ $anchor }}" aria-label="{{ T "Link to member" .Title }}" title="{{ T "Link to member" .Title }}"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></h3>
           </div>
           <div class="member-content-bottom">
           {{ if $members }}
