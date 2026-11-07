@@ -1,4 +1,8 @@
-<div id="hero" class="hero-image bg-primary bg-white-dots hero-image-setheight">
+{{- /* Page banner. Optional "image": a photo behind the text, darkened for readability
+       (any path image-url.html understands); without it, the black dot-grid banner. */ -}}
+{{- $photo := "" -}}
+{{- with .image }}{{ $photo = partial "image-url.html" (dict "page" $.page "src" . "width" 2000) }}{{ end -}}
+<div id="hero" class="hero-image bg-primary hero-image-setheight {{ if $photo }}hero-image--photo{{ else }}bg-white-dots{{ end }}"{{ with $photo }} style="--hero-photo: url('{{ . }}')"{{ end }}>
   <div class="container hero-text px-2 px-lg-0">
     {{ with .eyebrow }}
     <p class="hero-eyebrow">{{ with $.eyebrowLink }}<a href="{{ . }}">{{ $.eyebrow }}</a>{{ else }}{{ . }}{{ end }}</p>

@@ -29,12 +29,12 @@
   </div>
 {{ end }}
 
-{{ $work := where (where .Site.RegularPages "Type" "work") ".Params.featured" true }}
+{{ $work := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $work) 0}}
 <div id="{{ T "work" }}" class="bg-accent">
   <div class="justify-content-center">
     <div class="col-12 content py-4 py-md-5">
-      <h2 class="container text-black fw-bolder text-center text-lg-start px-0">{{ with .Site.GetPage "/work/" }}{{ .Title | default "What we do" }}{{ end }}</h2>
+      <h2 class="container text-black fw-bolder text-center text-lg-start px-0">{{ with .Site.GetPage "/services/" }}{{ .Title | default "What we do" }}{{ end }}</h2>
     </div>
     <div class="work-grid">
       <div class="container px-2 px-lg-0">
@@ -46,15 +46,42 @@
       </div>
     </div>
     <div class="py-4 d-flex align-items-center text-center w-100 full-width-link">
-      {{ with .Site.GetPage "/work/" }}
+      {{ with .Site.GetPage "/services/" }}
       <a class="fs-1 fw-bolder container" href="{{ .RelPermalink }}">
-        {{ .Params.button | T "See all our work" }} <span aria-hidden="true">→</span>
+        {{ .Params.button | T "See all our services" }} <span aria-hidden="true">→</span>
       </a>
       {{ end }}
     </div>
   </div>
 </div>
 {{end}}
+
+{{ $projects := where (where .Site.RegularPages "Type" "projects") ".Params.featured" true }}
+{{ with $projects }}
+<div id="projects" class="bg-white border-top border-black border-2">
+  <div class="justify-content-center">
+    <div class="col-12 content py-4 py-md-5">
+      <h2 class="container text-black fw-bolder text-center text-lg-start px-0">{{ with site.GetPage "/projects/" }}{{ .Title }}{{ end }}</h2>
+    </div>
+    <div class="work-grid">
+      <div class="container px-2 px-lg-0">
+        <div class="service-summary">
+        {{ range first 4 (sort . ".Params.weight") }}
+          {{ .Render "summary" }}
+        {{ end }}
+        </div>
+      </div>
+    </div>
+    <div class="py-4 d-flex align-items-center text-center w-100 full-width-link">
+      {{ with site.GetPage "/projects/" }}
+      <a class="fs-1 fw-bolder container" href="{{ .RelPermalink }}">
+        {{ T "See all our projects" }} <span aria-hidden="true">→</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
 
 {{ range first 1 (after 1 $reusablePages) }}
 <div id="contact" class="strip bg-primary bg-cover bg-position-top bg-overlay">

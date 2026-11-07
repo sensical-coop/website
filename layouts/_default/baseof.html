@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="{{ .Site.Language.Lang }}" data-style="{{ site.Params.style | default "fun" }}">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ partial "style-preview-head.html" . }}
   {{ partial "head-seo.html" . }}
   <link rel="icon" href="{{ .Site.Params.logo.favicon | relURL }}">
   <link rel="apple-touch-icon" href="{{ "images/logo/apple-touch-icon.png" | relURL }}">
@@ -37,6 +38,7 @@
 
   {{ partial "footer.html" . }}
   {{ partial "sub-footer.html" . }}
+  {{ partial "style-switcher.html" . }}
 
   {{ $scripts := resources.Get "js/scripts.js" }}
 

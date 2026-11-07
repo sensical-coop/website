@@ -1,0 +1,75 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-work-list page-project-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+{{ partial "hero-image-setheight.html" (dict "heading" .Params.heroHeading "subheading" .Params.heroSubHeading) }}
+{{ if .Content }}
+<div class="container pt-6 pt-md-10">
+  <div class="row">
+    <div class="col-12">
+      <div class="page-intro">
+      {{ .Content }}
+    </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<div class="work-grid">
+  <div class="container px-2 px-lg-0">
+    {{ with .Pages }}
+    {{- /* Filter chips: topics are the services the projects use, years the ones they cover */}}
+    {{- $keys := slice }}{{ $years := slice }}
+    {{- range . }}
+      {{- $keys = $keys | append (.Params.services | default slice) }}
+      {{- $years = $years | append (partial "project-years.html" .) }}
+    {{- end }}
+    {{- $topics := sort (where (where site.RegularPages "Type" "services") ".Params.translationKey" "in" (uniq $keys)) ".Params.weight" }}
+    {{- $years = sort (uniq $years) "value" "desc" }}
+    {{- if or (gt (len $topics) 1) (gt (len $years) 1) }}
+    <div class="project-filter" data-project-filter role="group" aria-label="{{ T "Filter projects" }}" hidden>
+      {{- if gt (len $topics) 1 }}
+      <div class="project-filter__group" role="group" aria-labelledby="filter-topic">
+        <span class="project-filter__label" id="filter-topic">{{ T "Topic" }}</span>
+        <button type="button" class="project-filter__chip" data-filter="topic" data-value="" aria-pressed="true">{{ T "All" }}</button>
+        {{- range $topics }}
+        <button type="button" class="project-filter__chip" data-filter="topic" data-value="{{ .Params.translationKey }}" aria-pressed="false">{{ .Title }}</button>
+        {{- end }}
+      </div>
+      {{- end }}
+      {{- if gt (len $years) 1 }}
+      <div class="project-filter__group" role="group" aria-labelledby="filter-year">
+        <span class="project-filter__label" id="filter-year">{{ T "Year" }}</span>
+        <button type="button" class="project-filter__chip" data-filter="year" data-value="" aria-pressed="true">{{ T "All" }}</button>
+        {{- range $years }}
+        <button type="button" class="project-filter__chip" data-filter="year" data-value="{{ . }}" aria-pressed="false">{{ . }}</button>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+    <div class="project-filter__empty panel" data-filter-empty hidden>
+      <p class="fs-5 mb-3">{{ T "No matching projects" }}</p>
+      <button type="button" class="project-filter__chip" data-filter-reset>{{ T "Clear filters" }}</button>
+    </div>
+    {{- end }}
+    <div class="service-summary" data-filter-grid>
+    {{ range .ByWeight }}
+      {{ .Render "summary" }}
+    {{ end }}
+    </div>
+    {{ else }}
+    <div class="project-empty panel">
+      <p class="fs-5 mb-4">{{ T "No projects yet" }}</p>
+      {{ with site.GetPage "/pages/contact" }}
+      <a class="sensical-button sensical-button-plus" href="{{ .RelPermalink }}">
+        <span class="circle-button" aria-hidden="true"><span class="plus">+</span></span>
+        <span class="button-link-text fs-5">{{ .Title }}</span>
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

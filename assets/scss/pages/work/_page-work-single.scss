@@ -57,9 +57,9 @@
         margin-bottom: 20px;
       }
     }
-    // Comfortable reading measure; full-bleed blocks (alerts, dividers) are unaffected
+    // Reading measure (about 90 characters); full-bleed blocks (alerts, dividers) are unaffected
     > p, > h2, > h3, > ul, > ol {
-      max-width: 46rem;
+      max-width: 58rem;
     }
 
     > ul, li {
@@ -83,9 +83,35 @@
     }
 
     .alert .container > * {
-      max-width: 46rem;
+      max-width: 58rem;
+    }
+
+    // Coral links would vanish on the coral alert
+    .alert.alert-bg-sensical a {
+      color: $black !important;
+      text-decoration: underline;
+      text-decoration-color: $black !important;
     }
   }
+  // Markdown images never grow past their column (layouts/_default/_markup/render-image.html)
+  .content img {
+    max-width: 100%;
+    height: auto;
+  }
+  .content-image {
+    margin: 40px 0;
+    img {
+      display: block;
+      width: 100%;
+    }
+    figcaption {
+      padding-top: 12px;
+      color: $secondary;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+
   .masonry {
     /* Masonry container */
     column-count: 3;

@@ -30,10 +30,17 @@
       }
     }
   }
+  // Fixed over the page; scripts.js slides it away on scroll down and back on scroll up
   &.header-absolute {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 100;
     width: 100%;
+    transition: transform 0.3s ease;
+  }
+  &.is-hidden {
+    transform: translateY(-100%);
   }
   .logo-text {
     font-family: $font-family-sensical;
@@ -45,6 +52,12 @@
     }
   }
 }
+@media (prefers-reduced-motion: reduce) {
+  .header.header-absolute {
+    transition: none;
+  }
+}
+
 // .lock-scroll {
 //   .header {
 //     &.header-absolute {

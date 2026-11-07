@@ -9,25 +9,40 @@ Versions en Markdown de cada pàgina: afegeix `.md` a l'URL (vegeu https://sensi
 
 Sensical és una cooperativa catalana (Societat Cooperativa Catalana Limitada), propietat dels seus cinc socis fundadors i gestionada per ells, que treballa amb una xarxa més àmplia de col·laboradors de confiança quan els projectes ho requereixen. L'equip combina enginyeria industrial, mecànica i electrònica, ciència de dades, disseny d'interacció, belles arts i humanitats. Entre tots hem treballat amb organitzacions com Fab Lab Barcelona, la BBC, el CCCB, Medialab Matadero i Sónar, a més de moltes universitats i centres de recerca.
 
-- Óscar González: enginyer industrial i investigador; ciència de dades, desenvolupament i calibratge de sensors; projecte Smart Citizen.
-- Tim Cowlishaw: dissenyador d'interacció i investigador; 20 anys dissenyant productes digitals, inclosa R+D i prototipatge a BBC R&D; doctorand a la UOC sobre l'impacte ambiental dels mitjans digitals.
-- Rebecca Anne Peters: investigadora i artista; doctora en Humanitats (Universitat Pompeu Fabra) amb una tesi sobre el paper de la tecnologia en les narratives culturals col·lectives; principis del codi obert i el seu impacte social.
-- Adai Suriñach: format en Belles Arts, especialitzat en impressió 3D i disseny de maquinari electrònic; projecte Smart Citizen i instructor de Fab Academy a Fab Lab Barcelona.
-- Adrien Laveau: enginyer mecànic; sensors, sistemes de mesura i programari d'anàlisi de dades; fabricació digital i prototipatge ràpid.
+- [Óscar González](https://sensical.es/ca/qui-som/#oscar-gonzalez): enginyer industrial i investigador; ciència de dades, desenvolupament i calibratge de sensors; projecte Smart Citizen.
+- [Tim Cowlishaw](https://sensical.es/ca/qui-som/#tim-cowlishaw): dissenyador d'interacció i investigador; 20 anys dissenyant productes digitals, inclosa R+D i prototipatge a BBC R&D; doctorand a la UOC sobre l'impacte ambiental dels mitjans digitals.
+- [Rebecca Anne Peters](https://sensical.es/ca/qui-som/#rebecca-peters): investigadora i artista; doctora en Humanitats (Universitat Pompeu Fabra) amb una tesi sobre el paper de la tecnologia en les narratives culturals col·lectives; principis del codi obert i el seu impacte social.
+- [Adai Suriñach](https://sensical.es/ca/qui-som/#adai-surinach): format en Belles Arts, especialitzat en impressió 3D i disseny de maquinari electrònic; projecte Smart Citizen i instructor de Fab Academy a Fab Lab Barcelona.
+- [Adrien Laveau](https://sensical.es/ca/qui-som/#adrien-laveau): enginyer mecànic; sensors, sistemes de mesura i programari d'anàlisi de dades; fabricació digital i prototipatge ràpid.
 
 ## Què fem
 
-### Recopilació de dades ambientals
+### Integració de sensors ambientals
 
-Dissenyem, construïm i despleguem sistemes de recopilació de dades ambientals a mida, flexibles, assequibles i fiables, especialment de qualitat de l'aire: partícules en suspensió (PM), contaminants químics, CO2 i més. Recollim dades de sensors mitjançant xarxes mesh distribuïdes i autònomes, i som entre els primers contribuïdors de mètriques de qualitat de l'aire a l'ecosistema de codi obert Meshtastic (mòduls de telemetria). També contribuïm al projecte Smart Citizen i tenim experiència en monitoratge de biodiversitat (càmeres de fototrampeig, monitoratge de so com BirdNet).
+Integrem sensors ambientals en sistemes de dades flexibles, assequibles i fiables: des del sensor i el seu firmware, passant per la xarxa que en transporta les dades, fins a la plataforma on les dades s'emmagatzemen, es visualitzen i s'utilitzen. La nostra experiència se centra en la qualitat de l'aire (partícules, gasos, CO₂) i l'agricultura, amb eines assequibles i de codi obert; contribuïm als projectes Smart Citizen i Meshtastic, i tenim experiència en monitorització de la biodiversitat (càmeres de fototrampeig, monitorització acústica amb BirdNET). Treballem amb centres de recerca i universitats, administracions públiques i ciutats, empreses i indústria, fabricants de sensors i integradors, i grups de ciència ciutadana.
 
-Oferim: maquinari de sensors provat en camp, inclosos dispositius mesh; emmagatzematge, processament i validació de dades; calibratge de grans conjunts de dades; desenvolupament de firmware i integració de sensors; projectes clau en mà de maquinari i programari; suport a la ciència ciutadana; i formació i mentoria. Creem eines per a la ciència ciutadana i per a la mesura de grau de recerca i industrial.
+Oferim: integració de sensors (selecció de maquinari, firmware, nous sensors en dispositius existents, inclosos dispositius en malla LoRa); maquinari provat sobre el terreny; una plataforma de dades amb Mesh Things (emmagatzematge, processament, calibratge, validació i alarmes); dades descodificades lliurades per MQTT o mitjançant una API; projectes clau en mà, del prototip al desplegament; manteniment; i formació i mentoria.
 
-### Co-creació i disseny participatiu
+### Integració de sensors a Meshtastic
 
-Som facilitadors, mentors i educadors amb experiència, a més de professionals creatius i tècnics. Les persones participants co-creen amb nosaltres durant tot el disseny i desenvolupament, no només en una fase inicial d'"ideació", i adquireixen les habilitats per continuar desenvolupant el resultat pel seu compte. Hem treballat amb escolars, músics, activistes ambientals i persones jubilades, així com amb empreses, organitzacions culturals i de mitjans i institucions educatives.
+Incorporem sensors a Meshtastic, el firmware de codi obert per a xarxes en malla LoRa: drivers desenvolupats amb l'equip de manteniment i acceptats al firmware oficial, definicions de telemetria al seu protocol, integració robusta (bus, temps, calibratge i ordres d'administració), compilacions i configuracions a mida, proves en maquinari real, i la part de dades amb Mesh Things. Per a fabricants de sensors, fabricants de dispositius i integradors, i equips que despleguen xarxes de sensors autònomes.
 
-Oferim: tallers puntuals amb un objectiu concret; co-disseny i facilitació de projectes; i mentoria, formació i desenvolupament de capacitats a llarg termini.
+### Cocreació i disseny participatiu
+
+Som facilitadors, mentors i educadors, a més de dissenyadors i enginyers. Els participants cocreen amb nosaltres durant tot el disseny i el desenvolupament, no només en una fase inicial d'ideació, i adquireixen les capacitats per gestionar i fer evolucionar el resultat pel seu compte. Hem treballat amb escolars, músics, activistes ambientals i persones jubilades, així com amb empreses, organitzacions culturals i de mitjans, i institucions educatives.
+
+Oferim: tallers amb un objectiu concret; codisseny i facilitació de projectes; i mentoria, formació i capacitació a més llarg termini.
+
+### Desenvolupament tècnic per a artistes
+
+Desenvolupem la tecnologia darrere d'espectacles i instal·lacions: il·luminació escènica, wearables, robòtica i sistemes interactius, construïts amb els artistes, robustos per a la gira i amb formació perquè l'equip els operi sense nosaltres. Fa deu anys que el nostre equip treballa amb la companyia de dansa Iron Skulls Co.
+
+## Projectes destacats
+
+- Mesh Things: plataforma de codi obert per recollir, emmagatzemar i processar dades de sensors de xarxes en malla LoRa com Meshtastic; funciona en un servidor al núvol o en una Raspberry Pi; en funcionament a https://things.sensical.es.
+- Contribucions al firmware de Meshtastic: més de 50 pull requests acceptades que afegeixen suport per a sensors (CO₂, partícules i gasos, formaldehid, temperatura i humitat, entrades analògiques, sondes one-wire, telemetria de sòl i aigua).
+- Famulus 4.0 (Iron Skulls Co, 2024–2025): control en directe a escena d'un gos robot Unitree Go2 amb un comandament de videojocs i un controlador MIDI.
+- Azul Petróleo (Iron Skulls Co, 2022–2023): màscares de llum i LEDs d'escenari, controlats en directe i sense fils des del programari d'il·luminació de l'espectacle.
 
 ## Com treballem
 
@@ -52,4 +67,4 @@ Oferim: tallers puntuals amb un objectiu concret; co-disseny i facilitació de p
 - GitHub: https://github.com/sensical-coop/
 - LinkedIn: https://www.linkedin.com/company/sensical-sccl/
 
-<!-- Darrera revisió: 2026-10-25. Revisar cada trimestre. -->
+<!-- Darrera revisió: 2026-11-07. Revisar cada trimestre. -->

@@ -8,8 +8,17 @@ Chaque page listée ci-dessous a une version Markdown épurée : ajoutez `.md` 
 
 ## Services
 
-- [Collecte de données environnementales](https://sensical.es/fr/services/collecte-donnees-environnementales.md) : mesure environnementale et de la qualité de l'air ouverte et abordable : capteurs, réseaux mesh Meshtastic, étalonnage, validation des données et déploiement.
-- [Co-création et conception participative](https://sensical.es/fr/services/co-creation.md) : ateliers, co-conception de projets et mentorat sur la durée, en impliquant votre équipe tout au long de la conception et du développement.
+- [Intégration de capteurs environnementaux](https://sensical.es/fr/services/integration-capteurs-environnementaux.md) : Des capteurs environnementaux intégrés dans des systèmes de données flexibles, abordables et fiables pour la recherche, les collectivités, les entreprises et les fabricants : firmware, réseaux maillés LoRa, étalonnage, validation des données et déploiement.
+- [Intégration de capteurs Meshtastic](https://sensical.es/fr/services/integration-capteurs-meshtastic.md) : Des pilotes de capteurs acceptés dans le firmware officiel de Meshtastic, des définitions de télémétrie, une intégration robuste et une plateforme pour les données.
+- [Co-création et conception participative](https://sensical.es/fr/services/co-creation.md) : Ateliers, co-conception et mentorat, pour que votre équipe s'approprie, gère et fasse évoluer la technologie qu'elle construit avec nous.
+- [Développement technique pour artistes](https://sensical.es/fr/services/developpement-technique-pour-artistes.md) : Lumière de scène, wearables et robotique pour le spectacle vivant et les installations, conçus avec les artistes, robustes en tournée, avec une formation pour les piloter.
+
+## Projets
+
+- [Mesh Things](https://sensical.es/fr/projets/mesh-things.md) : Notre plateforme open source pour collecter, stocker et traiter les données de capteurs des réseaux maillés LoRa comme Meshtastic, sur un serveur cloud ou un Raspberry Pi.
+- [Contributions au firmware Meshtastic](https://sensical.es/fr/projets/contributions-firmware-meshtastic.md) : Plus de 50 pull requests acceptées qui ajoutent à Meshtastic la prise en charge de capteurs de CO2, de particules, de formaldéhyde, analogiques, one-wire, ainsi que de sol et d'eau.
+- [Famulus 4.0](https://sensical.es/fr/projets/famulus-4-0.md) : Le pilotage en direct d'un chien robot Unitree Go2 avec une manette de jeu et un contrôleur MIDI, pour le spectacle de danse d'Iron Skulls Co.
+- [Azul Petróleo](https://sensical.es/fr/projets/masques-azul-petroleo.md) : Des masques lumineux et des LED de scène, pilotés en direct et sans fil depuis le logiciel lumière, pour le spectacle de danse d'Iron Skulls Co.
 
 ## Entreprise
 
@@ -26,4 +35,4 @@ Chaque page listée ci-dessous a une version Markdown épurée : ajoutez `.md` 
 
 - [Profil complet](https://sensical.es/fr/llms-full.txt) : méthodes, éléments différenciants et façon de travailler, plus en détail.
 
-<!-- Dernière révision : 2026-10-26. À réviser chaque trimestre. -->
+<!-- Dernière révision : 2026-11-07. À réviser chaque trimestre. -->

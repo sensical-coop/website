@@ -9,25 +9,40 @@ Versions Markdown de chaque page : ajoutez `.md` à l'URL (voir https://sensica
 
 Sensical est une coopérative catalane (Societat Cooperativa Catalana Limitada), détenue et dirigée par ses cinq membres fondateurs, qui s'appuie sur un réseau plus large de collaborateurs de confiance lorsque les projets le demandent. L'équipe réunit génie industriel, mécanique et électronique, science des données, design d'interaction, beaux-arts et sciences humaines. Entre nous, nous avons travaillé avec des organisations comme Fab Lab Barcelona, la BBC, le CCCB, Medialab Matadero et Sónar, ainsi qu'avec de nombreuses universités et organismes de recherche.
 
-- Óscar González : ingénieur industriel et chercheur ; science des données, développement et étalonnage de capteurs ; projet Smart Citizen.
-- Tim Cowlishaw : designer d'interaction et chercheur ; 20 ans de conception de produits numériques, dont R&D et prototypage à la BBC R&D ; doctorant à l'UOC sur l'impact environnemental des médias numériques.
-- Rebecca Anne Peters : chercheuse et artiste ; docteure en sciences humaines (Universitat Pompeu Fabra), thèse sur le rôle de la technologie dans les récits culturels collectifs ; principes de l'open source et leur impact sur la société.
-- Adai Suriñach : formé aux beaux-arts, spécialisé en impression 3D et conception de matériel électronique ; projet Smart Citizen et instructeur Fab Academy au Fab Lab Barcelona.
-- Adrien Laveau : ingénieur en mécanique ; capteurs, systèmes de mesure et logiciels d'analyse de données ; fabrication numérique et prototypage rapide.
+- [Óscar González](https://sensical.es/fr/a-propos/#oscar-gonzalez) : ingénieur industriel et chercheur ; science des données, développement et étalonnage de capteurs ; projet Smart Citizen.
+- [Tim Cowlishaw](https://sensical.es/fr/a-propos/#tim-cowlishaw) : designer d'interaction et chercheur ; 20 ans de conception de produits numériques, dont R&D et prototypage à la BBC R&D ; doctorant à l'UOC sur l'impact environnemental des médias numériques.
+- [Rebecca Anne Peters](https://sensical.es/fr/a-propos/#rebecca-peters) : chercheuse et artiste ; docteure en sciences humaines (Universitat Pompeu Fabra), thèse sur le rôle de la technologie dans les récits culturels collectifs ; principes de l'open source et leur impact sur la société.
+- [Adai Suriñach](https://sensical.es/fr/a-propos/#adai-surinach) : formé aux beaux-arts, spécialisé en impression 3D et conception de matériel électronique ; projet Smart Citizen et instructeur Fab Academy au Fab Lab Barcelona.
+- [Adrien Laveau](https://sensical.es/fr/a-propos/#adrien-laveau) : ingénieur en mécanique ; capteurs, systèmes de mesure et logiciels d'analyse de données ; fabrication numérique et prototypage rapide.
 
 ## Ce que nous faisons
 
-### Collecte de données environnementales
+### Intégration de capteurs environnementaux
 
-Nous concevons, construisons et déployons des systèmes de collecte de données environnementales sur mesure, flexibles, abordables et fiables, en particulier pour la qualité de l'air : particules fines (PM), polluants chimiques, CO2 et plus encore. Nous collectons des données de capteurs via des réseaux mesh distribués et autonomes, et nous figurons parmi les premiers contributeurs de mesures de qualité de l'air à l'écosystème open source Meshtastic (modules de télémétrie). Nous contribuons aussi au projet Smart Citizen et avons de l'expérience dans le suivi de la biodiversité (pièges photographiques, écoute acoustique comme BirdNet).
+Nous intégrons des capteurs environnementaux dans des systèmes de données flexibles, abordables et fiables : du capteur et de son firmware au réseau qui transporte ses données, jusqu'à la plateforme où les données sont stockées, visualisées et exploitées. Notre expérience porte sur la qualité de l'air (particules, gaz, CO2) et l'agriculture, avec des outils abordables et open source ; nous contribuons aux projets Smart Citizen et Meshtastic, et avons une expérience du suivi de la biodiversité (pièges photographiques, surveillance acoustique avec BirdNET). Nous travaillons avec des instituts de recherche et des universités, des collectivités et des villes, des entreprises et l'industrie, des fabricants de capteurs et des intégrateurs, et des groupes de science participative.
 
-Nous proposons : du matériel de mesure éprouvé sur le terrain, dont des appareils mesh ; le stockage, le traitement et la validation de données ; l'étalonnage de grands jeux de données ; le développement de firmware et l'intégration de capteurs ; des projets matériels et logiciels clés en main ; l'accompagnement de la science citoyenne ; ainsi que de la formation et du mentorat. Nous créons des outils pour la science citoyenne comme pour la mesure de qualité recherche et industrielle.
+Nous proposons : l'intégration de capteurs (choix du matériel, firmware, nouveaux capteurs sur des appareils existants, y compris des appareils maillés LoRa) ; du matériel éprouvé sur le terrain ; une plateforme de données avec Mesh Things (stockage, traitement, étalonnage, validation et alertes) ; des données décodées livrées par MQTT ou via une API ; des projets clés en main, du prototype au déploiement ; la maintenance ; et la formation et le mentorat.
+
+### Intégration de capteurs Meshtastic
+
+Nous apportons des capteurs à Meshtastic, le firmware open source pour les réseaux maillés LoRa : des pilotes développés avec les mainteneurs et acceptés dans le firmware officiel, des définitions de télémétrie dans son protocole, une intégration robuste (bus, temporisation, étalonnage et commandes d'administration), des compilations et préréglages sur mesure, des tests sur du matériel réel, et la partie données avec Mesh Things. Pour les fabricants de capteurs, les fabricants d'appareils et les intégrateurs, et les équipes qui déploient des réseaux de capteurs autonomes.
 
 ### Co-création et conception participative
 
-Nous sommes des animateurs, mentors et formateurs expérimentés, ainsi que des praticiens créatifs et techniques. Les participants co-créent avec nous tout au long de la conception et du développement, pas seulement lors d'une phase initiale d'« idéation », et acquièrent les compétences pour continuer à faire évoluer le résultat par eux-mêmes. Nous avons travaillé avec des écoliers, des musiciens, des militants écologistes et des retraités, ainsi qu'avec des entreprises, des organisations culturelles et médiatiques et des établissements d'enseignement.
+Nous sommes facilitateurs, mentors et formateurs, mais aussi designers et ingénieurs. Les participants co-créent avec nous tout au long de la conception et du développement, et pas seulement lors d'une phase initiale d'idéation, et acquièrent les compétences pour faire fonctionner et évoluer le résultat par eux-mêmes. Nous avons travaillé avec des écoliers, des musiciens, des militants écologistes et des retraités, ainsi qu'avec des entreprises, des organisations culturelles et médiatiques et des établissements d'enseignement.
 
-Nous proposons : des ateliers ponctuels avec un objectif précis ; la co-conception et l'animation de projets ; et du mentorat, de la formation et du renforcement des capacités sur le long terme.
+Nous proposons : des ateliers avec un objectif précis ; de la co-conception et de la facilitation de projets ; et du mentorat, de la formation et du renforcement des compétences sur le long terme.
+
+### Développement technique pour artistes
+
+Nous développons la technologie des spectacles et des installations : lumière de scène, wearables, robotique et systèmes interactifs, conçus avec les artistes, robustes en tournée, avec une formation pour que l'équipe les pilote sans nous. Depuis dix ans, notre équipe travaille avec la compagnie de danse Iron Skulls Co.
+
+## Projets choisis
+
+- Mesh Things : plateforme open source pour collecter, stocker et traiter les données de capteurs des réseaux maillés LoRa comme Meshtastic ; fonctionne sur un serveur cloud ou un Raspberry Pi ; en service sur https://things.sensical.es.
+- Contributions au firmware Meshtastic : plus de 50 pull requests acceptées qui ajoutent la prise en charge de capteurs (CO2, particules et gaz, formaldéhyde, température et humidité, entrées analogiques, sondes one-wire, télémétrie du sol et de l'eau).
+- Famulus 4.0 (Iron Skulls Co, 2024–2025) : pilotage en direct sur scène d'un chien robot Unitree Go2 avec une manette de jeu et un contrôleur MIDI.
+- Azul Petróleo (Iron Skulls Co, 2022–2023) : masques lumineux et LED de scène, pilotés en direct et sans fil depuis le logiciel lumière du spectacle.
 
 ## Notre façon de travailler
 
@@ -52,4 +67,4 @@ Nous proposons : des ateliers ponctuels avec un objectif précis ; la co-conce
 - GitHub : https://github.com/sensical-coop/
 - LinkedIn : https://www.linkedin.com/company/sensical-sccl/
 
-<!-- Dernière révision : 2026-10-26. À réviser chaque trimestre. -->
+<!-- Dernière révision : 2026-11-07. À réviser chaque trimestre. -->

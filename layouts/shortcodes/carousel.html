@@ -1,0 +1,24 @@
+{{- /* Image carousel for page content. List the images as Markdown inside it:
+
+  {{< carousel ratio="4/3" fit="contain" label="Field deployment" >}}
+  ![Alt text](photo-1.jpg "Optional caption")
+  ![Alt text](/images/projects/photo-2.jpg)
+  {{< /carousel >}}
+
+  or pull them from a front matter list with images="gallery" (default key: images).
+  Paths are looked up in the page bundle first, then under assets/, then static/. */ -}}
+{{- $images := slice -}}
+{{- with .Inner -}}
+  {{- range findRESubmatch `!\[([^\]]*)\]\(\s*<?([^\s)>]+)>?(?:\s+"([^"]*)")?\s*\)` . -}}
+    {{- $images = $images | append (dict "alt" (index . 1) "src" (index . 2) "caption" (index . 3)) -}}
+  {{- end -}}
+{{- else -}}
+  {{- $images = index $.Page.Params (.Get "images" | default "images") -}}
+{{- end -}}
+{{ partial "carousel.html" (dict
+  "page" .Page
+  "images" $images
+  "ratio" (.Get "ratio")
+  "fit" (.Get "fit")
+  "label" (.Get "label")
+) }}

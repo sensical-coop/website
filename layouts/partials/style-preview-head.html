@@ -1,0 +1,13 @@
+{{- /* Style preview: ?style=serious|fun overrides site.Params.style for this browser tab.
+       Runs before the CSS loads so the page doesn't flash the other style. */ -}}
+<script>
+(function () {
+  var styles = ['fun', 'serious'];
+  var style = new URLSearchParams(location.search).get('style');
+  try {
+    if (styles.indexOf(style) > -1) sessionStorage.setItem('style', style);
+    else style = sessionStorage.getItem('style');
+  } catch (e) {}
+  if (styles.indexOf(style) > -1) document.documentElement.setAttribute('data-style', style);
+})();
+</script>

@@ -4,12 +4,21 @@
 
 Sensical is a Catalan cooperative (Societat Cooperativa Catalana Limitada) founded in October 2026 by five members, working with a network of collaborators. We work remotely and on site, across Europe and internationally. We default to open-source software and open hardware, with licensing agreed per project. Contact: info@sensical.es.
 
-Every page listed below has a clean Markdown version: append `.md` to the page URL without the trailing slash (for example https://sensical.es/work/co-creation/ is https://sensical.es/work/co-creation.md). The full profile is at https://sensical.es/llms-full.txt. Spanish, Catalan and French versions: https://sensical.es/es/llms.txt, https://sensical.es/ca/llms.txt and https://sensical.es/fr/llms.txt.
+Every page listed below has a clean Markdown version: append `.md` to the page URL without the trailing slash (for example https://sensical.es/services/co-creation/ is https://sensical.es/services/co-creation.md). The full profile is at https://sensical.es/llms-full.txt. Spanish, Catalan and French versions: https://sensical.es/es/llms.txt, https://sensical.es/ca/llms.txt and https://sensical.es/fr/llms.txt.
 
-## Work
+## Services
 
-- [Environmental data collection](https://sensical.es/work/environmental-data-collection.md): Open, affordable air quality and environmental monitoring: sensors, Meshtastic mesh networks, calibration, data validation and deployment.
-- [Co-creation and participatory design](https://sensical.es/work/co-creation.md): Workshops, project co-design and long-term mentoring that involve your team throughout design and development.
+- [Environmental sensor integration](https://sensical.es/services/environmental-sensor-integration.md): Environmental sensors integrated into flexible, affordable and reliable data systems for research, public bodies, companies and manufacturers: firmware, LoRa mesh networks, calibration, data validation and deployment.
+- [Meshtastic sensor integration](https://sensical.es/services/meshtastic-sensor-integration.md): Sensor drivers merged into the official Meshtastic firmware, telemetry definitions, robust integration and a data platform for the readings.
+- [Co-creation and participatory design](https://sensical.es/services/co-creation.md): Workshops, project co-design and mentoring, so that your team can own, run and evolve the technology it builds with us.
+- [Technical development for artists](https://sensical.es/services/technical-development-for-artists.md): Stage lighting, wearables and robotics for performance and installations, built with artists, robust enough to tour, with training to run it.
+
+## Projects
+
+- [Mesh Things](https://sensical.es/projects/mesh-things.md): Our open-source platform to collect, store and process sensor data from LoRa mesh networks such as Meshtastic, on a cloud server or a Raspberry Pi.
+- [Meshtastic firmware contributions](https://sensical.es/projects/meshtastic-firmware-contributions.md): More than 50 merged pull requests adding CO2, particulate matter, formaldehyde, analog, one-wire and soil and water sensor support to Meshtastic.
+- [Famulus 4.0](https://sensical.es/projects/famulus-4-0.md): Live control of a Unitree Go2 robot dog with a game controller and a MIDI controller, for Iron Skulls Co's dance show.
+- [Azul Petróleo](https://sensical.es/projects/azul-petroleo-masks.md): Wearable light masks and stage LEDs, cued live and wirelessly from the lighting software, for Iron Skulls Co's dance show.
 
 ## Company
 
@@ -26,4 +35,4 @@ Every page listed below has a clean Markdown version: append `.md` to the page U
 
 - [Full profile](https://sensical.es/llms-full.txt): Methods, differentiators and how we work, in more detail.
 
-<!-- Last reviewed: 2026-10-25. Review quarterly. -->
+<!-- Last reviewed: 2026-11-07. Review quarterly. -->

@@ -1,0 +1,42 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-work-single page-project-single{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+{{ $section := .CurrentSection }}
+{{- /* Banner photo: heroImage, else the card image; heroImage: false keeps the plain banner */}}
+{{- $heroPhoto := .Params.image -}}
+{{- with .Params.heroImage }}{{ $heroPhoto = . }}{{ end -}}
+{{- if eq .Params.heroImage false }}{{ $heroPhoto = "" }}{{ end }}
+{{ partial "hero-image-setheight.html" (dict "heading" (.Params.heroHeading | default .Title) "subheading" .Params.heroSubHeading "eyebrow" ($section.Title) "eyebrowLink" $section.RelPermalink "keywords" .Params.labels "image" $heroPhoto "page" .) }}
+<div class="pt-4 pt-md-8">
+  <div class="justify-content-start">
+    <div class="container">
+      {{ partial "project-facts.html" . }}
+      <div class="work work-single pb-4 pb-md-8">
+        <div class="content">{{ .Content }}</div>
+      </div>
+    </div>
+    {{ with .Params.images }}
+    <div class="container pb-4 pb-md-8">
+      <h2 class="mb-2 text-uppercase">{{ T "Gallery" }}</h2>
+      {{ partial "carousel.html" (dict "page" $ "images" . "fit" $.Params.galleryFit "ratio" $.Params.galleryRatio) }}
+    </div>
+    {{ end }}
+    {{ with .Params.services }}
+    {{ $services := where (where site.RegularPages "Type" "services") ".Params.translationKey" "in" . }}
+    {{ partial "related-grid.html" (dict "title" (T "Services in this project") "pages" $services) }}
+    {{ end }}
+    {{/* related_projects: other projects, by translationKey (works in every language) or by
+         this language's file or folder name, e.g. [famulus40] or [famulus-4-0] */}}
+    {{ with .Params.related_projects }}
+    {{ $keys := . }}
+    {{ $related := slice }}
+    {{ range where site.RegularPages "Type" "projects" }}
+      {{ if or (in $keys .Params.translationKey) (in $keys .File.ContentBaseName) }}{{ $related = $related | append . }}{{ end }}
+    {{ end }}
+    {{ partial "related-grid.html" (dict "title" (T "Related projects") "pages" $related) }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,42 @@
+{{- /* Markdown images: page bundle or assets/ images are resized to webp with a srcset (like the
+       carousel), so a 2400px photo never ships at full size. An image on its own line becomes a
+       figure, with its title as caption: ![alt](/images/x.jpg "Caption"). */ -}}
+{{- $src := .Destination -}}
+{{- $url := $src | relURL -}}
+{{- $srcset := "" -}}
+{{- $width := 0 -}}
+{{- $height := 0 -}}
+{{- with partial "image-resource.html" (dict "page" .Page "src" $src) -}}
+  {{- $url = .RelPermalink -}}
+  {{- if and (eq .ResourceType "image") (in (slice "jpeg" "png" "webp" "tiff" "bmp") .MediaType.SubType) -}}
+    {{- $img := . -}}
+    {{- $set := slice -}}
+    {{- range slice 800 1200 -}}
+      {{- if lt . $img.Width -}}
+        {{- $r := $img.Resize (printf "%dx webp q80" .) -}}
+        {{- $set = $set | append (printf "%s %dw" $r.RelPermalink .) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $full := $img.Resize (printf "%dx webp q80" (math.Min $img.Width 1800 | int)) -}}
+    {{- $url = $full.RelPermalink -}}
+    {{- $set = $set | append (printf "%s %dw" $full.RelPermalink $full.Width) -}}
+    {{- $srcset = delimit (uniq $set) ", " -}}
+    {{- $width = $full.Width -}}
+    {{- $height = $full.Height -}}
+  {{- end -}}
+{{- end -}}
+{{- $img := printf `<img src="%s"%s alt="%s"%s loading="lazy" decoding="async">`
+    $url
+    (cond (ne $srcset "") (printf ` srcset="%s" sizes="(min-width: 1300px) 1140px, (min-width: 992px) 960px, 100vw"` $srcset) "")
+    .PlainText
+    (cond (gt $width 0) (printf ` width="%d" height="%d"` $width $height) "") -}}
+{{- if .IsBlock -}}
+<figure class="content-image">
+  {{ $img | safeHTML }}
+  {{- with .Title }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>
+{{- else -}}
+{{ $img | safeHTML }}
+{{- end -}}

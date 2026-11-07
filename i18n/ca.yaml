@@ -1,6 +1,4 @@
 Read more: Llegir més
-Related work: Projectes relacionats
-See all our work: El nostre portfolio
 Phone: Telèfon
 Email: Correu electrònic
 Address: Adreça
@@ -22,3 +20,30 @@ What we work on: En què treballem
 FAQ more title: No trobes la teva resposta?
 FAQ more text: Explica'ns la teva idea o projecte i et respondrem.
 FAQ more button: escriu-nos
+
+Services: "Serveis"
+Projects: "Projectes"
+Related services: "Serveis relacionats"
+Related projects: "Projectes"
+Services in this project: "Serveis implicats"
+Client: "Client"
+Year: "Any"
+Location: "Lloc"
+Partners: "Socis"
+See all our services: "Tots els nostres serveis"
+See all our projects: "Tots els nostres projectes"
+No projects yet: "Aviat publicarem casos d'estudi. Mentrestant, pregunta'ns pel que hem construït."
+Image gallery: "Galeria d'imatges"
+Previous image: "Imatge anterior"
+Next image: "Imatge següent"
+Go to image: "Ves a la imatge"
+Filter projects: "Filtra els projectes"
+Topic: "Tema"
+All: "Tots"
+No matching projects: "Encara no hi ha projectes que coincideixin amb aquests filtres."
+Clear filters: "Treu els filtres"
+Style: "Estil"
+Style fun: "Divertit"
+Style serious: "Seriós"
+Style note: "La qualitat del que fem és la mateixa, però podem ser formals i divertits alhora."
+Link to member: "Enllaç a {{ . }}"
