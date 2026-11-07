@@ -1,9 +1,9 @@
 ---
 url: 'projects'
 title: 'Projects'
-seoTitle: "Projects: environmental sensing and co-design in practice | Sensical"
-description: "Selected projects by Sensical: environmental monitoring deployments, open hardware and participatory R&D with research groups, companies and communities."
+seoTitle: "Projects: sensors, data platforms and the arts | Sensical"
+description: "Selected Sensical projects: sensor firmware for Meshtastic, a data platform for mesh sensor networks, and technology for the performing arts."
 heroHeading: 'Projects'
-heroSubHeading: 'What we have built, with whom, and what came out of it.'
+heroSubHeading: ''
 translationKey: projects
 ---

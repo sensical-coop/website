@@ -1,10 +1,10 @@
 ---
 url: 'serveis'
-title: 'Què fem'
-seoTitle: "Què fem: sensors ambientals i co-disseny | Sensical"
-description: "Descobreix la feina de Sensical: recopilació de dades ambientals amb sensors oberts i xarxes mesh, i co-creació i disseny participatiu amb el teu equip."
+title: "Serveis"
+seoTitle: "Serveis: sensors, codisseny i arts | Sensical"
+description: "Els serveis de Sensical: integració de sensors ambientals i en xarxes en malla LoRa, cocreació i disseny participatiu, i desenvolupament tècnic per a artistes."
 date: 2018-02-10T11:52:18+07:00
-heroHeading: 'Què fem'
+heroHeading: "Serveis"
 heroSubHeading: ''
 heroBackground: ''
 translationKey: services

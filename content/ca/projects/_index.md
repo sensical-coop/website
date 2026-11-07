@@ -1,9 +1,9 @@
 ---
 url: 'projectes'
 title: 'Projectes'
-seoTitle: "Projectes: sensors ambientals i co-disseny a la pràctica | Sensical"
-description: "Projectes seleccionats de Sensical: desplegaments de monitorització ambiental, maquinari obert i R+D participativa amb grups de recerca, empreses i comunitats."
+seoTitle: "Projectes: sensors, plataformes de dades i arts | Sensical"
+description: "Projectes seleccionats de Sensical: firmware de sensors per a Meshtastic, una plataforma de dades per a xarxes en malla i tecnologia per a les arts escèniques."
 heroHeading: 'Projectes'
-heroSubHeading: 'El que hem construït, amb qui, i quins resultats ha donat.'
+heroSubHeading: ''
 translationKey: projects
 ---

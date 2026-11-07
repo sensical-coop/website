@@ -1,7 +1,7 @@
 ---
 title: 'Co-creation and participatory design'
 seoTitle: "Co-creation and participatory design services | Sensical"
-description: "Hands-on co-creation and participatory design: workshops, project co-design and long-term mentoring so that your team can own and evolve its technology."
+description: "Co-creation and participatory design: workshops, project co-design and mentoring, so that your team can own, run and evolve the technology it builds with us."
 draft: false
 featured: true
 weight: 3
@@ -17,45 +17,40 @@ labels:
 - "Co-design"
 - "Mentoring"
 related_pages:
-- environmental-data-collection
+- environmental-sensor-integration
+- technical-development-for-artists
 ---
 
-We’re experienced {{< accent >}}facilitators, mentors and educators as well as creative and technical practitioners{{< /accent >}}, and we love to combine these skills to work with our clients and collaborators in an inclusive, participatory manner where everyone has an active role in identifying challenges and imagining and realising solutions.
+We are {{< accent >}}facilitators, mentors and educators as well as designers and engineers{{< /accent >}}. We bring these skills together to work with clients and collaborators in an inclusive, participatory way, where everyone takes an active part in defining the challenge and in designing and building the solution.
 
-Our approach is hands-on: participants both actively shape the solutions we develop, and gain the new skills and abilities that they need to continue their development, and to continue to work with new technologies in the future.
+Our approach is hands-on. Participants shape the solutions we develop together, and gain the skills they need to run them, evolve them and keep working with new technologies after the project ends.
 
-Let’s bring your projects to life, together. We like to work alongside your team and your collaborators to solve your needs, whatever they are: we can support you in your design or decision-making processes, as well as in technical development and realisation. Our approach ensures that everyone who needs to be is involved, and that you’re prepared to take ownership of the product and continue its journey when we’re done.
+We can support your team at any stage: in design and decision-making, and in technical development and delivery. Everyone who needs to be involved is involved, and by the end your team is ready to take ownership of the result.
 
-## Methods
+## How we work
 
-We combine experience in facilitation, participatory methods and education with our skills as creative and technical practitioners. This allows us to ensure that participants are given the opportunity to meaningfully co-create with us throughout the design and development process, and not just in the initial “ideation” phase.
-
-
-
-We work together in a hands-on manner, and participants both actively shaped the solutions we develop, and gain the new skills and abilities that they need to continue their development, and to continue to work with new technologies in the future.
+We combine facilitation, participatory methods and education with hands-on design and engineering. Participants co-create with us throughout the design and development process, not only in an initial ideation phase.
 
 {{< alert type="bg-sensical" >}}
 
-### In a nutshell
+### Adapted to you
 
-We can adapt the process according to your specific needs, both in terms of intensity and duration - from one-off workshops to longer term capacity building and mentoring.
+We adapt the process to your needs, in intensity and in duration: from a single workshop to long-term capacity building and mentoring.
 
 {{< /alert >}}
 
 ## Experience
 
-We’ve used our experiences as creative practitioners and facilitators to bring together diverse collectives of co-inventors including schoolchildren, musicians, environmental activists, and retirees. With each of them we’ve facilitated and enabled them to understand and imagine the possibilities of new technologies in their lives and practices, and worked with them to develop new products, services and experiences. We have worked alongside clients and partners including businesses, cultural and media organizations, and educational institutions.
+We have brought together diverse groups of co-inventors, including schoolchildren, musicians, environmental activists and retired people. With each group, we explored what new technologies could mean for their lives and practices, and developed new products, services and experiences with them. Our clients and partners include companies, cultural and media organisations, and educational institutions.
 
-## Who we’ve worked with
+## Who we have worked with
 
-Between us, we’ve worked in this way with organizations such as Fab Lab Barcelona, The BBC, CCCB, Medialab Matadero, Sónar, and a broad range of universities and research organizations.
+Between us, we have worked in this way with organisations such as Fab Lab Barcelona, the BBC, CCCB, Medialab Matadero and Sónar, as well as a broad range of universities and research organisations.
 
-## What we can offer
+## What we offer
 
-We can offer a wide range of options including:
++ **Workshops** with a specific objective, designed and facilitated to meet your short-term goals
++ **Project co-design and facilitation**, for sustained support throughout a project
++ **Mentoring, training and capacity building** within your organisation, over the longer term
 
-+ One off workshops with a specific objective in mind, which we design and facilitate to support your short-term goals.
-+ Project co-design and facilitation, for broader, more sustained project co-design support.
-+ Long term mentoring, training and capacity building within your organization.
-
-Contact us at: [info@sensical.es](mailto:info@sensical.es)
+Tell us about your project at [info@sensical.es](mailto:info@sensical.es).

@@ -1,25 +1,27 @@
 ---
-title: 'Environmental data collection'
-seoTitle: "Environmental sensing and air quality monitoring | Sensical"
-description: "Open, affordable environmental monitoring: air quality sensors, Meshtastic mesh networks, calibration and data validation, from first prototype to deployment."
+title: 'Environmental sensor integration'
+seoTitle: "Environmental sensor integration and Meshtastic data | Sensical"
+description: "Environmental sensor integration for research, public bodies, companies and manufacturers: firmware, mesh networks, calibration and data platforms."
 draft: false
 featured: true
-weight: 2
-heroHeading: 'Environmental data collection'
+weight: 1
+heroHeading: 'Environmental sensor integration'
 heroSubHeading: ''
 section_title: 'Services'
 translationKey: environmentaldatacollection
 aliases:
 - /work/environmental-data-collection/
+- /services/environmental-data-collection/
 labels:
 - "Sensors"
-- "Data"
+- "Integration"
 - "Mesh networks"
 related_pages:
+- meshtastic-sensor-integration
 - co-creation
 ---
 
-We help imagine, build, and deploy flexible, affordable, and reliable bespoke environmental data collection systems. We are a pioneer in collecting sensor data with distributed, off-grid mesh networks. Likewise, we have proven expertise in validation, calibration and data processing of large-scale datasets, ensuring smoothly running sensor deployments.
+We integrate environmental sensors into flexible, affordable, and reliable data systems: from the sensor and its firmware, through the network that carries its data, to the platform where that data is stored, visualised and used. We are experts in sensor data collection over distributed, off-grid mesh networks, and we have long experience validating, calibrating and processing large datasets.
 
 {{< divider
     image="images/drawings/probe-drawing.svg"
@@ -35,22 +37,31 @@ We help imagine, build, and deploy flexible, affordable, and reliable bespoke en
     mobile="hide"
 >}}
 
-We have broad experience collecting environmental data with affordable and open-source tools, particularly in the field of **air quality**. We are an independent organisation that proudly contributes to the [Smart Citizen](https://smartcitizen.me) and [Meshtastic](https://meshtastic.org) projects, collaborating closely with both research institutions and universities, and the private sector to develop research grade tools to monitor the environment. In addition we have experience working with biodiversity monitoring tools, including camera traps and sound monitoring (such as BirdNet).
+We have broad experience in environmental monitoring with affordable, open-source tools, especially for **air quality** and **agriculture**. We are an independent organisation that contributes to the [Smart Citizen](https://smartcitizen.me) and [Meshtastic](https://meshtastic.org) projects, and we work closely with research institutions, universities and companies to develop research-grade monitoring tools. We have also worked with biodiversity monitoring tools, such as camera traps and acoustic monitoring with BirdNET.
 {{< /feature >}}
 
 {{< alert type="bg-sensical" >}}
 
-### In a nutshell
+### In short
 
-We develop tools for both Citizen Science, as well as research grade and industrial sensing. Our collective experience includes participation in numerous R&D projects, including HORIZON and Erasmus+ projects, as well as work for national and local research funds in Spain and Barcelona.
+We develop tools for citizen science as well as for research-grade and industrial sensing. Our team has worked on numerous R&D projects, including EU Horizon and Erasmus+ projects, and on projects funded by national and local research programmes in Spain and Barcelona.
 {{< /alert >}}
 
+## Who we work with
 
-## Proud contributors to Meshtastic
+Every sensor project starts from a different place, so we adapt the integration to the people who will use the data:
 
-We are proudly among the first contributors of air quality metrics to the [Meshtastic](https://meshtastic.org) open-source ecosystem within Meshtastic Telemetry modules.
++ **Research institutions and universities**: research-grade deployments, with calibration, validation and publishable data
++ **Public bodies and cities**: affordable and open monitoring networks
++ **Companies and industry**: new sensors integrated into your products, sites or processes, with their data flowing into the systems you already use
++ **Sensor manufacturers and integrators**: LoRa mesh support for your devices, from firmware to a data platform for your customers, {{<accent>}}maintained as the protocol evolves{{</accent>}}
++ **Citizen science and community groups**: participatory sensing, from choosing the sensors to acting on the results
 
-Our broad experience in sensing projects helps us bring the possibility to collect environmental data and air pollution metrics such as **Particulate Matter (PM), chemical pollutants, CO2**, among many others to mesh networks.
+## Air quality on Mesh Networks
+
+We were among the first to contribute air quality metrics to the telemetry modules of [Meshtastic](https://meshtastic.org), the open-source firmware for LoRa mesh networks.
+
+That work brings environmental data to mesh networks: **particulate matter (PM), gases and CO2**, among other measurements. See our [Meshtastic sensor integration](/services/meshtastic-sensor-integration/) service and our [contributions to the Meshtastic firmware](/projects/meshtastic-firmware-contributions/).
 
 {{< divider
     image="images/drawings/antenna-drawing.svg"
@@ -58,17 +69,22 @@ Our broad experience in sensing projects helps us bring the possibility to colle
     margin="40vw"
 >}}
 
+## From the mesh to your data: Mesh Things
+
+Collecting data over a mesh is only half the job. [Mesh Things](/projects/mesh-things/) is our open-source platform for Meshtastic sensor networks. It decrypts and decodes the mesh's traffic, stores every reading, calibrates and checks it, and raises alarms when a sensor goes quiet or a value goes out of range. It already stores the data of around 1,000 devices for [Mesh Hub UK](https://meshhub.uk/)'s community network.
+
+We can run it for you at [things.sensical.es](https://things.sensical.es), deploy it on your own servers or on a Raspberry Pi in the field, or send the decoded readings over MQTT to the IoT platform you already use.
+
 {{< alert type="border-sensical" >}}
 
-### Not just sensors
+### Beyond the sensors
 
 We recognise that environmental monitoring involves much more than just sensors and technology, and as a collective with a diverse set of backgrounds and skillsets, we can support not just with sensor integration, but also with a range of complementary services. Whether it’s **training and documentation, design, or data analysis support**, we’re here to help with your entire environmental sensing project.
 {{< /alert >}}
 
-## What we can offer
+## What we offer
 
 We can offer a wide range of products and services around environmental solutions including:
-
 {{< feature
     image="images/drawings/electrochemical.svg"
     side="right"
@@ -77,17 +93,18 @@ We can offer a wide range of products and services around environmental solution
     mobile="hide"
 >}}
 
-+ Field proven sensing hardware solutions for environmental data collection, including mesh devices
-+ Data services, including data storage, processing and validation
-+ Firmware development and sensor integration
-+ Turn-key projects, including hardware and software products
-+ Participatory sensing support
++ **Sensor integration**: hardware selection, firmware development, and new sensors added to existing devices, including LoRa mesh devices
++ **Field-proven hardware** for environmental data collection, including mesh devices
++ **A data platform with {{<accent>}}Mesh Things{{</accent>}}**: storage, processing, calibration, validation and alarms, hosted by us or on your own infrastructure
++ **Data where you need it**: decoded readings delivered to your own platform over MQTT, or through an API
++ Turnkey projects, from the first prototype to deployment
++ Maintenance as firmware and protocols evolve
 + Training and mentoring on all of the above
 
 {{< /feature >}}
 
-## Let’s build it {{< accent >}}together{{< /accent >}}
+## Building it {{< accent >}}together{{< /accent >}}
 
-We have particular experience in working alongside researchers and citizen scientist groups to help define their research objectives, deploy sensors, analyse data and take action on the results, and we love to work in a horizontal, participatory fashion. Read more about our methods on our [co-creation page](/services/co-creation/).
+We have particular experience working with researchers and citizen science groups to define research objectives, deploy sensors, analyse data and act on the results, and we work in a horizontal, participatory way. Read more about our methods on our [co-creation page](/services/co-creation/).
 
-Contact us at: [info@sensical.es](mailto:info@sensical.es)
+Tell us about your sensors or your network at [info@sensical.es](mailto:info@sensical.es).

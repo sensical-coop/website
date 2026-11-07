@@ -1,7 +1,7 @@
 ---
 title: 'Co-creació i disseny participatiu'
 seoTitle: "Co-creació i disseny participatiu per a equips | Sensical"
-description: "Co-creació i disseny participatiu pràctic: tallers, co-disseny de projectes i mentoria a llarg termini perquè el teu equip faci seva la seva tecnologia."
+description: "Cocreació i disseny participatiu: tallers, codisseny de projectes i mentoria perquè el teu equip faci seva, gestioni i faci evolucionar la seva tecnologia."
 draft: false
 featured: true
 weight: 3
@@ -18,44 +18,39 @@ labels:
 - "Co-disseny"
 - "Mentoria"
 related_pages:
-- recopilacio-dades-ambientals
+- integracio-sensors-ambientals
+- desenvolupament-tecnic-per-a-artistes
 ---
+Som {{< accent >}}facilitadors, mentors i educadors, a més de dissenyadors i enginyers{{< /accent >}}. Combinem aquestes capacitats per treballar amb clients i col·laboradors de manera inclusiva i participativa, perquè totes les persones participin activament a definir el repte i a dissenyar i construir la solució.
 
-Som {{< accent >}}facilitadors, mentors i educadors amb experiència, així com professionals creatius i tècnics{{< /accent >}}, i ens encanta combinar aquestes habilitats per a treballar amb els nostres clients i col·laboradors d'una manera inclusiva i participativa on tots tenen un paper actiu en la identificació de desafiaments així com a imaginar i realitzar solucions.
+El nostre enfocament és pràctic. Els participants donen forma a les solucions que desenvolupem plegats i adquireixen les capacitats necessàries per gestionar-les, fer-les evolucionar i continuar treballant amb noves tecnologies quan el projecte s'acaba.
 
-El nostre enfocament és pràctic: els participants modelen activament les solucions que desenvolupem i adquireixen les noves habilitats i capacitats que necessiten per a continuar el seu desenvolupament i per a continuar treballant amb noves tecnologies en el futur.
+Podem acompanyar el teu equip en qualsevol fase: en el disseny i la presa de decisions, i en el desenvolupament tècnic i la implementació. Hi participen totes les persones que hi han de participar i, al final, el teu equip està preparat per fer seu el resultat.
 
-Fem que els teus projectes cobrin vida, junts. Ens agrada treballar mà a mà amb cada equip i els seus col·laboradors per a resoldre les necessitats del projecte, siguin quins siguin: Podem recolzar tant en els processos de disseny o presa de decisions, així com en el desenvolupament tècnic i la seva realització. El nostre enfocament assegura que tots els que necessiten estar involucrats formen part del procés, i que el teu equip està preparat per a prendre possessió del producte i continuar el seu viatge quan hàgim acabat.
+## Com treballem
 
-## Mètodes
-
-Combinem l'experiència en facilitació, mètodes participatius i educació amb les nostres habilitats com a professionals creatius i tècnics. Això ens permet assegurar-nos que els participants tinguin l'oportunitat de co-crear significativament amb nosaltres al llarg del procés de disseny i desenvolupament, i no sols en la fase inicial de «ideació».
-
-Treballem junts de manera pràctica, i els participants van modelar activament les solucions que desenvolupem i obtenen les noves habilitats i capacitats que necessiten per a continuar el seu desenvolupament i continuar treballant amb noves tecnologies en el futur.
+Combinem facilitació, metodologies participatives i educació amb disseny i enginyeria aplicats. Els participants cocreen amb nosaltres durant tot el procés de disseny i desenvolupament, no només en una fase inicial d'ideació.
 
 {{< alert type="bg-sensical" >}}
 
-### En poques paraules
+### A la teva mida
 
-Podem adaptar el procés segons les teves necessitats específiques, tant en intensitat com en durada: des de tallers puntuals fins a desenvolupament de capacitats a llarg termini i mentoria.
+Adaptem el procés a les teves necessitats, en intensitat i en durada: des d'un únic taller fins a la capacitació i la mentoria a llarg termini.
 
 {{< /alert >}}
 
 ## Experiència
 
-Hem utilitzat les nostres experiències com a professionals creatius i facilitadors per a reunir diversos col·lectius de coinventors, inclosos escolars, músics, activistes ambientals i jubilats. Amb cadascun d'ells els hem facilitat i permès comprendre i imaginar les possibilitats de les noves tecnologies en les seves vides i pràctiques, i hem treballat amb ells per a desenvolupar nous productes, serveis i experiències. Hem treballat al costat de clients i socis, incloent-hi empreses, organitzacions culturals i mediàtiques, i institucions educatives.
+Hem reunit grups diversos de coinventors, com ara escolars, músics, activistes ambientals i persones jubilades. Amb cada grup hem explorat què poden aportar les noves tecnologies a la seva vida i a la seva pràctica, i hi hem desenvolupat nous productes, serveis i experiències. Entre els nostres clients i socis hi ha empreses, organitzacions culturals i de mitjans, i institucions educatives.
 
 ## Amb qui hem treballat
 
-Entre nosaltres, hem treballat d'aquesta manera amb organitzacions com Fab Lab Barcelona, la BBC, CCCB, Medialab Escorxador, Sónar i una àmplia gamma d'universitats i organitzacions de recerca.
+Entre tots, hem treballat així amb organitzacions com Fab Lab Barcelona, la BBC, el CCCB, Medialab Matadero i Sónar, a més de nombroses universitats i centres de recerca.
 
-## Què podem oferir
+## Què oferim
 
-Podem oferir una àmplia gamma d'opcions, incloent:
++ **Tallers** amb un objectiu concret, dissenyats i facilitats per als teus objectius a curt termini
++ **Codisseny i facilitació de projectes**, amb un acompanyament continuat al llarg del projecte
++ **Mentoria, formació i capacitació** dins la teva organització, a més llarg termini
 
-+ Tallers puntuals amb un objectiu específic en ment, que dissenyem i facilitem per a donar suport a les teves metes a curt termini.
-+ Codisseny i facilitació de projectes, per a un suport més ampli i sostingut al codisseny del projecte.
-+ Mentoria, formació i desenvolupament de capacitats a llarg termini dins de la teva organització.
-
-
-Contacti'ns en: [info@sensical.es](mailto:info@sensical.es)
+Explica'ns el teu projecte a [info@sensical.es](mailto:info@sensical.es).

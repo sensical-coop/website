@@ -9,25 +9,40 @@ Markdown versions of each page: append `.md` to the page URL (see https://sensic
 
 Sensical is a Catalan cooperative (Societat Cooperativa Catalana Limitada), owned and run by its five founding members, and working with a wider network of trusted collaborators when projects need it. The team combines industrial, mechanical and electronic engineering, data science, interaction design, fine arts and the humanities. Between us we have worked with organisations such as Fab Lab Barcelona, the BBC, CCCB, Medialab Matadero and Sónar, as well as many universities and research organisations.
 
-- Óscar González: industrial engineer and researcher; data science, sensor development and calibration; Smart Citizen project.
-- Tim Cowlishaw: interaction designer and researcher; 20 years designing digital products, including R&D and prototyping at BBC R&D; PhD candidate at the UOC on the environmental impact of digital media.
-- Rebecca Anne Peters: researcher and artist; doctorate in Humanities (Universitat Pompeu Fabra) on technology's role within collective cultural narratives; open source principles and their impact on society.
-- Adai Suriñach: trained in Fine Arts, specialised in 3D printing and electronic hardware design; Smart Citizen project and Fab Academy instructor at Fab Lab Barcelona.
-- Adrien Laveau: mechanical engineer; sensors, measurement systems and data analysis software; digital fabrication and rapid prototyping.
+- [Óscar González](https://sensical.es/about/#oscar-gonzalez): industrial engineer and researcher; data science, sensor development and calibration; Smart Citizen project.
+- [Tim Cowlishaw](https://sensical.es/about/#tim-cowlishaw): interaction designer and researcher; 20 years designing digital products, including R&D and prototyping at BBC R&D; PhD candidate at the UOC on the environmental impact of digital media.
+- [Rebecca Anne Peters](https://sensical.es/about/#rebecca-peters): researcher and artist; doctorate in Humanities (Universitat Pompeu Fabra) on technology's role within collective cultural narratives; open source principles and their impact on society.
+- [Adai Suriñach](https://sensical.es/about/#adai-surinach): trained in Fine Arts, specialised in 3D printing and electronic hardware design; Smart Citizen project and Fab Academy instructor at Fab Lab Barcelona.
+- [Adrien Laveau](https://sensical.es/about/#adrien-laveau): mechanical engineer; sensors, measurement systems and data analysis software; digital fabrication and rapid prototyping.
 
 ## What we do
 
-### Environmental data collection
+### Environmental sensor integration
 
-We design, build and deploy flexible, affordable and reliable bespoke environmental data collection systems, especially for air quality: particulate matter (PM), chemical pollutants, CO2 and more. We collect sensor data over distributed, off-grid mesh networks and are among the first contributors of air quality metrics to the open-source Meshtastic ecosystem (Telemetry modules). We also contribute to the Smart Citizen project and have experience with biodiversity monitoring (camera traps, sound monitoring such as BirdNet).
+We integrate environmental sensors into flexible, affordable and reliable data systems: from the sensor and its firmware, through the network that carries its data, to the platform where the data is stored, visualised and used. Our background is in air quality (particulate matter, gases, CO2) and agriculture, with affordable, open-source tools; we contribute to the Smart Citizen and Meshtastic projects, and have experience with biodiversity monitoring (camera traps, acoustic monitoring with BirdNET). We work with research institutions and universities, public bodies and cities, companies and industry, sensor manufacturers and integrators, and citizen science groups.
 
-We offer: field-proven sensing hardware including mesh devices; data storage, processing and validation; calibration of large-scale datasets; firmware development and sensor integration; turn-key hardware and software projects; participatory sensing support; and training and mentoring. We build tools for citizen science as well as research-grade and industrial sensing.
+We offer: sensor integration (hardware selection, firmware, new sensors on existing devices, including LoRa mesh devices); field-proven hardware; a data platform with Mesh Things (storage, processing, calibration, validation and alarms); decoded data delivered over MQTT or an API; turnkey projects from prototype to deployment; maintenance; and training and mentoring.
+
+### Meshtastic sensor integration
+
+We bring sensors to Meshtastic, the open-source firmware for LoRa mesh networks: drivers developed with the maintainers and merged into the official firmware, telemetry definitions in its protocol, robust integration (bus, timing, calibration and admin commands), custom builds and presets, testing on real hardware, and the data side with Mesh Things. For sensor manufacturers, device makers and integrators, and teams deploying off-grid sensor networks.
 
 ### Co-creation and participatory design
 
-We are experienced facilitators, mentors and educators as well as creative and technical practitioners. Participants co-create with us throughout design and development, not only in an initial "ideation" phase, and gain the skills to keep developing the result on their own. We have worked with schoolchildren, musicians, environmental activists and retirees, as well as businesses, cultural and media organisations and educational institutions.
+We are facilitators, mentors and educators as well as designers and engineers. Participants co-create with us throughout design and development, not only in an initial ideation phase, and gain the skills to run and evolve the result on their own. We have worked with schoolchildren, musicians, environmental activists and retired people, as well as companies, cultural and media organisations and educational institutions.
 
-We offer: one-off workshops with a specific objective; project co-design and facilitation; and long-term mentoring, training and capacity building.
+We offer: workshops with a specific objective; project co-design and facilitation; and mentoring, training and capacity building over the longer term.
+
+### Technical development for artists
+
+We develop the technology behind performances and installations: stage lighting, wearables, robotics and interactive systems, built with the artists, robust enough to tour, and with training so the team can run it without us. For ten years our team has worked with the dance company Iron Skulls Co.
+
+## Selected projects
+
+- Mesh Things: open-source platform to collect, store and process sensor data from LoRa mesh networks such as Meshtastic; runs on a cloud server or a Raspberry Pi; live at https://things.sensical.es.
+- Meshtastic firmware contributions: more than 50 merged pull requests adding sensor support (CO2, particulate matter and gases, formaldehyde, temperature and humidity, analog inputs, one-wire probes, soil and water telemetry).
+- Famulus 4.0 (Iron Skulls Co, 2024–2025): live control of a Unitree Go2 robot dog on stage with a game controller and a MIDI controller.
+- Azul Petróleo (Iron Skulls Co, 2022–2023): wearable light masks and stage LEDs, cued live and wirelessly from the show's lighting software.
 
 ## How we work
 
@@ -52,4 +67,4 @@ We offer: one-off workshops with a specific objective; project co-design and fac
 - GitHub: https://github.com/sensical-coop/
 - LinkedIn: https://www.linkedin.com/company/sensical-sccl/
 
-<!-- Last reviewed: 2026-10-25. Review quarterly. -->
+<!-- Last reviewed: 2026-11-07. Review quarterly. -->

@@ -1,10 +1,10 @@
 ---
 url: 'services'
-title: 'Ce que nous faisons'
-seoTitle: "Ce que nous faisons : capteurs et co-design | Sensical"
-description: "Découvrez le travail de Sensical : collecte de données environnementales avec des capteurs ouverts et des réseaux mesh, co-création et conception participative."
+title: "Services"
+seoTitle: "Services : capteurs, co-design et arts | Sensical"
+description: "Les services de Sensical : capteurs environnementaux et réseaux maillés LoRa, co-création et conception participative, développement technique pour artistes."
 date: 2018-02-10T11:52:18+07:00
-heroHeading: 'Ce que nous faisons'
+heroHeading: "Services"
 heroSubHeading: ''
 heroBackground: ''
 translationKey: services
