@@ -35,7 +35,7 @@ heroImage: false
 
 ## Le défi
 
-UniPlot est développé depuis de nombreuses années et utilisé dans des domaines exigeants : essais moteur et groupe motopropulseur, émissions, batteries et simulation. Ses utilisateurs s'appuient sur des calculs et des modèles de rapport qu'ils affinent depuis des années, et ils attendent de chaque version qu'elle les préserve. En parallèle, les demandes ne cessent d'arriver : nouveaux formats de données et protocoles de bus, réglementations qui changent la façon de calculer les résultats, intégrations avec des systèmes d'essai et des outils de simulation, et rapports spécifiques à un client. {{<accent>}}Le travail consiste à faire évoluer un produit riche et durable avec une petite équipe, sans casser ce dont dépendent les ingénieurs.{{</accent>}}
+UniPlot est développé depuis de nombreuses années et utilisé dans des domaines exigeants : essais moteur et groupe motopropulseur, émissions, batteries et simulation. Ses utilisateurs s'appuient sur des calculs et des modèles de rapport qu'ils affinent depuis des années, et ils attendent de chaque version qu'elle les préserve. En parallèle, les demandes ne cessent d'arriver : nouveaux formats de données et protocoles de bus, réglementations qui changent la façon de calculer les résultats, intégrations avec des systèmes d'essai et des outils de simulation, et rapports spécifiques à un client. {{<accent>}}Le travail consiste à faire évoluer un produit riche et durable sans casser ce dont dépendent les ingénieurs.{{</accent>}}
 
 ## Ce que nous faisons
 
@@ -44,8 +44,8 @@ UniPlot est développé depuis de nombreuses années et utilisé dans des domain
 + **Add-ins métier** : la responsabilité produit d'add-ins dédiés à des tâches d'ingénierie spécifiques, comme l'add-in de [calcul des émissions](/fr/projets/calcul-emissions/).
 + **Intégrations** : concepts et exigences pour connecter UniPlot à des systèmes d'automatisation d'essais, à des logiciels de simulation utilisés comme source de données et à des bases de données d'essais ASAM ODS, par lancement, ligne de commande et URL, par COM et par des séquences d'analyse réutilisables.
 + **Flux de travail des clients** : étudier comment les équipes d'ingénierie dépouillent leurs données, souvent dans des tableurs, et reconstruire ce travail sous forme de bibliothèques de formules, de modèles de rapport et de séquences automatisées, validés par rapport à leurs résultats précédents.
-+ **Licences et déploiement** : traduire les modèles de licence du produit en comportement logiciel et en déploiement que les administrateurs peuvent gérer, et confronter les conditions de licence à ce que fait réellement le produit.
-+ **Support et qualité** : indicateurs pour le service d'assistance et le backlog, analyse des anomalies, et problèmes de formats de données reproduits et corrigés avec les développeurs.
++ **Licences et déploiement** : traduire les modèles de licence du produit en comportement logiciel et en déploiement que les administrateurs peuvent gérer, en cohérence avec les conditions de licence.
++ **Support et qualité** : indicateurs pour le service d'assistance et le backlog, et analyse des questions des utilisateurs avec les développeurs.
 + **Documentation et accompagnement** : documentation, formations, vidéos, webinaires, salons professionnels, brochures et refonte du site web du produit.
 
 ## Les choix techniques qui ont compté

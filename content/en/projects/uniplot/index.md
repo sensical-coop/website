@@ -35,7 +35,7 @@ heroImage: false
 
 ## The challenge
 
-UniPlot has been developed over many years and is used in demanding fields: engine and powertrain testing, emissions, batteries and simulation. Its users rely on calculations and report templates they have refined for years, and they expect every release to keep them working. At the same time, the requests keep coming: new data formats and bus protocols, regulations that change how results must be computed, integrations with test systems and simulation tools, and customer-specific reports. {{<accent>}}The work is to keep a deep, long-lived product evolving with a small team, without breaking what engineers depend on.{{</accent>}}
+UniPlot has been developed over many years and is used in demanding fields: engine and powertrain testing, emissions, batteries and simulation. Its users rely on calculations and report templates they have refined for years, and they expect every release to keep them working. At the same time, the requests keep coming: new data formats and bus protocols, regulations that change how results must be computed, integrations with test systems and simulation tools, and customer-specific reports. {{<accent>}}The work is to keep a deep, long-lived product evolving without breaking what engineers depend on.{{</accent>}}
 
 ## What we do
 
@@ -44,8 +44,8 @@ UniPlot has been developed over many years and is used in demanding fields: engi
 + **Domain add-ins**: product ownership of add-ins for specific engineering tasks, such as the [emission computation](/projects/emission-computation/) add-in.
 + **Integrations**: concepts and requirements for connecting UniPlot to test automation systems, simulation software used as a data source, and ASAM ODS test-data databases, through launch, command-line and URL workflows, COM and reusable analysis sequences.
 + **Customer workflows**: studying how engineering teams evaluate their data, often in spreadsheets, and rebuilding it as formula libraries, report templates and automated sequences, validated against their previous results.
-+ **Licensing and deployment**: turning the product's licensing models into software behaviour and deployment that administrators can manage, and reviewing licence terms against what the product actually does.
-+ **Support and quality**: indicators for the service desk and the backlog, issue investigation, and data-format problems reproduced and fixed with the developers.
++ **Licensing and deployment**: turning the product's licensing models into software behaviour and deployment that administrators can manage, consistent with the licence terms.
++ **Support and quality**: indicators for the service desk and the backlog, and investigation of user questions with the developers.
 + **Documentation and enablement**: documentation, training courses, videos, webinars, trade fairs, brochures and the renewal of the product website.
 
 ## Technical decisions that mattered

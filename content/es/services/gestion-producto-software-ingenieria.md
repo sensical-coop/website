@@ -18,13 +18,13 @@ related_pages:
 - integracion-software-ingenieria
 ---
 
-El software de ingeniería tiene una vida larga, y sus usuarios dependen de él cada día para obtener sus resultados. Gestionamos productos como estos: {{< accent >}}convertimos lo que piden los ingenieros en una hoja de ruta, especificaciones y versiones{{< /accent >}} que un equipo de desarrollo pequeño pueda entregar, sin romper aquello de lo que dependen los usuarios actuales.
+El software de ingeniería tiene una vida larga, y sus usuarios dependen de él cada día para obtener sus resultados. Gestionamos productos como estos: {{< accent >}}convertimos lo que piden los ingenieros en una hoja de ruta, especificaciones y versiones{{< /accent >}} que un equipo de desarrollo pueda entregar, sin romper aquello de lo que dependen los usuarios actuales.
 
 {{< alert type="bg-sensical" >}}
 
 ### El problema
 
-Una aplicación de ingeniería madura acumula peticiones más deprisa de lo que cualquier equipo puede desarrollarlas: un nuevo formato de datos, un cálculo exigido por una nueva normativa, una integración con un banco de ensayo, un informe específico para un cliente. Cada una tiene sentido por sí sola. Sin una forma clara de elegirlas, especificarlas y entregarlas, el producto pierde el rumbo, las versiones se retrasan y el soporte acaba absorbiendo al equipo. La gestión de producto consiste en hacer explícitas esas decisiones y convertirlas en software.
+Una aplicación de ingeniería madura recibe muchas peticiones: un nuevo formato de datos, un cálculo exigido por una nueva normativa, una integración con un banco de ensayo, un informe específico para un cliente. Cada una tiene sentido por sí sola. La gestión de producto consiste en elegir entre ellas, especificarlas con claridad y convertirlas en versiones en las que los usuarios puedan confiar.
 
 {{</alert>}}
 
@@ -40,7 +40,7 @@ Desde hace varios años gestionamos la evolución de [UniPlot](/es/proyectos/uni
 
 ## Para quién
 
-+ **Editores de software de ingeniería** con un producto maduro, una larga lista de peticiones de clientes y un equipo pequeño.
++ **Editores de software de ingeniería** con un producto maduro y una larga lista de peticiones de clientes.
 + **Departamentos de ingeniería** que tienen herramientas propias y necesitan que evolucionen como un producto, no como una colección de scripts.
 + **Socios tecnológicos** que quieren conectar su software con otro producto y necesitan a alguien que se haga cargo del alcance conjunto.
 

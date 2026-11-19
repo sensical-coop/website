@@ -18,13 +18,13 @@ related_pages:
 - integracio-programari-enginyeria
 ---
 
-El programari d'enginyeria té una vida llarga, i els seus usuaris en depenen cada dia per obtenir els seus resultats. Gestionem productes com aquests: {{< accent >}}convertim el que demanen els enginyers en un full de ruta, especificacions i versions{{< /accent >}} que un equip de desenvolupament petit pot lliurar, sense trencar allò de què depenen els usuaris actuals.
+El programari d'enginyeria té una vida llarga, i els seus usuaris en depenen cada dia per obtenir els seus resultats. Gestionem productes com aquests: {{< accent >}}convertim el que demanen els enginyers en un full de ruta, especificacions i versions{{< /accent >}} que un equip de desenvolupament pot lliurar, sense trencar allò de què depenen els usuaris actuals.
 
 {{< alert type="bg-sensical" >}}
 
 ### El problema
 
-Una aplicació d'enginyeria madura acumula peticions més de pressa del que cap equip pot desenvolupar-les: un nou format de dades, un càlcul que exigeix una nova normativa, una integració amb un banc d'assaig, un informe per a un client concret. Cadascuna té sentit per si sola. Sense una manera clara de triar-les, especificar-les i publicar-les, el producte perd el rumb, les versions s'endarrereixen i el suport absorbeix l'equip. La gestió de producte consisteix a fer explícites aquestes decisions i convertir-les en programari.
+Una aplicació d'enginyeria madura rep moltes peticions: un nou format de dades, un càlcul que exigeix una nova normativa, una integració amb un banc d'assaig, un informe per a un client concret. Cadascuna té sentit per si sola. La gestió de producte consisteix a triar entre elles, especificar-les amb claredat i convertir-les en versions en què els usuaris puguin confiar.
 
 {{</alert>}}
 
@@ -40,7 +40,7 @@ Des de fa diversos anys gestionem l'evolució d'[UniPlot](/ca/projectes/uniplot/
 
 ## Per a qui és
 
-+ **Editors de programari d'enginyeria** amb un producte madur, una llarga llista de peticions de clients i un equip petit.
++ **Editors de programari d'enginyeria** amb un producte madur i una llarga llista de peticions de clients.
 + **Departaments d'enginyeria** que tenen eines pròpies i necessiten que evolucionin com un producte, no com un recull d'scripts.
 + **Socis tecnològics** que volen connectar el seu programari amb un altre producte i necessiten algú que es faci càrrec de l'abast conjunt.
 

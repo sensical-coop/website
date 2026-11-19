@@ -35,7 +35,7 @@ heroImage: false
 
 ## El reto
 
-UniPlot se ha desarrollado a lo largo de muchos años y se utiliza en ámbitos exigentes: ensayos de motores y tren motriz, emisiones, baterías y simulación. Sus usuarios confían en cálculos y plantillas de informe que han ido perfeccionando durante años, y esperan que cada versión los mantenga funcionando. Al mismo tiempo, las peticiones no dejan de llegar: nuevos formatos de datos y protocolos de bus, normativas que cambian la forma de calcular los resultados, integraciones con sistemas de ensayo y herramientas de simulación, e informes específicos para clientes. {{<accent>}}El trabajo consiste en hacer evolucionar un producto profundo y de larga vida con un equipo pequeño, sin romper aquello de lo que dependen los ingenieros.{{</accent>}}
+UniPlot se ha desarrollado a lo largo de muchos años y se utiliza en ámbitos exigentes: ensayos de motores y tren motriz, emisiones, baterías y simulación. Sus usuarios confían en cálculos y plantillas de informe que han ido perfeccionando durante años, y esperan que cada versión los mantenga funcionando. Al mismo tiempo, las peticiones no dejan de llegar: nuevos formatos de datos y protocolos de bus, normativas que cambian la forma de calcular los resultados, integraciones con sistemas de ensayo y herramientas de simulación, e informes específicos para clientes. {{<accent>}}El trabajo consiste en hacer evolucionar un producto profundo y de larga vida sin romper aquello de lo que dependen los ingenieros.{{</accent>}}
 
 ## Qué hacemos
 
@@ -44,8 +44,8 @@ UniPlot se ha desarrollado a lo largo de muchos años y se utiliza en ámbitos e
 + **Add-ins especializados**: responsabilidad de producto de add-ins para tareas de ingeniería concretas, como el add-in de [cálculo de emisiones](/es/proyectos/calculo-emisiones/).
 + **Integraciones**: conceptos y requisitos para conectar UniPlot con sistemas de automatización de ensayos, con software de simulación usado como fuente de datos y con bases de datos de ensayo ASAM ODS, mediante flujos de lanzamiento, línea de comandos y URL, COM y secuencias de análisis reutilizables.
 + **Flujos de trabajo de clientes**: estudiar cómo evalúan sus datos los equipos de ingeniería, a menudo en hojas de cálculo, y reconstruir esa evaluación como bibliotecas de fórmulas, plantillas de informe y secuencias automatizadas, validadas con sus resultados anteriores.
-+ **Licencias y despliegue**: trasladar los modelos de licencia del producto a un comportamiento del software y un despliegue que los administradores puedan gestionar, y contrastar las condiciones de licencia con lo que el producto hace realmente.
-+ **Soporte y calidad**: indicadores para el servicio de soporte y el backlog, análisis de incidencias, y problemas de formatos de datos reproducidos y corregidos con los desarrolladores.
++ **Licencias y despliegue**: trasladar los modelos de licencia del producto a un comportamiento del software y un despliegue que los administradores puedan gestionar, coherentes con las condiciones de licencia.
++ **Soporte y calidad**: indicadores para el servicio de soporte y el backlog, y análisis de las consultas de los usuarios con los desarrolladores.
 + **Documentación y difusión**: documentación, cursos de formación, vídeos, webinars, ferias, folletos y la renovación de la web del producto.
 
 ## Decisiones técnicas clave

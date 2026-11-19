@@ -18,13 +18,13 @@ related_pages:
 - engineering-software-integration
 ---
 
-Engineering software lives for a long time, and its users depend on it every day to get their results out. We manage products like these: we {{< accent >}}turn what engineers ask for into a roadmap, specifications and releases{{< /accent >}} that a small development team can deliver, without breaking what existing users rely on.
+Engineering software lives for a long time, and its users depend on it every day to get their results out. We manage products like these: we {{< accent >}}turn what engineers ask for into a roadmap, specifications and releases{{< /accent >}} that a development team can deliver, without breaking what existing users rely on.
 
 {{< alert type="bg-sensical" >}}
 
 ### The problem
 
-A mature engineering application collects requests faster than any team can build them: a new data format, a calculation required by a new regulation, an integration with a test bench, a customer-specific report. Each one makes sense on its own. Without a clear way to choose, specify and ship them, the product drifts, releases slip and support absorbs the team. Product management is the work of making those choices explicit and turning them into software.
+A mature engineering application receives many requests: a new data format, a calculation required by a new regulation, an integration with a test bench, a customer-specific report. Each one makes sense on its own. Product management is the work of choosing between them, specifying them clearly and turning them into releases that users can rely on.
 
 {{</alert>}}
 
@@ -40,7 +40,7 @@ For several years we have managed the evolution of [UniPlot](/projects/uniplot/)
 
 ## Who it is for
 
-+ **Engineering software vendors** with a mature product, a long list of customer requests and a small team.
++ **Engineering software vendors** with a mature product and a long list of customer requests.
 + **Engineering departments** that own in-house tools and need them to evolve like a product, not a collection of scripts.
 + **Technology partners** that want to connect their software to another product and need someone to own the joint scope.
 

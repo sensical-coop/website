@@ -35,7 +35,7 @@ heroImage: false
 
 ## El repte
 
-UniPlot s'ha desenvolupat al llarg de molts anys i es fa servir en àmbits exigents: assajos de motors i grups motopropulsors, emissions, bateries i simulació. Els seus usuaris depenen de càlculs i plantilles d'informe que han anat perfeccionant durant anys, i esperen que cada versió els mantingui en funcionament. Alhora, les peticions no paren d'arribar: nous formats de dades i protocols de bus, normatives que canvien com s'han de calcular els resultats, integracions amb sistemes d'assaig i eines de simulació, i informes a mida per a clients. {{<accent>}}La feina consisteix a fer evolucionar un producte profund i de llarga vida amb un equip petit, sense trencar allò de què depenen els enginyers.{{</accent>}}
+UniPlot s'ha desenvolupat al llarg de molts anys i es fa servir en àmbits exigents: assajos de motors i grups motopropulsors, emissions, bateries i simulació. Els seus usuaris depenen de càlculs i plantilles d'informe que han anat perfeccionant durant anys, i esperen que cada versió els mantingui en funcionament. Alhora, les peticions no paren d'arribar: nous formats de dades i protocols de bus, normatives que canvien com s'han de calcular els resultats, integracions amb sistemes d'assaig i eines de simulació, i informes a mida per a clients. {{<accent>}}La feina consisteix a fer evolucionar un producte profund i de llarga vida sense trencar allò de què depenen els enginyers.{{</accent>}}
 
 ## Què fem
 
@@ -44,8 +44,8 @@ UniPlot s'ha desenvolupat al llarg de molts anys i es fa servir en àmbits exige
 + **Complements per a àmbits específics**: responsabilitat de producte de complements per a tasques d'enginyeria concretes, com el complement de [càlcul d'emissions](/ca/projectes/calcul-emissions/).
 + **Integracions**: conceptes i requisits per connectar UniPlot amb sistemes d'automatització d'assajos, amb programari de simulació com a font de dades i amb bases de dades d'assaig ASAM ODS, mitjançant fluxos de llançament, línia d'ordres i URL, COM i seqüències d'anàlisi reutilitzables.
 + **Fluxos de treball dels clients**: analitzar com els equips d'enginyeria avaluen les seves dades, sovint en fulls de càlcul, i reconstruir-ho com a biblioteques de fórmules, plantilles d'informe i seqüències automatitzades, validades amb els seus resultats anteriors.
-+ **Llicències i desplegament**: traduir els models de llicència del producte en un comportament del programari i un desplegament que els administradors puguin gestionar, i revisar les condicions de llicència amb relació al que fa realment el producte.
-+ **Suport i qualitat**: indicadors per al servei d'assistència i el _backlog_, investigació d'incidències, i problemes de formats de dades reproduïts i corregits amb els desenvolupadors.
++ **Llicències i desplegament**: traduir els models de llicència del producte en un comportament del programari i un desplegament que els administradors puguin gestionar, coherents amb les condicions de llicència.
++ **Suport i qualitat**: indicadors per al servei d'assistència i el _backlog_, i anàlisi de les consultes dels usuaris amb els desenvolupadors.
 + **Documentació i capacitació**: documentació, cursos de formació, vídeos, webinars, fires comercials, fullets i la renovació del web del producte.
 
 ## Decisions tècniques clau

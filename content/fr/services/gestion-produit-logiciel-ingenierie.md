@@ -18,13 +18,13 @@ related_pages:
 - integration-logiciels-ingenierie
 ---
 
-Un logiciel d'ingénierie vit longtemps, et ses utilisateurs en dépendent chaque jour pour produire leurs résultats. Nous gérons ce type de produit : nous {{< accent >}}transformons les demandes des ingénieurs en feuille de route, en spécifications et en versions{{< /accent >}} qu'une petite équipe de développement peut livrer, sans casser ce sur quoi s'appuient les utilisateurs existants.
+Un logiciel d'ingénierie vit longtemps, et ses utilisateurs en dépendent chaque jour pour produire leurs résultats. Nous gérons ce type de produit : nous {{< accent >}}transformons les demandes des ingénieurs en feuille de route, en spécifications et en versions{{< /accent >}} qu'une équipe de développement peut livrer, sans casser ce sur quoi s'appuient les utilisateurs existants.
 
 {{< alert type="bg-sensical" >}}
 
 ### Le problème
 
-Une application d'ingénierie mature accumule les demandes plus vite qu'aucune équipe ne peut les développer : un nouveau format de données, un calcul exigé par une nouvelle réglementation, une intégration avec un banc d'essai, un rapport spécifique à un client. Chacune a du sens prise isolément. Sans méthode claire pour les choisir, les spécifier et les livrer, le produit dérive, les versions prennent du retard et le support absorbe l'équipe. La gestion de produit consiste à rendre ces choix explicites et à les transformer en logiciel.
+Une application d'ingénierie mature reçoit de nombreuses demandes : un nouveau format de données, un calcul exigé par une nouvelle réglementation, une intégration avec un banc d'essai, un rapport spécifique à un client. Chacune a du sens prise isolément. La gestion de produit consiste à choisir entre elles, à les spécifier clairement et à les transformer en versions sur lesquelles les utilisateurs peuvent compter.
 
 {{</alert>}}
 
@@ -40,7 +40,7 @@ Depuis plusieurs années, nous gérons l'évolution d'[UniPlot](/fr/projets/unip
 
 ## Pour qui
 
-+ **Éditeurs de logiciels d'ingénierie** qui ont un produit mature, une longue liste de demandes clients et une petite équipe.
++ **Éditeurs de logiciels d'ingénierie** qui ont un produit mature et une longue liste de demandes clients.
 + **Départements d'ingénierie** qui possèdent des outils internes et doivent les faire évoluer comme un produit, et non comme une collection de scripts.
 + **Partenaires technologiques** qui veulent connecter leur logiciel à un autre produit et ont besoin de quelqu'un pour porter le périmètre commun.
 
