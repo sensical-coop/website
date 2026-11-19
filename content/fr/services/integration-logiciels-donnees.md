@@ -14,7 +14,7 @@ labels:
 - "MQTT"
 - "API"
 related_pages:
-- flux-donnees-ingenierie
+- flux-donnees-iot
 - integration-capteurs-meshtastic
 - integration-capteurs-environnementaux
 ---
@@ -75,4 +75,4 @@ Nous privilégions les protocoles et formats ouverts et documentés, comme MQTT,
 
 ## Parlons-en
 
-Dites-nous quels systèmes vos données doivent traverser à [info@sensical.es](mailto:info@sensical.es). Pour le volet capteurs, consultez notre service d'[intégration de capteurs environnementaux](/fr/services/integration-capteurs-environnementaux/) ; pour les données d'essai et de simulation, notre service de [flux de données d'ingénierie](/fr/services/flux-donnees-ingenierie/).
+Dites-nous quels systèmes vos données doivent traverser à [info@sensical.es](mailto:info@sensical.es). Pour le volet capteurs, consultez notre service d'[intégration de capteurs environnementaux](/fr/services/integration-capteurs-environnementaux/) ; pour transformer les données en résultats validés et en rapports, consultez notre service [chaînes de données capteurs et IoT](/fr/services/flux-donnees-iot/).

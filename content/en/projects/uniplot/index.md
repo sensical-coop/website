@@ -12,7 +12,6 @@ client: "ENORISE"
 year: "2020–2026"
 services:
 - engineeringproductmanagement
-- engineeringdataworkflows
 related_projects:
 - emissioncomputation
 labels:
@@ -55,7 +54,7 @@ UniPlot has been developed over many years and is used in demanding fields: engi
 
 ## What it shows
 
-Years of work on UniPlot are the basis of our [product management](/services/engineering-software-product-management/) and [engineering data workflows](/services/engineering-data-workflows/) services: we know how engineers work with their data, and how to turn that into software they can rely on.
+Years of work on UniPlot are the basis of our [product management](/services/engineering-software-product-management/) service: we know how engineers work with their data, and how to turn that into software they can rely on.
 
 ## Contact us
 

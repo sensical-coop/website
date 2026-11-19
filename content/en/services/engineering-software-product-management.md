@@ -14,7 +14,7 @@ labels:
 - "Roadmaps"
 - "Releases"
 related_pages:
-- engineering-data-workflows
+- iot-data-workflows
 - software-data-integration
 ---
 
@@ -65,4 +65,4 @@ We coordinate technical, commercial and legal constraints so that the product st
 
 ## Get in touch
 
-Tell us about your product and your backlog at [info@sensical.es](mailto:info@sensical.es). If your challenge is how engineers process their data rather than the software itself, see our [engineering data workflows](/services/engineering-data-workflows/) service.
+Tell us about your product and your backlog at [info@sensical.es](mailto:info@sensical.es). If your challenge is turning sensor data into reliable results rather than the software itself, see our [sensor and IoT data workflows](/services/iot-data-workflows/) service.

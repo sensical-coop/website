@@ -41,9 +41,9 @@ Desarrollamos la tecnología detrás de espectáculos e instalaciones: iluminaci
 
 Gestionamos software de ingeniería de larga vida: hojas de ruta y priorización, requisitos con criterios de aceptación, estimaciones de esfuerzo y casos de negocio, conversión de peticiones específicas de clientes en funcionalidades o add-ins reutilizables, coordinación del desarrollo y preparación de versiones, traslado de los modelos de licencia al comportamiento y al despliegue del software, y coherencia entre las condiciones de licencia, la privacidad, la documentación y el producto. Coordinamos las restricciones técnicas, comerciales y legales, pero no somos abogados ni damos asesoramiento jurídico.
 
-### Flujos de datos de ingeniería
+### Flujos de datos de sensores e IoT
 
-Estudiamos cómo los equipos de ensayo y simulación convierten sus datos en resultados, a menudo mediante hojas de cálculo copiadas y pasos manuales, y trasladamos ese trabajo a bibliotecas de fórmulas, plantillas de informe y secuencias automatizadas. Validamos el nuevo flujo con resultados de referencia anteriores a la migración, lo implantamos por etapas sin detener los ensayos y formamos a los ingenieros para que lo mantengan. Ámbitos: bancos de ensayo de motores y vehículos, emisiones, ensayos de baterías, datos de calibración y de simulación; formatos como MDF4, CSV, NetCDF y Excel.
+Diseñamos lo que ocurre entre una lectura bruta de un sensor y un resultado en el que se pueda confiar. Seguimos los datos desde el dispositivo hasta el informe, detectamos los pasos manuales y los riesgos (fórmulas copiadas entre hojas de cálculo, lecturas que faltan o se repiten, deriva de los sensores, problemas de reloj) y reconstruimos el flujo para que los controles de calidad, la calibración, los valores derivados y las alarmas se ejecuten automáticamente a medida que llegan los datos, con informes y paneles generados a partir de los mismos datos validados. Validamos el nuevo flujo con datos históricos y formamos al equipo para que lo mantenga. Ámbitos: calidad del aire, monitorización ambiental y agrícola, medición de emisiones, series temporales y redes en malla LoRa con Mesh Things.
 
 ### Integración de software y datos
 

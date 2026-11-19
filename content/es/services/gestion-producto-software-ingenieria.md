@@ -14,7 +14,7 @@ labels:
 - "Hojas de ruta"
 - "Versiones"
 related_pages:
-- flujos-datos-ingenieria
+- flujos-datos-iot
 - integracion-software-datos
 ---
 
@@ -65,4 +65,4 @@ Coordinamos las restricciones técnicas, comerciales y legales para que el produ
 
 ## Hablemos
 
-Cuéntanos sobre tu producto y tu backlog en [info@sensical.es](mailto:info@sensical.es). Si tu reto es cómo procesan sus datos los ingenieros, más que el propio software, consulta nuestro servicio de [flujos de datos de ingeniería](/es/servicios/flujos-datos-ingenieria/).
+Cuéntanos sobre tu producto y tu backlog en [info@sensical.es](mailto:info@sensical.es). Si tu reto es convertir datos de sensores en resultados fiables, más que el propio software, consulta nuestro servicio de [flujos de datos de sensores e IoT](/es/servicios/flujos-datos-iot/).

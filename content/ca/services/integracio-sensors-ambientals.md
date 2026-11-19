@@ -21,9 +21,9 @@ labels:
 related_pages:
 - integracio-sensors-meshtastic
 - co-creacio
-- fluxos-dades-enginyeria
+- fluxos-dades-iot
 ---
-Integrem sensors ambientals en sistemes de dades flexibles, assequibles i fiables: des del sensor i el seu firmware, passant per la xarxa que en transporta les dades, fins a la plataforma on aquestes dades s'emmagatzemen, es visualitzen i s'utilitzen. Som experts en la recollida de dades de sensors a través de xarxes en malla distribuïdes i autònomes, i tenim una llarga experiència en la validació, el calibratge i el processament de grans conjunts de dades.
+Integrem sensors ambientals en sistemes de dades flexibles, assequibles i fiables: des del sensor i el seu firmware, passant per la xarxa que en transporta les dades, fins a la plataforma on aquestes dades s'emmagatzemen, es visualitzen i s'utilitzen. Som experts en la recollida de dades de sensors a través de xarxes en malla distribuïdes i autònomes, i tenim una llarga experiència en la validació i el calibratge de grans conjunts de dades, que oferim com el nostre servei de [fluxos de dades de sensors i IoT](/ca/serveis/fluxos-dades-iot/).
 
 {{< divider
     image="images/drawings/probe-drawing.svg"

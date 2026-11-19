@@ -14,7 +14,7 @@ labels:
 - "Feuilles de route"
 - "Versions"
 related_pages:
-- flux-donnees-ingenierie
+- flux-donnees-iot
 - integration-logiciels-donnees
 ---
 
@@ -65,4 +65,4 @@ Nous coordonnons les contraintes techniques, commerciales et juridiques pour que
 
 ## Parlons-en
 
-Parlez-nous de votre produit et de votre backlog à [info@sensical.es](mailto:info@sensical.es). Si votre enjeu porte sur la façon dont les ingénieurs traitent leurs données plutôt que sur le logiciel lui-même, consultez notre service [flux de données d'ingénierie](/fr/services/flux-donnees-ingenierie/).
+Parlez-nous de votre produit et de votre backlog à [info@sensical.es](mailto:info@sensical.es). Si votre enjeu est de transformer des données de capteurs en résultats fiables plutôt que le logiciel lui-même, consultez notre service [chaînes de données capteurs et IoT](/fr/services/flux-donnees-iot/).

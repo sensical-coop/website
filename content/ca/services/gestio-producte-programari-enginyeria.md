@@ -14,7 +14,7 @@ labels:
 - "Fulls de ruta"
 - "Versions"
 related_pages:
-- fluxos-dades-enginyeria
+- fluxos-dades-iot
 - integracio-programari-dades
 ---
 
@@ -65,4 +65,4 @@ Coordinem les restriccions tècniques, comercials i legals perquè el producte s
 
 ## Parlem-ne
 
-Explica'ns el teu producte i el teu _backlog_ a [info@sensical.es](mailto:info@sensical.es). Si el teu repte és com els enginyers processen les dades més que no pas el programari en si, consulta el nostre servei de [fluxos de dades d'enginyeria](/ca/serveis/fluxos-dades-enginyeria/).
+Explica'ns el teu producte i el teu _backlog_ a [info@sensical.es](mailto:info@sensical.es). Si el teu repte és convertir dades de sensors en resultats fiables més que no pas el programari en si, consulta el nostre servei de [fluxos de dades de sensors i IoT](/ca/serveis/fluxos-dades-iot/).

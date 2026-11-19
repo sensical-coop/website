@@ -15,6 +15,7 @@ services:
 - environmentaldatacollection
 - meshtasticsensorintegration
 - softwareintegration
+- iotdataworkflows
 labels:
 - "LoRa Mesh"
 - "Data platform"

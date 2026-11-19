@@ -14,7 +14,7 @@ labels:
 - "MQTT"
 - "APIs"
 related_pages:
-- engineering-data-workflows
+- iot-data-workflows
 - meshtastic-sensor-integration
 - environmental-sensor-integration
 ---
@@ -75,4 +75,4 @@ We prefer open, documented protocols and formats, such as MQTT, Protocol Buffers
 
 ## Get in touch
 
-Tell us which systems your data has to cross at [info@sensical.es](mailto:info@sensical.es). For the sensor side, see our [environmental sensor integration](/services/environmental-sensor-integration/) service; for test and simulation data, see [engineering data workflows](/services/engineering-data-workflows/).
+Tell us which systems your data has to cross at [info@sensical.es](mailto:info@sensical.es). For the sensor side, see our [environmental sensor integration](/services/environmental-sensor-integration/) service; to turn the data into validated results and reports, see [sensor and IoT data workflows](/services/iot-data-workflows/).

@@ -14,7 +14,7 @@ labels:
 - "MQTT"
 - "API"
 related_pages:
-- fluxos-dades-enginyeria
+- fluxos-dades-iot
 - integracio-sensors-meshtastic
 - integracio-sensors-ambientals
 ---
@@ -75,4 +75,4 @@ Preferim protocols i formats oberts i documentats, com MQTT, Protocol Buffers, R
 
 ## Parlem-ne
 
-Explica'ns quins sistemes han de travessar les teves dades a [info@sensical.es](mailto:info@sensical.es). Per a la part dels sensors, consulta el nostre servei d'[integració de sensors ambientals](/ca/serveis/integracio-sensors-ambientals/); per a dades d'assaig i simulació, consulta [fluxos de dades d'enginyeria](/ca/serveis/fluxos-dades-enginyeria/).
+Explica'ns quins sistemes han de travessar les teves dades a [info@sensical.es](mailto:info@sensical.es). Per a la part dels sensors, consulta el nostre servei d'[integració de sensors ambientals](/ca/serveis/integracio-sensors-ambientals/); per convertir les dades en resultats i informes validats, consulta [fluxos de dades de sensors i IoT](/ca/serveis/fluxos-dades-iot/).

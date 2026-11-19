@@ -41,9 +41,9 @@ Desenvolupem la tecnologia darrere d'espectacles i instal·lacions: il·luminaci
 
 Gestionem programari d'enginyeria de llarga vida: fulls de ruta i priorització, requisits amb criteris d'acceptació, estimacions d'esforç i casos de negoci, conversió de peticions de clients concrets en funcionalitats o complements reutilitzables, coordinació del desenvolupament i preparació de versions, models de llicència traduïts en comportament del programari i desplegament, i coherència entre condicions de llicència, privadesa, documentació i producte. Coordinem les restriccions tècniques, comercials i legals, però no som advocats i no fem assessorament jurídic.
 
-### Fluxos de dades d'enginyeria
+### Fluxos de dades de sensors i IoT
 
-Analitzem com els equips d'assaig i simulació converteixen les dades en resultats, sovint amb fulls de càlcul copiats i passos manuals, i traslladem aquesta feina a biblioteques de fórmules, plantilles d'informe i seqüències automatitzades. Validem el nou flux amb resultats de referència d'abans de la migració, el despleguem per etapes sense aturar els assajos i formem els enginyers perquè el mantinguin. Àmbits: bancs d'assaig de motors i vehicles, emissions, assajos de bateries, dades de calibratge i de simulació; formats com MDF4, CSV, NetCDF i Excel.
+Dissenyem el que passa entre una lectura de sensor en brut i un resultat en què es pot confiar. Seguim les dades des del dispositiu fins a l'informe, detectem els passos manuals i els riscos (fórmules copiades entre fulls de càlcul, lectures que falten o es repeteixen, deriva dels sensors, problemes de rellotge) i reconstruïm el flux perquè els controls de qualitat, el calibratge, els valors derivats i les alarmes s'executin automàticament a mesura que arriben les dades, amb informes i quadres de comandament generats a partir de les mateixes dades validades. Validem el nou flux amb dades històriques i formem l'equip perquè el mantingui. Àmbits: qualitat de l'aire, monitorització ambiental i agrícola, mesura d'emissions, dades de sèries temporals i xarxes en malla LoRa amb Mesh Things.
 
 ### Integració de programari i dades
 

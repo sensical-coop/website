@@ -13,7 +13,7 @@ Every page listed below has a clean Markdown version: append `.md` to the page U
 - [Co-creation and participatory design](https://sensical.es/services/co-creation.md): Workshops, project co-design and mentoring, so that your team can own, run and evolve the technology it builds with us.
 - [Technical development for artists](https://sensical.es/services/technical-development-for-artists.md): Stage lighting, wearables and robotics for performance and installations, built with artists, robust enough to tour, with training to run it.
 - [Product management for engineering software](https://sensical.es/services/engineering-software-product-management.md): Roadmaps, specifications, releases and licensing models for engineering software, built from what engineers need; we coordinate legal constraints but do not give legal advice.
-- [Engineering data workflows](https://sensical.es/services/engineering-data-workflows.md): Analysis of how test and simulation data becomes results, and migration from fragile spreadsheets to formula libraries, report templates and automation, validated against existing results.
+- [Sensor and IoT data workflows](https://sensical.es/services/iot-data-workflows.md): From raw sensor readings to trusted results: quality checks, drift detection, calibration, derived values, alarms and reports, automated and validated against historical data instead of fragile spreadsheets.
 - [Software and data integration](https://sensical.es/services/software-data-integration.md): Connecting devices, software and data platforms through MQTT, APIs, protocol decoding and open formats, as in Mesh Things, so data reaches the tools people use without manual steps.
 
 ## Projects

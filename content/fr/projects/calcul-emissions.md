@@ -11,7 +11,7 @@ heroSubHeading: "Du texte réglementaire aux résultats d'émissions validés"
 client: "ENORISE (add-in UniPlot)"
 year: "2020–2026"
 services:
-- engineeringdataworkflows
+- iotdataworkflows
 - engineeringproductmanagement
 - environmentaldatacollection
 related_projects:

@@ -41,9 +41,9 @@ We develop the technology behind performances and installations: stage lighting,
 
 We manage long-lived engineering software: roadmaps and prioritisation, requirements with acceptance criteria, effort estimates and business cases, turning customer-specific requests into reusable features or add-ins, development coordination and release preparation, licensing models translated into software behaviour and deployment, and consistency between licence terms, privacy, documentation and the product. We coordinate technical, commercial and legal constraints, but we are not lawyers and do not give legal advice.
 
-### Engineering data workflows
+### Sensor and IoT data workflows
 
-We study how test and simulation teams turn data into results, often through copied spreadsheets and manual steps, and move that work to formula libraries, report templates and automated sequences. We validate the new workflow against reference results from before the migration, roll it out in stages without stopping testing, and train engineers to maintain it. Domains: engine and vehicle test benches, emissions, battery testing, calibration and simulation data; formats such as MDF4, CSV, NetCDF and Excel.
+We design what happens between a raw sensor reading and a result people can trust. We follow the data from the device to the report, find manual steps and risks (copied spreadsheet formulas, missing or repeated readings, sensor drift, clock problems), and rebuild the workflow so that quality checks, calibration, derived values and alarms run automatically as data arrives, with reports and dashboards produced from the same validated data. We validate the new workflow on historical data and train the team to maintain it. Domains: air quality, environmental and agricultural sensing, emission measurement, time-series data and LoRa mesh networks with Mesh Things.
 
 ### Software and data integration
 

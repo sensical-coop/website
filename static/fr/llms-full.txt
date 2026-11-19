@@ -41,9 +41,9 @@ Nous développons la technologie des spectacles et des installations : lumière
 
 Nous gérons des logiciels d'ingénierie au long cours : feuilles de route et priorisation, exigences avec critères d'acceptation, estimations de charge et études d'opportunité, transformation de demandes spécifiques de clients en fonctionnalités réutilisables ou en add-ins, coordination du développement et préparation des versions, modèles de licence traduits en comportement logiciel et en déploiement, et cohérence entre conditions de licence, confidentialité, documentation et produit. Nous coordonnons les contraintes techniques, commerciales et juridiques, mais nous ne sommes pas juristes et ne donnons pas de conseil juridique.
 
-### Flux de données d'ingénierie
+### Chaînes de données capteurs et IoT
 
-Nous étudions comment les équipes d'essais et de simulation transforment leurs données en résultats, souvent au moyen de tableurs copiés et d'étapes manuelles, et transférons ce travail vers des bibliothèques de formules, des modèles de rapport et des séquences automatisées. Nous validons le nouveau flux par rapport à des résultats de référence antérieurs à la migration, le déployons par étapes sans arrêter les essais, et formons les ingénieurs à le maintenir. Domaines : bancs d'essai moteur et véhicule, émissions, essais de batteries, données de calibration et de simulation ; formats comme MDF4, CSV, NetCDF et Excel.
+Nous concevons ce qui se passe entre une mesure brute de capteur et un résultat auquel on peut se fier. Nous suivons les données de l'appareil jusqu'au rapport, repérons les étapes manuelles et les risques (formules copiées entre tableurs, mesures manquantes ou en double, dérive des capteurs, problèmes d'horloge), et reconstruisons la chaîne pour que les contrôles qualité, l'étalonnage, les valeurs dérivées et les alarmes s'exécutent automatiquement à l'arrivée des données, avec des rapports et tableaux de bord produits à partir des mêmes données validées. Nous validons la nouvelle chaîne sur des données historiques et formons l'équipe à la maintenir. Domaines : qualité de l'air, mesures environnementales et agricoles, mesure des émissions, séries temporelles et réseaux maillés LoRa avec Mesh Things.
 
 ### Intégration de logiciels et de données
 

@@ -19,10 +19,10 @@ labels:
 related_pages:
 - meshtastic-sensor-integration
 - co-creation
-- engineering-data-workflows
+- iot-data-workflows
 ---
 
-We integrate environmental sensors into flexible, affordable, and reliable data systems: from the sensor and its firmware, through the network that carries its data, to the platform where that data is stored, visualised and used. We are experts in sensor data collection over distributed, off-grid mesh networks, and we have long experience validating, calibrating and processing large datasets.
+We integrate environmental sensors into flexible, affordable, and reliable data systems: from the sensor and its firmware, through the network that carries its data, to the platform where that data is stored, visualised and used. We are experts in sensor data collection over distributed, off-grid mesh networks, and we have long experience validating and calibrating large datasets, which we offer as our [sensor and IoT data workflows](/services/iot-data-workflows/) service.
 
 {{< divider
     image="images/drawings/probe-drawing.svg"
