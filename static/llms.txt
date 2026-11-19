@@ -14,7 +14,7 @@ Every page listed below has a clean Markdown version: append `.md` to the page U
 - [Technical development for artists](https://sensical.es/services/technical-development-for-artists.md): Stage lighting, wearables and robotics for performance and installations, built with artists, robust enough to tour, with training to run it.
 - [Product management for engineering software](https://sensical.es/services/engineering-software-product-management.md): Roadmaps, specifications, releases and licensing models for engineering software, built from what engineers need; we coordinate legal constraints but do not give legal advice.
 - [Engineering data workflows](https://sensical.es/services/engineering-data-workflows.md): Analysis of how test and simulation data becomes results, and migration from fragile spreadsheets to formula libraries, report templates and automation, validated against existing results.
-- [Engineering software integration](https://sensical.es/services/engineering-software-integration.md): Connecting analysis software with test automation, simulation tools and test-data databases (ASAM ODS, openMDM) so data arrives without manual export and reports run on their own.
+- [Software and data integration](https://sensical.es/services/software-data-integration.md): Connecting devices, software and data platforms through MQTT, APIs, protocol decoding and open formats, as in Mesh Things, so data reaches the tools people use without manual steps.
 
 ## Projects
 

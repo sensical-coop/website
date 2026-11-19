@@ -14,7 +14,7 @@ Cada pàgina de la llista té una versió neta en Markdown: afegeix `.md` a l'UR
 - [Desenvolupament tècnic per a artistes](https://sensical.es/ca/serveis/desenvolupament-tecnic-per-a-artistes.md): Il·luminació escènica, wearables i robòtica per a arts escèniques i instal·lacions, desenvolupats amb artistes, robustos per a la gira i amb formació per operar-los.
 - [Gestió de producte per a programari d'enginyeria](https://sensical.es/ca/serveis/gestio-producte-programari-enginyeria.md): Fulls de ruta, especificacions, versions i models de llicència per a programari d'enginyeria, a partir del que necessiten els enginyers; coordinem les restriccions legals, però no fem assessorament jurídic.
 - [Fluxos de dades d'enginyeria](https://sensical.es/ca/serveis/fluxos-dades-enginyeria.md): Anàlisi de com les dades d'assaig i simulació es converteixen en resultats, i migració de fulls de càlcul fràgils a biblioteques de fórmules, plantilles d'informe i automatització, validades amb els resultats existents.
-- [Integració de programari d'enginyeria](https://sensical.es/ca/serveis/integracio-programari-enginyeria.md): Connexió del programari d'anàlisi amb l'automatització d'assajos, les eines de simulació i les bases de dades d'assaig (ASAM ODS, openMDM), perquè les dades arribin sense exportacions manuals i els informes es generin sols.
+- [Integració de programari i dades](https://sensical.es/ca/serveis/integracio-programari-dades.md): Connexió de dispositius, programari i plataformes de dades mitjançant MQTT, API, descodificació de protocols i formats oberts, com a Mesh Things, perquè les dades arribin a les eines que fa servir la gent sense passos manuals.
 
 ## Projectes
 

@@ -14,6 +14,7 @@ partners:
 services:
 - environmentaldatacollection
 - meshtasticsensorintegration
+- softwareintegration
 labels:
 - "Meshtastic"
 - "Plataforma de datos"

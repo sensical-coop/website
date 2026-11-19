@@ -45,9 +45,9 @@ Gestionamos software de ingeniería de larga vida: hojas de ruta y priorización
 
 Estudiamos cómo los equipos de ensayo y simulación convierten sus datos en resultados, a menudo mediante hojas de cálculo copiadas y pasos manuales, y trasladamos ese trabajo a bibliotecas de fórmulas, plantillas de informe y secuencias automatizadas. Validamos el nuevo flujo con resultados de referencia anteriores a la migración, lo implantamos por etapas sin detener los ensayos y formamos a los ingenieros para que lo mantengan. Ámbitos: bancos de ensayo de motores y vehículos, emisiones, ensayos de baterías, datos de calibración y de simulación; formatos como MDF4, CSV, NetCDF y Excel.
 
-### Integración de software de ingeniería
+### Integración de software y datos
 
-Conectamos el software de análisis con las herramientas que lo rodean: sistemas de automatización de ensayos (informes automáticos al final del ensayo, escritura de vuelta de los resultados), software de simulación (la herramienta de análisis como postprocesador), bases de datos de ensayo (ASAM ODS, openMDM), y scripts o aplicaciones que controlan el análisis mediante COM, la línea de comandos o interfaces de scripting. Redactamos conceptos de integración, requisitos y estimaciones, e implementamos importadores, exportadores, secuencias y cadenas de generación de informes.
+Conectamos dispositivos, software y plataformas de datos para que los datos circulen de forma fiable, en el formato adecuado y sin pasos manuales: brokers y puentes MQTT, eliminación de duplicados y procesamiento en flujo, decodificación de protocolos binarios y cifrados (Protocol Buffers, OSC), envío a plataformas de terceros por MQTT o mediante APIs REST, bases de datos y archivos Parquet en almacenamiento compatible con S3, y formatos de datos de ingeniería como MDF4, HDF5 y NetCDF. Ejemplos: Mesh Things (decodificación y compartición de datos de Meshtastic), nuestras contribuciones al protocolo de Meshtastic y el bus de control MQTT de Famulus 4.0. Preferimos protocolos y formatos abiertos, para que las integraciones no aten a los clientes a un único proveedor.
 
 ## Proyectos destacados
 
@@ -55,7 +55,7 @@ Conectamos el software de análisis con las herramientas que lo rodean: sistemas
 - Contribuciones al firmware de Meshtastic: más de 50 pull requests aceptadas que añaden soporte para sensores (CO2, partículas y gases, formaldehído, temperatura y humedad, entradas analógicas, sondas one-wire, telemetría de suelo y agua).
 - Famulus 4.0 (Iron Skulls Co, 2024–2025): control en directo en escena de un perro robot Unitree Go2 con un mando de videojuegos y un controlador MIDI.
 - Azul Petróleo (Iron Skulls Co, 2022–2023): máscaras de luz y LEDs de escenario, controlados en directo y sin cables desde el software de iluminación del espectáculo.
-- UniPlot (ENORISE, 2020–2026): gestión de producto de una aplicación de análisis, gráficos e informes de datos para ingenieros de ensayo y simulación: hoja de ruta y versiones, add-ins, integraciones con sistemas de ensayo, herramientas de simulación y bases de datos ASAM ODS, migración de flujos de trabajo de clientes, licencias, documentación y formación.
+- UniPlot (ENORISE, 2020–2026): gestión de producto de una aplicación de análisis, gráficos e informes de datos para ingenieros de ensayo y simulación: hoja de ruta y versiones, add-ins, migración de flujos de trabajo de clientes, licencias, documentación y formación.
 - Cálculo de emisiones (add-in de UniPlot, 2020–2026): evaluación de emisiones reglamentarias y en conducción real (RDE), del análisis de la legislación (UE y Euro 7, EPA estadounidense, China) a la alineación temporal, el control de datos de sensores, las correcciones, la validación del trayecto y los informes, con las reglas normativas guardadas como datos editables.
 
 ## Cómo trabajamos

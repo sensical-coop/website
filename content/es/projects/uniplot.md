@@ -13,7 +13,6 @@ year: "2020–2026"
 services:
 - engineeringproductmanagement
 - engineeringdataworkflows
-- engineeringsoftwareintegration
 related_projects:
 - emissioncomputation
 labels:
@@ -56,7 +55,7 @@ UniPlot se ha desarrollado a lo largo de muchos años y se utiliza en ámbitos e
 
 ## Lo que demuestra
 
-Los años de trabajo en UniPlot son la base de nuestros servicios de [gestión de producto](/es/servicios/gestion-producto-software-ingenieria/), [flujos de datos de ingeniería](/es/servicios/flujos-datos-ingenieria/) e [integración de software](/es/servicios/integracion-software-ingenieria/): sabemos cómo trabajan los ingenieros con sus datos y cómo convertir eso en software en el que puedan confiar.
+Los años de trabajo en UniPlot son la base de nuestros servicios de [gestión de producto](/es/servicios/gestion-producto-software-ingenieria/) y [flujos de datos de ingeniería](/es/servicios/flujos-datos-ingenieria/): sabemos cómo trabajan los ingenieros con sus datos y cómo convertir eso en software en el que puedan confiar.
 
 ## Contacto
 

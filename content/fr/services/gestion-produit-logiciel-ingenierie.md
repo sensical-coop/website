@@ -15,7 +15,7 @@ labels:
 - "Versions"
 related_pages:
 - flux-donnees-ingenierie
-- integration-logiciels-ingenierie
+- integration-logiciels-donnees
 ---
 
 Un logiciel d'ingénierie vit longtemps, et ses utilisateurs en dépendent chaque jour pour produire leurs résultats. Nous gérons ce type de produit : nous {{< accent >}}transformons les demandes des ingénieurs en feuille de route, en spécifications et en versions{{< /accent >}} qu'une équipe de développement peut livrer, sans casser ce sur quoi s'appuient les utilisateurs existants.

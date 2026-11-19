@@ -15,7 +15,7 @@ labels:
 - "Versions"
 related_pages:
 - fluxos-dades-enginyeria
-- integracio-programari-enginyeria
+- integracio-programari-dades
 ---
 
 El programari d'enginyeria té una vida llarga, i els seus usuaris en depenen cada dia per obtenir els seus resultats. Gestionem productes com aquests: {{< accent >}}convertim el que demanen els enginyers en un full de ruta, especificacions i versions{{< /accent >}} que un equip de desenvolupament pot lliurar, sense trencar allò de què depenen els usuaris actuals.

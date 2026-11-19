@@ -14,7 +14,7 @@ labels:
 - "Automatisation"
 - "Migration"
 related_pages:
-- integration-logiciels-ingenierie
+- integration-logiciels-donnees
 - gestion-produit-logiciel-ingenierie
 - integration-capteurs-environnementaux
 ---

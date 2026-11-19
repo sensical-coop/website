@@ -13,7 +13,6 @@ year: "2020–2026"
 services:
 - engineeringproductmanagement
 - engineeringdataworkflows
-- engineeringsoftwareintegration
 related_projects:
 - emissioncomputation
 labels:
@@ -56,7 +55,7 @@ UniPlot est développé depuis de nombreuses années et utilisé dans des domain
 
 ## Ce que cela montre
 
-Des années de travail sur UniPlot fondent nos services de [gestion de produit](/fr/services/gestion-produit-logiciel-ingenierie/), de [flux de données d'ingénierie](/fr/services/flux-donnees-ingenierie/) et d'[intégration de logiciels](/fr/services/integration-logiciels-ingenierie/) : nous savons comment les ingénieurs travaillent avec leurs données, et comment en faire un logiciel sur lequel ils peuvent compter.
+Des années de travail sur UniPlot fondent nos services de [gestion de produit](/fr/services/gestion-produit-logiciel-ingenierie/) et de [flux de données d'ingénierie](/fr/services/flux-donnees-ingenierie/) : nous savons comment les ingénieurs travaillent avec leurs données, et comment en faire un logiciel sur lequel ils peuvent compter.
 
 ## Nous contacter
 

@@ -14,7 +14,7 @@ labels:
 - "Automatització"
 - "Migració"
 related_pages:
-- integracio-programari-enginyeria
+- integracio-programari-dades
 - gestio-producte-programari-enginyeria
 - integracio-sensors-ambientals
 ---

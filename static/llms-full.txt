@@ -45,9 +45,9 @@ We manage long-lived engineering software: roadmaps and prioritisation, requirem
 
 We study how test and simulation teams turn data into results, often through copied spreadsheets and manual steps, and move that work to formula libraries, report templates and automated sequences. We validate the new workflow against reference results from before the migration, roll it out in stages without stopping testing, and train engineers to maintain it. Domains: engine and vehicle test benches, emissions, battery testing, calibration and simulation data; formats such as MDF4, CSV, NetCDF and Excel.
 
-### Engineering software integration
+### Software and data integration
 
-We connect analysis software with the tools around it: test automation systems (automatic end-of-test reports, write-back of results), simulation software (the analysis tool as a post-processor), test-data databases (ASAM ODS, openMDM), and scripts or applications driving the analysis through COM, the command line or scripting interfaces. We write integration concepts, requirements and estimates, and implement importers, exporters, sequences and reporting pipelines.
+We connect devices, software and data platforms so that data moves reliably, in the right format and without manual steps: MQTT brokers and bridges, deduplication and stream processing, decoding of binary and encrypted protocols (Protocol Buffers, OSC), delivery to third-party platforms over MQTT or REST APIs, databases and Parquet archives on S3-compatible storage, and engineering data formats such as MDF4, HDF5 and NetCDF. Examples: Mesh Things (decoding and sharing Meshtastic data), our Meshtastic protocol contributions, and the MQTT control bus of Famulus 4.0. We prefer open protocols and formats, so that integrations do not lock clients into one vendor.
 
 ## Selected projects
 
@@ -55,7 +55,7 @@ We connect analysis software with the tools around it: test automation systems (
 - Meshtastic firmware contributions: more than 50 merged pull requests adding sensor support (CO2, particulate matter and gases, formaldehyde, temperature and humidity, analog inputs, one-wire probes, soil and water telemetry).
 - Famulus 4.0 (Iron Skulls Co, 2024–2025): live control of a Unitree Go2 robot dog on stage with a game controller and a MIDI controller.
 - Azul Petróleo (Iron Skulls Co, 2022–2023): wearable light masks and stage LEDs, cued live and wirelessly from the show's lighting software.
-- UniPlot (ENORISE, 2020–2026): product management of a data analysis, plotting and reporting application for test and simulation engineers: roadmap and releases, add-ins, integrations with test systems, simulation tools and ASAM ODS databases, customer workflow migrations, licensing, documentation and training.
+- UniPlot (ENORISE, 2020–2026): product management of a data analysis, plotting and reporting application for test and simulation engineers: roadmap and releases, add-ins, customer workflow migrations, licensing, documentation and training.
 - Emission computation (UniPlot add-in, 2020–2026): regulatory and Real Driving Emissions evaluation, from legislation analysis (EU and Euro 7, US EPA, China) to time alignment, sensor data checks, corrections, trip validation and reports, with regulatory rules kept as editable data.
 
 ## How we work

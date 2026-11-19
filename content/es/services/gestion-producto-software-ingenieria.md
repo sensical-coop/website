@@ -15,7 +15,7 @@ labels:
 - "Versiones"
 related_pages:
 - flujos-datos-ingenieria
-- integracion-software-ingenieria
+- integracion-software-datos
 ---
 
 El software de ingeniería tiene una vida larga, y sus usuarios dependen de él cada día para obtener sus resultados. Gestionamos productos como estos: {{< accent >}}convertimos lo que piden los ingenieros en una hoja de ruta, especificaciones y versiones{{< /accent >}} que un equipo de desarrollo pueda entregar, sin romper aquello de lo que dependen los usuarios actuales.

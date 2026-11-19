@@ -14,7 +14,7 @@ Chaque page listée ci-dessous a une version Markdown épurée : ajoutez `.md` 
 - [Développement technique pour artistes](https://sensical.es/fr/services/developpement-technique-pour-artistes.md) : Lumière de scène, wearables et robotique pour le spectacle vivant et les installations, conçus avec les artistes, robustes en tournée, avec une formation pour les piloter.
 - [Gestion de produit pour logiciels d'ingénierie](https://sensical.es/fr/services/gestion-produit-logiciel-ingenierie.md) : Feuilles de route, spécifications, versions et modèles de licence pour logiciels d'ingénierie, à partir des besoins des ingénieurs ; nous coordonnons les contraintes juridiques mais ne donnons pas de conseil juridique.
 - [Flux de données d'ingénierie](https://sensical.es/fr/services/flux-donnees-ingenierie.md) : Analyse de la façon dont les données d'essai et de simulation deviennent des résultats, et migration des tableurs fragiles vers des bibliothèques de formules, des modèles de rapport et de l'automatisation, validés par rapport aux résultats existants.
-- [Intégration de logiciels d'ingénierie](https://sensical.es/fr/services/integration-logiciels-ingenierie.md) : Connexion des logiciels d'analyse avec l'automatisation d'essais, les outils de simulation et les bases de données d'essais (ASAM ODS, openMDM), pour que les données arrivent sans export manuel et que les rapports se génèrent seuls.
+- [Intégration de logiciels et de données](https://sensical.es/fr/services/integration-logiciels-donnees.md) : Connexion d'appareils, de logiciels et de plateformes de données via MQTT, des API, le décodage de protocoles et des formats ouverts, comme dans Mesh Things, pour que les données arrivent dans les outils utilisés sans étape manuelle.
 
 ## Projets
 

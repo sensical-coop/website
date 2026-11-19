@@ -45,9 +45,9 @@ Gestionem programari d'enginyeria de llarga vida: fulls de ruta i priorització,
 
 Analitzem com els equips d'assaig i simulació converteixen les dades en resultats, sovint amb fulls de càlcul copiats i passos manuals, i traslladem aquesta feina a biblioteques de fórmules, plantilles d'informe i seqüències automatitzades. Validem el nou flux amb resultats de referència d'abans de la migració, el despleguem per etapes sense aturar els assajos i formem els enginyers perquè el mantinguin. Àmbits: bancs d'assaig de motors i vehicles, emissions, assajos de bateries, dades de calibratge i de simulació; formats com MDF4, CSV, NetCDF i Excel.
 
-### Integració de programari d'enginyeria
+### Integració de programari i dades
 
-Connectem el programari d'anàlisi amb les eines que l'envolten: sistemes d'automatització d'assajos (informes automàtics en acabar l'assaig, resultats escrits de nou al sistema), programari de simulació (l'eina d'anàlisi com a postprocessador), bases de dades d'assaig (ASAM ODS, openMDM), i scripts o aplicacions que controlen l'anàlisi mitjançant COM, la línia d'ordres o interfícies d'scripting. Redactem conceptes d'integració, requisits i estimacions, i implementem importadors, exportadors, seqüències i cadenes de generació d'informes.
+Connectem dispositius, programari i plataformes de dades perquè les dades circulin de manera fiable, en el format correcte i sense passos manuals: brokers i ponts MQTT, eliminació de duplicats i processament de fluxos, descodificació de protocols binaris i xifrats (Protocol Buffers, OSC), lliurament a plataformes de tercers per MQTT o API REST, bases de dades i arxius Parquet en emmagatzematge compatible amb S3, i formats de dades d'enginyeria com MDF4, HDF5 i NetCDF. Exemples: Mesh Things (descodificació i compartició de dades de Meshtastic), les nostres contribucions al protocol de Meshtastic i el bus de control MQTT de Famulus 4.0. Preferim protocols i formats oberts, perquè les integracions no lliguin els clients a un sol proveïdor.
 
 ## Projectes destacats
 
@@ -55,7 +55,7 @@ Connectem el programari d'anàlisi amb les eines que l'envolten: sistemes d'auto
 - Contribucions al firmware de Meshtastic: més de 50 pull requests acceptades que afegeixen suport per a sensors (CO₂, partícules i gasos, formaldehid, temperatura i humitat, entrades analògiques, sondes one-wire, telemetria de sòl i aigua).
 - Famulus 4.0 (Iron Skulls Co, 2024–2025): control en directe a escena d'un gos robot Unitree Go2 amb un comandament de videojocs i un controlador MIDI.
 - Azul Petróleo (Iron Skulls Co, 2022–2023): màscares de llum i LEDs d'escenari, controlats en directe i sense fils des del programari d'il·luminació de l'espectacle.
-- UniPlot (ENORISE, 2020–2026): gestió de producte d'una aplicació d'anàlisi, gràfics i informes de dades per a enginyers d'assaig i simulació: full de ruta i versions, complements, integracions amb sistemes d'assaig, eines de simulació i bases de dades ASAM ODS, migració de fluxos de treball de clients, llicències, documentació i formació.
+- UniPlot (ENORISE, 2020–2026): gestió de producte d'una aplicació d'anàlisi, gràfics i informes de dades per a enginyers d'assaig i simulació: full de ruta i versions, complements, migració de fluxos de treball de clients, llicències, documentació i formació.
 - Càlcul d'emissions (complement d'UniPlot, 2020–2026): avaluació d'emissions reglamentàries i en conducció real (RDE), de l'anàlisi de la legislació (UE i Euro 7, EPA dels Estats Units, Xina) a l'alineació temporal, la comprovació de dades de sensors, les correccions, la validació del trajecte i els informes, amb les regles reglamentàries guardades com a dades editables.
 
 ## Com treballem

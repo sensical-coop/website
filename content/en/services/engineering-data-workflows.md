@@ -14,7 +14,7 @@ labels:
 - "Automation"
 - "Migration"
 related_pages:
-- engineering-software-integration
+- software-data-integration
 - engineering-software-product-management
 - environmental-sensor-integration
 ---
