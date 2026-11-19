@@ -12,6 +12,9 @@ Every page listed below has a clean Markdown version: append `.md` to the page U
 - [Meshtastic sensor integration](https://sensical.es/services/meshtastic-sensor-integration.md): Sensor drivers merged into the official Meshtastic firmware, telemetry definitions, robust integration and a data platform for the readings.
 - [Co-creation and participatory design](https://sensical.es/services/co-creation.md): Workshops, project co-design and mentoring, so that your team can own, run and evolve the technology it builds with us.
 - [Technical development for artists](https://sensical.es/services/technical-development-for-artists.md): Stage lighting, wearables and robotics for performance and installations, built with artists, robust enough to tour, with training to run it.
+- [Product management for engineering software](https://sensical.es/services/engineering-software-product-management.md): Roadmaps, specifications, releases and licensing models for engineering software, built from what engineers need; we coordinate legal constraints but do not give legal advice.
+- [Engineering data workflows](https://sensical.es/services/engineering-data-workflows.md): Analysis of how test and simulation data becomes results, and migration from fragile spreadsheets to formula libraries, report templates and automation, validated against existing results.
+- [Engineering software integration](https://sensical.es/services/engineering-software-integration.md): Connecting analysis software with test automation, simulation tools and test-data databases (ASAM ODS, openMDM) so data arrives without manual export and reports run on their own.
 
 ## Projects
 
@@ -19,6 +22,8 @@ Every page listed below has a clean Markdown version: append `.md` to the page U
 - [Meshtastic firmware contributions](https://sensical.es/projects/meshtastic-firmware-contributions.md): More than 50 merged pull requests adding CO2, particulate matter, formaldehyde, analog, one-wire and soil and water sensor support to Meshtastic.
 - [Famulus 4.0](https://sensical.es/projects/famulus-4-0.md): Live control of a Unitree Go2 robot dog with a game controller and a MIDI controller, for Iron Skulls Co's dance show.
 - [Azul Petróleo](https://sensical.es/projects/azul-petroleo-masks.md): Wearable light masks and stage LEDs, cued live and wirelessly from the lighting software, for Iron Skulls Co's dance show.
+- [UniPlot](https://sensical.es/projects/uniplot.md): Product management, integrations and customer data workflows for UniPlot, a data analysis, plotting and reporting application for test and simulation engineers.
+- [Emission computation](https://sensical.es/projects/emission-computation.md): A UniPlot add-in for regulatory and Real Driving Emissions evaluation: legislation analysis (EU, EPA, China), sensor data checks, corrections and reports.
 
 ## Company
 
@@ -35,4 +40,4 @@ Every page listed below has a clean Markdown version: append `.md` to the page U
 
 - [Full profile](https://sensical.es/llms-full.txt): Methods, differentiators and how we work, in more detail.
 
-<!-- Last reviewed: 2026-11-07. Review quarterly. -->
+<!-- Last reviewed: 2026-11-19. Review quarterly. -->

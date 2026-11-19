@@ -37,12 +37,26 @@ We offer: workshops with a specific objective; project co-design and facilitatio
 
 We develop the technology behind performances and installations: stage lighting, wearables, robotics and interactive systems, built with the artists, robust enough to tour, and with training so the team can run it without us. For ten years our team has worked with the dance company Iron Skulls Co.
 
+### Product management for engineering software
+
+We manage long-lived engineering software: roadmaps and prioritisation, requirements with acceptance criteria, effort estimates and business cases, turning customer-specific requests into reusable features or add-ins, development coordination and release preparation, licensing models translated into software behaviour and deployment, and consistency between licence terms, privacy, documentation and the product. We coordinate technical, commercial and legal constraints, but we are not lawyers and do not give legal advice.
+
+### Engineering data workflows
+
+We study how test and simulation teams turn data into results, often through copied spreadsheets and manual steps, and move that work to formula libraries, report templates and automated sequences. We validate the new workflow against reference results from before the migration, roll it out in stages without stopping testing, and train engineers to maintain it. Domains: engine and vehicle test benches, emissions, battery testing, calibration and simulation data; formats such as MDF4, CSV, NetCDF and Excel.
+
+### Engineering software integration
+
+We connect analysis software with the tools around it: test automation systems (automatic end-of-test reports, write-back of results), simulation software (the analysis tool as a post-processor), test-data databases (ASAM ODS, openMDM), and scripts or applications driving the analysis through COM, the command line or scripting interfaces. We write integration concepts, requirements and estimates, and implement importers, exporters, sequences and reporting pipelines.
+
 ## Selected projects
 
 - Mesh Things: open-source platform to collect, store and process sensor data from LoRa mesh networks such as Meshtastic; runs on a cloud server or a Raspberry Pi; live at https://things.sensical.es.
 - Meshtastic firmware contributions: more than 50 merged pull requests adding sensor support (CO2, particulate matter and gases, formaldehyde, temperature and humidity, analog inputs, one-wire probes, soil and water telemetry).
 - Famulus 4.0 (Iron Skulls Co, 2024–2025): live control of a Unitree Go2 robot dog on stage with a game controller and a MIDI controller.
 - Azul Petróleo (Iron Skulls Co, 2022–2023): wearable light masks and stage LEDs, cued live and wirelessly from the show's lighting software.
+- UniPlot (ENORISE, 2020–2026): product management of a data analysis, plotting and reporting application for test and simulation engineers: roadmap and releases, add-ins, integrations with test systems, simulation tools and ASAM ODS databases, customer workflow migrations, licensing, documentation and training.
+- Emission computation (UniPlot add-in, 2020–2026): regulatory and Real Driving Emissions evaluation, from legislation analysis (EU and Euro 7, US EPA, China) to time alignment, sensor data checks, corrections, trip validation and reports, with regulatory rules kept as editable data.
 
 ## How we work
 
@@ -67,4 +81,4 @@ We develop the technology behind performances and installations: stage lighting,
 - GitHub: https://github.com/sensical-coop/
 - LinkedIn: https://www.linkedin.com/company/sensical-sccl/
 
-<!-- Last reviewed: 2026-11-07. Review quarterly. -->
+<!-- Last reviewed: 2026-11-19. Review quarterly. -->

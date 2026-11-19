@@ -1,8 +1,8 @@
 ---
 url: 'projets'
 title: 'Projets'
-seoTitle: "Projets : capteurs, plateformes de données et arts | Sensical"
-description: "Projets choisis de Sensical : firmware de capteurs pour Meshtastic, plateforme de données pour réseaux maillés et technologie pour le spectacle vivant."
+seoTitle: "Projets : capteurs, logiciels d'ingénierie et arts | Sensical"
+description: "Projets choisis : firmware de capteurs Meshtastic, plateforme de données pour réseaux maillés, logiciels d'ingénierie et technologie pour la scène."
 heroHeading: 'Projets'
 heroSubHeading: ''
 translationKey: projects

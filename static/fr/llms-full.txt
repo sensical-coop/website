@@ -37,12 +37,26 @@ Nous proposons : des ateliers avec un objectif précis ; de la co-conception e
 
 Nous développons la technologie des spectacles et des installations : lumière de scène, wearables, robotique et systèmes interactifs, conçus avec les artistes, robustes en tournée, avec une formation pour que l'équipe les pilote sans nous. Depuis dix ans, notre équipe travaille avec la compagnie de danse Iron Skulls Co.
 
+### Gestion de produit pour logiciels d'ingénierie
+
+Nous gérons des logiciels d'ingénierie au long cours : feuilles de route et priorisation, exigences avec critères d'acceptation, estimations de charge et études d'opportunité, transformation de demandes spécifiques de clients en fonctionnalités réutilisables ou en add-ins, coordination du développement et préparation des versions, modèles de licence traduits en comportement logiciel et en déploiement, et cohérence entre conditions de licence, confidentialité, documentation et produit. Nous coordonnons les contraintes techniques, commerciales et juridiques, mais nous ne sommes pas juristes et ne donnons pas de conseil juridique.
+
+### Flux de données d'ingénierie
+
+Nous étudions comment les équipes d'essais et de simulation transforment leurs données en résultats, souvent au moyen de tableurs copiés et d'étapes manuelles, et transférons ce travail vers des bibliothèques de formules, des modèles de rapport et des séquences automatisées. Nous validons le nouveau flux par rapport à des résultats de référence antérieurs à la migration, le déployons par étapes sans arrêter les essais, et formons les ingénieurs à le maintenir. Domaines : bancs d'essai moteur et véhicule, émissions, essais de batteries, données de calibration et de simulation ; formats comme MDF4, CSV, NetCDF et Excel.
+
+### Intégration de logiciels d'ingénierie
+
+Nous connectons les logiciels d'analyse aux outils qui les entourent : systèmes d'automatisation d'essais (rapports automatiques en fin d'essai, renvoi des résultats), logiciels de simulation (l'outil d'analyse comme post-processeur), bases de données d'essais (ASAM ODS, openMDM), et scripts ou applications qui pilotent l'analyse via COM, la ligne de commande ou des interfaces de script. Nous rédigeons des concepts d'intégration, des exigences et des estimations, et développons des importateurs, des exportateurs, des séquences et des chaînes de génération de rapports.
+
 ## Projets choisis
 
 - Mesh Things : plateforme open source pour collecter, stocker et traiter les données de capteurs des réseaux maillés LoRa comme Meshtastic ; fonctionne sur un serveur cloud ou un Raspberry Pi ; en service sur https://things.sensical.es.
 - Contributions au firmware Meshtastic : plus de 50 pull requests acceptées qui ajoutent la prise en charge de capteurs (CO2, particules et gaz, formaldéhyde, température et humidité, entrées analogiques, sondes one-wire, télémétrie du sol et de l'eau).
 - Famulus 4.0 (Iron Skulls Co, 2024–2025) : pilotage en direct sur scène d'un chien robot Unitree Go2 avec une manette de jeu et un contrôleur MIDI.
 - Azul Petróleo (Iron Skulls Co, 2022–2023) : masques lumineux et LED de scène, pilotés en direct et sans fil depuis le logiciel lumière du spectacle.
+- UniPlot (ENORISE, 2020–2026) : gestion de produit d'une application d'analyse, de tracé et de génération de rapports pour les ingénieurs d'essais et de simulation : feuille de route et versions, add-ins, intégrations avec des systèmes d'essai, des outils de simulation et des bases de données ASAM ODS, migrations de flux de travail clients, licences, documentation et formation.
+- Calcul des émissions (add-in UniPlot, 2020–2026) : évaluation réglementaire des émissions et des émissions en conduite réelle (RDE), de l'analyse de la législation (UE et Euro 7, EPA américaine, Chine) à l'alignement temporel, aux contrôles des données capteurs, aux corrections, à la validation des trajets et aux rapports, avec des règles réglementaires conservées sous forme de données modifiables.
 
 ## Notre façon de travailler
 
@@ -67,4 +81,4 @@ Nous développons la technologie des spectacles et des installations : lumière
 - GitHub : https://github.com/sensical-coop/
 - LinkedIn : https://www.linkedin.com/company/sensical-sccl/
 
-<!-- Dernière révision : 2026-11-07. À réviser chaque trimestre. -->
+<!-- Dernière révision : 2026-11-19. À réviser chaque trimestre. -->

@@ -21,6 +21,7 @@ labels:
 related_pages:
 - integracion-sensores-meshtastic
 - co-creacion
+- flujos-datos-ingenieria
 ---
 Integramos sensores ambientales en sistemas de datos flexibles, asequibles y fiables: desde el sensor y su firmware, pasando por la red que transporta sus datos, hasta la plataforma donde esos datos se almacenan, se visualizan y se utilizan. Somos expertos en la recogida de datos de sensores a través de redes en malla distribuidas y autónomas, y tenemos una larga experiencia en la validación, la calibración y el procesamiento de grandes conjuntos de datos.
 

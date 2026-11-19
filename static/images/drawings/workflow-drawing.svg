@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 130">
+  <!-- Spreadsheets -> template -> report (Sensical line style) -->
+  <g fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round">
+    <rect x="620" y="30" width="120" height="86"/>
+    <rect x="606" y="18" width="120" height="86"/>
+    <rect x="592" y="6" width="120" height="86"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="2">
+    <path d="M592,27 H712 M592,48 H712 M592,69 H712 M632,6 V92 M672,6 V92"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0,62 H560"/>
+    <path d="M770,62 H960"/><path d="M944,50 L962,62 L944,74"/>
+    <path d="M1130,62 H1320"/><path d="M1304,50 L1322,62 L1304,74"/>
+    <path d="M1520,62 H2000"/>
+  </g>
+  <g stroke="#000" stroke-width="3" stroke-linejoin="round">
+    <rect x="990" y="8" width="112" height="108" fill="#e2c166"/>
+    <path d="M1004,96 C1030,90 1040,40 1060,46 S1080,80 1090,30" fill="none"/>
+    <path d="M1004,24 V100 H1092" fill="none"/>
+  </g>
+  <g stroke="#000" stroke-width="3" stroke-linejoin="round" fill="#fff">
+    <path d="M1360,8 H1450 L1474,32 V122 H1360 Z"/>
+    <path d="M1450,8 V32 H1474" fill="none"/>
+    <rect x="1376" y="44" width="80" height="40" fill="#000"/>
+    <path d="M1376,98 H1456 M1376,110 H1430" fill="none"/>
+  </g>
+</svg>

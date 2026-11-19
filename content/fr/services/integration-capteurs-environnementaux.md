@@ -20,6 +20,7 @@ labels:
 related_pages:
 - integration-capteurs-meshtastic
 - co-creation
+- flux-donnees-ingenierie
 ---
 Nous intégrons des capteurs environnementaux dans des systèmes de données flexibles, abordables et fiables : du capteur et de son firmware au réseau qui transporte ses données, jusqu'à la plateforme où ces données sont stockées, visualisées et exploitées. Nous sommes experts de la collecte de données de capteurs via des réseaux maillés distribués et autonomes, et nous avons une longue expérience de la validation, de l'étalonnage et du traitement de grands jeux de données.
 
