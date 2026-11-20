@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 130">
+  <!-- Three tools connected to one analysis box (Sensical line style) -->
+  <g fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0,65 H420"/>
+    <path d="M520,20 C700,20 760,60 900,62"/>
+    <path d="M520,65 H900"/>
+    <path d="M520,110 C700,110 760,70 900,68"/>
+    <path d="M884,52 L904,65 L884,78"/>
+    <path d="M1080,65 H2000"/>
+  </g>
+  <g stroke="#000" stroke-width="3" stroke-linejoin="round">
+    <rect x="440" y="2" width="80" height="36" fill="#fff"/>
+    <rect x="440" y="47" width="80" height="36" fill="#000"/>
+    <ellipse cx="480" cy="98" rx="40" ry="9" fill="#fff"/>
+    <path d="M440,98 V118 A40,9 0 0 0 520,118 V98" fill="#fff"/>
+    <rect x="920" y="10" width="140" height="110" fill="#e2c166"/>
+    <path d="M936,104 H1046 M936,104 V24" fill="none"/>
+    <path d="M940,96 L966,70 L990,82 L1016,40 L1040,52" fill="none"/>
+  </g>
+  <g fill="#000"><circle cx="1240" cy="65" r="9"/><circle cx="1560" cy="65" r="9"/></g>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 130">
+  <!-- Roadmap: a timeline with release milestones (Sensical line style) -->
+  <g fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0,80 H1960"/>
+    <path d="M1940,68 L1962,80 L1940,92"/>
+    <g>
+      <path d="M300,80 V30"/><path d="M300,30 h70 l-14,12 l14,12 h-70"/>
+      <path d="M760,80 V24"/><path d="M760,24 h70 l-14,12 l14,12 h-70"/>
+      <path d="M1220,80 V30"/><path d="M1220,30 h70 l-14,12 l14,12 h-70"/>
+      <path d="M1680,80 V24" stroke-dasharray="8 8"/><path d="M1680,24 h70 l-14,12 l14,12 h-70" stroke-dasharray="8 8"/>
+    </g>
+    <g stroke-dasharray="2 14"><path d="M60,104 H1900"/></g>
+  </g>
+  <g stroke="#000" stroke-width="3">
+    <circle cx="300" cy="80" r="13" fill="#000"/>
+    <circle cx="760" cy="80" r="13" fill="#000"/>
+    <circle cx="1220" cy="80" r="16" fill="#e2c166"/>
+    <circle cx="1680" cy="80" r="13" fill="#fff"/>
+  </g>
+  <g fill="#000">
+    <rect x="410" y="110" width="140" height="12" rx="6"/>
+    <rect x="880" y="110" width="220" height="12" rx="6"/>
+    <rect x="1330" y="110" width="110" height="12" rx="6" fill="#e2c166" stroke="#000" stroke-width="3"/>
+  </g>
+</svg>

@@ -12,6 +12,9 @@ Cada página de la lista tiene una versión limpia en Markdown: añade `.md` a l
 - [Integración de sensores en Meshtastic](https://sensical.es/es/servicios/integracion-sensores-meshtastic.md): Drivers de sensores aceptados en el firmware oficial de Meshtastic, definiciones de telemetría, integración robusta y una plataforma para los datos.
 - [Co-creación y diseño participativo](https://sensical.es/es/servicios/co-creacion.md): Talleres, co-diseño de proyectos y mentoría para que tu equipo haga suya, gestione y evolucione la tecnología que construye con nosotros.
 - [Desarrollo técnico para artistas](https://sensical.es/es/servicios/desarrollo-tecnico-para-artistas.md): Iluminación escénica, wearables y robótica para artes escénicas e instalaciones, desarrollados con artistas, robustos para la gira y con formación para operarlos.
+- [Gestión de producto para software de ingeniería](https://sensical.es/es/servicios/gestion-producto-software-ingenieria.md): Hojas de ruta, especificaciones, versiones y modelos de licencia para software de ingeniería, a partir de lo que necesitan los ingenieros; coordinamos las restricciones legales, pero no damos asesoramiento jurídico.
+- [Flujos de datos de sensores e IoT](https://sensical.es/es/servicios/flujos-datos-iot.md): De las lecturas brutas de los sensores a resultados fiables: controles de calidad, detección de deriva, calibración, valores derivados, alarmas e informes, automatizados y validados con datos históricos en lugar de hojas de cálculo frágiles.
+- [Integración de software y datos](https://sensical.es/es/servicios/integracion-software-datos.md): Conexión de dispositivos, software y plataformas de datos mediante MQTT, APIs, decodificación de protocolos y formatos abiertos, como en Mesh Things, para que los datos lleguen a las herramientas que se usan sin pasos manuales.
 
 ## Proyectos
 
@@ -19,6 +22,8 @@ Cada página de la lista tiene una versión limpia en Markdown: añade `.md` a l
 - [Contribuciones al firmware de Meshtastic](https://sensical.es/es/proyectos/contribuciones-firmware-meshtastic.md): Más de 50 pull requests aceptadas que añaden a Meshtastic soporte para sensores de CO2, partículas, formaldehído, analógicos, one-wire y de suelo y agua.
 - [Famulus 4.0](https://sensical.es/es/proyectos/famulus-4-0.md): Control en directo de un perro robot Unitree Go2 con un mando de videojuegos y un controlador MIDI, para el espectáculo de danza de Iron Skulls Co.
 - [Azul Petróleo](https://sensical.es/es/proyectos/mascaras-azul-petroleo.md): Máscaras de luz y LEDs de escenario, controlados en directo y sin cables desde el software de iluminación, para el espectáculo de danza de Iron Skulls Co.
+- [UniPlot](https://sensical.es/es/proyectos/uniplot.md): Gestión de producto, integraciones y flujos de datos de clientes para UniPlot, una aplicación de análisis, gráficos e informes de datos para ingenieros de ensayo y simulación.
+- [Cálculo de emisiones](https://sensical.es/es/proyectos/calculo-emisiones.md): Un add-in de UniPlot para la evaluación de emisiones reglamentarias y en conducción real (RDE): análisis de la legislación (UE, EPA, China), control de datos de sensores, correcciones e informes.
 
 ## Empresa
 
@@ -35,4 +40,4 @@ Cada página de la lista tiene una versión limpia en Markdown: añade `.md` a l
 
 - [Perfil completo](https://sensical.es/es/llms-full.txt): Métodos, elementos diferenciales y forma de trabajar, con más detalle.
 
-<!-- Última revisión: 2026-11-07. Revisar cada trimestre. -->
+<!-- Última revisión: 2026-11-19. Revisar cada trimestre. -->

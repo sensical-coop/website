@@ -37,12 +37,26 @@ We offer: workshops with a specific objective; project co-design and facilitatio
 
 We develop the technology behind performances and installations: stage lighting, wearables, robotics and interactive systems, built with the artists, robust enough to tour, and with training so the team can run it without us. For ten years our team has worked with the dance company Iron Skulls Co.
 
+### Product management for engineering software
+
+We manage long-lived engineering software: roadmaps and prioritisation, requirements with acceptance criteria, effort estimates and business cases, turning customer-specific requests into reusable features or add-ins, development coordination and release preparation, licensing models translated into software behaviour and deployment, and consistency between licence terms, privacy, documentation and the product. We coordinate technical, commercial and legal constraints, but we are not lawyers and do not give legal advice.
+
+### Sensor and IoT data workflows
+
+We design what happens between a raw sensor reading and a result people can trust. We follow the data from the device to the report, find manual steps and risks (copied spreadsheet formulas, missing or repeated readings, sensor drift, clock problems), and rebuild the workflow so that quality checks, calibration, derived values and alarms run automatically as data arrives, with reports and dashboards produced from the same validated data. We validate the new workflow on historical data and train the team to maintain it. Domains: air quality, environmental and agricultural sensing, emission measurement, time-series data and LoRa mesh networks with Mesh Things.
+
+### Software and data integration
+
+We connect devices, software and data platforms so that data moves reliably, in the right format and without manual steps: MQTT brokers and bridges, deduplication and stream processing, decoding of binary and encrypted protocols (Protocol Buffers, OSC), delivery to third-party platforms over MQTT or REST APIs, databases and Parquet archives on S3-compatible storage, and engineering data formats such as MDF4, HDF5 and NetCDF. Examples: Mesh Things (decoding and sharing Meshtastic data), our Meshtastic protocol contributions, and the MQTT control bus of Famulus 4.0. We prefer open protocols and formats, so that integrations do not lock clients into one vendor.
+
 ## Selected projects
 
 - Mesh Things: open-source platform to collect, store and process sensor data from LoRa mesh networks such as Meshtastic; runs on a cloud server or a Raspberry Pi; live at https://things.sensical.es.
 - Meshtastic firmware contributions: more than 50 merged pull requests adding sensor support (CO2, particulate matter and gases, formaldehyde, temperature and humidity, analog inputs, one-wire probes, soil and water telemetry).
 - Famulus 4.0 (Iron Skulls Co, 2024–2025): live control of a Unitree Go2 robot dog on stage with a game controller and a MIDI controller.
 - Azul Petróleo (Iron Skulls Co, 2022–2023): wearable light masks and stage LEDs, cued live and wirelessly from the show's lighting software.
+- UniPlot (ENORISE, 2020–2026): product management of a data analysis, plotting and reporting application for test and simulation engineers: roadmap and releases, add-ins, customer workflow migrations, licensing, documentation and training.
+- Emission computation (UniPlot add-in, 2020–2026): regulatory and Real Driving Emissions evaluation, from legislation analysis (EU and Euro 7, US EPA, China) to time alignment, sensor data checks, corrections, trip validation and reports, with regulatory rules kept as editable data.
 
 ## How we work
 
@@ -67,4 +81,4 @@ We develop the technology behind performances and installations: stage lighting,
 - GitHub: https://github.com/sensical-coop/
 - LinkedIn: https://www.linkedin.com/company/sensical-sccl/
 
-<!-- Last reviewed: 2026-11-07. Review quarterly. -->
+<!-- Last reviewed: 2026-11-19. Review quarterly. -->

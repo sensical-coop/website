@@ -13,6 +13,7 @@ year: "2024–2025"
 location: "Estrena: Umore Azoka, Leioa"
 services:
 - technicaldevelopmentartists
+- softwareintegration
 related_projects:
 - azulpetroleomasks
 labels:

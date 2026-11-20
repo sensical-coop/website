@@ -37,12 +37,26 @@ Ofrecemos: talleres con un objetivo concreto; co-diseño y facilitación de proy
 
 Desarrollamos la tecnología detrás de espectáculos e instalaciones: iluminación escénica, wearables, robótica y sistemas interactivos, construidos con los artistas, robustos para la gira y con formación para que el equipo los opere sin nosotros. Desde hace diez años, nuestro equipo trabaja con la compañía de danza Iron Skulls Co.
 
+### Gestión de producto para software de ingeniería
+
+Gestionamos software de ingeniería de larga vida: hojas de ruta y priorización, requisitos con criterios de aceptación, estimaciones de esfuerzo y casos de negocio, conversión de peticiones específicas de clientes en funcionalidades o add-ins reutilizables, coordinación del desarrollo y preparación de versiones, traslado de los modelos de licencia al comportamiento y al despliegue del software, y coherencia entre las condiciones de licencia, la privacidad, la documentación y el producto. Coordinamos las restricciones técnicas, comerciales y legales, pero no somos abogados ni damos asesoramiento jurídico.
+
+### Flujos de datos de sensores e IoT
+
+Diseñamos lo que ocurre entre una lectura bruta de un sensor y un resultado en el que se pueda confiar. Seguimos los datos desde el dispositivo hasta el informe, detectamos los pasos manuales y los riesgos (fórmulas copiadas entre hojas de cálculo, lecturas que faltan o se repiten, deriva de los sensores, problemas de reloj) y reconstruimos el flujo para que los controles de calidad, la calibración, los valores derivados y las alarmas se ejecuten automáticamente a medida que llegan los datos, con informes y paneles generados a partir de los mismos datos validados. Validamos el nuevo flujo con datos históricos y formamos al equipo para que lo mantenga. Ámbitos: calidad del aire, monitorización ambiental y agrícola, medición de emisiones, series temporales y redes en malla LoRa con Mesh Things.
+
+### Integración de software y datos
+
+Conectamos dispositivos, software y plataformas de datos para que los datos circulen de forma fiable, en el formato adecuado y sin pasos manuales: brokers y puentes MQTT, eliminación de duplicados y procesamiento en flujo, decodificación de protocolos binarios y cifrados (Protocol Buffers, OSC), envío a plataformas de terceros por MQTT o mediante APIs REST, bases de datos y archivos Parquet en almacenamiento compatible con S3, y formatos de datos de ingeniería como MDF4, HDF5 y NetCDF. Ejemplos: Mesh Things (decodificación y compartición de datos de Meshtastic), nuestras contribuciones al protocolo de Meshtastic y el bus de control MQTT de Famulus 4.0. Preferimos protocolos y formatos abiertos, para que las integraciones no aten a los clientes a un único proveedor.
+
 ## Proyectos destacados
 
 - Mesh Things: plataforma de código abierto para recoger, almacenar y procesar datos de sensores de redes en malla LoRa como Meshtastic; funciona en un servidor en la nube o en una Raspberry Pi; en marcha en https://things.sensical.es.
 - Contribuciones al firmware de Meshtastic: más de 50 pull requests aceptadas que añaden soporte para sensores (CO2, partículas y gases, formaldehído, temperatura y humedad, entradas analógicas, sondas one-wire, telemetría de suelo y agua).
 - Famulus 4.0 (Iron Skulls Co, 2024–2025): control en directo en escena de un perro robot Unitree Go2 con un mando de videojuegos y un controlador MIDI.
 - Azul Petróleo (Iron Skulls Co, 2022–2023): máscaras de luz y LEDs de escenario, controlados en directo y sin cables desde el software de iluminación del espectáculo.
+- UniPlot (ENORISE, 2020–2026): gestión de producto de una aplicación de análisis, gráficos e informes de datos para ingenieros de ensayo y simulación: hoja de ruta y versiones, add-ins, migración de flujos de trabajo de clientes, licencias, documentación y formación.
+- Cálculo de emisiones (add-in de UniPlot, 2020–2026): evaluación de emisiones reglamentarias y en conducción real (RDE), del análisis de la legislación (UE y Euro 7, EPA estadounidense, China) a la alineación temporal, el control de datos de sensores, las correcciones, la validación del trayecto y los informes, con las reglas normativas guardadas como datos editables.
 
 ## Cómo trabajamos
 
@@ -67,4 +81,4 @@ Desarrollamos la tecnología detrás de espectáculos e instalaciones: iluminaci
 - GitHub: https://github.com/sensical-coop/
 - LinkedIn: https://www.linkedin.com/company/sensical-sccl/
 
-<!-- Última revisión: 2026-11-07. Revisar cada trimestre. -->
+<!-- Última revisión: 2026-11-19. Revisar cada trimestre. -->
